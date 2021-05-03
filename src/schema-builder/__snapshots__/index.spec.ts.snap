@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SchemaBuilder writes schema 1`] = `
+"type Query {
+  SectionBlockText(id: String): SectionBlockText
+  Page(id: String): Page
+  SectionCarousel(id: String): SectionCarousel
+  PageMetadata(id: String): PageMetadata
+}
+
+type SectionBlockText {
+  internalTitle: Never
+  body: String!
+  bookmarkTitle: String
+  style: SectionBlockTextStyle
+}
+
+scalar Never
+
+enum SectionBlockTextStyle {
+  default
+  narrow
+}
+
+type Page {
+  title: String!
+  subpages: [Page]
+  meta: PageMetadata
+  sections: [PageSection]
+  flags: [PageFlag]
+}
+
+type PageMetadata {
+  canonicalLink: String
+  metaKeywords: String
+  metaFlag: [PageMetadataMetaFlag]
+  structuredData: JSON
+}
+
+enum PageMetadataMetaFlag {
+  no-follow
+  no-index
+}
+
+scalar JSON
+
+union PageSection = SectionBlockText | SectionCarousel
+
+type SectionCarousel {
+  images: [Asset]
+  slideInterval: Float
+}
+
+type Asset {
+  title: String
+  file: AssetFile
+}
+
+type AssetFile {
+  url: String!
+  details: AssetFileDetails!
+  fileName: String
+  contentType: String
+}
+
+type AssetFileDetails {
+  size: Int!
+  image: AssetFileDetailsImage!
+}
+
+type AssetFileDetailsImage {
+  width: Int!
+  height: Int!
+}
+
+enum PageFlag {
+  Not Shareable
+  Set Campus Cookie
+}
+"
+`;
