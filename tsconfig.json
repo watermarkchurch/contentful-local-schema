@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "*": ["@types/*"] },
+    "declaration": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "lib": [
+      "es2015"
+    ],
+    "types": [
+      "node",
+      "jest"
+    ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}

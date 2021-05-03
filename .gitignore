@@ -1,0 +1,10 @@
+node_modules
+dist
+
+**/src/**/*.js
+**/src/**/*.map
+**/src/**/*.d.ts
+
+coverage
+.nyc_output
+tmp
