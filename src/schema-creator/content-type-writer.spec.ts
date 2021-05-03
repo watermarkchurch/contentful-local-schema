@@ -189,6 +189,140 @@ describe("ContentTypeWriter", () => {
       "
     `);
   });
+
+  it("writes links", () => {
+    const map = new Map();
+    ["PageMetadata", "SectionBlockText", "SectionCarousel"].forEach((type) =>
+      map.set(type, new GraphQLObjectType({ name: `${type}Fake`, fields: {} }))
+    );
+
+    const instance = new ContentTypeWriter(
+      {
+        sys: {
+          id: "page",
+          type: "ContentType",
+        },
+        displayField: "internalTitle",
+        name: "Page",
+        description:
+          "A page describes a collection of sections that correspondto a URL slug",
+        fields: [
+          {
+            id: "title",
+            name: "Title",
+            type: "Symbol",
+            localized: false,
+            required: true,
+            validations: [],
+            disabled: false,
+            omitted: false,
+          },
+          {
+            id: "subpages",
+            name: "Subpages",
+            type: "Array",
+            localized: false,
+            required: false,
+            validations: [],
+            disabled: false,
+            omitted: false,
+            items: {
+              type: "Link",
+              validations: [
+                {
+                  linkContentType: ["page"],
+                },
+              ],
+              linkType: "Entry",
+            },
+          },
+          {
+            id: "meta",
+            name: "Meta",
+            type: "Link",
+            localized: false,
+            required: false,
+            validations: [
+              {
+                linkContentType: ["pageMetadata"],
+              },
+            ],
+            disabled: false,
+            omitted: false,
+            linkType: "Entry",
+          },
+          {
+            id: "sections",
+            name: "Sections",
+            type: "Array",
+            localized: false,
+            required: false,
+            validations: [],
+            disabled: false,
+            omitted: false,
+            items: {
+              type: "Link",
+              validations: [
+                {
+                  linkContentType: ["section-block-text", "section-carousel"],
+                },
+              ],
+              linkType: "Entry",
+            },
+          },
+          {
+            id: "flags",
+            name: "Flags",
+            type: "Array",
+            localized: false,
+            required: false,
+            validations: [],
+            disabled: false,
+            omitted: false,
+            items: {
+              type: "Symbol",
+              validations: [
+                {
+                  in: ["Not Shareable", "Set Campus Cookie"],
+                },
+              ],
+            },
+          },
+        ],
+      },
+      map
+    );
+
+    const gqlObject = instance.write();
+
+    expect(printObject(gqlObject)).toMatchInlineSnapshot(`
+      "type Query {
+        Page: Page
+      }
+
+      type Page {
+        title: String!
+        subpages: [Page]
+        meta: PageMetadataFake
+        sections: [PageSection]
+        flags: [PageFlag]
+      }
+
+      type PageMetadataFake
+
+      union PageSection = SectionBlockTextFake | SectionCarouselFake
+
+      type SectionBlockTextFake
+
+      type SectionCarouselFake
+
+      enum PageFlag {
+        Not Shareable
+        Set Campus Cookie
+      }
+      "
+    `);
+  });
 });
 
 function printObject(...objects: GraphQLObjectType[]) {

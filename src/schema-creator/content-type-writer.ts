@@ -1,7 +1,6 @@
 import inflection from 'inflection'
-import util from 'util'
 
-import { GraphQLBoolean, GraphQLEnumType, GraphQLEnumValueConfigMap, GraphQLFieldConfigMap, GraphQLFloat, GraphQLInt, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLOutputType, GraphQLScalarType, GraphQLString } from 'graphql'
+import { GraphQLBoolean, GraphQLEnumType, GraphQLEnumValueConfigMap, GraphQLFieldConfigMap, GraphQLFloat, GraphQLInt, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLOutputType, GraphQLScalarType, GraphQLString, GraphQLType, GraphQLUnionType } from 'graphql'
 
 const GraphQLNever = new GraphQLScalarType({
   name: 'Never'
@@ -71,7 +70,7 @@ export default class ContentTypeWriter {
   public write = () => {
     const contentType = this.contentType
 
-    return new GraphQLObjectType({
+    const type = new GraphQLObjectType({
       name: this.className,
       fields: () => {
         const fields: GraphQLFieldConfigMap<any, any> = {}
@@ -81,102 +80,9 @@ export default class ContentTypeWriter {
         return fields
       },
     })
+    this.contentTypeMap.set(this.className, type)
 
-    // file.addImportDeclaration({
-    //   moduleSpecifier: '../base',
-    //   namedImports: ['Asset', 'IAsset', 'Entry', 'IEntry', 'ILink', 'ISys', 'isAsset', 'isEntry'],
-    // })
-    // file.addImportDeclaration({
-    //   moduleSpecifier: '.',
-    //   namedImports: ['wrap'],
-    // })
-
-    // const fieldsInterface = file.addInterface({
-    //   name: this.fieldsName,
-    //   isExported: true,
-    // })
-
-    // contentType.fields.forEach((f: any) =>
-    //   this.writeField(f, fieldsInterface))
-
-    // if (this.linkedTypes.length > 0) {
-    //   this.linkedTypes = this.linkedTypes.filter((t, index, self) => self.indexOf(t) === index).sort()
-    //   const indexOfSelf = this.linkedTypes.indexOf(contentType.sys.id)
-    //   if (indexOfSelf > -1) {
-    //     this.linkedTypes.splice(indexOfSelf, 1)
-    //   }
-
-    //   this.linkedTypes.forEach((id) => {
-    //     file.addImportDeclaration({
-    //       moduleSpecifier: `./${idToFilename(id)}`,
-    //       namedImports: [
-    //         `I${idToName(id)}`,
-    //         idToName(id),
-    //       ],
-    //     })
-    //   })
-    // }
-
-    // file.addInterface({
-    //   name: this.interfaceName,
-    //   isExported: true,
-    //   docs: [[
-    //     contentType.name,
-    //     contentType.description && '',
-    //     contentType.description && contentType.description,
-    //   ].filter(exists).join('\n')],
-    //   extends: [`IEntry<${this.fieldsName}>`],
-    // })
-
-    // file.addFunction({
-    //   name: `is${this.className}`,
-    //   isExported: true,
-    //   parameters: [{
-    //     name: 'entry',
-    //     type: 'IEntry<any>',
-    //   }],
-    //   returnType: `entry is ${this.interfaceName}`,
-    //   bodyText: (writer) => {
-    //     writer.writeLine('return entry &&')
-    //       .writeLine('entry.sys &&')
-    //       .writeLine('entry.sys.contentType &&')
-    //       .writeLine('entry.sys.contentType.sys &&')
-    //       .writeLine(`entry.sys.contentType.sys.id == '${contentType.sys.id}'`)
-    //   },
-    // })
-
-    // const klass = file.addClass({
-    //   name: this.className,
-    //   isExported: true,
-    //   extends: `Entry<${this.fieldsName}>`,
-    //   implements: [this.interfaceName],
-    //   properties: [
-    //     // These are inherited from the base class and do not need to be redefined here.
-    //     // Further, babel 7 transforms the constructor in such a way that the `Object.assign(this, entryOrId)`
-    //     // in the base class gets wiped if these properties are present.
-    //     // { name: 'sys', isReadonly: true, hasExclamationToken: true, scope: Scope.Public, type: `ISys<'Entry'>` },
-    //     // { name: 'fields', isReadonly: true, hasExclamationToken: true, scope: Scope.Public, type: this.fieldsName },
-    //   ],
-    // })
-
-    // contentType.fields.filter((f: any) => !f.omitted)
-    //   .map((f: any) => this.writeFieldAccessor(f, klass))
-
-    // klass.addConstructor({
-    //   parameters: [{
-    //     name: 'entryOrId',
-    //     type: `${this.interfaceName} | string`,
-    //   }, {
-    //     name: 'fields',
-    //     hasQuestionToken: true,
-    //     type: this.fieldsName,
-    //   }],
-    //   overloads: [
-    //     { parameters: [{ name: 'entry', type: this.interfaceName }] },
-    //     { parameters: [{ name: 'id', type: 'string' }, { name: 'fields', type: this.fieldsName }] },
-    //   ],
-    //   bodyText: `super(entryOrId, '${contentType.sys.id}', fields)`,
-    // })
+    return type
   }
 
   public writeField(field: any, fields: GraphQLFieldConfigMap<any, any>) {
@@ -208,7 +114,7 @@ export default class ContentTypeWriter {
         if (field.linkType == 'Asset') {
           return Asset
         } else {
-          return null
+          return this.resolveLinkContentType(field)
         }
       case 'Array':
         const itemType = this.writeFieldType(Object.assign({ id: field.id }, field.items))
@@ -218,34 +124,36 @@ export default class ContentTypeWriter {
     }
   }
 
-  public resolveLinkContentType(field: any) {
+  public resolveLinkContentType(field: any): GraphQLOutputType {
     if (field.validations) {
       const validation = field.validations.find((v: any) => v.linkContentType && v.linkContentType.length > 0)
       if (validation) {
         this.linkedTypes.push(...validation.linkContentType)
         if (validation.linkContentType.length == 1) {
           const name = idToName(validation.linkContentType[0])
-          return ('I' + name)
+          const resolved = this.contentTypeMap.get(name)
+          if (!resolved) {
+            throw new Error(`Could not resolve content type '${name}'`)
+          }
+          return resolved
         }
 
         const unionName = unionTypeDefName(this.contentType.sys.id, field)
-        if (!this.file.getTypeAlias(unionName)) {
-          this.file.addTypeAlias({
-            name: unionName,
-            isExported: true,
-            type: validation.linkContentType.map((v: any) => 'I' + idToName(v)).join(' | '),
-          })
 
-          this.file.addTypeAlias({
-            name: unionName + 'Class',
-            isExported: true,
-            type: validation.linkContentType.map((v: any) => idToName(v)).join(' | '),
+        return new GraphQLUnionType({
+          name: unionName,
+          types: () => validation.linkContentType.map((val: any) => {
+            const name = idToName(val)
+            const resolved = this.contentTypeMap.get(name)
+            if (!resolved) {
+              throw new Error(`Could not resolve content type '${name}'`)
+            }
+            return resolved
           })
-        }
-        return unionName
+        })
       }
     }
-    return 'IEntry<any>'
+    return this.contentType.get('AnyContentful')
   }
 
   public writePotentialUnionType(field: any) {
@@ -282,18 +190,3 @@ function unionTypeDefName(contentType: string, field: { id: string }) {
   return `${idToName(contentType)}${inflection.singularize(idToName(field.id))}`
 }
 
-function idToFilename(id: string) {
-  return inflection.underscore(id, false)
-}
-
-function dump(obj: any) {
-  return util.inspect(obj, {
-    depth: null,
-    maxArrayLength: null,
-    breakLength: 0,
-  })
-}
-
-function exists(val: any): boolean {
-  return !!val
-}
