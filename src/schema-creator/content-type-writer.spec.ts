@@ -73,10 +73,15 @@ describe("ContentTypeWriter", () => {
         internalTitle: Never
         body: String!
         bookmarkTitle: String
-        style: String
+        style: SectionBlockTextStyle
       }
 
       scalar Never
+
+      enum SectionBlockTextStyle {
+        default
+        narrow
+      }
       "
     `);
   });

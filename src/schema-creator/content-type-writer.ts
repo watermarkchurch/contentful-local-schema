@@ -1,7 +1,7 @@
 import inflection from 'inflection'
 import util from 'util'
 
-import { GraphQLBoolean, GraphQLFieldConfigMap, GraphQLFloat, GraphQLInt, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLOutputType, GraphQLScalarType, GraphQLString } from 'graphql'
+import { GraphQLBoolean, GraphQLEnumType, GraphQLEnumValueConfigMap, GraphQLFieldConfigMap, GraphQLFloat, GraphQLInt, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLOutputType, GraphQLScalarType, GraphQLString } from 'graphql'
 
 const GraphQLNever = new GraphQLScalarType({
   name: 'Never'
@@ -219,19 +219,21 @@ export default class ContentTypeWriter {
       return null
     }
 
-    // const validation = field.validations.find((v: any) => v.in && v.in.length > 0)
-    // if (validation) {
-    //   const name = unionTypeDefName(this.contentType.sys.id, field)
-    //   if (!this.file.getTypeAlias(name)) {
-    //     this.file.addTypeAlias({
-    //       name,
-    //       isExported: true,
-    //       type: validation.in.map((val: any) => dump(val)).join(' | '),
-    //     })
-    //   }
+    const validation = field.validations.find((v: any) => v.in && v.in.length > 0)
+    if (validation) {
+      const name = unionTypeDefName(this.contentType.sys.id, field)
+      
 
-    //   return name
-    // }
+      return new GraphQLEnumType({
+        name,
+        values: validation.in.reduce((map: GraphQLEnumValueConfigMap, val: any) => {
+          map[val.toString()] = {
+            value: val
+          }
+          return map
+        }, {})
+      })
+    }
   }
 }
 function idToName(id: string) {
