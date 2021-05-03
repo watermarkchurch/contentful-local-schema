@@ -85,6 +85,110 @@ describe("ContentTypeWriter", () => {
       "
     `);
   });
+
+  it("writes assets", () => {
+    const instance = new ContentTypeWriter(
+      {
+        sys: {
+          id: "section-carousel",
+          type: "ContentType",
+        },
+        displayField: "internalTitle",
+        name: "Section: Carousel",
+        description:
+          "Renders a carousel of images that automatically progresses from one to the next",
+        fields: [
+          ,
+          {
+            id: "images",
+            name: "Images",
+            type: "Array",
+            localized: false,
+            required: false,
+            validations: [
+              {
+                size: {
+                  min: 1,
+                  max: null,
+                },
+              },
+            ],
+            disabled: false,
+            omitted: false,
+            items: {
+              type: "Link",
+              validations: [
+                {
+                  linkMimetypeGroup: ["image"],
+                },
+                {
+                  assetFileSize: {
+                    min: null,
+                    max: 20971520,
+                  },
+                },
+              ],
+              linkType: "Asset",
+            },
+          },
+          {
+            id: "slideInterval",
+            name: "Slide Interval (Seconds)",
+            type: "Number",
+            localized: false,
+            required: false,
+            validations: [
+              {
+                range: {
+                  min: 1,
+                  max: null,
+                },
+              },
+            ],
+            disabled: false,
+            omitted: false,
+          },
+        ],
+      },
+      new Map()
+    );
+
+    const gqlObject = instance.write();
+
+    expect(printObject(gqlObject)).toMatchInlineSnapshot(`
+      "type Query {
+        SectionCarousel: SectionCarousel
+      }
+
+      type SectionCarousel {
+        images: [Asset]
+        slideInterval: Float
+      }
+
+      type Asset {
+        title: String
+        file: AssetFile
+      }
+
+      type AssetFile {
+        url: String!
+        details: AssetFileDetails!
+        fileName: String
+        contentType: String
+      }
+
+      type AssetFileDetails {
+        size: Int!
+        image: AssetFileDetailsImage!
+      }
+
+      type AssetFileDetailsImage {
+        width: Int!
+        height: Int!
+      }
+      "
+    `);
+  });
 });
 
 function printObject(...objects: GraphQLObjectType[]) {

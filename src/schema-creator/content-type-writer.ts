@@ -19,6 +19,40 @@ const GraphQLLocation  = new GraphQLObjectType({
   }
 })
 
+const AssetFileDetailsImage = new GraphQLObjectType({
+  name: 'AssetFileDetailsImage',
+  fields: {
+    width: { type: new GraphQLNonNull(GraphQLInt) },
+    height: { type: new GraphQLNonNull(GraphQLInt) },
+  }
+})
+
+const AssetFileDetails = new GraphQLObjectType({
+  name: 'AssetFileDetails',
+  fields: {
+    size: { type: new GraphQLNonNull(GraphQLInt) },
+    image: { type: new GraphQLNonNull(AssetFileDetailsImage) }
+  }
+})
+
+const AssetFile = new GraphQLObjectType({
+  name: 'AssetFile',
+  fields: {
+    url: { type: new GraphQLNonNull(GraphQLString) },
+    details: { type: new GraphQLNonNull(AssetFileDetails) },
+    fileName: { type: GraphQLString },
+    contentType: { type: GraphQLString },
+  }
+})
+
+const Asset = new GraphQLObjectType({
+  name: 'Asset',
+  fields: {
+    title: { type: GraphQLString },
+    file: { type: AssetFile }
+  }
+})
+
 export default class ContentTypeWriter {
   public readonly className: string
 
@@ -171,11 +205,11 @@ export default class ContentTypeWriter {
       case 'Location':
         return GraphQLLocation
       case 'Link':
-        // if (field.linkType == 'Asset') {
-        //   return 'ILink<\'Asset\'> | IAsset'
-        // } else {
-        //   return `ILink<'Entry'> | ${this.resolveLinkContentType(field)}`
-        // }
+        if (field.linkType == 'Asset') {
+          return Asset
+        } else {
+          return null
+        }
       case 'Array':
         const itemType = this.writeFieldType(Object.assign({ id: field.id }, field.items))
         return new GraphQLList(itemType)
