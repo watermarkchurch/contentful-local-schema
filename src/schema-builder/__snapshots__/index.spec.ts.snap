@@ -8,11 +8,31 @@ exports[`SchemaBuilder writes schema 1`] = `
   PageMetadata(id: String): PageMetadata
 }
 
-type SectionBlockText {
+type SectionBlockText implements Entry {
   internalTitle: Never
   body: String!
   bookmarkTitle: String
   style: SectionBlockTextStyle
+}
+
+interface Entry {
+  sys: Sys
+  contentfulMetadata: ContentfulMetadata
+}
+
+type Sys {
+  id: String
+  spaceId: String
+  environmentId: String
+}
+
+type ContentfulMetadata {
+  tags: [ContentfulTag]!
+}
+
+type ContentfulTag {
+  id: String!
+  name: String!
 }
 
 scalar Never
@@ -22,7 +42,7 @@ enum SectionBlockTextStyle {
   narrow
 }
 
-type Page {
+type Page implements Entry {
   title: String!
   subpages: [Page]
   meta: PageMetadata
@@ -30,7 +50,7 @@ type Page {
   flags: [PageFlag]
 }
 
-type PageMetadata {
+type PageMetadata implements Entry {
   canonicalLink: String
   metaKeywords: String
   metaFlag: [PageMetadataMetaFlag]
@@ -42,35 +62,29 @@ enum PageMetadataMetaFlag {
   no-index
 }
 
-scalar JSON
+\\"\\"\\"
+The \`JSON\` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
+\\"\\"\\"
+scalar JSON @specifiedBy(url: \\"http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf\\")
 
 union PageSection = SectionBlockText | SectionCarousel
 
-type SectionCarousel {
+type SectionCarousel implements Entry {
   images: [Asset]
   slideInterval: Float
 }
 
 type Asset {
+  sys: Sys
+  contentfulMetadata: ContentfulMetadata
   title: String
-  file: AssetFile
-}
-
-type AssetFile {
-  url: String!
-  details: AssetFileDetails!
-  fileName: String
+  description: String
   contentType: String
-}
-
-type AssetFileDetails {
-  size: Int!
-  image: AssetFileDetailsImage!
-}
-
-type AssetFileDetailsImage {
-  width: Int!
-  height: Int!
+  fileName: String
+  url: String
+  size: Int
+  width: Int
+  height: Int
 }
 
 enum PageFlag {

@@ -42,17 +42,7 @@ describe("SchemaBuilder", () => {
     const schema = await instance.build()
 
     const printed = printSchema(schema)
-    expect(printed).toMatch(/^\s*something: AnyContentful\s*$/m);
-    expect(printed).toMatch(/^\s*union AnyContentful/m);
-    const match = /^union AnyContentful = (?<types>.+)$/m.exec(printed)
-    const types = match!.groups!.types.split('|').map((t) => t.trim())
-    expect(types.sort()).toEqual([
-      "Page",
-      "PageMetadata",
-      "SectionBlockText",
-      "SectionCarousel",
-      "SectionUnknownLink"
-    ])
+    expect(printed).toMatch(/^\s*something: Entry\s*$/m);
   })
 })
 

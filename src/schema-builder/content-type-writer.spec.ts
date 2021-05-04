@@ -70,11 +70,31 @@ describe("ContentTypeWriter", () => {
         SectionBlockText: SectionBlockText
       }
 
-      type SectionBlockText {
+      type SectionBlockText implements Entry {
         internalTitle: Never
         body: String!
         bookmarkTitle: String
         style: SectionBlockTextStyle
+      }
+
+      interface Entry {
+        sys: Sys
+        contentfulMetadata: ContentfulMetadata
+      }
+
+      type Sys {
+        id: String
+        spaceId: String
+        environmentId: String
+      }
+
+      type ContentfulMetadata {
+        tags: [ContentfulTag]!
+      }
+
+      type ContentfulTag {
+        id: String!
+        name: String!
       }
 
       scalar Never
@@ -162,31 +182,42 @@ describe("ContentTypeWriter", () => {
         SectionCarousel: SectionCarousel
       }
 
-      type SectionCarousel {
+      type SectionCarousel implements Entry {
         images: [Asset]
         slideInterval: Float
       }
 
+      interface Entry {
+        sys: Sys
+        contentfulMetadata: ContentfulMetadata
+      }
+
+      type Sys {
+        id: String
+        spaceId: String
+        environmentId: String
+      }
+
+      type ContentfulMetadata {
+        tags: [ContentfulTag]!
+      }
+
+      type ContentfulTag {
+        id: String!
+        name: String!
+      }
+
       type Asset {
+        sys: Sys
+        contentfulMetadata: ContentfulMetadata
         title: String
-        file: AssetFile
-      }
-
-      type AssetFile {
-        url: String!
-        details: AssetFileDetails!
-        fileName: String
+        description: String
         contentType: String
-      }
-
-      type AssetFileDetails {
-        size: Int!
-        image: AssetFileDetailsImage!
-      }
-
-      type AssetFileDetailsImage {
-        width: Int!
-        height: Int!
+        fileName: String
+        url: String
+        size: Int
+        width: Int
+        height: Int
       }
       "
     `);
@@ -303,12 +334,32 @@ describe("ContentTypeWriter", () => {
         Page: Page
       }
 
-      type Page {
+      type Page implements Entry {
         title: String!
         subpages: [Page]
         meta: PageMetadataFake
         sections: [PageSection]
         flags: [PageFlag]
+      }
+
+      interface Entry {
+        sys: Sys
+        contentfulMetadata: ContentfulMetadata
+      }
+
+      type Sys {
+        id: String
+        spaceId: String
+        environmentId: String
+      }
+
+      type ContentfulMetadata {
+        tags: [ContentfulTag]!
+      }
+
+      type ContentfulTag {
+        id: String!
+        name: String!
       }
 
       type PageMetadataFake

@@ -1,56 +1,9 @@
 import inflection from 'inflection'
+import GraphQLJSON from 'graphql-type-json';
 
 import { GraphQLBoolean, GraphQLEnumType, GraphQLEnumValueConfigMap, GraphQLFieldConfigMap, GraphQLFloat, GraphQLInt, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLOutputType, GraphQLScalarType, GraphQLString, GraphQLType, GraphQLUnionType } from 'graphql'
+import { Asset, Entry, GraphQLLocation, GraphQLNever } from '../types'
 
-const GraphQLNever = new GraphQLScalarType({
-  name: 'Never'
-})
-
-const GraphQLJSON = new GraphQLScalarType({
-  name: 'JSON'
-})
-
-const GraphQLLocation  = new GraphQLObjectType({
-  name: 'Location',
-  fields: {
-    lat: { type: GraphQLFloat },
-    lon: { type: GraphQLFloat }
-  }
-})
-
-const AssetFileDetailsImage = new GraphQLObjectType({
-  name: 'AssetFileDetailsImage',
-  fields: {
-    width: { type: new GraphQLNonNull(GraphQLInt) },
-    height: { type: new GraphQLNonNull(GraphQLInt) },
-  }
-})
-
-const AssetFileDetails = new GraphQLObjectType({
-  name: 'AssetFileDetails',
-  fields: {
-    size: { type: new GraphQLNonNull(GraphQLInt) },
-    image: { type: new GraphQLNonNull(AssetFileDetailsImage) }
-  }
-})
-
-const AssetFile = new GraphQLObjectType({
-  name: 'AssetFile',
-  fields: {
-    url: { type: new GraphQLNonNull(GraphQLString) },
-    details: { type: new GraphQLNonNull(AssetFileDetails) },
-    fileName: { type: GraphQLString },
-    contentType: { type: GraphQLString },
-  }
-})
-
-const Asset = new GraphQLObjectType({
-  name: 'Asset',
-  fields: {
-    title: { type: GraphQLString },
-    file: { type: AssetFile }
-  }
-})
 
 export default class ContentTypeWriter {
   public readonly className: string
@@ -73,6 +26,7 @@ export default class ContentTypeWriter {
 
     const type = new GraphQLObjectType({
       name: this.className,
+      interfaces: [Entry],
       fields: () => {
         const fields: GraphQLFieldConfigMap<any, any> = {}
         contentType.fields.forEach((f: any) =>
@@ -128,17 +82,7 @@ export default class ContentTypeWriter {
   public resolveLinkContentType(field: any): GraphQLOutputType {
     let validation = field.validations && field.validations.find((v: any) => v.linkContentType && v.linkContentType.length > 0)
     if (!validation) {
-      let anyContentful: GraphQLOutputType | undefined = this.helperTypeMap.get('AnyContentful')
-      if (!anyContentful) {
-        anyContentful = new GraphQLUnionType({
-          name: 'AnyContentful',
-          types: () => {
-            return Array.from(this.contentTypeMap.values())
-          }
-        })
-        this.helperTypeMap.set('AnyContentful', anyContentful)
-      }
-      return anyContentful
+      return Entry
     }
 
     this.linkedTypes.push(...validation.linkContentType)
