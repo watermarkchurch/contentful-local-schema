@@ -1,8 +1,8 @@
 import inflection from 'inflection'
 import GraphQLJSON from 'graphql-type-json';
 
-import { GraphQLBoolean, GraphQLEnumType, GraphQLEnumValueConfigMap, GraphQLFieldConfigMap, GraphQLFloat, GraphQLInt, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLOutputType, GraphQLScalarType, GraphQLString, GraphQLType, GraphQLUnionType } from 'graphql'
-import { Asset, Entry, GraphQLLocation, GraphQLNever } from '../types'
+import { GraphQLBoolean, GraphQLEnumType, GraphQLEnumValueConfigMap, GraphQLFieldConfigMap, GraphQLFloat, GraphQLInt, GraphQLInterfaceType, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLOutputType, GraphQLScalarType, GraphQLString, GraphQLType, GraphQLUnionType } from 'graphql'
+import { Asset, AssetCollection, Entry, EntryCollection, GraphQLLocation, GraphQLNever } from '../types'
 
 
 export default class ContentTypeWriter {
@@ -13,7 +13,7 @@ export default class ContentTypeWriter {
   constructor(
     private readonly contentType: any,
     private readonly contentTypeMap: Map<string, GraphQLObjectType>,
-    private readonly helperTypeMap: Map<string, GraphQLOutputType>
+    private readonly collectionTypeMap: Map<string, GraphQLObjectType>
   ) {
     this.linkedTypes = []
 
@@ -37,7 +37,21 @@ export default class ContentTypeWriter {
     })
     this.contentTypeMap.set(this.className, type)
 
-    return type
+    const collection = new GraphQLObjectType({
+      name: `${this.className}Collection`,
+      fields: {
+        skip: { type: new GraphQLNonNull(GraphQLInt) },
+        limit: { type: new GraphQLNonNull(GraphQLInt) },
+        total: { type: new GraphQLNonNull(GraphQLInt) },
+        items: { type: new GraphQLNonNull(new GraphQLList(type)) }
+      }
+    })
+    this.collectionTypeMap.set(this.className, collection)
+
+    return {
+      type,
+      collection
+    }
   }
 
   public writeField(field: any, fields: GraphQLFieldConfigMap<any, any>) {
@@ -73,13 +87,22 @@ export default class ContentTypeWriter {
         }
       case 'Array':
         const itemType = this.writeFieldType(Object.assign({ id: field.id }, field.items))
-        return new GraphQLList(itemType)
+        if (field.items.type == 'Link') {
+          if (itemType == Asset) {
+            return AssetCollection
+          } else if (itemType == Entry) {
+            return EntryCollection
+          }
+          return this.writeLinkCollectionType(itemType)
+        } else {
+          return new GraphQLList(itemType)
+        }
       default:
         return GraphQLJSON
     }
   }
 
-  public resolveLinkContentType(field: any): GraphQLOutputType {
+  public resolveLinkContentType(field: any): GraphQLUnionType | GraphQLInterfaceType | GraphQLObjectType {
     let validation = field.validations && field.validations.find((v: any) => v.linkContentType && v.linkContentType.length > 0)
     if (!validation) {
       return Entry
@@ -107,8 +130,28 @@ export default class ContentTypeWriter {
         }
         return resolved
       })
-  })
-  
+    })
+  }
+
+  public writeLinkCollectionType(itemType: any): GraphQLObjectType {
+    if (this.collectionTypeMap.has(itemType.name)) {
+      const collection = this.collectionTypeMap.get(itemType.name)!
+      console.log('has', itemType.name, collection)
+      return collection
+    } else {
+      const collection = new GraphQLObjectType({
+        name: `${itemType.name}Collection`,
+        fields: {
+          skip: { type: new GraphQLNonNull(GraphQLInt) },
+          limit: { type: new GraphQLNonNull(GraphQLInt) },
+          total: { type: new GraphQLNonNull(GraphQLInt) },
+          items: { type: new GraphQLNonNull(new GraphQLList(itemType)) }
+        }
+      })
+      console.log('new', itemType.name, collection)
+      this.collectionTypeMap.set(itemType.name, collection)
+      return collection
+    }
   }
 
   public writePotentialUnionType(field: any) {

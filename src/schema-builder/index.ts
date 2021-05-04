@@ -2,6 +2,7 @@ import { GraphQLFieldConfigMap, GraphQLObjectType, GraphQLSchema, GraphQLString 
 import fs from 'fs-extra'
 import path from 'path'
 import ContentTypeWriter from "./content-type-writer";
+import inflection from "inflection";
 
 interface IBaseOptions {
   logger: { debug: Console['debug'] }
@@ -43,16 +44,24 @@ export default class SchemaBuilder {
 
     const contentTypeMap = new Map()
     const helperTypeMap = new Map()
-    const graphQLTypes: GraphQLObjectType[] = contentfulSchema.contentTypes.map((ct) =>
+    const graphQLTypes = contentfulSchema.contentTypes.map((ct) =>
       new ContentTypeWriter(ct, contentTypeMap, helperTypeMap).write())
 
     const Query = new GraphQLObjectType({
       name: 'Query',
-      fields: graphQLTypes.reduce((fields, type) => {
-        fields[type.name] = {
+      fields: graphQLTypes.reduce((fields, {type, collection}) => {
+        const queryFieldName = inflection.camelize(type.name, true)
+        fields[queryFieldName] = {
           type,
           args: {
             id: { type: GraphQLString}
+          }
+        }
+        fields[`${queryFieldName}Collection`] = {
+          type: collection,
+          args: {
+            skip: { type: GraphQLString },
+            limit: { type: GraphQLString },
           }
         }
         return fields

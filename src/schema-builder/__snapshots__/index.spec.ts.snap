@@ -2,10 +2,14 @@
 
 exports[`SchemaBuilder writes schema 1`] = `
 "type Query {
-  SectionBlockText(id: String): SectionBlockText
-  Page(id: String): Page
-  SectionCarousel(id: String): SectionCarousel
-  PageMetadata(id: String): PageMetadata
+  sectionBlockText(id: String): SectionBlockText
+  sectionBlockTextCollection(skip: String, limit: String): SectionBlockTextCollection
+  page(id: String): Page
+  pageCollection(skip: String, limit: String): PageCollection
+  sectionCarousel(id: String): SectionCarousel
+  sectionCarouselCollection(skip: String, limit: String): SectionCarouselCollection
+  pageMetadata(id: String): PageMetadata
+  pageMetadataCollection(skip: String, limit: String): PageMetadataCollection
 }
 
 type SectionBlockText implements Entry {
@@ -42,12 +46,26 @@ enum SectionBlockTextStyle {
   narrow
 }
 
+type SectionBlockTextCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [SectionBlockText]!
+}
+
 type Page implements Entry {
   title: String!
-  subpages: [Page]
+  subpages: PageCollection
   meta: PageMetadata
-  sections: [PageSection]
+  sections: PageSectionCollection
   flags: [PageFlag]
+}
+
+type PageCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Page]!
 }
 
 type PageMetadata implements Entry {
@@ -67,11 +85,25 @@ The \`JSON\` scalar type represents JSON values as specified by [ECMA-404](http:
 \\"\\"\\"
 scalar JSON @specifiedBy(url: \\"http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf\\")
 
+type PageSectionCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [PageSection]!
+}
+
 union PageSection = SectionBlockText | SectionCarousel
 
 type SectionCarousel implements Entry {
-  images: [Asset]
+  images: AssetCollection
   slideInterval: Float
+}
+
+type AssetCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Asset]!
 }
 
 type Asset {
@@ -90,6 +122,20 @@ type Asset {
 enum PageFlag {
   Not Shareable
   Set Campus Cookie
+}
+
+type SectionCarouselCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [SectionCarousel]!
+}
+
+type PageMetadataCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [PageMetadata]!
 }
 "
 `;

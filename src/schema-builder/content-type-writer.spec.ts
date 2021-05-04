@@ -63,11 +63,12 @@ describe("ContentTypeWriter", () => {
       new Map()
     );
 
-    const gqlObject = instance.write();
+    const { type, collection } = instance.write();
 
-    expect(printObject(gqlObject)).toMatchInlineSnapshot(`
+    expect(printObject(type, collection)).toMatchInlineSnapshot(`
       "type Query {
         SectionBlockText: SectionBlockText
+        SectionBlockTextCollection: SectionBlockTextCollection
       }
 
       type SectionBlockText implements Entry {
@@ -102,6 +103,13 @@ describe("ContentTypeWriter", () => {
       enum SectionBlockTextStyle {
         default
         narrow
+      }
+
+      type SectionBlockTextCollection {
+        skip: Int!
+        limit: Int!
+        total: Int!
+        items: [SectionBlockText]!
       }
       "
     `);
@@ -175,15 +183,16 @@ describe("ContentTypeWriter", () => {
       new Map()
     );
 
-    const gqlObject = instance.write();
+    const { type, collection } = instance.write();
 
-    expect(printObject(gqlObject)).toMatchInlineSnapshot(`
+    expect(printObject(type, collection)).toMatchInlineSnapshot(`
       "type Query {
         SectionCarousel: SectionCarousel
+        SectionCarouselCollection: SectionCarouselCollection
       }
 
       type SectionCarousel implements Entry {
-        images: [Asset]
+        images: AssetCollection
         slideInterval: Float
       }
 
@@ -207,6 +216,13 @@ describe("ContentTypeWriter", () => {
         name: String!
       }
 
+      type AssetCollection {
+        skip: Int!
+        limit: Int!
+        total: Int!
+        items: [Asset]!
+      }
+
       type Asset {
         sys: Sys
         contentfulMetadata: ContentfulMetadata
@@ -218,6 +234,13 @@ describe("ContentTypeWriter", () => {
         size: Int
         width: Int
         height: Int
+      }
+
+      type SectionCarouselCollection {
+        skip: Int!
+        limit: Int!
+        total: Int!
+        items: [SectionCarousel]!
       }
       "
     `);
@@ -327,18 +350,19 @@ describe("ContentTypeWriter", () => {
       new Map()
     );
 
-    const gqlObject = instance.write();
+    const { type, collection } = instance.write();
 
-    expect(printObject(gqlObject)).toMatchInlineSnapshot(`
+    expect(printObject(type, collection)).toMatchInlineSnapshot(`
       "type Query {
         Page: Page
+        PageCollection: PageCollection
       }
 
       type Page implements Entry {
         title: String!
-        subpages: [Page]
+        subpages: PageCollection
         meta: PageMetadataFake
-        sections: [PageSection]
+        sections: PageSectionCollection
         flags: [PageFlag]
       }
 
@@ -362,7 +386,21 @@ describe("ContentTypeWriter", () => {
         name: String!
       }
 
+      type PageCollection {
+        skip: Int!
+        limit: Int!
+        total: Int!
+        items: [Page]!
+      }
+
       type PageMetadataFake
+
+      type PageSectionCollection {
+        skip: Int!
+        limit: Int!
+        total: Int!
+        items: [PageSection]!
+      }
 
       union PageSection = SectionBlockTextFake | SectionCarouselFake
 

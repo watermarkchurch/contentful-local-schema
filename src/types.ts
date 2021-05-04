@@ -44,6 +44,16 @@ export const Entry = new GraphQLInterfaceType({
   }
 })
 
+export const EntryCollection = new GraphQLObjectType({
+  name: 'EntryCollection',
+  fields: {
+    skip: { type: new GraphQLNonNull(GraphQLInt) },
+    limit: { type: new GraphQLNonNull(GraphQLInt) },
+    total: { type: new GraphQLNonNull(GraphQLInt) },
+    items: { type: new GraphQLNonNull(new GraphQLList(Entry)) }
+  }
+})
+
 export const Asset = new GraphQLObjectType({
   name: 'Asset',
   fields: {
@@ -58,5 +68,15 @@ export const Asset = new GraphQLObjectType({
     size: { type: GraphQLInt },
     width: { type: GraphQLInt },
     height: { type: GraphQLInt },
+  }
+})
+
+export const AssetCollection = new GraphQLObjectType({
+  name: 'AssetCollection',
+  fields: {
+    skip: { type: new GraphQLNonNull(GraphQLInt) },
+    limit: { type: new GraphQLNonNull(GraphQLInt) },
+    total: { type: new GraphQLNonNull(GraphQLInt) },
+    items: { type: new GraphQLNonNull(new GraphQLList(Asset)) }
   }
 })
