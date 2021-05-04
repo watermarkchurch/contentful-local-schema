@@ -1,9 +1,11 @@
 import * as chalk from 'chalk'
 import * as fs from 'fs-extra'
+import { printSchema } from 'graphql'
 import * as path from 'path'
 import * as yargs from 'yargs'
 
 import defaults from './defaults'
+import SchemaBuilder from './schema-builder'
 // import { ContentfulTSGenerator } from './generator'
 // import { Installer } from './installer'
 import { SchemaDownloader } from './schema-downloader'
@@ -11,7 +13,7 @@ import { SchemaDownloader } from './schema-downloader'
 interface IArgv {
   /** The schema file to load for code generation */
   file: string,
-  /** The output directory in which to write the code */
+  /** The output directory in which to write the graphql schema */
   out: string
   /** Whether to download */
   download: boolean
@@ -34,7 +36,7 @@ yargs
   })
   .option('out', {
     alias: 'o',
-    describe: 'Where to place the generated code.',
+    describe: 'Where to place the generated schema file.',
   })
   .option('download', {
     boolean: true,
@@ -61,37 +63,32 @@ yargs
 
 // tslint:disable-next-line:no-shadowed-variable
 async function Run(args: IArgv, logger: ILogger = console) {
+  const options = {
+    directory: path.dirname(args.file),
+    filename: path.basename(args.file),
+    logger,
+    ...args,
+  }
   if (args.download) {
-    const downloader = new SchemaDownloader({
-      ...args,
-      directory: path.dirname(args.file),
-      filename: path.basename(args.file),
-      logger,
-    })
+    const downloader = new SchemaDownloader(options)
 
     await downloader.downloadSchema()
   }
 
-  // const installer = new Installer({
-  //   outputDir: args.out,
-  //   logger,
-  // })
+  const schemaBuilder = new SchemaBuilder(options)
+  const schema = await schemaBuilder.build()
 
-  // const generator = new ContentfulTSGenerator({
-  //   outputDir: path.join(args.out, 'generated'),
-  //   schemaFile: args.file,
-  // })
-
-  // await Promise.all([
-  //   installer.install(),
-  //   generator.generate(),
-  // ])
+  const outDir = options.out || options.directory
+  await fs.mkdirp(outDir)
+  await fs.writeFile(
+    path.join(outDir, 'contentful-schema.gql'),
+    printSchema(schema)
+  )
 }
 
 const args = Object.assign<Partial<IArgv>, Partial<IArgv>>(
   {
     ...defaults,
-    out: defaults.outputDir,
     file: defaults.schemaFile,
   },
   yargs.argv as Partial<IArgv>)
