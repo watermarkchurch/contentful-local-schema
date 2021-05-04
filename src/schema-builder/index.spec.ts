@@ -11,6 +11,49 @@ describe("SchemaBuilder", () => {
 
     expect(printSchema(schema)).toMatchSnapshot()
   })
+
+  it("handles unknown link type", async () => {
+    const instance = new SchemaBuilder({
+      contentTypes: [
+        {
+          sys: {
+            id: "section-unknown-link",
+            type: "ContentType",
+          },
+          name: "Section: Unknown Link",
+          fields: [
+            {
+              id: "something",
+              name: "Something",
+              type: "Link",
+              localized: false,
+              required: false,
+              // no validations
+              disabled: false,
+              omitted: false,
+              linkType: "Entry",
+            },
+          ]
+        },
+        ...contentfulSchema.contentTypes
+      ]
+    })
+
+    const schema = await instance.build()
+
+    const printed = printSchema(schema)
+    expect(printed).toMatch(/^\s*something: AnyContentful\s*$/m);
+    expect(printed).toMatch(/^\s*union AnyContentful/m);
+    const match = /^union AnyContentful = (?<types>.+)$/m.exec(printed)
+    const types = match!.groups!.types.split('|').map((t) => t.trim())
+    expect(types.sort()).toEqual([
+      "Page",
+      "PageMetadata",
+      "SectionBlockText",
+      "SectionCarousel",
+      "SectionUnknownLink"
+    ])
+  })
 })
 
 const contentfulSchema = {

@@ -42,8 +42,9 @@ export default class SchemaBuilder {
     }
 
     const contentTypeMap = new Map()
+    const helperTypeMap = new Map()
     const graphQLTypes: GraphQLObjectType[] = contentfulSchema.contentTypes.map((ct) =>
-      new ContentTypeWriter(ct, contentTypeMap).write())
+      new ContentTypeWriter(ct, contentTypeMap, helperTypeMap).write())
 
     const Query = new GraphQLObjectType({
       name: 'Query',

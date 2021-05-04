@@ -59,7 +59,8 @@ export default class ContentTypeWriter {
 
   constructor(
     private readonly contentType: any,
-    private readonly contentTypeMap: Map<string, GraphQLObjectType>
+    private readonly contentTypeMap: Map<string, GraphQLObjectType>,
+    private readonly helperTypeMap: Map<string, GraphQLOutputType>
   ) {
     this.linkedTypes = []
 
@@ -125,35 +126,45 @@ export default class ContentTypeWriter {
   }
 
   public resolveLinkContentType(field: any): GraphQLOutputType {
-    if (field.validations) {
-      const validation = field.validations.find((v: any) => v.linkContentType && v.linkContentType.length > 0)
-      if (validation) {
-        this.linkedTypes.push(...validation.linkContentType)
-        if (validation.linkContentType.length == 1) {
-          const name = idToName(validation.linkContentType[0])
-          const resolved = this.contentTypeMap.get(name)
-          if (!resolved) {
-            throw new Error(`Could not resolve content type '${name}'`)
+    let validation = field.validations && field.validations.find((v: any) => v.linkContentType && v.linkContentType.length > 0)
+    if (!validation) {
+      let anyContentful: GraphQLOutputType | undefined = this.helperTypeMap.get('AnyContentful')
+      if (!anyContentful) {
+        anyContentful = new GraphQLUnionType({
+          name: 'AnyContentful',
+          types: () => {
+            return Array.from(this.contentTypeMap.values())
           }
-          return resolved
-        }
-
-        const unionName = unionTypeDefName(this.contentType.sys.id, field)
-
-        return new GraphQLUnionType({
-          name: unionName,
-          types: () => validation.linkContentType.map((val: any) => {
-            const name = idToName(val)
-            const resolved = this.contentTypeMap.get(name)
-            if (!resolved) {
-              throw new Error(`Could not resolve content type '${name}'`)
-            }
-            return resolved
-          })
         })
+        this.helperTypeMap.set('AnyContentful', anyContentful)
       }
+      return anyContentful
     }
-    return this.contentType.get('AnyContentful')
+
+    this.linkedTypes.push(...validation.linkContentType)
+    if (validation.linkContentType.length == 1) {
+      const name = idToName(validation.linkContentType[0])
+      const resolved = this.contentTypeMap.get(name)
+      if (!resolved) {
+        throw new Error(`Could not resolve content type '${name}'`)
+      }
+      return resolved
+    }
+
+    const unionName = unionTypeDefName(this.contentType.sys.id, field)
+
+    return new GraphQLUnionType({
+      name: unionName,
+      types: () => validation.linkContentType.map((val: any) => {
+        const name = idToName(val)
+        const resolved = this.contentTypeMap.get(name)
+        if (!resolved) {
+          throw new Error(`Could not resolve content type '${name}'`)
+        }
+        return resolved
+      })
+  })
+  
   }
 
   public writePotentialUnionType(field: any) {

@@ -59,6 +59,7 @@ describe("ContentTypeWriter", () => {
           },
         ],
       },
+      new Map(),
       new Map()
     );
 
@@ -150,6 +151,7 @@ describe("ContentTypeWriter", () => {
           },
         ],
       },
+      new Map(),
       new Map()
     );
 
@@ -290,7 +292,8 @@ describe("ContentTypeWriter", () => {
           },
         ],
       },
-      map
+      map,
+      new Map()
     );
 
     const gqlObject = instance.write();
