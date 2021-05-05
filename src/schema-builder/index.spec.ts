@@ -1,10 +1,11 @@
 import { printSchema } from "graphql"
 import SchemaBuilder from "."
+import { ContentType } from "../util"
 
 describe("SchemaBuilder", () => {
   it("writes schema", async () => {
     const instance = new SchemaBuilder({
-      contentTypes: contentfulSchema.contentTypes
+      contentTypes: contentfulSchema.contentTypes as ContentType[]
     })
 
     const schema = await instance.build()
@@ -34,7 +35,7 @@ describe("SchemaBuilder", () => {
               linkType: "Entry",
             },
           ]
-        },
+        } as any,
         ...contentfulSchema.contentTypes
       ]
     })

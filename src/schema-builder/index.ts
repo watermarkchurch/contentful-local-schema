@@ -1,8 +1,10 @@
 import { GraphQLFieldConfigMap, GraphQLObjectType, GraphQLSchema, GraphQLString } from "graphql";
 import fs from 'fs-extra'
 import path from 'path'
-import ContentTypeWriter from "./content-type-writer";
 import inflection from "inflection";
+
+import ContentTypeWriter from "./content-type-writer";
+import type { ContentType } from "../util";
 
 interface IBaseOptions {
   logger: { debug: Console['debug'] }
@@ -13,7 +15,7 @@ type IOptions = IBaseOptions & (
     directory: string
     filename: string
   } | {
-    contentTypes: any[]
+    contentTypes: ContentType[]
   }
 )
 
@@ -31,7 +33,7 @@ export default class SchemaBuilder {
   }
 
   public async build(): Promise<GraphQLSchema> {
-    let contentfulSchema: { contentTypes: any[] }
+    let contentfulSchema: { contentTypes: ContentType[] }
     if ('contentTypes' in this.options) {
       contentfulSchema = { contentTypes: this.options.contentTypes }
     } else {

@@ -58,7 +58,7 @@ describe("ContentTypeWriter", () => {
             omitted: false,
           },
         ],
-      },
+      } as any,
       new Map(),
       new Map()
     );
@@ -178,7 +178,7 @@ describe("ContentTypeWriter", () => {
             omitted: false,
           },
         ],
-      },
+      } as any,
       new Map(),
       new Map()
     );
@@ -345,7 +345,7 @@ describe("ContentTypeWriter", () => {
             },
           },
         ],
-      },
+      } as any,
       map,
       new Map()
     );
