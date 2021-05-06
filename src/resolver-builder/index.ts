@@ -3,6 +3,7 @@ import fs from 'fs-extra'
 import path from 'path'
 import { ContentfulDataSource } from '../dataSource';
 import type { ContentType } from '../util';
+import ContentTypeResolverBuilder from './content-type-resolver-builder';
 import QueryResolverBuilder from './query-resolver-builder';
 
 
@@ -57,9 +58,10 @@ export default class ResolverBuilder {
         }, {})
       },
       ...contentfulSchema.contentTypes.reduce((types, ct) => {
-
-
-        return types
+        return {
+          ...types,
+          ...new ContentTypeResolverBuilder(this.dataSource, ct).build()
+        }
       }, {})
     }
   }

@@ -36,3 +36,12 @@ export function idToName(id: string) {
   id = id.replace(/[\s+]/g, '')
   return id
 }
+
+export function present(value: string | undefined | null | ''): value is string {
+  if (!value) { return false }
+
+  if (!/\S/.test(value)) {
+    return false
+  }
+  return true
+}
