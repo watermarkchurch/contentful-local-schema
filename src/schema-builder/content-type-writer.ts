@@ -3,8 +3,7 @@ import GraphQLJSON from 'graphql-type-json';
 
 import { GraphQLBoolean, GraphQLEnumType, GraphQLEnumValueConfigMap, GraphQLFieldConfigMap, GraphQLFloat, GraphQLInt, GraphQLInterfaceType, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLOutputType, GraphQLScalarType, GraphQLString, GraphQLType, GraphQLUnionType } from 'graphql'
 import { Asset, AssetCollection, Entry, EntryCollection, GraphQLLocation, GraphQLNever } from '../types'
-import { ContentType, ContentTypeField, isLinkContentTypeValidation } from '../util';
-
+import { ContentType, ContentTypeField, idToName, isLinkContentTypeValidation } from '../util';
 
 export default class ContentTypeWriter {
   public readonly className: string
@@ -176,13 +175,6 @@ export default class ContentTypeWriter {
       })
     }
   }
-}
-function idToName(id: string) {
-  id = inflection.underscore(id)
-  id = id.replace(/[^\w]/g, ' ')
-  id = inflection.titleize(id)
-  id = id.replace(/[\s+]/g, '')
-  return id
 }
 
 function unionTypeDefName(contentType: string, field: { id: string }) {

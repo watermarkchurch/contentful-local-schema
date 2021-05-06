@@ -1,3 +1,4 @@
+import inflection from "inflection"
 
 export interface ContentType {
   sys: {
@@ -26,4 +27,12 @@ export interface LinkContentTypeValidation {
 
 export function isLinkContentTypeValidation(v: any): v is LinkContentTypeValidation {
   return 'linkContentType' in v && Array.isArray(v.linkContentType)
+}
+
+export function idToName(id: string) {
+  id = inflection.underscore(id)
+  id = id.replace(/[^\w]/g, ' ')
+  id = inflection.titleize(id)
+  id = id.replace(/[\s+]/g, '')
+  return id
 }
