@@ -1,5 +1,5 @@
-import {ApolloClient, InMemoryCache, Resolver, Resolvers} from '@apollo/client'
-import { GraphQLObjectType, GraphQLString } from 'graphql'
+import {ApolloClient, InMemoryCache} from '@apollo/client'
+import { GraphQLList, GraphQLObjectType, GraphQLString } from 'graphql'
 import gql from 'graphql-tag'
 import { ContentfulDataSource } from '../dataSource'
 import { Entry } from '../types'
@@ -78,6 +78,100 @@ describe('LocalTypePolicyBuilder', () => {
 
     expect(result.data.sectionBlockText).toMatchObject({
       body: 'test body'
+    })
+  })
+
+
+
+  it('resolves a collection type', async () => {
+    const schema = [
+      new GraphQLObjectType({
+        name: 'Query',
+        fields: {
+          sectionBlockTextCollection: {
+            type: new GraphQLList(SectionBlockText)
+          }
+        }
+      })
+    ]
+    fakeDataSource.getEntries.mockResolvedValue({
+      total: 2,
+      skip: 0,
+      limit: 100,
+      items: [
+        {
+          sys: {
+            id: '1234',
+            contentType: {
+              sys: {
+                id: 'section-block-text'
+              }
+            },
+            locale: 'en-US'
+          },
+          fields: {
+            body: 'test body 1'
+          }
+        },
+        {
+          sys: {
+            id: '5678',
+            contentType: {
+              sys: {
+                id: 'section-block-text'
+              }
+            },
+            locale: 'en-US'
+          },
+          fields: {
+            body: 'test body 2'
+          }
+        },
+      ]
+    })
+
+    // act
+    const resolvers = new QueryResolverBuilder(
+        fakeDataSource,
+        sectionBlockTextContentType
+      ).build()
+
+    const client = new ApolloClient({
+      cache: new InMemoryCache(),
+      link: { request: jest.fn() } as any,
+      typeDefs: schema as any,
+      resolvers: {
+        SectionBlockText: {
+          body: (entry) => entry.fields.body,
+        },
+        ...resolvers
+      }
+    })
+
+    const result = await client.query({
+      query: gql`
+      query findBlockText($id: String!) {
+        sectionBlockTextCollection @client {
+          total
+          skip
+          limit
+          items {
+            body
+          }
+        }
+      }
+      `
+    })
+
+    const collection = result.data.sectionBlockTextCollection
+    expect(collection.total).toEqual(2)
+    expect(collection.skip).toEqual(0)
+    expect(collection.limit).toEqual(100)
+    expect(collection.items[0]).toMatchObject({
+      body: 'test body 1'
+    })
+    expect(collection.items[1]).toMatchObject({
+      body: 'test body 2'
     })
   })
 })

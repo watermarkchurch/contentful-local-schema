@@ -1,4 +1,4 @@
-import type { FieldReadFunction, Resolver, Resolvers, TypePolicies, TypePolicy } from "@apollo/client";
+import type { Resolver } from "@apollo/client";
 import inflection from "inflection";
 import { ContentfulDataSource } from "../dataSource";
 import { ContentType, idToName } from "../util";
@@ -17,24 +17,18 @@ export default class QueryResolverBuilder {
     const typeName = idToName(this.contentType.sys.id)
     const queryFieldName = inflection.camelize(typeName, true)
 
-    resolvers[queryFieldName] = this.buildFindResolver()
-    // policy[typeName] = {
-    //   fields: {
-    //     body: (parent, args) => {
-    //       console.log('bodyResolver', parent, args)
-    //     }
-    //   }
-    // }
+    resolvers[queryFieldName] = this.buildEntryResolver()
+    resolvers[`${queryFieldName}Collection`] = this.buildCollectionResolver()
 
     return {
       Query: resolvers
     }
   }
 
-  private buildFindResolver(): Resolver {
+  private buildEntryResolver(): Resolver {
     const dataSource = this.dataSource
-    return async (...opts) => {
-      const [_, args] = opts
+
+    return async (_, args) => {
       if (!args || !args.id) { throw new Error('ID must be provided') }
       const entry = await dataSource.getEntry(args.id)
       if (!entry) {
@@ -43,6 +37,26 @@ export default class QueryResolverBuilder {
       return {
         __typename: idToName(entry.sys.contentType.sys.id),
         ...entry
+      }
+    }
+  }
+
+  private buildCollectionResolver(): Resolver {
+    const dataSource = this.dataSource
+
+    return async (_, args) => {
+      const collection = await dataSource.getEntries()
+      
+      return {
+        skip: collection.skip,
+        limit: collection.limit,
+        total: collection.total,
+        items: collection.items.map((entry) => (
+          {
+            __typename: idToName(entry.sys.contentType.sys.id),
+            ...entry
+          }
+        ))
       }
     }
   }
