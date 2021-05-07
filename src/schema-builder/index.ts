@@ -1,33 +1,38 @@
 import { GraphQLFieldConfigMap, GraphQLObjectType, GraphQLSchema, GraphQLString } from "graphql";
-import fs from 'fs-extra'
 import path from 'path'
 import inflection from "inflection";
 
 import ContentTypeWriter from "./content-type-writer";
 import type { ContentType } from "../util";
 
-interface IBaseOptions {
-  logger: { debug: Console['debug'] }
+interface BaseOptions {
 }
 
-type IOptions = IBaseOptions & (
+export type SchemaBuilderOptions = BaseOptions & (
   {
+    /**
+     * The directory where the schema file is located.  Defaults to
+     * the local directory.
+     */
     directory: string
-    filename: string
+    /**
+     * The name of the schema file.  Defaults to 'contentful-schema.json'.
+     */
+     filename: string
   } | {
     contentTypes: ContentType[]
   }
 )
 
 export default class SchemaBuilder {
-  private readonly options: Readonly<IOptions>
+  private readonly options: Readonly<SchemaBuilderOptions>
 
-  constructor(options?: Partial<IOptions>) {
-    const opts: IOptions = Object.assign({
+  constructor(options?: Partial<SchemaBuilderOptions>) {
+    const opts: SchemaBuilderOptions = Object.assign({
       directory: '.',
       filename: 'contentful-schema.json',
       logger: console,
-    } as IOptions, options)
+    } as SchemaBuilderOptions, options)
 
     this.options = opts
   }
@@ -37,11 +42,8 @@ export default class SchemaBuilder {
     if ('contentTypes' in this.options) {
       contentfulSchema = { contentTypes: this.options.contentTypes }
     } else {
-      if (this.options.directory) {
-        await fs.mkdirp(this.options.directory)
-      }
-      const file = path.join(this.options.directory || '.', this.options.filename)
-      contentfulSchema = JSON.parse((await fs.readFile(file)).toString())
+      const file = path.resolve(this.options.directory || '.', this.options.filename)
+      contentfulSchema = require(file)
     }
 
     const contentTypeMap = new Map()

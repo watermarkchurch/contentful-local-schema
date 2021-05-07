@@ -1,5 +1,4 @@
 import type { Resolver, Resolvers } from "@apollo/client";
-import type { Asset, Entry } from "contentful";
 import { ContentType, ContentTypeField, idToName, present } from "../util";
 import { ContentfulDataSource } from "../dataSource";
 

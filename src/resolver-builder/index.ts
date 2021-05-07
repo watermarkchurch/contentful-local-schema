@@ -1,5 +1,4 @@
 import type {Resolvers} from '@apollo/client'
-import fs from 'fs-extra'
 import path from 'path'
 import { ContentfulDataSource } from '../dataSource';
 import type { ContentType } from '../util';
@@ -41,11 +40,8 @@ export default class ResolverBuilder {
     if ('contentTypes' in this.options) {
       contentfulSchema = { contentTypes: this.options.contentTypes }
     } else {
-      if (this.options.directory) {
-        await fs.mkdirp(this.options.directory)
-      }
-      const file = path.join(this.options.directory || '.', this.options.filename)
-      contentfulSchema = JSON.parse((await fs.readFile(file)).toString())
+      const file = path.resolve(this.options.directory || '.', this.options.filename)
+      contentfulSchema = require(file)
     }
 
     return {

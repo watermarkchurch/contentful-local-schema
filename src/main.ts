@@ -4,22 +4,18 @@ import { printSchema } from 'graphql'
 import * as path from 'path'
 import * as yargs from 'yargs'
 
-import defaults from './defaults'
-import SchemaBuilder from './schema-builder'
-// import { ContentfulTSGenerator } from './generator'
-// import { Installer } from './installer'
-import { SchemaDownloader } from './schema-downloader'
+import { createSchema, downloadContentfulSchema } from './index'
 
 interface IArgv {
   /** The schema file to load for code generation */
   file: string,
-  /** The output directory in which to write the graphql schema */
-  out: string
+  /** The output file in which to write the graphql schema */
+  out?: string
   /** Whether to download */
-  download: boolean
-  managementToken: string,
-  space: string,
-  environment: string
+  download?: boolean
+  managementToken?: string,
+  space?: string,
+  environment?: string
   verbose?: boolean
 }
 
@@ -36,7 +32,7 @@ yargs
   })
   .option('out', {
     alias: 'o',
-    describe: 'Where to place the generated schema file.',
+    describe: 'Where to place the generated gql file.',
   })
   .option('download', {
     boolean: true,
@@ -61,35 +57,56 @@ yargs
     describe: 'Enable verbose logging',
   })
 
+const defaultLogger = {
+  debug() { }
+}
+const verboseLogger = {
+  debug() {
+    // debug to stderr because we'll print the GQL schema to stdout
+    return console.error.call(this, arguments)
+  }
+}
+
 // tslint:disable-next-line:no-shadowed-variable
-async function Run(args: IArgv, logger: ILogger = console) {
+async function Run(args: IArgv) {
   const options = {
     directory: path.dirname(args.file),
     filename: path.basename(args.file),
-    logger,
+    logger: args.verbose ? verboseLogger : defaultLogger,
     ...args,
-  }
-  if (args.download) {
-    const downloader = new SchemaDownloader(options)
-
-    await downloader.downloadSchema()
+    file: undefined as never // prefer directory + filename
   }
 
-  const schemaBuilder = new SchemaBuilder(options)
-  const schema = await schemaBuilder.build()
+  const schemaFile = path.join(options.directory, options.filename)
 
-  const outDir = options.out || options.directory
-  await fs.mkdirp(outDir)
-  await fs.writeFile(
-    path.join(outDir, 'contentful-schema.gql'),
-    printSchema(schema)
-  )
+  const download = args.download ||
+    !(await fs.pathExists(schemaFile))
+  if (download) {
+    await downloadContentfulSchema(options)
+  }
+
+  if (!(await fs.pathExists(schemaFile))) {
+    throw new Error(`Schema file does not exist at '${schemaFile}'!  Please download it with the --download option .`)
+  }
+
+  const schema = await createSchema(options)
+
+  if (options.out && options.out != '-') {
+    await fs.mkdirp(path.dirname(options.out))
+    await fs.writeFile(options.out, printSchema(schema))
+  } else {
+    console.log(printSchema(schema))
+  }
 }
 
-const args = Object.assign<Partial<IArgv>, Partial<IArgv>>(
+let file = 'contentful-schema.json'
+if (fs.existsSync('db') && fs.statSync('db').isDirectory()) {
+  file = 'db/contentful-schema.json'
+}
+
+const args = Object.assign<IArgv, Partial<IArgv>>(
   {
-    ...defaults,
-    file: defaults.schemaFile,
+    file
   },
   yargs.argv as Partial<IArgv>)
 
@@ -115,6 +132,6 @@ if (args.verbose) {
   }
 }
 
-Run(args as IArgv, logger)
+Run(args, logger)
   .catch((err) =>
     console.error(chalk.red('An unexpected error occurred!'), err))

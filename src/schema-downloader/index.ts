@@ -3,30 +3,51 @@ import {createClient} from 'contentful-management'
 import * as fs from 'fs-extra'
 import * as path from 'path'
 
-interface IOptions {
+export interface SchemaDownloaderOptions {
+  /**
+   * The directory where the schema file is located.  Defaults to
+   * the local directory.
+   */
   directory: string
+  /**
+   * The name of the schema file.  Defaults to 'contentful-schema.json'.
+   */
   filename: string
+  /**
+   * Contentful space ID.  Defaults to process.env.CONTENTFUL_SPACE_ID
+   */
   space: string
+
+  /**
+   * Contentful environment.
+   * 
+   * Defaults to process.env.CONTENTFUL_ENVIRONMENT or 'master'
+   */
   environment: string
+  /**
+   * Contentful Management Access Token.
+   * 
+   * Defaults to process.env.CONTENTFUL_MANAGEMENT_TOKEN
+   */
   managementToken: string
 
   logger: { debug: Console['debug'] }
 }
 
 export class SchemaDownloader {
-  private readonly options: Readonly<IOptions>
+  private readonly options: Readonly<SchemaDownloaderOptions>
   private readonly client: any
   private readonly semaphore: Limiter
 
-  constructor(options?: Partial<IOptions>) {
-    const opts: IOptions = Object.assign({
+  constructor(options?: Partial<SchemaDownloaderOptions>) {
+    const opts: SchemaDownloaderOptions = Object.assign({
       directory: '.',
       filename: 'contentful-schema.json',
       managementToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN,
       space: process.env.CONTENTFUL_SPACE_ID,
       environment: process.env.CONTENTFUL_ENVIRONMENT || 'master',
-      logger: console,
-    } as IOptions, options)
+      logger: { debug: () => undefined },
+    } as SchemaDownloaderOptions, options)
 
     if (!opts.managementToken) {
       throw new Error('No managementToken given!')
