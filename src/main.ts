@@ -1,4 +1,3 @@
-import * as chalk from 'chalk'
 import * as fs from 'fs-extra'
 import { printSchema } from 'graphql'
 import * as path from 'path'
@@ -17,12 +16,6 @@ interface IArgv {
   space?: string,
   environment?: string
   verbose?: boolean
-}
-
-interface ILogger {
-  log: Console['log'],
-  error: Console['error'],
-  debug: Console['debug'],
 }
 
 yargs
@@ -118,20 +111,6 @@ if (typeof (args.download) == 'undefined') {
   args.download = args.download == 'true'
 }
 
-// tslint:disable:no-console
-
-const logger: ILogger = {
-  error: console.error,
-  log: console.log,
-  debug: () => undefined,
-}
-
-if (args.verbose) {
-  logger.debug = (...msg: any[]) => {
-    console.debug(chalk.gray(...msg))
-  }
-}
-
-Run(args, logger)
+Run(args)
   .catch((err) =>
-    console.error(chalk.red('An unexpected error occurred!'), err))
+    console.error('An unexpected error occurred!', err))
