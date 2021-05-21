@@ -32,7 +32,10 @@ export class InMemoryDataSource implements ContentfulDataSource {
   }
 
   public getAsset(id: string, query?: any): Asset | undefined {
-    return cloneDeep(this._assets.get(id))
+    const asset = this._assets.get(id)
+    if (asset) {
+      return this.denormalizeForLocale(asset, query?.locale || this.defaultLocale)
+    }
   }
   public getAssets(query?: any): AssetCollection {
     let filters = query ? this.parseQuery(query) : []
@@ -41,7 +44,7 @@ export class InMemoryDataSource implements ContentfulDataSource {
     for(const asset of this._assets.values()) {
       if (filters.findIndex((f) => !f(asset)) == -1) {
         // No filters returned false.
-        items.push(cloneDeep(asset))
+        items.push(this.denormalizeForLocale(asset, query?.locale || this.defaultLocale))
       }
     }
 
@@ -56,8 +59,11 @@ export class InMemoryDataSource implements ContentfulDataSource {
     }
   }
 
-  public getEntry<T>(id: string): Entry<T> | undefined {
-    return cloneDeep(this._entries.get(id))
+  public getEntry<T>(id: string, query?: any): Entry<T> | undefined {
+    const entry = this._entries.get(id)
+    if (entry) {
+      return this.denormalizeForLocale(entry, query?.locale || this.defaultLocale)
+    }
   }
   public getEntries<T = { [key: string]: any }>(query?: any): EntryCollection<T> {
     let filters = query ? this.parseQuery(query) : []
@@ -66,7 +72,7 @@ export class InMemoryDataSource implements ContentfulDataSource {
     for(const entry of this._entries.values()) {
       if (filters.findIndex((f) => !f(entry)) == -1) {
         // No filters returned false.
-        items.push(cloneDeep(entry))
+        items.push(this.denormalizeForLocale(entry, query?.locale || this.defaultLocale))
       }
     }
 
@@ -115,7 +121,37 @@ export class InMemoryDataSource implements ContentfulDataSource {
   
     return filters
   }
+
+  private denormalizeForLocale(e: Entry<any> , locale: string): Entry<any>
+  private denormalizeForLocale(e: Asset, locale: string): Asset
+  private denormalizeForLocale(e: Entry<any> | Asset, locale: string): Entry<any> | Asset {
+    e = cloneDeep(e)
+    if (locale == '*') {
+      return e
+    }
+
+    let hasAnyValuesForLocale = false
+    Object.keys(e.fields).forEach((field) => {
+      const value = e.fields[field]
+      if (typeof value != 'object') { return }
+  
+      // value is of type { 'en-US': something }
+      if (locale in value) {
+        hasAnyValuesForLocale = true
+        e.fields[field] = value[locale]
+      }
+    })
+    if (!hasAnyValuesForLocale) {
+      // fall back to default
+      return this.denormalizeForLocale(e, this.defaultLocale)
+    }
+
+    e.sys.locale = locale
+    return e
+  }
 }
+
+
 
 type Filter = (e: Entry<any> | Asset) => boolean
 

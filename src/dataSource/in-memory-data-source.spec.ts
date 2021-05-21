@@ -14,7 +14,7 @@ describe('InMemoryDataSource', () => {
   it('gets a synced entry', () => {
     const item0 = syncInitial.items[0]
 
-    const got = instance.getEntry(item0.sys.id)
+    const got = instance.getEntry(item0.sys.id, { locale: '*' })
 
     expect(got).toEqual(item0)
     expect(instance.getAsset(item0.sys.id)).toBeUndefined()
@@ -23,7 +23,7 @@ describe('InMemoryDataSource', () => {
   it('gets a synced asset', () => {
     const expected = syncInitial.items.find((i: any) => i.sys.id == '5PPyBNpCxFOROmqRZZJEVw')
 
-    const got = instance.getAsset(expected.sys.id)
+    const got = instance.getAsset(expected.sys.id, { locale: '*' })
 
     expect(got).toEqual(expected)
     expect(instance.getEntry(expected.sys.id)).toBeUndefined()
@@ -46,7 +46,6 @@ describe('InMemoryDataSource', () => {
   describe('querying by', () => {
     it('sys.id', () => {
       const items = instance.getEntries({ 'sys.id': '2dVyGMdo3yydeL0QMuc5Cx' })
-      console.log('items', items)
       expect(items.items[0].fields.name).toEqual('Rachel S')
     })
   })
