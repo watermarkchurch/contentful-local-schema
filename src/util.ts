@@ -1,3 +1,4 @@
+import type { Asset, Entry, Sys } from "contentful"
 import inflection from "inflection"
 
 export interface ContentType {
@@ -44,4 +45,34 @@ export function present(value: string | undefined | null | ''): value is string 
     return false
   }
   return true
+}
+
+export type SyncItem =
+  Entry<any> |
+  Asset |
+  DeletedEntry |
+  DeletedAsset
+
+interface DeletedEntry {
+  sys: Sys & { type: 'DeletedEntry' }
+}
+
+interface DeletedAsset {
+  sys: Sys & { type: 'DeletedAsset' }
+}
+
+export function isEntry(e: any): e is Entry<any> {
+  return e && e.sys && e.sys.type == 'Entry'
+}
+
+export function isAsset(e: any): e is Asset {
+  return e && e.sys && e.sys.type == 'Asset'
+}
+
+export function isDeletedEntry(e: any): e is DeletedEntry {
+  return e && e.sys && e.sys.type == 'DeletedEntry'
+}
+
+export function isDeletedAsset(e: any): e is DeletedAsset {
+  return e && e.sys && e.sys.type == 'DeletedAsset'
 }

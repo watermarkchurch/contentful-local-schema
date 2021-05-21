@@ -1,0 +1,6191 @@
+{
+  "sys": {
+    "type": "Array"
+  },
+  "items": [
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6RPLNBrHzAwg4X58WFkCBc",
+        "type": "Entry",
+        "createdAt": "2019-04-04T16:58:18.595Z",
+        "updatedAt": "2021-05-03T14:17:33.137Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Post-Conference Survey"
+        },
+        "title": {
+          "en-US": "Give Us Some Feedback"
+        },
+        "summary": {
+          "en-US": "Post-Conference Survey"
+        },
+        "description": {
+          "en-US": "Would you please take a few minutes to give us your feedback about CLC here? We’d love to hear about your experience and learn how we can make CLC even better. When you provide feedback, your name will be entered for a chance to win a $50 Amazon gift card!\n\n[Click here for 2021 Post-Conference Survey](https://watermark.formstack.com/forms/clc2021attendeefeedback)"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5PPyBNpCxFOROmqRZZJEVw"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2KbRsvE5b134nEo2Lni7pr",
+        "type": "Entry",
+        "createdAt": "2021-04-29T13:59:14.858Z",
+        "updatedAt": "2021-04-29T15:02:25.009Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Awaken 2021 Announcement"
+        },
+        "title": {
+          "en-US": "Awaken 2021 | Sept. 4-6"
+        },
+        "summary": {
+          "en-US": "Special promo available now!"
+        },
+        "description": {
+          "en-US": "Young adults are the greatest potential asset for strengthening churches and reaching our communities for Christ. That's why we're giving every church that attended CLC access to our lowest rate for the AWAKEN Conference, September 4-6, 2021 in Dallas, Texas. At AWAKEN, we'll seek to encourage and unleash young adults to go back and change the world for Christ through the local church. Give any young adult you know promo code \"CLC2021\" to get a ticket for only $79 (offer expires May 31, 2021).\n\nRegister now at [awaken.live](http://awaken.live/ \"Awaken Conference\")"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2TKH7IuR7hJ81fnslY7gO3"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "doyAUR5XEVx4jK4NGvS8z",
+        "type": "Entry",
+        "createdAt": "2021-04-06T19:56:05.811Z",
+        "updatedAt": "2021-04-29T14:29:32.983Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 47,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "conference"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "CLC 2021"
+        },
+        "title": {
+          "en-US": "CLC 2021"
+        },
+        "code": {
+          "en-US": "CLC2021"
+        },
+        "days": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1ttTX1RVkFbHpe3Tm59x6k"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7KDEVnvN8kuLI2Bd4ZeGPv"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4LmidTk7uZecZqqJOFAdf7"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4XxyEnB0ri5MVN3GHprnom"
+              }
+            }
+          ]
+        },
+        "announcements": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6RPLNBrHzAwg4X58WFkCBc"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2KbRsvE5b134nEo2Lni7pr"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "PFewXcdKopTmOA4Aflsdw"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "ifufjPJq2jLVJQOX7p550"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1S0AZML6F2adBgDIsyMhBy"
+              }
+            }
+          ]
+        },
+        "tracks": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6jXx5FuBLiWWMMa0mLwS9g"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2vnotfLPE0dWbUo23goINi"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5oQbQCxAXCE5BpNm2iFFRn"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "q5ULCZMjzczzIWPltRm87"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3rNcc3XgxuX4qln57NYIXE"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3m7F2ZAccnrECGEfI3BeQG"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4rRL5sdEVRDz4jAKHqpv04"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7yRlydRlECyZeUS7tlfQo7"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "SHBXGsryit3FZDU3bLpzj"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7t9ZB1pK8B6BfE0RXk6KUc"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7Me6d5BsbjIpbpfsiX6yOf"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "60QJqIcZHX35nB7QYgf9f8"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "V8NyLUfx4gN8mzESh1Pyh"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7e4PNq4yCyIj6vYz5NHOov"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3DteTRptuh9xixKm9qHpll"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3oGXa5iCxSDwVbUsJR8d02"
+              }
+            }
+          ]
+        },
+        "maps": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "cFW5pVtuTn4Ez4b7FJ9NR"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6tgGPaFEri02jL7ST7Oa8T"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4orluEO0AbbWUZcLOcnOKQ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4eOoYoNbx3H4IK50aaG4Bl"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2sa7yC7ARF8XI8M5Iw5I7M"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6TydijZvZEaEScdMrfyRTv"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2wtYmPNap8AWgNMId5GJGk"
+              }
+            }
+          ]
+        },
+        "resources": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6bYFBZ1Du4IBgYYmBi7Uav"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2a8tCK3ljSnJ6r1vheDbhA"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1Y7LqvgNUTmWKGHevl78bZ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6ipEnsLsOv5O7yAQvrtbmw"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2babUn5wVDEZBrcEy6UeOR"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4dyHaXHmhV1Z3hJDabWq6X"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6gw0GUYOirWJZK3fo8ZU8e"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "PFewXcdKopTmOA4Aflsdw",
+        "type": "Entry",
+        "createdAt": "2021-04-28T00:59:30.180Z",
+        "updatedAt": "2021-04-29T14:29:03.528Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Post Conference Resources"
+        },
+        "title": {
+          "en-US": "Post-Conference Resources"
+        },
+        "summary": {
+          "en-US": "We get it. It’s a lot to take in."
+        },
+        "description": {
+          "en-US": "We get it. It’s a lot to take in. All the conference resources (main stage, breakouts, handouts, etc.) will be sent by June 1, so watch your inbox!"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3jzU3gqzQ8aErHqd4lq2iF"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "ifufjPJq2jLVJQOX7p550",
+        "type": "Entry",
+        "createdAt": "2021-04-29T14:01:43.018Z",
+        "updatedAt": "2021-04-29T14:14:32.444Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Church Leader's Conference Playlist"
+        },
+        "title": {
+          "en-US": "Check out the CLC 2021 Playlist"
+        },
+        "summary": {
+          "en-US": "Available now on Spotify!"
+        },
+        "description": {
+          "en-US": "Available now on [Spotify](https://open.spotify.com/playlist/7aSbfZqEEooCGDgF2fdXWt?si=kuOxBU1AQkCYKiW1fAmr7Q)!"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1cv9Y7WK8AYKGymmMnABgX"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5PPyBNpCxFOROmqRZZJEVw",
+        "type": "Asset",
+        "createdAt": "2021-04-29T14:09:42.214Z",
+        "updatedAt": "2021-04-29T14:09:42.214Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Post Conference Survey"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5PPyBNpCxFOROmqRZZJEVw/92f3fce61d5ac5fd4db4b1cddde936bc/CLC21_App_Anouncements_WC_1000x700px_MT2.jpg",
+            "details": {
+              "size": 1241887,
+              "image": {
+                "width": 4167,
+                "height": 2917
+              }
+            },
+            "fileName": "CLC21 App Anouncements WC_1000x700px MT2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1cv9Y7WK8AYKGymmMnABgX",
+        "type": "Asset",
+        "createdAt": "2021-04-29T14:00:56.428Z",
+        "updatedAt": "2021-04-29T14:00:56.428Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "MicrosoftTeams-image (8)"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/1cv9Y7WK8AYKGymmMnABgX/2d1294633b6979117e0f0ca1dac84898/MicrosoftTeams-image__8_.png",
+            "details": {
+              "size": 208651,
+              "image": {
+                "width": 1000,
+                "height": 700
+              }
+            },
+            "fileName": "MicrosoftTeams-image (8).png",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2TKH7IuR7hJ81fnslY7gO3",
+        "type": "Asset",
+        "createdAt": "2021-04-29T13:57:38.719Z",
+        "updatedAt": "2021-04-29T13:57:38.719Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "MicrosoftTeams-image (7)"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2TKH7IuR7hJ81fnslY7gO3/c1f149d9b72cac623c987de111de2995/MicrosoftTeams-image__7_.png",
+            "details": {
+              "size": 150196,
+              "image": {
+                "width": 1000,
+                "height": 700
+              }
+            },
+            "fileName": "MicrosoftTeams-image (7).png",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2jkuTEPfJZUygIWs1YrtKG",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:10:50.127Z",
+        "updatedAt": "2021-04-28T23:44:03.601Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 24,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Staff Consulting Appointments"
+        },
+        "title": {
+          "en-US": "Staff Consulting Appointments"
+        },
+        "description": {
+          "en-US": "\nWe are making our staff members from every ministry area available to you. That includes our senior leaders, finance coordinators, IT team, student directors, and everything in between! We don't claim to have all the answers, but if you want to hear a different perspective, bounce some ideas off someone else, or hear what's worked (and what hasn't worked) in our experience, sign up for a time slot.\n\n__Registration has closed.__\n"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2wtYmPNap8AWgNMId5GJGk"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-29T07:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-29T08:30-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3HBniJQwbm80xU3lR46G1F"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3H6BnqBn8Dhz1jZAuET34c",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:46:14.712Z",
+        "updatedAt": "2021-04-28T19:48:21.013Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Expanding Your Church Walls Through Social Media - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "Expanding Your Church Walls Through Social Media"
+        },
+        "description": {
+          "en-US": "If a pandemic hits and shuts down your building, is your online presence ready? Learn practical tools and strategies to leverage social media as ministry for those inside and outside of your church."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5DjLuvacCX04njFPQMp9yh"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2L280lQIzjHlLvt6IYbUxH"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6l9xCGZA3CbmeRr21t1DK9"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "Ezf3U7innNmCIbsjGnNCg"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "Ezf3U7innNmCIbsjGnNCg",
+        "type": "Asset",
+        "createdAt": "2021-04-28T19:48:17.373Z",
+        "updatedAt": "2021-04-28T19:48:17.373Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 Social Media Platforms Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/Ezf3U7innNmCIbsjGnNCg/cb900bb72bca8c69b12a4072904e935b/CLC2021-SocialPlatformsBestPractices.pdf",
+            "details": {
+              "size": 1071031
+            },
+            "fileName": "CLC2021-SocialPlatformsBestPractices.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6l9xCGZA3CbmeRr21t1DK9",
+        "type": "Asset",
+        "createdAt": "2021-04-28T19:47:25.093Z",
+        "updatedAt": "2021-04-28T19:47:25.093Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 Social Media Overview Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/6l9xCGZA3CbmeRr21t1DK9/842e618b05e817e7a622cb3438359ccc/CLC2021-SocialMediaOverview.pdf",
+            "details": {
+              "size": 1048916
+            },
+            "fileName": "CLC2021-SocialMediaOverview.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3VTH8nGnrWrh4Y9oW048qf",
+        "type": "Entry",
+        "createdAt": "2021-04-14T21:53:58.006Z",
+        "updatedAt": "2021-04-28T18:38:26.673Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Wednesday Breakout Session 3"
+        },
+        "title": {
+          "en-US": "Breakout Session 3"
+        },
+        "breakouts": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3yxIEfus6ys7hYfao0bgSi"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6iTFIu68EPTsMsQkFYYaaq"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "54NhgDtJbTaNLIT1pfGENC"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4pm1uXIY0cja8nWC9vgVwg"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2t16D72K0owqSaZLt6ueya"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7LXIngm7N7cC7jtKMRdxMK"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4fDUb0v4q0YxG7h122tqHB"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6EbUFbbOsot02IWBnj21Mw"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2pGrdjSHSR17guVfzoxNFl"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3H6BnqBn8Dhz1jZAuET34c"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4FLxEPn1Fv0lEzfU7Eo1j4"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "Cxut8gOSUEx3d39hMgjOk"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "13WRQVzZHC228WYcWo2Iur"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6bzr7Uv2E7cnHbXNoTNuw4"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3HPpfBsp4MNwM0uu1oxQOl"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "LqKtb23SNRrq2pL5sJdqy"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3gnrJTl8lpqPfXifZsbqwB",
+        "type": "Asset",
+        "createdAt": "2021-04-28T18:38:00.881Z",
+        "updatedAt": "2021-04-28T18:38:00.881Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 Social Media Overview Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/3gnrJTl8lpqPfXifZsbqwB/16e4ae04058f7f6c0c2753098ead3932/CLC_2021_Social_Media_Overview_Handout.pdf",
+            "details": {
+              "size": 1708283
+            },
+            "fileName": "CLC 2021 Social Media Overview Handout.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1roWGMDBm5q4ELL5ZL4v3r",
+        "type": "Asset",
+        "createdAt": "2021-04-28T18:37:35.839Z",
+        "updatedAt": "2021-04-28T18:37:35.839Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 Social Media Overview Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/1roWGMDBm5q4ELL5ZL4v3r/eca55adfba2943d1f7ab74bc0ce516ce/CLC_2021_Social_Media_Overview_Handout.pdf",
+            "details": {
+              "size": 1708283
+            },
+            "fileName": "CLC 2021 Social Media Overview Handout.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5VucFZrdX2hAcCjJRTJq9q",
+        "type": "Entry",
+        "createdAt": "2021-04-15T17:38:01.575Z",
+        "updatedAt": "2021-04-28T15:44:29.127Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Global Missions Overview - Breakout Session 1"
+        },
+        "title": {
+          "en-US": "Global Missions Overview"
+        },
+        "description": {
+          "en-US": "Find out more about Watermark’s non-traditional approach to global missions and how God has transformed thousands of lives in our efforts to reach “the ends of the earth.”"
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4IAeJUb37yLCE8yHGmKq3o"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "4GguA5V5JgH72Z3z6oDPKn"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "2iFHM037ieHPyjYixfwvEB"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4GguA5V5JgH72Z3z6oDPKn",
+        "type": "Entry",
+        "createdAt": "2021-04-15T21:06:48.308Z",
+        "updatedAt": "2021-04-28T15:44:09.230Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "location"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Kids Building Room 21-22"
+        },
+        "title": {
+          "en-US": "Kids Room 21-22"
+        },
+        "map": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6Vbi7NP6SYUbueUfhLMkUl"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3SOxBCfmvBybxyS8HsSJMe",
+        "type": "Entry",
+        "createdAt": "2021-04-14T21:58:29.399Z",
+        "updatedAt": "2021-04-28T14:15:41.084Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 12,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Wednesday Dinner"
+        },
+        "title": {
+          "en-US": "Dinner"
+        },
+        "description": {
+          "en-US": "__TORCHY’S TACOS__\n\n__Gerasene Demoniac Taco:__ Flour Tortilla, Pork carnitas, Jalapenos, Pico, Lettuce, Cojita cheese, Avocado, Grilled corn & black bean relish\n\n__Esau’s Birthright Taco:__ Flour Tortilla, Barbacoa, Refried beans, Pico, Lettuce, Cheddar jack, Avocado\n\n__Chicken Fajita Taco:__ Flour Tortilla, Marinated & grilled chicken, Grilled Onions, Grilled Peppers, Pice de gallo, Cheddar Jack Cheese \n\n__Trailer Park:__ Fried chicken, Green chiles, Lettuce, Pico de gallo, Cheddar jack cheese, Poblano sauce, Flour tortilla\n\n__Special Meals:__\n__Fried Avocado Taco:__ Fried Avocado, Refried pinto beans, Pico de gallo, Lettuce, Cheddar jack cheese \n\n__Allergy Friendly__\n__Fresh Avocado Taco:__ Fresh Avocado, Pico de gallo, Lettuce\n\n__Vegetarian Sides:__ Rice and beans\n\n__Sides for everyone:__ Chips, Salsa, Queso, Mixed variety of sauces"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "4orluEO0AbbWUZcLOcnOKQ"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T17:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T18:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2IEH5tvSNdHNT0kYPkqoqs",
+        "type": "Entry",
+        "createdAt": "2021-04-14T21:47:05.723Z",
+        "updatedAt": "2021-04-28T13:57:03.657Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Wednesday Lunch"
+        },
+        "title": {
+          "en-US": "Lunch"
+        },
+        "description": {
+          "en-US": "__PIADA ITALIAN STREET FOOD__\n\nLine 1 and 2: __Crispy Chicken BLT:__\nCrispy chicken, tomatoes, romaine, pancetta, basil aioli, creamy parmesan\n\nLine 3 and 4: __Chicken Pesto:__\nGrilled chicken, mozzarella, feta, tomatoes, basil aioli, romaine\n\nLine 5 and 6: __Spicy Tuscan Steak:__\nSteak, romaine, arugula, pickled red onions, feta, tomatoes, basil aioli, tuscan dressing\n\nSpecial Meals Tent: __Power Bowl:__\nQuinoa, carrots, pickled onions, corn & cherry tomatoes, broccoli, chickpeas, yogurt harissa dressing \n\n__Sides:__ Chips or Fruit Cup\n\n__Desserts:__ Salted Caramel Cookie or Chocolate Chunk Cookie\n"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "4orluEO0AbbWUZcLOcnOKQ"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1S0AZML6F2adBgDIsyMhBy",
+        "type": "Entry",
+        "createdAt": "2021-04-28T00:58:53.237Z",
+        "updatedAt": "2021-04-28T11:53:57.462Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Merch Announcement"
+        },
+        "title": {
+          "en-US": "Get your CLC 2021 merch now!"
+        },
+        "summary": {
+          "en-US": "Shirts, stickers, and more available in the Town Center."
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7LdouVZm5NA0yEtAgdhyLR"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1k2rJk4I55SsXBWuC82zxd",
+        "type": "Entry",
+        "createdAt": "2021-04-28T01:02:30.080Z",
+        "updatedAt": "2021-04-28T01:02:30.080Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Thursday Morning Showcase Announcement"
+        },
+        "title": {
+          "en-US": "Thursday Morning Showcase: Worship Ministry"
+        },
+        "summary": {
+          "en-US": "A live rehearsal with Shane & Shane"
+        },
+        "description": {
+          "en-US": "Register for the [Worship Ministry showcase](clc://clc/app-link/NodeSingle?nodeId=Event:cba8bc7de210aa32a5abe7c608bd4eb41af5dec1c876f7e2aff1d7ec400739b4)! Don't miss out on the live rehearsal with Shane & Shane. "
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6eEu9miC9LPgZRki9hBLur"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7j1kzHGXMIylY62bLS79DV",
+        "type": "Entry",
+        "createdAt": "2021-04-28T00:59:50.724Z",
+        "updatedAt": "2021-04-28T00:59:50.724Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Let's Go Church"
+        },
+        "title": {
+          "en-US": "Let's Go Church!"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6pYFvOpQrmoBd7HfVYHdI6"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4vHX8to2MQcKTcVJHvblDC",
+        "type": "Entry",
+        "createdAt": "2021-04-28T00:58:26.157Z",
+        "updatedAt": "2021-04-28T00:58:26.157Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Consequences"
+        },
+        "title": {
+          "en-US": "Farkle Consequences"
+        },
+        "summary": {
+          "en-US": "Be on the lookout for Farkle consequences! 👀"
+        },
+        "description": {
+          "en-US": "Be on the lookout for people paying their consequences from yesterday! If you spot one, share it on social media using #WatermarkCLC21 and tag @watermarkresources."
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "23c29HRVr8lidquSZi6hS1"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2FSU5kZ8ApM8m5BRnd5rr1",
+        "type": "Entry",
+        "createdAt": "2021-04-28T00:58:01.585Z",
+        "updatedAt": "2021-04-28T00:58:01.585Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Wednesday Night Showcases"
+        },
+        "title": {
+          "en-US": "Wednesday Night Showcases"
+        },
+        "summary": {
+          "en-US": "Sign up for the re|engage, Merge, Shoreline, and Watermark Kids showcases happening tonight!"
+        },
+        "description": {
+          "en-US": "Registration for showcases are required. Be sure to sign up soon, spots will fill up quickly!\n\n[Merge showcase](clc://clc/app-link/NodeSingle?nodeId=Event:63ea759e3a7c4607d8f775b91f20b3ae440dcf37bbfbff3487890c08ac24c146) \n\n[re|engage showcase](clc://clc/app-link/NodeSingle?nodeId=Event:23c0fa8a764d2354493eb8987de8b3cb2f1c50b2a4c7b568cb76d8e4f1af4ece) \n\n[Kids showcase](clc://clc/app-link/NodeSingle?nodeId=Event:5f1b22ce66ddfc61a0b82d1be4f6352e1e5db8bd8034662e37ccbd9d5a07ca40)\n\n[Students showcase](clc://clc/app-link/NodeSingle?nodeId=Event:e2b1df1b98bda3320253737fa52d89a3638b55e0a1d4884b45859736d893c096)"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2TiE9b0iwiHdADCwHOs874"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7d4hDOBhOAYJSciD1VqNT6",
+        "type": "Entry",
+        "createdAt": "2021-04-27T19:06:56.756Z",
+        "updatedAt": "2021-04-27T22:07:22.450Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Farkle Home Announcement"
+        },
+        "title": {
+          "en-US": "Let's Farkle"
+        },
+        "description": {
+          "en-US": "New to playing Farkle? Try playing with 1 dice! Each player takes 1 dice and rolls. Keep rolling until you get a 1, and you're safe. Last person to roll a 1 is the loser.\n\nWant to play the full game? Here are all the [farkle rules](clc://clc/app-link/NodeSingle?nodeId=Announcement:72220b24d28534a9ff17afced8515e37fd226a69061f5c8217f329c7b18dd417)! May the odds be in your favor.\n\nYou're walking away with your own set but you can also [play on your phone](https://watermarkchurch.github.io/wm-contentful-ui-extensions/latest/farkle) too!"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2GQoZI1OuyUL2SeAChhmTO"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5DqQEmBwMuoETmmvSLAaWw",
+        "type": "Entry",
+        "createdAt": "2021-04-27T18:57:50.408Z",
+        "updatedAt": "2021-04-27T20:45:44.291Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "The Porch Showcase Announcement"
+        },
+        "title": {
+          "en-US": "Tuesday Night Showcase: The Porch"
+        },
+        "description": {
+          "en-US": "*Registration for the showcase is full but if you're interested in experiencing The Porch, you can still attend at 7:00 pm.*\n\nThe Porch challenges young adults to take the next step of faith and connect with others who will spur them on to full devotion to Christ. This ministry challenges young adults to put their faith into practice and serves as an introduction to participation in the local church. \n"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7j8cnJylef3UEZ8tfbUigh"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1Y7LqvgNUTmWKGHevl78bZ",
+        "type": "Entry",
+        "createdAt": "2019-03-24T20:21:06.038Z",
+        "updatedAt": "2021-04-27T20:42:35.718Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 14,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Farkle Rules"
+        },
+        "title": {
+          "en-US": "Farkle Rules"
+        },
+        "description": {
+          "en-US": "[Roll a Dice](https://08unw.csb.app)\n\nWhat’s so great about this silly game? We believe a team that plays together, stays together. Shared social experiences help team members become friends. Laughing together as a team builds intimacy. Learning to laugh at yourself builds humility. For us, the silliness of Farkle is serious business!\n\nDon’t lose. There’s no winner in Farkle, only a loser.\n\n### __THE CONSEQUENCE__\nWhen we play, the loser gets a consequence. Before the game begins, players come up with an agreed upon consequence for the loser. Good consequences motivate player involvement and create tension in gameplay.\n\n### __GAMEPLAY__\n- On your turn, roll all six dice. Set aside dice worth points. This begins your running point total for that turn.\n- Next, you may choose to roll the remaining dice, removing any dice worth points and adding them to your running point total.\n- If you are ever able to set aside all six dice, you must re-roll all six dice at least once.\n- If you are ever unable to set aside any dice (no dice rolled are worth points), you have “farkled out” of that turn. This means you lose your running point total for this turn, and your turn is over with no points.\n- You may choose to end your turn at any time in order to keep the running point total that you’ve accumulated on that turn.\n- After you end your turn and pass the dice to the next player, record your running point total for that turn on the score sheet and add it to your score from previous rounds.\n\n### __Scoring__  \nThere are many variations of Farkle scoring. Here’s how we play:\n-   5’s = 50 points\n-   1’s = 100 points\n-   1,1,1 = 1,000 points\n-   2,2,2 = 200 points\n-   3,3,3 = 300 points\n-   4,4,4 = 400 points\n-   5,5,5 = 500 points\n-   6,6,6 = 600 points\n-   Straight of 1-6 = 1,500 points\n*No special scoring for Four, Five, or Six of a Kind \n*Sample roll: 3-2-3-5-1-3=450 points\n\n### __STRATEGY__  \nYou are not required to set aside ALL dice worth points. For example, if you roll a 1 and a 5, it may be strategic to set aside the 1 and roll the 5 again with the rest of the non-point dice. This strategy may give you a better chance of rolling a three of a kind. Remember, at least one die worth points must be set aside after each roll.\n\n### __MINIMUM FIRST SCORE__  \nTo enter the game and begin recording points on the score sheet, you must reach at least 500 points in a single turn. When you reach 500 points for the first time, you may choose to immediately end your turn to prevent losing the points. It might take a few turns just to get on the score sheet!\n\n### __ENDING THE GAME__  \nWhen a player meets or exceeds 5,000 total points and ends their turn, each of the other players get one final turn to try to keep their score out of last place. The player with the next highest score rolls next. Repeat until all remaining players have one final turn. The player with the lowest total score is the loser.\n\n### __THE PAYOFF__  \nA good loser will execute their consequence quickly, thoroughly, and without complaining. If the end result is laughter and an unforgettable memory, you’re doing it right!"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5ZxBtwnAaq1zwHFuJJxC9t"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5ZxBtwnAaq1zwHFuJJxC9t",
+        "type": "Asset",
+        "createdAt": "2019-03-24T20:33:43.554Z",
+        "updatedAt": "2021-04-27T20:42:26.058Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5
+      },
+      "fields": {
+        "title": {
+          "en-US": "Farkle"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5ZxBtwnAaq1zwHFuJJxC9t/c02c3d29968e284609cafe45c61ddd93/20210427_CLC_mo_000144.jpg",
+            "details": {
+              "size": 1113305,
+              "image": {
+                "width": 2048,
+                "height": 1365
+              }
+            },
+            "fileName": "20210427_CLC_mo_000144.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2NklNnRoJnib0PlgIyyLPW",
+        "type": "Entry",
+        "createdAt": "2021-04-27T19:06:24.983Z",
+        "updatedAt": "2021-04-27T20:37:32.656Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Plan Your Breakout Announcement"
+        },
+        "title": {
+          "en-US": "Plan Your Breakouts"
+        },
+        "summary": {
+          "en-US": "Find all breakout schedules, locations, and descriptions in the schedule tab."
+        },
+        "description": {
+          "en-US": "Find all breakout schedules, locations, and descriptions in the [schedule tab](clc://clc/app-link/Schedule)."
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "24K8CgfpjhIxEb4TZUF9Pt"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3HBniJQwbm80xU3lR46G1F",
+        "type": "Asset",
+        "createdAt": "2021-04-21T20:58:11.006Z",
+        "updatedAt": "2021-04-27T20:31:41.118Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Staff Consulting"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/3HBniJQwbm80xU3lR46G1F/8da7fa3b4f53bb9824e6254ff1e35003/CLC21_App_Anouncements_WC_1000x700px_MT6.jpg",
+            "details": {
+              "size": 1395718,
+              "image": {
+                "width": 4167,
+                "height": 2917
+              }
+            },
+            "fileName": "CLC21 App Anouncements WC_1000x700px MT6.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2GQoZI1OuyUL2SeAChhmTO",
+        "type": "Asset",
+        "createdAt": "2021-04-27T15:35:35.243Z",
+        "updatedAt": "2021-04-27T20:25:36.040Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Let's Play Farkle"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2GQoZI1OuyUL2SeAChhmTO/552bc29808068208df74166dca71d680/20210427_CLC_mo_000134.jpg",
+            "details": {
+              "size": 459345,
+              "image": {
+                "width": 1922,
+                "height": 1345
+              }
+            },
+            "fileName": "20210427_CLC_mo_000134.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2id8NFLaOA0ZVTInMI80sU",
+        "type": "Entry",
+        "createdAt": "2021-04-27T19:06:07.224Z",
+        "updatedAt": "2021-04-27T19:06:07.224Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Wednesday morning - Community Showcase"
+        },
+        "title": {
+          "en-US": "Wednesday Morning Showcase: Community Shepherds"
+        },
+        "summary": {
+          "en-US": "Grab your coffee and hear about shepherding the flock!"
+        },
+        "description": {
+          "en-US": "Don't miss the Community Shepherd Showcase tomorrow morning at 6:30 AM! [Registeration required](clc://clc/app-link/NodeSingle?nodeId=Event:312e707392f721c7bf32e6b93301c45b6349eb1ae28fe261cbfbd1d514ce3128) right here in the CLC App."
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5onirG1Q4RfxcjRxXSmyUu"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5onirG1Q4RfxcjRxXSmyUu",
+        "type": "Asset",
+        "createdAt": "2021-04-27T19:06:03.523Z",
+        "updatedAt": "2021-04-27T19:06:03.523Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Wednesday Morning Showcase: Community Shepherds"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5onirG1Q4RfxcjRxXSmyUu/6b70d0e0e7412ad00df506e03d644e2d/CLC21_App_Anouncements_WC_1000x700px_MT3.jpg",
+            "details": {
+              "size": 1410823,
+              "image": {
+                "width": 4167,
+                "height": 2917
+              }
+            },
+            "fileName": "CLC21 App Anouncements WC_1000x700px MT3.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6FMp7h01aRFb3WSJ6ZluY6",
+        "type": "Entry",
+        "createdAt": "2021-04-14T21:30:19.072Z",
+        "updatedAt": "2021-04-27T18:55:48.223Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 9,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Dinner - Tuesday"
+        },
+        "title": {
+          "en-US": "Dinner"
+        },
+        "description": {
+          "en-US": "__HUTCHINS BBQ__\n\n__Protein:__ Prime Sliced Brisket, Sausage, and Bone-In Chicken (Smoked in Pecan Wood)\n\n__Sides & Dessert:__ Green Beans, Macaroni & Cheese, Sliced Bread, & Peach Cobbler\n\nOR \n\n__ORIGINAL CHOP SHOP (Allergy-Friendly Option)__\n\n__Gluten Free + Dairy Free Meal:__ Box with Raw Vegetable Chop Salad Wrap w/ grilled chicken in GF Wrap, kettle chips, pickle spear & mini cookie\n\n__Gluten Free + Dairy Free + Egg Free Meal:__ Box with Raw Vegetable Chop Salad w/ grilled chicken, kettle chips, pickle spear & coconut chia pudding\n\n__Vegan + Dairy Free Meal:__ Box with Veggie + Hummus Sandwich, pickle spear, kettle chips, coconut chia pudding\n"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7z6eMdVIv00bhoLHB8XEGG"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-27T17:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T18:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6eEu9miC9LPgZRki9hBLur",
+        "type": "Asset",
+        "createdAt": "2021-04-27T15:58:26.214Z",
+        "updatedAt": "2021-04-27T15:58:26.214Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Thursday Morning Showcase"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/6eEu9miC9LPgZRki9hBLur/645d54543a39dbbb1215724ece76bf96/CLC21_App_Anouncements_WC_1000x700px_MT11.jpg",
+            "details": {
+              "size": 1284761,
+              "image": {
+                "width": 4167,
+                "height": 2917
+              }
+            },
+            "fileName": "CLC21 App Anouncements WC_1000x700px MT11.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6pYFvOpQrmoBd7HfVYHdI6",
+        "type": "Asset",
+        "createdAt": "2021-04-27T15:55:32.736Z",
+        "updatedAt": "2021-04-27T15:55:32.736Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Let's Go Church"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/6pYFvOpQrmoBd7HfVYHdI6/cccefc423726d173854890c713ebd7bd/CLC21_App_Anouncements_WC_1000x700px_MT13.jpg",
+            "details": {
+              "size": 1293054,
+              "image": {
+                "width": 4167,
+                "height": 2917
+              }
+            },
+            "fileName": "CLC21 App Anouncements WC_1000x700px MT13.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3jzU3gqzQ8aErHqd4lq2iF",
+        "type": "Asset",
+        "createdAt": "2021-04-27T15:54:22.948Z",
+        "updatedAt": "2021-04-27T15:54:22.948Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Post Conference Resources"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/3jzU3gqzQ8aErHqd4lq2iF/a14ec653b05b65ed4131ed911423316b/CLC21_App_Anouncements_WC_1000x700px_MT8.jpg",
+            "details": {
+              "size": 1276861,
+              "image": {
+                "width": 4167,
+                "height": 2917
+              }
+            },
+            "fileName": "CLC21 App Anouncements WC_1000x700px MT8.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7LdouVZm5NA0yEtAgdhyLR",
+        "type": "Asset",
+        "createdAt": "2021-04-27T15:53:24.835Z",
+        "updatedAt": "2021-04-27T15:53:24.835Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "2021 Merch Photo"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/7LdouVZm5NA0yEtAgdhyLR/dce2afc8a9222157b16cb08adce51177/CLC21_App_Anouncements_WC_1000x700px_MT5.jpg",
+            "details": {
+              "size": 5976767,
+              "image": {
+                "width": 4167,
+                "height": 2917
+              }
+            },
+            "fileName": "CLC21 App Anouncements WC_1000x700px MT5.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "23c29HRVr8lidquSZi6hS1",
+        "type": "Asset",
+        "createdAt": "2021-04-27T15:52:42.316Z",
+        "updatedAt": "2021-04-27T15:52:42.316Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "#WatermarkCLC21"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/23c29HRVr8lidquSZi6hS1/f09cdd9a261b6bb623c21680af87edd5/CLC21_App_Anouncements_WC_1000x700px_MT9.jpg",
+            "details": {
+              "size": 1186092,
+              "image": {
+                "width": 4167,
+                "height": 2917
+              }
+            },
+            "fileName": "CLC21 App Anouncements WC_1000x700px MT9.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "24K8CgfpjhIxEb4TZUF9Pt",
+        "type": "Asset",
+        "createdAt": "2021-04-27T15:51:16.506Z",
+        "updatedAt": "2021-04-27T15:51:16.506Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Plan Your Breakouts"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/24K8CgfpjhIxEb4TZUF9Pt/a3fa65d7855801db008492ac713caee2/CLC21_App_Anouncements_WC_1000x700px_MT4.jpg",
+            "details": {
+              "size": 1262394,
+              "image": {
+                "width": 4167,
+                "height": 2917
+              }
+            },
+            "fileName": "CLC21 App Anouncements WC_1000x700px MT4.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2TiE9b0iwiHdADCwHOs874",
+        "type": "Asset",
+        "createdAt": "2021-04-27T15:50:09.597Z",
+        "updatedAt": "2021-04-27T15:50:09.597Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Wednesday Night Showcases"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2TiE9b0iwiHdADCwHOs874/c2026b0bf5a39df06b10f4ec78e272bd/CLC21_App_Anouncements_WC_1000x700px_MT7.jpg",
+            "details": {
+              "size": 1453560,
+              "image": {
+                "width": 4167,
+                "height": 2917
+              }
+            },
+            "fileName": "CLC21 App Anouncements WC_1000x700px MT7.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7j8cnJylef3UEZ8tfbUigh",
+        "type": "Asset",
+        "createdAt": "2021-04-27T15:45:55.319Z",
+        "updatedAt": "2021-04-27T15:45:55.319Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "The Porch Showcase"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/7j8cnJylef3UEZ8tfbUigh/ea521485bf797d9ac366df5b14bf210f/CLC21_App_Anouncements_WC_1000x700px_MT2.jpg",
+            "details": {
+              "size": 1237307,
+              "image": {
+                "width": 4167,
+                "height": 2917
+              }
+            },
+            "fileName": "CLC21 App Anouncements WC_1000x700px MT2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4dyHaXHmhV1Z3hJDabWq6X",
+        "type": "Entry",
+        "createdAt": "2019-03-19T19:04:27.758Z",
+        "updatedAt": "2021-04-27T13:23:20.383Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 13,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Watermark Resources"
+        },
+        "title": {
+          "en-US": "Watermark Resources"
+        },
+        "summary": {
+          "en-US": "Equipping people toward full devotion to Jesus Christ through the local church"
+        },
+        "description": {
+          "en-US": "Watermark Resources serves churches around the world through ministries, trainings, conferences, and resources to equip people toward full devotion to Jesus Christ. Stop by our booth and check out curriculum samples, learn how to bring a ministry to your church, ask questions about our training conferences, or let us know how we can serve you. Learn more at [watermarkresources.com](https://www.watermarkresources.com/)\n\n### __BOOTH__  \n(Town Center 1st floor, facing the Coffee Shop)   \nTuesday: 9:00 AM–5:30 PM   \nWednesday: 8:15 AM–5:30 PM    \nThursday: 8:00 AM–12:30 PM    "
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2GDv587WMMHVz9l8hs2H08"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7vs2DENjpezga8ur6EULhw",
+        "type": "Entry",
+        "createdAt": "2021-04-26T21:39:07.779Z",
+        "updatedAt": "2021-04-26T22:06:06.228Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "re:generation Showcase"
+        },
+        "title": {
+          "en-US": "Join us tonight for the re:generation Showcase."
+        },
+        "description": {
+          "en-US": "Be sure to check out the [re:generation Showcase](clc://clc/app-link/NodeSingle?nodeId=Event:a43f749b3e088d4a4a3e31accaef4b78a85e2a0d494ea09afc069a9525cf5a0c)!\n\nThis showcase will provide you an opportunity to meet re:gen leaders, attend large group, and experience a mock small group. Just want to see large group, then join us for large group only at 6:30 PM. No registration required for large group but if you want to experience the ministry as a leader you should register!"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2Cjrq7TlP6zkkjJfc6jUDj"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5JRnRQw8pWe1O9gJCKTn0B",
+        "type": "Asset",
+        "createdAt": "2019-03-24T19:58:01.059Z",
+        "updatedAt": "2021-04-26T21:56:34.991Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4
+      },
+      "fields": {
+        "title": {
+          "en-US": "Regen-showcase"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5JRnRQw8pWe1O9gJCKTn0B/ed33a0f3ef82eca68bdd3197fc8fb5a1/ReGen_App_Header.jpg",
+            "details": {
+              "size": 1374456,
+              "image": {
+                "width": 4167,
+                "height": 2917
+              }
+            },
+            "fileName": "ReGen App Header.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6P6r1TrqaEDxiyzlfn3nkg",
+        "type": "Entry",
+        "createdAt": "2021-04-22T14:51:31.994Z",
+        "updatedAt": "2021-04-26T21:38:59.452Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 18,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Welcome - CLC 2021"
+        },
+        "title": {
+          "en-US": "Welcome to CLC 2021!"
+        },
+        "summary": {
+          "en-US": "Here's what you need to know for Tuesday."
+        },
+        "description": {
+          "en-US": "Friends –\n\nThrough one of the craziest years, God has made it clear that the Church is unstoppable. Can you believe the Church Leaders Conference 2021 is finally here? We’ve been waiting for this. Our team has been praying for each of you, for our time together, and we cannot wait to see what God is going to do over the next few days. Thank you for choosing to invest your time with us. It is going to be a blast!\n\nHere are the details for this week:\n\n__CLC APP:__\nWay to go! You've found the go-to resource for schedule, maps, announcements, and everything you need for a great experience here at CLC. You can create a personalized schedule by saving the events you want to attend to the My CLC tab. Make sure you turn the notifications on so you don't miss a beat!\n\n__PARKING:__ At Watermark, parking can be a bit of an… opportunity to grow in patience. To best serve you and our midweek ministries, please consider walking if staying close, carpooling, or taking advantage of hotel shuttles. If driving, please let our volunteers guide you to the appropriate parking lots or the parking map on the Connect tab.\n\n__CHECK-IN FOR MAIN CONFERENCE (TUESDAY, APRIL 27):__ Check-in for the general conference starts at 12 PM in the Town Center on Tuesday. Please check in by 12:30 PM before the conference kicks off at 1 PM. View the full schedule on the Schedule tab. \n\n__MEALS:__ Dinner on Tuesday and Wednesday and lunch on Wednesday are included in the price of your ticket. Lunch is also provided for Ministry Workshop attendees on Tuesday. If you are not attending a Ministry Workshop, you can buy lunch for $5 on Tuesday.\n\n### FAQ\n__WHAT DO I WEAR?:__ Dress casual and comfortable. In Texas, we love our air conditioning, so consider bringing a warmer layer each day. \n\n__IF I FIND MYSELF WITH SOME FREE TIME BEFORE OR AFTER THE CONFERENCE – DO YOU HAVE ANY RECOMMENDATIONS?__ We’ve put together a list of 54 Things To Do While You’re In Dallas on the Connect tab including local attractions, ideas for team activities, and recommended restaurants. Disclaimer: You’ll regret skipping out on the conference meals. Trust us. \n\n__BUT WHAT ABOUT COVID-19?__ The best information we have suggests that we will be able to gather in-person in a safe and responsible way, much like how our church body is meeting each weekend. You can read our current guidelines and protocols [here](https://www.watermark.org/covid19update/dallas).\n"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7Fc9jfX7xvEx90RG4LTxdr"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2Cjrq7TlP6zkkjJfc6jUDj",
+        "type": "Asset",
+        "createdAt": "2021-04-26T21:35:55.483Z",
+        "updatedAt": "2021-04-26T21:35:55.483Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "ReGen App Header"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2Cjrq7TlP6zkkjJfc6jUDj/1647b05ee111f04b4883539e66e1967c/ReGen_App_Header.jpg",
+            "details": {
+              "size": 1374456,
+              "image": {
+                "width": 4167,
+                "height": 2917
+              }
+            },
+            "fileName": "ReGen App Header.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7Fc9jfX7xvEx90RG4LTxdr",
+        "type": "Asset",
+        "createdAt": "2021-04-26T21:26:13.220Z",
+        "updatedAt": "2021-04-26T21:26:13.220Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "welcomephoto"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/7Fc9jfX7xvEx90RG4LTxdr/202b34de7e14525698ba02926a4dfea9/welcomephoto.png",
+            "details": {
+              "size": 1189256,
+              "image": {
+                "width": 1000,
+                "height": 700
+              }
+            },
+            "fileName": "welcomephoto.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5YxAePNzi3LWgQrKmSdqmu",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:04:07.938Z",
+        "updatedAt": "2021-04-26T19:43:17.123Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Communication Team Overview - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "Communication Team Overview"
+        },
+        "description": {
+          "en-US": "Uncover the best strategies for using social media, print media, on-stage announcements, and email to communicate with your church body."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "W7kkj2nmxS7r2b9P03eAc"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "33TgvOJLRx4RdoqaVFi4Yu"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4vovqMpoNKJtPJ2RaHwgGG"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4vovqMpoNKJtPJ2RaHwgGG",
+        "type": "Asset",
+        "createdAt": "2021-04-26T19:43:09.617Z",
+        "updatedAt": "2021-04-26T19:43:09.617Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC21 Communications Overview Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/4vovqMpoNKJtPJ2RaHwgGG/363f4118090dd609815cee7560e8a849/CLC21_Breakout_Handout_.docx",
+            "details": {
+              "size": 1914507
+            },
+            "fileName": "CLC21 Breakout Handout .docx",
+            "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "g95aMzS98YxSpdwt86ocb",
+        "type": "Entry",
+        "createdAt": "2021-04-14T21:06:00.660Z",
+        "updatedAt": "2021-04-26T18:31:33.274Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 12,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Lunch  - Tuesday"
+        },
+        "title": {
+          "en-US": "Lunch"
+        },
+        "description": {
+          "en-US": "Lunch will be provided for workshop attendees. If you are not attending a workshop, lunch will be available for purchase. \n\n#### __Food Truck Options:__\n__In-N-Out__\nHamburger or Cheeseburger with chips and a drink.\n\n__Fletcher's Original Corny Dogs__\nCorny Dog & Curly Fries\n\n__Crisp + Green__\nCinco De Light Salad\nClassic Chicken Caesar Salad\nPearadise City Salad\n\n__OFC Food Truck__\nChicken Tenders with a side of coleslaw or mashed potatoes and gravy.\n\n#### List of Ingredients\n__In-N-Out__\nHamburger - Toasted bun, beef patty, onion, lettuce, tomato, spread, chips & drink\nCheeseburger - Toasted bun, American cheese, beef patty, onion, lettuce, tomato, spread, chips & drink\n\n__Fletcher's Original Corny Dogs__\nCorny Dog (contains beef and pork)\nCurly Fries\n\n__Crisp + Green__\n- Cinco De Light: Romaine, arugula, avocado, queso fresco, pepitas, roasted corn, tomatoes, jalapeño, blue corn chips, lime squeeze, & jalapeño lime vinaigrette (vegan option available)\n- Classic Chicken Caesar: Kale, romaine, roasted chicken, tomatoes, sunflower seeds, shaved parmesan, parmesan crisps, lemon squeeze, & classic caesar dressing\n- Pearadise City: Mixed greens, arugula, roasted chicken, pecans, craisins, bleu cheese, radicchio, asian pear & balsamic vinaigrette\n\n__OFC Food Truck__\n- 2-3 Organic Fried Chicken tenders with a choice of side (coleslaw, vegan mashed potatoes and gravy)\n- ALL batter, fry oil (organic coconut oil) and ingredients of the sides are organic, gluten-free, dairy-free, soy-free, corn-free, peanut-free, and non-gmo."
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5PoGyMZeA6zUoulz37T7e1"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-27T11:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T13:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6bYFBZ1Du4IBgYYmBi7Uav",
+        "type": "Entry",
+        "createdAt": "2019-04-04T15:38:15.642Z",
+        "updatedAt": "2021-04-24T23:25:42.552Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 14,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "54 Things To Do While You’re in Dallas "
+        },
+        "title": {
+          "en-US": "54 Things To Do While You’re in Dallas"
+        },
+        "summary": {
+          "en-US": "A few recommendations from our staff."
+        },
+        "description": {
+          "en-US": "#### Howdy and Welcome to Dallas!\nHonestly, you probably won't hear too many \"howdys\" in Dallas, but maybe a few \"y'alls\" here and there. The CLC team would like to provide you with a little intro to Dallas, to help you and your team explore our city before or after the conference, or in the evenings. \n\n#### The Food\nThe first thing you need to know is that CLC lunches and dinners are worth staying for. Let’s just say that we have left a few popular spots off this list because they are coming to us.  \n\nYou have some great options for other times (perhaps a late night \"Fourth Meal\"?). Nearest to Watermark, you'll find [Mattito’s](http://www.mattitos.com/locations/forest-lane-dallas/), [Asian Mint](https://asianmint.com/asian-mint-at-75-forest-lane-dallas-tx/), Chipotle, and Street’s Chicken. You'll also find several choices at Walnut Hill and 75 including Taco Deli, Snooze, Bellagreen, and Unleaven Fresh Kitchen. For more great barbecue, try [Ten 50 BBQ](http://ten50bbq.com/) or [Babe’s Chicken](https://www.babeschicken.com/our-kitchens/carrollton/). If you are in the mood for a burger, then check out Liberty Burger or Shady’s Burger.\n\nIn need of breakfast? Nearby go-tos include [Original Pancake House](http://ophdfw.com/) and [Maple Leaf Diner](http://www.mldiner.com/) (it's Canadian!). [Cindi's New York Deli](http://cindisnydeli.com/) is a popular choice among Watermark staff. \n\nTrying to satisfy a sweet tooth? Try a Dallas staple, [Wild About Harry’s](https://www.wildaboutharrys.com/), for frozen custard.  Other local spots to check out are [Cinnaholic](https://locations.cinnaholic.com/ll/us/tx/richardson/100-s-central-expy-unit-15/) for gourmet cinnamon rolls and Steel City Pops. \n\nDallas also has plenty of great places for quicker bites. You don't have to look far for a Chick-fil-A, Whataburger, Pot Belly Sandwich Shop, Sonic, In-N-Out, Freebirds, Waffle House, Raising Cane's, Dairy Queen, or even [Shake Shack ](https://www.shakeshack.com/location/addison-dallas-tx/). \n\n#### The Neighborhoods\n\nLOTS of other eateries exist in the various neighborhoods around Dallas. \n\n[Trinity Groves](http://www.trinitygroves.com/), located in a majorly redeveloped portion of West Dallas, not only serves as a multi-eatery \"restaurant incubator\" with great patio dining, but it also offers a walking bridge and great views of Downtown Dallas. (Be sure to stop at [Kate Weiser Chocolate](https://kateweiserchocolate.com/), even if it's only to view her chocolate creations.) \n\n[Deep Ellum](http://deepellumtexas.com/) (east of Downtown) or [Bishop Arts](http://www.bishopartsdistrict.com/home) (southwest Dallas) are revitalized areas full of culture, shops, and food – and are highly walkable. I'd personally give the edge to Bishop Arts, but Deep Ellum is edgier if that's your scene. If you want to explore a little bit closer in, spend some time on [Lower Greenville](http://neighborhoods.dmagazine.com/dallas/east-dallas/lower-greenville/) or wander [Mockingbird Station](http://www.mockingbirdstation.com/). \n\n#### Culture (or what Texans call, \"The Learnin\")\n\nHighland Park is a city within a city – located right in the heart of Dallas. Not only is it full of tree-lined streets and stylish shops, but HP is also home to [SMU](http://www.smu.edu/), one of the prettiest college campuses in this part of the world. Next to SMU you'll find the [George W. Bush Presidential Library](https://www.georgewbushlibrary.smu.edu/), one of Dallas's newest historical hot spots. \n\nThe [Perot Museum of Nature and Science](https://www.perotmuseum.org/) is another new attraction with lots of buzz. And there's always the good ol' [Dallas Museum of Art](https://dma.org/), too (general admission is free, but you'll have to pay for parking). The [Sixth Floor Museum](http://www.jfk.org/) draws crowds as well, even 54 years after President Kennedy was assassinated from that very sixth floor (or was he?). \n\nDon't need education but would love to see something shiny? Consider the [Downtown GeO-Deck](http://reuniontower.com/), an observation deck inside that big ball you've noticed in the Dallas skyline (pro tip: it's called Reunion Tower). Or you can check out Jerry Jones's various Dallas Cowboys facilities: the mammoth [AT&T Stadium](http://attstadium.com/tours) out in Arlington, or the Cowboys training facility, [The Star](http://www.thestarinfrisco.com/tours), that's a little closer in. Both facilities offer tours. \n\n#### Team Time!\n\nCatch a [Texas Rangers](https://www.mlb.com/rangers/schedule) game against the Angels Monday through Wednesday or Red Sox Thursday. More great team hangout options? [WhirlyBall](http://www.whirlyballplano.com/) in Plano is a fun combination of bumper cars and lacrosse. (They also offer laser tag if that's more your style.) Or you and your team can compete at [Top Golf](https://topgolf.com/us/dallas/), a high-tech driving range that's also great for non-golfers. \n\nFor something free, scenic, and laid-back, consider Downtown's park-built-over-the-highway, [Klyde Warren Park ](https://www.klydewarrenpark.org/). They've got food trucks, restaurants, and lawn games.\n\nYour crew could also try some indoor skydiving at [iFly](https://www.iflyworld.com/dallas/), or play video games at[ Dave & Busters](http://www.daveandbusters.com/dallas). If you prefer bowling – go swanky at [Bowl & Barrel](http://www.bowlandbarrel.com/), or throw it back to middle school at [Strike & Reel](https://www.strikeandreel.com/), a large entertainment complex with bowling, games, movie theaters, and more! In need of a shopping fix? [NorthPark Center](https://www.northparkcenter.com/) is close to Watermark and a Dallas institution, but the [Galleria](http://www.galleriadallas.com/) is closer and offers ice skating. \n\n#### I Could Go On...\n\nWanna roam a giant bookstore? The [Half Price Books flagship store](https://www.hpb.com/001) is on Northwest Highway, just south of Watermark. Don't believe Dallas has nature? You'll find lots of it at [White Rock Lake](http://www.dallasparks.org/235/White-Rock-Lake) or the [Dallas Arboretum](http://www.dallasarboretum.org/). \n\n#### A Word about Transportation\n\nWant to see some of these, but don't want to bother renting a car for a week? Check with the hotel to see how far their complementary shuttle will take you. Uber and Lyft also have a strong presence here in Dallas. Or if you're not in a hurry and want to enjoy the ride, Dallas's light-rail system (DART) can take you to several of the spots mentioned above. Plus, there are always cabs waiting right outside the hotels. \n\nEnjoy your time in Dallas! We're so glad you're here.\n"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3jZ8kPrLNT3imlOhIsfG56"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4hhSggSlgVtj17doEsBy0n",
+        "type": "Entry",
+        "createdAt": "2019-03-08T17:09:43.242Z",
+        "updatedAt": "2021-04-24T18:57:19.767Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Helping Couples Survive an Affair - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "Helping Couples Survive an Affair"
+        },
+        "description": {
+          "en-US": "An affair doesn’t have to be the end of a marriage or a family. The way we respond and minister to those in crisis matters. Gain both practical and biblical truths as you come alongside and help couples when trust has been broken."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7z2YAnBZSqAlWxPo3xpv3a"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7Ic7VtSGqz00ok8ie66Fk"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "31txvJKI9WpVOYfWIT9QmK"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "3nMPee3bwHAjoZpkqirbUf"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6OWb9ltG5ys30BFT5YzW7V"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6hzGVAKjcKn6iYoTdwGv3w",
+        "type": "Entry",
+        "createdAt": "2021-04-14T21:44:11.156Z",
+        "updatedAt": "2021-04-23T22:51:00.605Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Community Shepherd Showcase"
+        },
+        "title": {
+          "en-US": "Community Shepherd Showcase"
+        },
+        "description": {
+          "en-US": "We are committed to shepherding the flock the Lord has entrusted to our local body of Christ, specifically through biblical community. Our Community Shepherds (lay leaders) with staff (Community Directors) oversee, care for, and invest in small groups, primarily by communicating and developing relationships. Join us as the Elders encourage, train, and spur on our Community Shepherds."
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2wtYmPNap8AWgNMId5GJGk"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T06:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T08:30-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5mn2txXFfFj7qwKO972zAM"
+            }
+          }
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        },
+        "capacity": {
+          "en-US": 100
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1DGNC65efrtgTTVtSXvpMH",
+        "type": "Entry",
+        "createdAt": "2021-04-21T17:46:18.352Z",
+        "updatedAt": "2021-04-23T22:32:41.666Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "location"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Town Center"
+        },
+        "title": {
+          "en-US": "Town Center"
+        },
+        "map": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "0wjN1Qws6nfZf6dwfx7nJ"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4orluEO0AbbWUZcLOcnOKQ",
+        "type": "Entry",
+        "createdAt": "2021-04-23T22:31:59.051Z",
+        "updatedAt": "2021-04-23T22:31:59.051Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "location"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Town Center"
+        },
+        "title": {
+          "en-US": "Town Center"
+        },
+        "map": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "0wjN1Qws6nfZf6dwfx7nJ"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "0wjN1Qws6nfZf6dwfx7nJ",
+        "type": "Asset",
+        "createdAt": "2021-04-23T22:31:55.323Z",
+        "updatedAt": "2021-04-23T22:31:55.323Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Town Center Map"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/0wjN1Qws6nfZf6dwfx7nJ/be43766c300b4d5d26aff8e9ade4adbb/CLC21_App_PhoneMap_RJ_TownCenter.jpg",
+            "details": {
+              "size": 313608,
+              "image": {
+                "width": 1080,
+                "height": 1920
+              }
+            },
+            "fileName": "CLC21 App PhoneMap RJ TownCenter.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4RDPJmXVFhrunhjaKmrDou",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:35:25.566Z",
+        "updatedAt": "2021-04-23T22:30:21.799Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Community / Connecting Workshop"
+        },
+        "title": {
+          "en-US": "Community / Connecting Workshop"
+        },
+        "description": {
+          "en-US": "For many churches, small groups are the entry point where people first experience biblical community, practice the “one anothers” of Scripture, and begin the process of spiritual transformation. Learn Watermark's guiding principles for community, how to assimilate and form groups, strategies for training leaders, and how to ensure that Members are shepherding one another.\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4DdzWfwlYUwOCJIALKkD9b"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2tkxwkwvh7Q8QUgwncuKNH"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "dVJ4Qp5FdXktmpiUog40v"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2iMN59lb2YnvIZx0o4rVHA"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6XzqR9zG7ZxUEnjbOIR2kc"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1ILBV0FSrQSEvW7AfpVNxy"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "16eBqOk81pxRmk1WU9N7Vf"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "vEMHFdlK8m791WUGtN4jk"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2Rnz2xfkzBhOhkhJRTofBy"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1KSkecEhLB69tolZn06ASR"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2zjwOXo0uTn1NtWDRzeWmq"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5Vf1ohn7ko3PmHzZ7iBern"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-26T13:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-26T16:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "16eBqOk81pxRmk1WU9N7Vf",
+        "type": "Entry",
+        "createdAt": "2021-04-23T22:10:04.250Z",
+        "updatedAt": "2021-04-23T22:30:06.678Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Jacob A"
+        },
+        "name": {
+          "en-US": "Jacob A"
+        },
+        "summary": {
+          "en-US": "Single Men’s Community Director"
+        },
+        "biography": {
+          "en-US": "Single Men's Community Director\n[Read Jacob's bio ](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3bJL269M2gZhyQ0P5tyApm"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "vEMHFdlK8m791WUGtN4jk",
+        "type": "Entry",
+        "createdAt": "2021-04-23T22:11:22.554Z",
+        "updatedAt": "2021-04-23T22:29:25.751Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Blake M"
+        },
+        "name": {
+          "en-US": "Blake M"
+        },
+        "summary": {
+          "en-US": "Men's Community Director"
+        },
+        "biography": {
+          "en-US": "__Men's Community Director__\n[Read Blake's Bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "442iXQ85KtfBJ8COanRP7g"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2Rnz2xfkzBhOhkhJRTofBy",
+        "type": "Entry",
+        "createdAt": "2021-04-23T22:12:18.368Z",
+        "updatedAt": "2021-04-23T22:28:59.247Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Scott M"
+        },
+        "name": {
+          "en-US": "Scott M"
+        },
+        "summary": {
+          "en-US": "Director of Married Community"
+        },
+        "biography": {
+          "en-US": "__Director of Married Community__  \n[Read Scott's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4JtVgLQfr8nDhiE9n020k7"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1KSkecEhLB69tolZn06ASR",
+        "type": "Entry",
+        "createdAt": "2021-04-23T22:13:43.095Z",
+        "updatedAt": "2021-04-23T22:28:06.973Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Robbie R"
+        },
+        "name": {
+          "en-US": "Robbie R"
+        },
+        "biography": {
+          "en-US": "__Married Community Director__  \n[Read Robbie's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3xUj8qgQObvQrsFisPkcQM"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2zjwOXo0uTn1NtWDRzeWmq",
+        "type": "Entry",
+        "createdAt": "2021-04-23T22:14:59.846Z",
+        "updatedAt": "2021-04-23T22:27:17.686Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "K T"
+        },
+        "name": {
+          "en-US": "K T"
+        },
+        "summary": {
+          "en-US": "Elder"
+        },
+        "biography": {
+          "en-US": "__Elder__  \n[Read Kyle's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1l6EYK2vwdp4iVKk4opvC6"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2babUn5wVDEZBrcEy6UeOR",
+        "type": "Entry",
+        "createdAt": "2019-03-20T16:06:38.943Z",
+        "updatedAt": "2021-04-23T22:23:18.166Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 13,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Watermark Coffee"
+        },
+        "title": {
+          "en-US": "Watermark Coffee"
+        },
+        "description": {
+          "en-US": "### Hours\nMon - Thurs: 8:00 AM – 7:00 PM \n\nFri: Closed\n\n### __Coffee__\n- Drip Coffee\n- Cold Brew\n- Lattes\n- Mochas\n- Americanos\n\n### __Not Coffee__\n- Fruit Smoothies\n- Harney & Sons® Hot & Iced teas\n- David Rio™ chai\n- Topo Chico\n- Lemonade\n- Frozen Blends\n\n### __Other Good Things__\n- Muffins, scones, cookies, and other baked goods (including some gluten-free options)\n- Modern Oats® (gluten-free premium oatmeal)"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "74SN60SvzXucutvoZ9lUps"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1l6EYK2vwdp4iVKk4opvC6",
+        "type": "Asset",
+        "createdAt": "2021-04-23T22:14:56.270Z",
+        "updatedAt": "2021-04-23T22:14:56.270Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "K T"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/1l6EYK2vwdp4iVKk4opvC6/995baad63a5b303a6b64b99916c6e85d/Kyle_Thompson.jpeg",
+            "details": {
+              "size": 77957,
+              "image": {
+                "width": 640,
+                "height": 640
+              }
+            },
+            "fileName": "Kyle_Thompson.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3xUj8qgQObvQrsFisPkcQM",
+        "type": "Asset",
+        "createdAt": "2021-04-23T22:13:40.821Z",
+        "updatedAt": "2021-04-23T22:13:40.821Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "R-Rice"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/3xUj8qgQObvQrsFisPkcQM/52d812790bcc61caf0049bad59984cb5/R-Rice.jpeg",
+            "details": {
+              "size": 48242,
+              "image": {
+                "width": 640,
+                "height": 640
+              }
+            },
+            "fileName": "R-Rice.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4JtVgLQfr8nDhiE9n020k7",
+        "type": "Asset",
+        "createdAt": "2021-04-23T22:12:13.843Z",
+        "updatedAt": "2021-04-23T22:12:13.843Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Scott M"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/4JtVgLQfr8nDhiE9n020k7/78e02710eab621b05b333f3c98817182/Scott_Michael_20200218_WCC_Staff_000719.jpeg",
+            "details": {
+              "size": 78251,
+              "image": {
+                "width": 640,
+                "height": 640
+              }
+            },
+            "fileName": "Scott_Michael_20200218_WCC_Staff_000719.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "442iXQ85KtfBJ8COanRP7g",
+        "type": "Asset",
+        "createdAt": "2021-04-23T22:11:13.726Z",
+        "updatedAt": "2021-04-23T22:11:13.726Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Blake M"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/442iXQ85KtfBJ8COanRP7g/273f765262e7d89f755ae4c3e6c2903d/Blake_McJunkin.jpeg",
+            "details": {
+              "size": 71204,
+              "image": {
+                "width": 640,
+                "height": 640
+              }
+            },
+            "fileName": "Blake_McJunkin.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3bJL269M2gZhyQ0P5tyApm",
+        "type": "Asset",
+        "createdAt": "2021-04-23T22:10:01.656Z",
+        "updatedAt": "2021-04-23T22:10:01.656Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Jacob A"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/3bJL269M2gZhyQ0P5tyApm/0ae5ae4665c548cee813f55ea1220eee/20190103-3.jpeg",
+            "details": {
+              "size": 72032,
+              "image": {
+                "width": 640,
+                "height": 640
+              }
+            },
+            "fileName": "20190103-3.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4XxyEnB0ri5MVN3GHprnom",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:54:07.694Z",
+        "updatedAt": "2021-04-23T22:07:07.777Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "day"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "CLC21 - Thu April 29"
+        },
+        "title": {
+          "en-US": "Thursday"
+        },
+        "date": {
+          "en-US": "2021-04-29"
+        },
+        "scheduleItem": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "10f0opShLAil0CC7NcABN5"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2jkuTEPfJZUygIWs1YrtKG"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7gxAAVjQlvlRqWqg702kCF"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4LmidTk7uZecZqqJOFAdf7",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:52:04.644Z",
+        "updatedAt": "2021-04-23T22:07:01.757Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "day"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "CLC21 - Wed April 28"
+        },
+        "title": {
+          "en-US": "Wednesday"
+        },
+        "date": {
+          "en-US": "2021-04-28"
+        },
+        "summary": {
+          "en-US": "Conference Day 3 - April 28"
+        },
+        "scheduleItem": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6hzGVAKjcKn6iYoTdwGv3w"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7CLu6mnqHi8d7qSsyePtYn"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "26Z8IDnUdlBnuqipvi8qU"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "66yskwNVuprIWy8HzxzUIN"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2IEH5tvSNdHNT0kYPkqoqs"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4Ay4zCRlpqG2PKTIXe91VS"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "52tsGMZgTMTpn9kL9ltAQP"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3VTH8nGnrWrh4Y9oW048qf"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2rlouDASHOrl0vaZJOlQeq"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4RuBN1otGPdjF7KoY19KWL"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3SOxBCfmvBybxyS8HsSJMe"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6jBGlrx28xVwa2tuZXlgoO"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4PxsXDdhsqFVvMD6XVjmxB"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6QrpvjQ7fV89wTfChCnH2g"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1RwyVJynJx8YWJUKL06wjg"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7KDEVnvN8kuLI2Bd4ZeGPv",
+        "type": "Entry",
+        "createdAt": "2021-04-14T20:49:09.580Z",
+        "updatedAt": "2021-04-23T22:06:56.358Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "day"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "CLC21 - Tue April 27"
+        },
+        "title": {
+          "en-US": "Tuesday"
+        },
+        "date": {
+          "en-US": "2021-04-27"
+        },
+        "summary": {
+          "en-US": "Conference Day 2 - April 27"
+        },
+        "scheduleItem": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3DIqqCbvljbXTJJFNsmzD9"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "g95aMzS98YxSpdwt86ocb"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6iqmS7rM0QxCuSgCTYAHk2"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1w6dPf4lQbXNCgF7OvrzFu"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3bk32tNJ5juPHGgOSBGA6V"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "W1O6jhl0TfTKxnBvS7ZhC"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6FMp7h01aRFb3WSJ6ZluY6"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4GTNGVShbxOaS69C2kDBrN"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2khVZtMTyVVOh0wjHwgz5w"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "ECLuATViqla0Bd0voSRBh"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1ttTX1RVkFbHpe3Tm59x6k",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:23:24.112Z",
+        "updatedAt": "2021-04-23T22:06:48.088Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "day"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "CLC21 - Mon April 26"
+        },
+        "title": {
+          "en-US": "Monday"
+        },
+        "date": {
+          "en-US": "2021-04-26"
+        },
+        "summary": {
+          "en-US": "Workshop Day - April 26"
+        },
+        "scheduleItem": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4HwAOb37tgtUJFL7fwRYen"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4It7y6gTQCjX1mD65BofDA"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "26mz6Uyc6azVS3V1ph3Iy9"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "0sW8eYkjWhGYKuqr9NwBm"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1PvBdwotI2xctagzPDWTBs",
+        "type": "Asset",
+        "createdAt": "2021-04-22T19:47:40.111Z",
+        "updatedAt": "2021-04-23T21:55:56.941Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4
+      },
+      "fields": {
+        "title": {
+          "en-US": "Wednesday Lunch Flow Map"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/1PvBdwotI2xctagzPDWTBs/e7469a24b6d68d1e3816ecf88d6ea7e8/CLC21_App_PhoneMap_RJ_MealFlow.jpg",
+            "details": {
+              "size": 342596,
+              "image": {
+                "width": 1080,
+                "height": 1920
+              }
+            },
+            "fileName": "CLC21 App PhoneMap RJ MealFlow.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7z6eMdVIv00bhoLHB8XEGG",
+        "type": "Entry",
+        "createdAt": "2021-04-22T19:48:38.566Z",
+        "updatedAt": "2021-04-23T21:55:03.961Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "location"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "South Parking Lot"
+        },
+        "title": {
+          "en-US": "South Parking Lot"
+        },
+        "map": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1PvBdwotI2xctagzPDWTBs"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5PoGyMZeA6zUoulz37T7e1",
+        "type": "Asset",
+        "createdAt": "2021-04-23T21:53:41.962Z",
+        "updatedAt": "2021-04-23T21:53:41.962Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Tuesday Lunch Map"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5PoGyMZeA6zUoulz37T7e1/1a60cac4b46971497a18210cde12bf0d/CLC21_App_PhoneMap_RJ_TuesdayLunch.jpg",
+            "details": {
+              "size": 326315,
+              "image": {
+                "width": 1080,
+                "height": 1920
+              }
+            },
+            "fileName": "CLC21 App PhoneMap RJ TuesdayLunch.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6gEQjJ7unQW3WMtpZHarRd",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:49:54.380Z",
+        "updatedAt": "2021-04-23T21:04:17.842Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 9,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Outreach & Missions Workshop"
+        },
+        "title": {
+          "en-US": "Outreach & Missions Workshop"
+        },
+        "description": {
+          "en-US": "The Church is God's \"Plan A\" to impact neighborhoods, cities, and the ends of the earth. Learn from Watermark's External Focus team about mobilizing your church body to transform your community. Learn the core ministry values that drive our efforts, how to evaluate service opportunities both locally and globally, \"helping without hurting\" principles, how to disciple your church body through service, and our focus on lay leadership.\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2nyUgc92YLuCUbuC25nzFV"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-26T13:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-26T16:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7gxAAVjQlvlRqWqg702kCF",
+        "type": "Entry",
+        "createdAt": "2021-04-15T02:16:34.733Z",
+        "updatedAt": "2021-04-23T21:03:09.876Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Main Stage Session 5 "
+        },
+        "title": {
+          "en-US": "Main Stage Session 5"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6tgGPaFEri02jL7ST7Oa8T"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-29T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-29T12:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4It7y6gTQCjX1mD65BofDA",
+        "type": "Entry",
+        "createdAt": "2021-04-14T20:40:26.611Z",
+        "updatedAt": "2021-04-23T21:02:06.019Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Workshop Kickoff "
+        },
+        "title": {
+          "en-US": "Workshop Kickoff"
+        },
+        "description": {
+          "en-US": "A pre-conference opportunity to get an in-depth look at one of Watermark’s core ministries. \n\nWorkshops allow you and your team to take a deep-dive into one of Watermark’s core ministries, get personal training from ministry leaders, and connect with leaders from other churches who are passionate about the same area of ministry you are!"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6tgGPaFEri02jL7ST7Oa8T"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-26T12:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-26T13:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3DIqqCbvljbXTJJFNsmzD9",
+        "type": "Entry",
+        "createdAt": "2021-04-20T19:54:58.618Z",
+        "updatedAt": "2021-04-23T21:01:44.619Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 9,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Workshops (Cont.) - Session 2"
+        },
+        "title": {
+          "en-US": "Workshops (Cont.)"
+        },
+        "description": {
+          "en-US": "A pre-conference opportunity to get an in-depth look at one of Watermark’s core ministries. \n\nWorkshops allow you and your team to take a deep-dive into one of Watermark’s core ministries, get personal training from ministry leaders, and connect with leaders from other churches who are passionate about the same area of ministry you are!"
+        },
+        "breakouts": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "O0duYsTthaMvn6pb7eYNA"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4YpMrAWXl7BdswYzi3uJ71"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "02gqlQ16h3s1Q9xc3H7HM"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "wiBItPZTn9vKvh3Lj1xUK"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "54EpbJaZVKvVb9nMgXqJ0D"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "57yp6MvPQPxk1Zem5feGw4"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1GyKgt35D9ilz8MeXmaNub"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "65mOD0cqPJ7r5da6DMzdXA"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "y0SDAWeZoxYX7ccVvOE0n"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6OsAQdB1OVmmAnk8xTUsn2"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7cnBLR2aRp2TZcFTfC6cxs"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-26T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T11:30-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "26mz6Uyc6azVS3V1ph3Iy9",
+        "type": "Entry",
+        "createdAt": "2021-04-14T20:43:05.698Z",
+        "updatedAt": "2021-04-23T21:00:08.294Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 10,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Workshops - Session 1"
+        },
+        "title": {
+          "en-US": "Workshops"
+        },
+        "summary": {
+          "en-US": "A pre-conference opportunity to get an in-depth look at one of Watermark’s core ministries. "
+        },
+        "description": {
+          "en-US": "Workshops allow you and your team to take a deep-dive into one of Watermark’s core ministries, get personal training from ministry leaders, and connect with leaders from other churches who are passionate about the same area of ministry you are!"
+        },
+        "breakouts": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4RDPJmXVFhrunhjaKmrDou"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4NT1JxkFTBscQeCcSMCr3D"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2UmuGogdp9iinunDrhn4Ji"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "cxNidLIlWQdbKQIoNjsOz"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2z0mgFYfTbE1nG0FQa0da0"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6gEQjJ7unQW3WMtpZHarRd"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "h8yd2ovMwsOGcsbKZlUjN"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5EGR9zDWf0mvbFuPUVo4mY"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3lpJO2UcKXbsn9YkmdMLBR"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5fSvEj8jvFXxU6qZ1JLlcH"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "61965yZn0GCmhMCz4q46EO"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-26T13:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-26T16:30-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "19aTHqFaJvq3sSFkhIhrVk",
+        "type": "Asset",
+        "createdAt": "2021-04-21T00:47:53.362Z",
+        "updatedAt": "2021-04-23T20:55:19.840Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC21 KidsFamilies"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/19aTHqFaJvq3sSFkhIhrVk/3d8ad8868de8714e06a388d950de8c75/CLC21_KidsFamilies.png",
+            "details": {
+              "size": 1550506,
+              "image": {
+                "width": 980,
+                "height": 686
+              }
+            },
+            "fileName": "CLC21_KidsFamilies.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6gw0GUYOirWJZK3fo8ZU8e",
+        "type": "Entry",
+        "createdAt": "2021-04-23T20:44:24.273Z",
+        "updatedAt": "2021-04-23T20:45:52.915Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "link"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Audience Poll"
+        },
+        "url": {
+          "en-US": "https://www.watermark.org/clc-poll"
+        },
+        "useInAppBrowser": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1ILBV0FSrQSEvW7AfpVNxy",
+        "type": "Entry",
+        "createdAt": "2019-03-08T16:42:11.061Z",
+        "updatedAt": "2021-04-23T20:26:28.777Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Wes B"
+        },
+        "name": {
+          "en-US": "Wes B"
+        },
+        "summary": {
+          "en-US": "Married Community Director"
+        },
+        "biography": {
+          "en-US": "__Married Community Director__  \n[Read Wes's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6oHkOouO8Qn9b3gI2ytQyQ"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4IAeJUb37yLCE8yHGmKq3o",
+        "type": "Entry",
+        "createdAt": "2021-04-15T22:09:58.758Z",
+        "updatedAt": "2021-04-23T20:25:46.828Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "T M"
+        },
+        "name": {
+          "en-US": "T M"
+        },
+        "summary": {
+          "en-US": "Director of International Engagement"
+        },
+        "biography": {
+          "en-US": "__Director of International Engagement__  \n[Read Tobin's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2isMXZi1QFynUnBxYwbS4T"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "21LaM8vYbUaoB9Imx6T98o",
+        "type": "Entry",
+        "createdAt": "2019-03-08T18:53:21.631Z",
+        "updatedAt": "2021-04-23T20:24:58.862Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "S S"
+        },
+        "name": {
+          "en-US": "S S"
+        },
+        "summary": {
+          "en-US": "Kid's Care Director"
+        },
+        "biography": {
+          "en-US": "__Kid's Care Director__  \n[Read Suzanne's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2umZwV45vN1hLofiXh90ry"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7z2YAnBZSqAlWxPo3xpv3a",
+        "type": "Entry",
+        "createdAt": "2019-03-08T17:09:37.876Z",
+        "updatedAt": "2021-04-23T20:24:14.949Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Susan C"
+        },
+        "name": {
+          "en-US": "Susan C"
+        },
+        "summary": {
+          "en-US": "re|engage Director"
+        },
+        "biography": {
+          "en-US": "__re|engage Director__  \n[Read Susan's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "38mx69Pcr8X758na6RD4D"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4XPMkF9gGafx5Jvfad9cGy",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:59:58.042Z",
+        "updatedAt": "2021-04-23T20:23:29.645Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "S S"
+        },
+        "name": {
+          "en-US": "S S"
+        },
+        "summary": {
+          "en-US": "Women’s Director of re:generation"
+        },
+        "biography": {
+          "en-US": "__Women's Director of re:generation__  \n[Read Sierra's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6eY2hlr2EDYiprRxJHqQ2e"
+            }
+          }
+        },
+        "isOnConferenceDirectory": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "XxSC4OwyWGQkXjByvkcni",
+        "type": "Entry",
+        "createdAt": "2019-03-06T15:51:02.662Z",
+        "updatedAt": "2021-04-23T20:22:40.327Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Shane E"
+        },
+        "name": {
+          "en-US": "Shane E"
+        },
+        "summary": {
+          "en-US": "Worship Leader"
+        },
+        "biography": {
+          "en-US": "__Worship Leader__  \n[Read Shane's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2QXPOAoka6WPDV9BoweHw8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7pNyzTk2GaasgMSjibJ6y7",
+        "type": "Entry",
+        "createdAt": "2019-03-06T15:49:41.438Z",
+        "updatedAt": "2021-04-23T20:21:56.646Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Shane B"
+        },
+        "name": {
+          "en-US": "Shane B"
+        },
+        "summary": {
+          "en-US": "Worship Leader"
+        },
+        "biography": {
+          "en-US": "__Worship Leader__  \n[Read Shane's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1tAHGuBb0uoje3ahkV1W3x"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5ok9SxjySz1A4eDErGcGfI",
+        "type": "Entry",
+        "createdAt": "2019-03-28T20:53:02.529Z",
+        "updatedAt": "2021-04-23T20:21:12.056Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "S H"
+        },
+        "name": {
+          "en-US": "S H"
+        },
+        "summary": {
+          "en-US": "Kids Director"
+        },
+        "biography": {
+          "en-US": "__Kids Director__  \n[Read Sean's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3ZhEKTN7R3bYro251IVVNh"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "255CJwGROYPxA38llQy9RH",
+        "type": "Entry",
+        "createdAt": "2019-03-08T17:14:04.879Z",
+        "updatedAt": "2021-04-23T20:20:40.084Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Scott M"
+        },
+        "name": {
+          "en-US": "Scott M"
+        },
+        "summary": {
+          "en-US": "IT Director"
+        },
+        "biography": {
+          "en-US": "__IT Director__  \n[Read Scott's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7pWWJzcZ1kFqN40G1wDyfO"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2Lm5CBJ0x5ELoR0OPmxHQ4",
+        "type": "Entry",
+        "createdAt": "2019-03-05T22:46:16.087Z",
+        "updatedAt": "2021-04-23T20:20:05.191Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Ryan N"
+        },
+        "name": {
+          "en-US": "Ryan N"
+        },
+        "summary": {
+          "en-US": "re|engage Director"
+        },
+        "biography": {
+          "en-US": "__re|engage Director__  \n[Read Ryan's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "28HAj6UWxBtl1pWpoXzyXm"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "dVJ4Qp5FdXktmpiUog40v",
+        "type": "Entry",
+        "createdAt": "2019-03-08T15:59:32.192Z",
+        "updatedAt": "2021-04-23T20:18:08.130Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Ryan G"
+        },
+        "name": {
+          "en-US": "Ryan G"
+        },
+        "summary": {
+          "en-US": "Men's Community Formation Director"
+        },
+        "biography": {
+          "en-US": "__Men's Community Formation Director__  \n[Read Ryan's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4oQPsGHozrTPRuoJTzpEwZ"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7zAmCS4SaRERDKuH85B7n6",
+        "type": "Entry",
+        "createdAt": "2019-03-28T20:24:06.575Z",
+        "updatedAt": "2021-04-23T20:17:26.292Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "R G"
+        },
+        "name": {
+          "en-US": "R G"
+        },
+        "summary": {
+          "en-US": "Director of Watermark Resources"
+        },
+        "biography": {
+          "en-US": "__Director of Watermark Resources__  \n[Read Robert's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4VDCCPt9eJIbI1dUrlFLUh"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4CQPw20Ho6VQB724XK0lRI",
+        "type": "Entry",
+        "createdAt": "2019-03-29T17:05:36.700Z",
+        "updatedAt": "2021-04-23T20:16:42.329Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "R L"
+        },
+        "name": {
+          "en-US": "R L"
+        },
+        "summary": {
+          "en-US": "Junior High Women's Coordinator"
+        },
+        "biography": {
+          "en-US": "__Junior High Women's Coordinator__  \n[Read Rebe's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2D2HhpVhOoAbhBXVh2RXGR"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2dVyGMdo3yydeL0QMuc5Cx",
+        "type": "Entry",
+        "createdAt": "2019-03-07T15:40:46.091Z",
+        "updatedAt": "2021-04-23T20:15:53.805Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Rachel S"
+        },
+        "name": {
+          "en-US": "Rachel S"
+        },
+        "summary": {
+          "en-US": "Director of Children's Midweek Ministry"
+        },
+        "biography": {
+          "en-US": "__Director of Children's Midweek Ministry__  \n[Read Rachel's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5wTGb6GNxaH2cb2a3pJHoG"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7HTbvxdIO4bKe3KnrlwfHP",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:51:45.521Z",
+        "updatedAt": "2021-04-23T20:15:11.490Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Rachel K"
+        },
+        "name": {
+          "en-US": "Rachel K"
+        },
+        "summary": {
+          "en-US": "Benefits Coordinator"
+        },
+        "biography": {
+          "en-US": "__Benefits Coordinator__  \n[Read Rachel's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5vFukfeOiDYchI6sUkhuC3"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2m6Lb9D8MZ3aRFkRs8mw5u",
+        "type": "Entry",
+        "createdAt": "2019-03-21T01:13:31.446Z",
+        "updatedAt": "2021-04-23T20:14:21.657Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Paula V"
+        },
+        "name": {
+          "en-US": "Paula V"
+        },
+        "summary": {
+          "en-US": "Kids Curriculum Coordinator"
+        },
+        "biography": {
+          "en-US": "__Kids Curriculum Coordinator__  \n[Read Paula's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1SYcUuabpkARxYxbOkNxmc"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4XG2FMG7onjwgflRjyu01I",
+        "type": "Entry",
+        "createdAt": "2019-03-07T15:34:48.263Z",
+        "updatedAt": "2021-04-23T20:13:28.131Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Noah B"
+        },
+        "name": {
+          "en-US": "Noah B"
+        },
+        "summary": {
+          "en-US": "Married Community Director"
+        },
+        "biography": {
+          "en-US": "__Married Community Director__  \n[Read Noah's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "33CPxXWcnfodau5Dyew0kd"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "nextPageUrl": "https://cdn.contentful.com/spaces/vsbnbtnlrnnr/environments/master/sync?sync_token=wonDrcKnRgcSOF4-wrDCgcKefWzCgsOxXQhzISXDm3fCoMOIw5fDk8OTw6zDsTzCkcKcKwFVwrwNd8OSRMObw74HbhjClBDDgSjCuMKIPxM_MMO8w7PCnMKJwqNmw7QFw7xiJARPw6rDlm3Drio1wpfDvWnDnsO-w4XCmhUew5w3w5TCh8OLAsKFwoBIwpZew5QhbsKdNsOvw6ZOeFcfGMO1wrYcw4F1wpjCogvDsMOFw7zCi8OBPMOew5UVJsK2ZcKUw4E0EsKmfBjDshPCpsKnGsKuDMKKWsO4"
+}

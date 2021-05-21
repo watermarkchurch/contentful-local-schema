@@ -1,0 +1,235 @@
+type Query {
+  announcement(id: String): Announcement
+  announcementCollection(skip: String, limit: String): AnnouncementCollection
+  breakouts(id: String): Breakouts
+  breakoutsCollection(skip: String, limit: String): BreakoutsCollection
+  conference(id: String): Conference
+  conferenceCollection(skip: String, limit: String): ConferenceCollection
+  day(id: String): Day
+  dayCollection(skip: String, limit: String): DayCollection
+  event(id: String): Event
+  eventCollection(skip: String, limit: String): EventCollection
+  link(id: String): Link
+  linkCollection(skip: String, limit: String): LinkCollection
+  location(id: String): Location
+  locationCollection(skip: String, limit: String): LocationCollection
+  speaker(id: String): Speaker
+  speakerCollection(skip: String, limit: String): SpeakerCollection
+  track(id: String): Track
+  trackCollection(skip: String, limit: String): TrackCollection
+}
+
+type Announcement implements Entry {
+  internalTitle: String
+  title: String
+  summary: String
+  description: String
+  mediaUrl: String
+  publishAt: String
+  art: Asset
+}
+
+interface Entry {
+  sys: Sys
+  contentfulMetadata: ContentfulMetadata
+}
+
+type Sys {
+  id: String
+  spaceId: String
+  environmentId: String
+}
+
+type ContentfulMetadata {
+  tags: [ContentfulTag]!
+}
+
+type ContentfulTag {
+  id: String!
+  name: String!
+}
+
+type Asset {
+  sys: Sys
+  contentfulMetadata: ContentfulMetadata
+  title: String
+  description: String
+  contentType: String
+  fileName: String
+  url: String
+  size: Int
+  width: Int
+  height: Int
+}
+
+type AnnouncementCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Announcement]!
+}
+
+type Breakouts implements Entry {
+  internalTitle: String
+  title: String
+  summary: String
+  description: String
+  breakouts: EventCollection
+  startTime: String
+  endTime: String
+  art: Asset
+}
+
+type EventCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Event]!
+}
+
+type Event implements Entry {
+  internalTitle: String
+  title: String
+  summary: String
+  description: String
+  speakers: SpeakerCollection
+  location: Location
+  downloads: AssetCollection
+  startTime: String
+  endTime: String
+  art: Asset
+  eventType: EventEventType
+  capacity: Int
+}
+
+type SpeakerCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Speaker]!
+}
+
+type Speaker implements Entry {
+  internalTitle: String
+  name: String
+  summary: String
+  biography: String
+  photo: Asset
+  isOnConferenceDirectory: Boolean
+  talks: EventCollection
+}
+
+type Location implements Entry {
+  internalTitle: String
+  title: String
+  summary: String
+  map: Asset
+}
+
+type AssetCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Asset]!
+}
+
+enum EventEventType {
+  Breakout
+  Showcase
+  Workshop
+}
+
+type BreakoutsCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Breakouts]!
+}
+
+type Conference implements Entry {
+  internalTitle: String
+  title: String
+  code: String
+  days: DayCollection
+  announcements: AnnouncementCollection
+  tracks: TrackCollection
+  maps: LocationCollection
+  resources: ConferenceResourceCollection
+}
+
+type DayCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Day]!
+}
+
+type Day implements Entry {
+  internalTitle: String
+  title: String
+  date: String
+  summary: String
+  scheduleItem: DayScheduleItemCollection
+}
+
+type DayScheduleItemCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [DayScheduleItem]!
+}
+
+union DayScheduleItem = Breakouts | Event
+
+type TrackCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Track]!
+}
+
+type Track implements Entry {
+  internalTitle: String
+  title: String
+  summary: String
+  description: String
+  scheduleItems: EventCollection
+  art: Asset
+}
+
+type LocationCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Location]!
+}
+
+type ConferenceResourceCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [ConferenceResource]!
+}
+
+union ConferenceResource = Announcement | Link
+
+type Link implements Entry {
+  title: String
+  url: String
+  useInAppBrowser: Boolean
+}
+
+type ConferenceCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Conference]!
+}
+
+type LinkCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Link]!
+}
+

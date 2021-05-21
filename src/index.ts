@@ -1,5 +1,8 @@
+import type { Resolvers } from "@apollo/client"
 import { GraphQLSchema } from "graphql"
+import { ContentfulDataSource } from "./dataSource"
 import defaults from "./defaults"
+import ResolverBuilder from "./resolver-builder"
 import SchemaBuilder, { SchemaBuilderOptions } from "./schema-builder"
 import { SchemaDownloader, SchemaDownloaderOptions } from "./schema-downloader"
 
@@ -32,4 +35,17 @@ export async function createSchema(
     ...defaults,
     ...options
   }).build()
+}
+
+export async function createLocalResolvers(
+  dataSource: ContentfulDataSource,
+  options?: Partial<SchemaBuilderOptions>
+): Promise<Resolvers> {
+  return await new ResolverBuilder(
+    dataSource,
+    {
+      ...defaults,
+      ...options
+    }
+  ).build()
 }

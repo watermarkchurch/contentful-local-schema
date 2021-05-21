@@ -1,0 +1,5807 @@
+{
+  "sys": {
+    "type": "Array"
+  },
+  "items": [
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1CzEEMjnxk9ETPxwJVYtXI",
+        "type": "Entry",
+        "createdAt": "2019-03-07T15:52:27.636Z",
+        "updatedAt": "2021-04-23T20:12:25.930Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Nate W"
+        },
+        "name": {
+          "en-US": "Nate W"
+        },
+        "summary": {
+          "en-US": "Director of Equipping & Apologetics"
+        },
+        "biography": {
+          "en-US": "__Director of Equipping & Apologetics__  \n[Read Nathan's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "GgJ4mFbF1Uh9ijSpBEtQp"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1z9cxLxyVW62Aub5koH3ul",
+        "type": "Entry",
+        "createdAt": "2021-04-21T16:51:08.267Z",
+        "updatedAt": "2021-04-23T20:11:43.068Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "N M"
+        },
+        "name": {
+          "en-US": "N M"
+        },
+        "summary": {
+          "en-US": "Safety & Security Director"
+        },
+        "biography": {
+          "en-US": "__Safety & Security Director__  \n[Read Nate's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3otWskJUm0L77XKfAXGLgt"
+            }
+          }
+        },
+        "isOnConferenceDirectory": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2SeONE5F3AbUA62doszGpS",
+        "type": "Entry",
+        "createdAt": "2019-03-08T17:12:17.075Z",
+        "updatedAt": "2021-04-23T20:10:57.349Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Nate G"
+        },
+        "name": {
+          "en-US": "Nate G"
+        },
+        "summary": {
+          "en-US": "Watermark Resources Director"
+        },
+        "biography": {
+          "en-US": "__Watermark Resources Director__  \n[Read Nate's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3QRQR5gwEx3R6tWMRlar9g"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6XzqR9zG7ZxUEnjbOIR2kc",
+        "type": "Entry",
+        "createdAt": "2019-03-08T19:04:38.461Z",
+        "updatedAt": "2021-04-23T20:10:08.368Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "M M"
+        },
+        "name": {
+          "en-US": "M M"
+        },
+        "summary": {
+          "en-US": "Director of Women’s Community & Women’s Director of the Watermark Institute"
+        },
+        "biography": {
+          "en-US": "__Director of Women's Community & Women's Director of the Watermark Institute__  \n[Read Melissa's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7mmu6dg2OCMKthiSIdF4jP"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "YJyhyr47qwljWPJa0GD5K",
+        "type": "Entry",
+        "createdAt": "2019-03-28T19:51:22.351Z",
+        "updatedAt": "2021-04-23T20:09:05.805Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "All Business"
+        },
+        "name": {
+          "en-US": "All Business"
+        },
+        "summary": {
+          "en-US": "Director of Operations"
+        },
+        "biography": {
+          "en-US": "__Director of Operations__  \n[Read Luke's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4C4Zx46Vg2Cbw7kIK5WMaM"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4wWoKaGQlGFf8JgkIbHCvP",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:42:09.711Z",
+        "updatedAt": "2021-04-23T20:08:24.745Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "L L"
+        },
+        "name": {
+          "en-US": "L L"
+        },
+        "summary": {
+          "en-US": "Single Adults Coordinator"
+        },
+        "biography": {
+          "en-US": "__Single Adults Coordinator__  \n[Read Lindsey's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "f0cSpp5li0jaxy8LVqKoB"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "588Yatw1rliI1AIyjw8Yq9",
+        "type": "Entry",
+        "createdAt": "2021-04-22T14:32:17.724Z",
+        "updatedAt": "2021-04-23T20:06:00.647Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "L J"
+        },
+        "name": {
+          "en-US": "L J"
+        },
+        "summary": {
+          "en-US": "Young Adults Women's Coordinator"
+        },
+        "biography": {
+          "en-US": "__Young Adults Women's Coordinator__  \n[Read Lauren's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3z9IYxHLAX1p7o7dKnD4g"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "254LBuFRZYqT0uE3TZ5amI",
+        "type": "Entry",
+        "createdAt": "2019-03-08T18:43:13.710Z",
+        "updatedAt": "2021-04-23T20:05:07.524Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Lance S"
+        },
+        "name": {
+          "en-US": "Lance S"
+        },
+        "summary": {
+          "en-US": "Director of Premarital Ministry"
+        },
+        "biography": {
+          "en-US": "__Director of Premarital Ministry__  \n[Read Lance's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "ysuYsY9NZ5N346t5ikOF3"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3BnUpqOzxOOunWhLJMtv3E",
+        "type": "Entry",
+        "createdAt": "2021-04-21T16:50:13.832Z",
+        "updatedAt": "2021-04-23T20:04:30.633Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "K I"
+        },
+        "name": {
+          "en-US": "K I"
+        },
+        "summary": {
+          "en-US": "Elementary Director"
+        },
+        "biography": {
+          "en-US": "__Elementary Director__  \n[Read KyLea's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2exz8TDHVrdjSMuI4RlCiP"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6ABq3dUJiSMfBJatclJlrg",
+        "type": "Entry",
+        "createdAt": "2019-03-08T18:33:26.832Z",
+        "updatedAt": "2021-04-23T20:03:44.731Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Karen M"
+        },
+        "name": {
+          "en-US": "Karen M"
+        },
+        "summary": {
+          "en-US": "Equipping Coordinator"
+        },
+        "biography": {
+          "en-US": "__Equipping Coordinator__  \n[Read Karen's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4fL1N7vR0g4Mpb3ODByWfI"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4rX3apRkjlP2RT90arNnEn",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:48:55.481Z",
+        "updatedAt": "2021-04-23T20:02:57.854Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "J J II"
+        },
+        "name": {
+          "en-US": "J J II"
+        },
+        "summary": {
+          "en-US": "Young Adults Director of Volunteers"
+        },
+        "biography": {
+          "en-US": "__Young Adults Director of Volunteers__  \n[Read Josiah's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1nc3wdgvjTN2l184BtGUYS"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7gLgknGNm7kHS8xu0a18he",
+        "type": "Entry",
+        "createdAt": "2021-04-22T14:38:32.408Z",
+        "updatedAt": "2021-04-23T20:01:56.537Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "J O'N"
+        },
+        "name": {
+          "en-US": "J O'N"
+        },
+        "summary": {
+          "en-US": "Worship Coordinator"
+        },
+        "biography": {
+          "en-US": "__Worship Coordinator__  \n[Read Josh's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "70cqDepYFfE1rhI14Ds6BV"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3vLLcoC2mo3tYKTWVQdorV",
+        "type": "Entry",
+        "createdAt": "2019-03-29T17:00:53.857Z",
+        "updatedAt": "2021-04-23T20:01:13.508Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "J J"
+        },
+        "name": {
+          "en-US": "J J"
+        },
+        "summary": {
+          "en-US": "Technical Director"
+        },
+        "biography": {
+          "en-US": "__Technical Director__  \n[Read Jonathan's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1EZn5mYH0hO3Yw2J2dr7lJ"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "18pJfw6ZzPOR6vUXMsR1E9",
+        "type": "Entry",
+        "createdAt": "2019-03-05T22:55:17.581Z",
+        "updatedAt": "2021-04-23T20:00:26.344Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "J A"
+        },
+        "name": {
+          "en-US": "J A"
+        },
+        "summary": {
+          "en-US": "Worship Director"
+        },
+        "biography": {
+          "en-US": "__Worship Director__  \n[Read Jon's bio](https://www.watermark.org/team"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4k0ST4ooNSnGZUmR2aOcih"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3UYDdBsorYLjDlfY3UKEtx",
+        "type": "Entry",
+        "createdAt": "2019-03-08T15:56:45.138Z",
+        "updatedAt": "2021-04-23T19:59:39.913Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "John E"
+        },
+        "name": {
+          "en-US": "John E"
+        },
+        "summary": {
+          "en-US": "Sr. Director of Pastoral Care & Director of re:generation"
+        },
+        "biography": {
+          "en-US": "__Sr. Director of Pastor Care & Director of re:generation__  \n[Read John's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2tlp41Gjao2pNTuZuqBZ2O"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "hLWz26KqeVyEHBVflq4uZ",
+        "type": "Entry",
+        "createdAt": "2019-03-08T16:06:56.332Z",
+        "updatedAt": "2021-04-23T19:59:25.907Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "John M"
+        },
+        "name": {
+          "en-US": "John M"
+        },
+        "summary": {
+          "en-US": "Sr. Director of Watermark Resources & Marriage Ministry"
+        },
+        "biography": {
+          "en-US": "__Sr. Director of Watermark Resources & Marriage Ministry__  \n[Read John's bio](https://www.watermark.org/team"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "68LCLupvpECy8fFlQkzqaC"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7Kj8RBnDzk0s7BvMu3Bwab",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:43:15.717Z",
+        "updatedAt": "2021-04-23T19:57:29.224Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "J C"
+        },
+        "name": {
+          "en-US": "J C"
+        },
+        "summary": {
+          "en-US": "Director of Staff Development"
+        },
+        "biography": {
+          "en-US": "__Director of Staff Development__  \n[Read John's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1sDhqAtda4bdj8ahoLyFfF"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2tkxwkwvh7Q8QUgwncuKNH",
+        "type": "Entry",
+        "createdAt": "2021-04-22T14:28:30.621Z",
+        "updatedAt": "2021-04-23T19:56:39.364Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "J T"
+        },
+        "name": {
+          "en-US": "J T"
+        },
+        "summary": {
+          "en-US": "Director of Newly Married Ministries"
+        },
+        "biography": {
+          "en-US": "__Director of Newly Married Ministries__  \n[Read Joey's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4F868SUtlV2lBvRiczFisT"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2iMN59lb2YnvIZx0o4rVHA",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:39:48.041Z",
+        "updatedAt": "2021-04-23T19:55:47.856Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "J W"
+        },
+        "name": {
+          "en-US": "J W"
+        },
+        "summary": {
+          "en-US": "Married Community Director"
+        },
+        "biography": {
+          "en-US": "__Married Community Director__  \n[Read Jim's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "Jw5UKcIDDr1lQ0be4B4yk"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "66jpw0uQyvx3Wcel3oYnP6",
+        "type": "Entry",
+        "createdAt": "2019-03-08T18:45:52.522Z",
+        "updatedAt": "2021-04-23T19:55:03.609Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Jim P"
+        },
+        "name": {
+          "en-US": "Jim P"
+        },
+        "summary": {
+          "en-US": "Director of Facilities"
+        },
+        "biography": {
+          "en-US": "__Director of Facilities__  \n[Read Jim's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "73ZzqPZFmARGPhVc96mE54"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6XCgExVnKFyLFBY5qD7rgG",
+        "type": "Entry",
+        "createdAt": "2019-03-28T20:44:57.451Z",
+        "updatedAt": "2021-04-23T19:54:19.213Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "J H"
+        },
+        "name": {
+          "en-US": "J H"
+        },
+        "summary": {
+          "en-US": "Director of High School Ministry"
+        },
+        "biography": {
+          "en-US": "__Director of High School Ministry__  \n[Read Jermaine's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1VTl5bDjXiPpGTvbYjVumD"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3fYfCIq7kpWoOQIG43er9K",
+        "type": "Entry",
+        "createdAt": "2019-03-06T16:50:47.674Z",
+        "updatedAt": "2021-04-23T19:53:13.346Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Jeff W"
+        },
+        "name": {
+          "en-US": "Jeff W"
+        },
+        "summary": {
+          "en-US": "Director of External Focus"
+        },
+        "biography": {
+          "en-US": "__Director of External Focus__  \n[Read Jeff's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4YwEYy4BDqI0sXza2NP1jl"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "44lBGhIZSQ98hKImRZciLi",
+        "type": "Entry",
+        "createdAt": "2021-04-22T14:31:17.510Z",
+        "updatedAt": "2021-04-23T19:52:14.628Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "JD R"
+        },
+        "name": {
+          "en-US": "JD R"
+        },
+        "summary": {
+          "en-US": "Young Adults Creative Director"
+        },
+        "biography": {
+          "en-US": "__Young Adults Creative Director__  \n[Read JD's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7oVAJKMs2QJ9wdmm02TU29"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1VgRzseR17vWoxA1GqzFeY",
+        "type": "Entry",
+        "createdAt": "2019-03-28T20:25:51.211Z",
+        "updatedAt": "2021-04-23T19:51:17.389Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "H C"
+        },
+        "name": {
+          "en-US": "H C"
+        },
+        "summary": {
+          "en-US": "Watermark Resources Event Coordinator"
+        },
+        "biography": {
+          "en-US": "__Watermark Resources Event Coordinator__  \n[Read Holly's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5JiHWG3k8jUX4pap0zL847"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3ihNPbb8UKMfpTPSf8Bo4x",
+        "type": "Entry",
+        "createdAt": "2021-04-22T14:36:43.052Z",
+        "updatedAt": "2021-04-23T19:50:08.562Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "H B"
+        },
+        "name": {
+          "en-US": "H B"
+        },
+        "summary": {
+          "en-US": "Worship Director"
+        },
+        "biography": {
+          "en-US": "__Worship Director__  \n[Read Hayden's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "46oKRXu2qne8quODAMgWtD"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1qmn03lTCKsBsIWINSxprV",
+        "type": "Entry",
+        "createdAt": "2019-03-28T20:49:46.757Z",
+        "updatedAt": "2021-04-23T19:49:13.869Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "H R"
+        },
+        "name": {
+          "en-US": "H R"
+        },
+        "summary": {
+          "en-US": "Director of Community and Rockwall Midweek MInistry"
+        },
+        "biography": {
+          "en-US": "__Director of Community and Rockwall Midweek Ministry__  \n[Read Harrison's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6R9kCajFMOIBMKuE1ayMt6"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "44HUay8fEHpTfkWTcQQh4E",
+        "type": "Entry",
+        "createdAt": "2019-03-05T22:23:11.937Z",
+        "updatedAt": "2021-04-23T19:47:49.161Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Gigi H"
+        },
+        "name": {
+          "en-US": "Gigi H"
+        },
+        "summary": {
+          "en-US": "Women's Equipping Director"
+        },
+        "biography": {
+          "en-US": "__Women's Equipping Director__  \n[Read Gigi's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "59q5E54zQ8YKsjdELuUNKF"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2hrtIzzAxR2Fu32ogeaE98",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:58:30.610Z",
+        "updatedAt": "2021-04-23T19:46:58.757Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "E M"
+        },
+        "name": {
+          "en-US": "E M"
+        },
+        "summary": {
+          "en-US": "Frontlines Director"
+        },
+        "biography": {
+          "en-US": "__Frontlines Director__  \n[Read Ethan's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "34mDR12ZRnvNxb854AFtW3"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "74brjul1vQumxWRv772RXG",
+        "type": "Entry",
+        "createdAt": "2021-04-22T14:37:43.612Z",
+        "updatedAt": "2021-04-23T19:46:07.987Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "E N"
+        },
+        "name": {
+          "en-US": "E N"
+        },
+        "summary": {
+          "en-US": "Worship Director"
+        },
+        "biography": {
+          "en-US": "__Worship Director__  \n[Read Erik's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2Om3tDAzgKGhQXIyY31zJS"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4Wreaar5vDUDS5Cqcm2DFl",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:04:36.463Z",
+        "updatedAt": "2021-04-23T19:45:21.549Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "E H"
+        },
+        "name": {
+          "en-US": "E H"
+        },
+        "summary": {
+          "en-US": "Watermark Resources Director of Operations"
+        },
+        "biography": {
+          "en-US": "__Watermark Resources Director of Operations__  \n[Read Eric's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "19jXfBCNsrKmtEk5f9Iq4Z"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "gaVZ5b0fPVQ9TNq92AgvN",
+        "type": "Entry",
+        "createdAt": "2021-04-21T15:42:38.498Z",
+        "updatedAt": "2021-04-23T19:44:33.759Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "E M II"
+        },
+        "name": {
+          "en-US": "E M II"
+        },
+        "summary": {
+          "en-US": "Frontlines Coordinator"
+        },
+        "biography": {
+          "en-US": "__Frontlines Coordinator__  \n[Read Emma's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4CCntMhr9NSuUcmnuYY7gd"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4GuIM6lqJumy45nKgMuGsG",
+        "type": "Entry",
+        "createdAt": "2021-04-22T14:33:45.048Z",
+        "updatedAt": "2021-04-23T19:43:07.428Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "E D"
+        },
+        "name": {
+          "en-US": "E D"
+        },
+        "summary": {
+          "en-US": "Young Adults Resources Coordinator"
+        },
+        "biography": {
+          "en-US": "__Young Adults Resources Coordinator__  \n[Read Emma's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5f3AVrJQ7I7fY6ZgArVXsf"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1u1DhfYJkaaOsEI8BZ0tRm",
+        "type": "Entry",
+        "createdAt": "2021-04-22T14:35:39.609Z",
+        "updatedAt": "2021-04-23T19:42:09.923Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "D F"
+        },
+        "name": {
+          "en-US": "D F"
+        },
+        "summary": {
+          "en-US": "Worship Coordinator"
+        },
+        "biography": {
+          "en-US": "__Worship Coordinator__  \n[Read Davy's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7nupzXjbck12MmPtUtLUNE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "kpSouTRN116duIzHh7PWt",
+        "type": "Entry",
+        "createdAt": "2019-03-06T16:42:03.778Z",
+        "updatedAt": "2021-04-23T19:39:47.151Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "David P"
+        },
+        "name": {
+          "en-US": "David P"
+        },
+        "summary": {
+          "en-US": "Campus Pastor Team (Kids, Students, Arts, and Communications)"
+        },
+        "biography": {
+          "en-US": "__Dallas Campus Pastor__  \n[Read David's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "ZXWr8mC0ODcfrvR2n1J0Z"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "Tdp808EAfWpbTOjvU98pC",
+        "type": "Entry",
+        "createdAt": "2019-03-07T19:20:13.426Z",
+        "updatedAt": "2021-04-23T18:27:06.768Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "David M"
+        },
+        "name": {
+          "en-US": "David M"
+        },
+        "summary": {
+          "en-US": "Young Adults Director"
+        },
+        "biography": {
+          "en-US": "__Young Adults Director__  \n[Read David's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5To2YGm9T15qRER9VEdFjs"
+            }
+          }
+        },
+        "talks": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5HXZ8ez7ZyiMOGZ2Smgvrr"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "42efIaeSmrKvXSUk2wzDpu",
+        "type": "Entry",
+        "createdAt": "2019-03-29T16:58:29.916Z",
+        "updatedAt": "2021-04-23T18:26:31.808Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "D M"
+        },
+        "name": {
+          "en-US": "D M"
+        },
+        "summary": {
+          "en-US": "Video Systems Engineer"
+        },
+        "biography": {
+          "en-US": "__Video Systems Engineer__  \n[Read Daniel's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3ifwgGmCA6twIF4fR1FZgY"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5DjLuvacCX04njFPQMp9yh",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:44:56.747Z",
+        "updatedAt": "2021-04-23T18:26:08.443Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "C F"
+        },
+        "name": {
+          "en-US": "C F"
+        },
+        "summary": {
+          "en-US": "Social Media Channel Manager"
+        },
+        "biography": {
+          "en-US": "__Social Media Channel Manager__  \n[Read Courtney's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1mA4q7D0kOdqtu6mzarIAV"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3wphPeJHOMtDrfJCB5a3uX",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:00:32.429Z",
+        "updatedAt": "2021-04-23T18:25:43.957Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "C W"
+        },
+        "name": {
+          "en-US": "C W"
+        },
+        "summary": {
+          "en-US": "College Director"
+        },
+        "biography": {
+          "en-US": "__College Director__  \n[Read Cooper's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "eEqxieZUL2LdMtzrI7EAL"
+            }
+          }
+        },
+        "talks": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "BLzxmjyZCS9UGkRevVnIS"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2DpyHInlPkk5vI5okjRuPf",
+        "type": "Entry",
+        "createdAt": "2019-03-08T18:07:54.072Z",
+        "updatedAt": "2021-04-23T18:25:14.793Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Connor B"
+        },
+        "name": {
+          "en-US": "Connor B"
+        },
+        "summary": {
+          "en-US": "Frisco Campus Pastor"
+        },
+        "biography": {
+          "en-US": "__Frisco Campus Pastor__  \n[Read Connor's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4GnZf0UKX81AGS1K0fo9kV"
+            }
+          }
+        },
+        "talks": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "76afadgxGYzS3MTeZFx0w3"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4fDUb0v4q0YxG7h122tqHB"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7G3FFTqlvzIcjuIxFoaSKK"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "56Vme2T12LJrdIvaQuIvon",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:59:54.166Z",
+        "updatedAt": "2021-04-23T18:24:50.267Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "C E"
+        },
+        "name": {
+          "en-US": "C E"
+        },
+        "summary": {
+          "en-US": "Men’s Director of re:generation"
+        },
+        "biography": {
+          "en-US": "__Men's Director of re:generation__  \n[Read Colby's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6EbaUIXTH7JDeRIw9g3gJV"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "W7kkj2nmxS7r2b9P03eAc",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:03:42.120Z",
+        "updatedAt": "2021-04-23T18:24:30.858Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "C M"
+        },
+        "name": {
+          "en-US": "C M"
+        },
+        "summary": {
+          "en-US": "Communications Director"
+        },
+        "biography": {
+          "en-US": "__Communications Director__  \n[Read Cindy's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4ssH3PPRPQrkf38QN3SyuC"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7y9Sv0BRhaDBBsfGlGCdKK",
+        "type": "Entry",
+        "createdAt": "2021-04-21T16:48:35.086Z",
+        "updatedAt": "2021-04-23T18:24:08.648Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "C C"
+        },
+        "name": {
+          "en-US": "C C"
+        },
+        "summary": {
+          "en-US": "Executive Director of Watermark Health"
+        },
+        "biography": {
+          "en-US": "__Executive Director of Watermark Healh__  \n[Read Christy's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1J1YGjTX2wcAEtI6HBQIby"
+            }
+          }
+        },
+        "isOnConferenceDirectory": {
+          "en-US": true
+        },
+        "talks": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3F7LZsObmjYUf0g9RBCVOx"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "24R6Dazana1KBgNMgZa8Dy"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1Oui7Zk6bLxFX5ilBqdRz7",
+        "type": "Entry",
+        "createdAt": "2019-03-28T20:55:35.192Z",
+        "updatedAt": "2021-04-23T18:23:48.860Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "C M"
+        },
+        "name": {
+          "en-US": "C M"
+        },
+        "summary": {
+          "en-US": "Film Team Director"
+        },
+        "biography": {
+          "en-US": "__Film Team Director__  \n[Read Chris' bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4elKSWId3RqhXEUmik9WC4"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7IScyDUVgVH0gk65QKodj5",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:53:40.232Z",
+        "updatedAt": "2021-04-23T18:22:29.849Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "C S"
+        },
+        "name": {
+          "en-US": "C S"
+        },
+        "summary": {
+          "en-US": "Executive Director of the Watermark Community Development Corporation (CDC)"
+        },
+        "biography": {
+          "en-US": "__Executive Director of the Watermark Community Development Corporation (CDC)__  \n[Read Carson's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2lqqrYf42Bq184nUK6NeYl"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "abS5kUjwon56DyxnsQQIP",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:02:36.160Z",
+        "updatedAt": "2021-04-23T18:21:42.121Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "C N"
+        },
+        "name": {
+          "en-US": "C N"
+        },
+        "summary": {
+          "en-US": "Director of Women's Ministry Teams"
+        },
+        "biography": {
+          "en-US": "__Director of Women's Ministry Teams__  \n[Read Callie's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5atvxzdXSoaYgv7g4CMWtt"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "15EbTuhXIiIJfL2A51xiK9",
+        "type": "Entry",
+        "createdAt": "2019-03-08T16:48:48.159Z",
+        "updatedAt": "2021-04-23T18:21:04.097Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "C V W"
+        },
+        "name": {
+          "en-US": "C V W"
+        },
+        "summary": {
+          "en-US": "Senior Communications Director"
+        },
+        "biography": {
+          "en-US": "__Senior Communications Director__  \n[Read Caitlin's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4Ztmq8hkApIHEUCy5mh74Q"
+            }
+          }
+        },
+        "talks": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "44yBViyAQ3m6yADjd8e7x2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6YNiUfKEqjHlljCz4mhSJ9",
+        "type": "Entry",
+        "createdAt": "2019-03-06T14:20:55.983Z",
+        "updatedAt": "2021-04-23T18:20:31.620Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Bruce K"
+        },
+        "name": {
+          "en-US": "Bruce K"
+        },
+        "summary": {
+          "en-US": "Director of Life Initiatives "
+        },
+        "biography": {
+          "en-US": "__Director of Life Initiatives__  \n[Read Bruce's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6NR28QDfMuwT87xV9J6bjg"
+            }
+          }
+        },
+        "isOnConferenceDirectory": {
+          "en-US": true
+        },
+        "talks": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5AcgyipuCy0ziJQeGLJ7i4"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6lyhHVBSmCGLq3ixnCEtLD"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4ol24lpUkCHWsjeK4hXtXV",
+        "type": "Entry",
+        "createdAt": "2019-03-08T19:02:42.560Z",
+        "updatedAt": "2021-04-23T18:19:48.524Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "B B"
+        },
+        "name": {
+          "en-US": "B B"
+        },
+        "summary": {
+          "en-US": "Director of Single Adults & Men’s Director of the Watermark Institute"
+        },
+        "biography": {
+          "en-US": "__Director of Single Adults & Men's Director of the Watermark Institute__  \n[Read Braun's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3AaidGwstlAli6gc4ye9G8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "489KH56xbDlUnIsXD4wHzr",
+        "type": "Entry",
+        "createdAt": "2019-03-28T19:47:04.121Z",
+        "updatedAt": "2021-04-23T18:19:23.629Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Hot Rod"
+        },
+        "name": {
+          "en-US": "Hot Rod"
+        },
+        "summary": {
+          "en-US": "Men’s Gather & Single Parent Family Director"
+        },
+        "biography": {
+          "en-US": "__Men's Gather & Single Parent Family Director__  \n[Read Bobby's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2nlMNdzh5WH2yLGnIMzhE1"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2Jg5Z1B0dJXqgLVzCoj3VJ",
+        "type": "Entry",
+        "createdAt": "2019-03-08T16:20:05.677Z",
+        "updatedAt": "2021-04-23T18:18:55.188Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Bobby C"
+        },
+        "name": {
+          "en-US": "Bobby C"
+        },
+        "summary": {
+          "en-US": "Director of Equipping"
+        },
+        "biography": {
+          "en-US": "__Director of Equipping__  \n[Read Bobby's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5mXNo2Zg4UunZlNUusragL"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1UMDRyis7j8IFfLFn6RKNZ",
+        "type": "Entry",
+        "createdAt": "2019-03-08T16:13:51.147Z",
+        "updatedAt": "2021-04-23T18:18:34.538Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Blake H"
+        },
+        "name": {
+          "en-US": "Blake H"
+        },
+        "summary": {
+          "en-US": "Campus Pastor Team (Institute, Equipping, Marriage, and Single Adults)"
+        },
+        "biography": {
+          "en-US": "__Campus Pastor Team (Institute, Equipping, Marriage, and Single Adults)__  \n[Read Blake's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5tpiNKCKVfK7krbbP2SfFK"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "68H8HQiyQAbII2njHZyEvE",
+        "type": "Entry",
+        "createdAt": "2019-03-07T15:25:43.094Z",
+        "updatedAt": "2021-04-23T18:18:03.136Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Ben H"
+        },
+        "name": {
+          "en-US": "Ben H"
+        },
+        "summary": {
+          "en-US": "Director of Serving"
+        },
+        "biography": {
+          "en-US": "__Director of Serving__  \n[Read Benson's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1h982cABY26EnrCZMQL7Z1"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "aguLiucqhOe9SUQXxqt9b",
+        "type": "Entry",
+        "createdAt": "2019-03-29T16:59:46.456Z",
+        "updatedAt": "2021-04-23T18:17:36.225Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "A H"
+        },
+        "name": {
+          "en-US": "A H"
+        },
+        "summary": {
+          "en-US": "Video Content Director"
+        },
+        "biography": {
+          "en-US": "__Video Content Director__  \n[Read Alex's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2OEM4E59Ym9hNO0Js7CBRf"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6M69eJw8CEVK3qh7DBSPZx",
+        "type": "Entry",
+        "createdAt": "2019-03-28T23:21:31.011Z",
+        "updatedAt": "2021-04-23T18:17:03.627Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "A H"
+        },
+        "name": {
+          "en-US": "A H"
+        },
+        "summary": {
+          "en-US": "Creative Consultant"
+        },
+        "biography": {
+          "en-US": "__Creative Consultant__  \n[Read Alaina's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4EvHGZrZgyTkqAQfA2LCcn"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7gtlKsBXAp0H1LWsPxmsq8",
+        "type": "Entry",
+        "createdAt": "2021-04-15T22:29:31.653Z",
+        "updatedAt": "2021-04-23T18:16:22.871Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "A N"
+        },
+        "name": {
+          "en-US": "A N"
+        },
+        "summary": {
+          "en-US": "College Women’s Coordinator"
+        },
+        "biography": {
+          "en-US": "__College Women's Coordinator__  \n[Read Abigails's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3YTOoF8fCGKOHesT6Q3bvn"
+            }
+          }
+        },
+        "isOnConferenceDirectory": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4DdzWfwlYUwOCJIALKkD9b",
+        "type": "Entry",
+        "createdAt": "2019-03-29T16:25:01.451Z",
+        "updatedAt": "2021-04-23T17:15:07.913Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 9,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "speaker"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "G S"
+        },
+        "name": {
+          "en-US": "G S"
+        },
+        "summary": {
+          "en-US": "Director of Men's Community"
+        },
+        "biography": {
+          "en-US": "__Director of Men's Community__  \n[Read Graham's bio](https://www.watermark.org/team)"
+        },
+        "photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "55SET5zeD1mL0npyRSiwsL"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4YpMrAWXl7BdswYzi3uJ71",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:15:08.000Z",
+        "updatedAt": "2021-04-22T22:36:36.397Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Equipping Workshop - Tuesday "
+        },
+        "title": {
+          "en-US": "Equipping Workshop (Cont.)"
+        },
+        "description": {
+          "en-US": "How do we challenge individuals to take the next step in their walk with Christ and find a clear path toward discipleship? Come learn how Watermark seeks to equip our Members to be and make disciples in any life stage. Watermark’s Equipping Team will discuss transformative Bible studies, devotional and apologetic strategies, faithful stewardship, and other opportunities to equip your church with a deeper understanding of God’s Word.\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "44HUay8fEHpTfkWTcQQh4E"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6TydijZvZEaEScdMrfyRTv"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-27T13:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T16:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "54EpbJaZVKvVb9nMgXqJ0D",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:22:28.125Z",
+        "updatedAt": "2021-04-22T22:34:31.116Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Marriage (Merge, Foundation Groups, re|engage) Workshop - Tuesday"
+        },
+        "title": {
+          "en-US": "Marriage (Merge, Foundation Groups, re|engage) Workshop (Cont.)"
+        },
+        "description": {
+          "en-US": "Learn about Watermark's unique marriage ministries and practical steps to lead couples in your church more effectively. Whether you want to improve your existing marriage ministry, overhaul your strategy, or start from the ground up, this workshop will help you make disciples in the context of marriage and the local church.\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "33TgvOJLRx4RdoqaVFi4Yu"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-27T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T11:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3F7LZsObmjYUf0g9RBCVOx",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:49:08.794Z",
+        "updatedAt": "2021-04-22T19:31:52.579Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "The Church's Role in Healthcare - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "The Church's Role in Healthcare"
+        },
+        "description": {
+          "en-US": "Learn how your church can step into healthcare to meet the phsyical and spiritual needs of your neighbors, engage with the lost, and serve your city.\n\n*Duplicate from Breakout Session 1*"
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7y9Sv0BRhaDBBsfGlGCdKK"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "Fs4f3kpYxyXG6NNdqxgOe"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4Y4supP8gleA9kCzHgPiBD"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "44ucIW6lr2ZNDQMsHuXwCX",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:52:07.651Z",
+        "updatedAt": "2021-04-22T19:31:24.394Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "The Benefits of Being Employed by the Church - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "The Benefits of Being Employed by the Church"
+        },
+        "description": {
+          "en-US": "Hear how Watermark's church leadership and Human Resources team determine compensation and benefits for employees – including some unique benefits you might not be familiar with!\n\n*Duplicate from Breakout Session 1*"
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "YJyhyr47qwljWPJa0GD5K"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7HTbvxdIO4bKe3KnrlwfHP"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1PM1sbmSA9aVPS5q1Nsg2N"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "1ge2HJE7JVqqcgjBhtdj1J"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4Ay4zCRlpqG2PKTIXe91VS",
+        "type": "Entry",
+        "createdAt": "2021-04-16T15:44:32.395Z",
+        "updatedAt": "2021-04-22T19:30:57.672Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Wednesday Breakout Session 2"
+        },
+        "title": {
+          "en-US": "Breakout Session 2"
+        },
+        "breakouts": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4i1QWZP7JVkBEmxeAuIsoF"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "dM7ZxBCEOF39sN3imLAc2"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "XlN1JJfBoheVjfKt4Ahbv"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5YyCRVUgjgB9woVoq1SUnA"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3pmPrp1rdVvDQfFycN0GCE"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3F7LZsObmjYUf0g9RBCVOx"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "49up5I6bGJsRmxuAS7fbqG"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "44ucIW6lr2ZNDQMsHuXwCX"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "32zbrB4CwbUg4RDBh47uv0"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6lyhHVBSmCGLq3ixnCEtLD"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "76afadgxGYzS3MTeZFx0w3"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3h00Uy1dm2whj6pqjk583H"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3o9z7khZ3wxdD1VhdUO7XU"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2DDDs5lT0sF5VglCbHaI9c"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6jci0NQr4d51nMvnHSvL3s"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5sBlwfzyHsYW6iqqpFIWXf"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "BLzxmjyZCS9UGkRevVnIS"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "67SoBhZo2qffVffLIDk5nj"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3DdY2eckFBjVJ7R9oIc1Ib"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4hhSggSlgVtj17doEsBy0n"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5YxAePNzi3LWgQrKmSdqmu"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "38JzQE0n0ItYP8aB3CYpBI"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2DDDs5lT0sF5VglCbHaI9c",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:57:05.163Z",
+        "updatedAt": "2021-04-22T19:30:48.403Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Global Missions Overview - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "Global Missions Overview"
+        },
+        "description": {
+          "en-US": "Find out more about Watermark’s non-traditional approach to global missions and how God has transformed thousands of lives in our efforts to reach “the ends of the earth.”\n\n*Duplicate from Breakout Session 1*"
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4IAeJUb37yLCE8yHGmKq3o"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "4GguA5V5JgH72Z3z6oDPKn"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "2iFHM037ieHPyjYixfwvEB"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3h00Uy1dm2whj6pqjk583H",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:54:22.345Z",
+        "updatedAt": "2021-04-22T19:30:30.980Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "The Church's Role In Community Development - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "The Church's Role In Community Development"
+        },
+        "description": {
+          "en-US": "Are you frustrated with providing handouts to under-resourced individuals? Do you see the same people in your community day after day and wish you could make a real difference in their lives? Does your city view your church as a resource that really helps the community in effective ways? Join us as we explore some key principles in learning how the body of Christ can be deployed in long term impact in your community to really make a difference in the lives of those you seek to serve.\n\n*Duplicate from Breakout Session 1*"
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7IScyDUVgVH0gk65QKodj5"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5hFZG5iYEAbra48sOxuW9o"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6EEo9vOoGgZ8tVtzHeT6gw"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6lyhHVBSmCGLq3ixnCEtLD",
+        "type": "Entry",
+        "createdAt": "2021-04-15T21:51:40.409Z",
+        "updatedAt": "2021-04-22T19:28:28.062Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Caring for the Vulnerable in our Communities - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "Caring for the Vulnerable in our Communities"
+        },
+        "description": {
+          "en-US": "Learn more about The Life Initiative at Watermark and how it can equip, organize, and mobilize your church to address abortion, foster care, and adoption.\n\n*Duplicate from Breakout Session 1*"
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6YNiUfKEqjHlljCz4mhSJ9"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7GYXoDV8pxwJaw5VNSLPXH"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "p6kand0JeVJh3j77qR10g"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7hM66qd6enDICtR5M3OD46",
+        "type": "Entry",
+        "createdAt": "2019-03-08T16:26:07.995Z",
+        "updatedAt": "2021-04-22T18:56:42.642Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Marriage Ministry Overview - Breakout Session 1"
+        },
+        "title": {
+          "en-US": "Marriage Ministry Overview"
+        },
+        "description": {
+          "en-US": "From preparing nearly-weds, establishing newlyweds, and enriching all marriages, we will discuss the \"why\" behind our marriage ministry model and how this strategy can transform the health of marriages in your church and community."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2Lm5CBJ0x5ELoR0OPmxHQ4"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "254LBuFRZYqT0uE3TZ5amI"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "HtzBubMdH4Nv8tMJkGYSg"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6jeM8pA9qKK9gpbhfdNLBV"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6jeM8pA9qKK9gpbhfdNLBV",
+        "type": "Asset",
+        "createdAt": "2021-04-22T18:55:08.652Z",
+        "updatedAt": "2021-04-22T18:55:08.652Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Marriage Ministry Overview Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/6jeM8pA9qKK9gpbhfdNLBV/d1a9227e860ecdab8be05b207549c0b8/Marriage_Ministry_Overview_2021_CLC_Handout_Template.pdf",
+            "details": {
+              "size": 1331768
+            },
+            "fileName": "Marriage Ministry Overview_2021 CLC Handout Template.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1ge2HJE7JVqqcgjBhtdj1J",
+        "type": "Asset",
+        "createdAt": "2021-04-15T17:23:19.221Z",
+        "updatedAt": "2021-04-22T18:54:07.781Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - The Benefits of Being Employed by the Church Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/1ge2HJE7JVqqcgjBhtdj1J/f39f48d861fb65924c483234b1b80eda/Breakouts_-_Benefits_-_Handout_v1.pdf",
+            "details": {
+              "size": 382150
+            },
+            "fileName": "Breakouts - Benefits - Handout v1.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6EEo9vOoGgZ8tVtzHeT6gw",
+        "type": "Asset",
+        "createdAt": "2021-04-15T17:27:12.818Z",
+        "updatedAt": "2021-04-22T18:53:58.493Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - The Church's Role In Community Development Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/6EEo9vOoGgZ8tVtzHeT6gw/cbda815a3ea5b5d3097fa6bf291e5692/The_Church-s_Role_in_Community_Development_-_Handout.pdf",
+            "details": {
+              "size": 197855
+            },
+            "fileName": "The Church's Role in Community Development - Handout.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6CXPj1YlJB5ujxLvZCab1n",
+        "type": "Asset",
+        "createdAt": "2021-04-15T17:32:36.420Z",
+        "updatedAt": "2021-04-22T18:53:45.293Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Elementary Ministry Overview Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/6CXPj1YlJB5ujxLvZCab1n/eb5481e51cf720589e5802d579b54df2/Breakouts_-_Elementary_Handout_2021__1_.pdf",
+            "details": {
+              "size": 709786
+            },
+            "fileName": "Breakouts - Elementary Handout 2021 (1).pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4FrlZMFgnlz7ZjFutwsf6F",
+        "type": "Asset",
+        "createdAt": "2021-04-15T19:18:54.679Z",
+        "updatedAt": "2021-04-22T18:53:20.020Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Making Truth Taste Good Breakout Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/4FrlZMFgnlz7ZjFutwsf6F/311e03cfb821e33d0aa6fc18a87719a4/CLC21Making_Truth_Taste_Good_Breakout_Handout_-_Copy.pdf",
+            "details": {
+              "size": 1852807
+            },
+            "fileName": "CLC21Making Truth Taste Good Breakout Handout - Copy.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "p6kand0JeVJh3j77qR10g",
+        "type": "Asset",
+        "createdAt": "2021-04-15T19:43:45.127Z",
+        "updatedAt": "2021-04-22T18:53:11.641Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Caring for the Vulnerable in our Communities Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/p6kand0JeVJh3j77qR10g/d3c20a11d05a99eefc386ead82f0c132/CLC_2021_Caring_for_the_Vulnerable_Handout.pdf",
+            "details": {
+              "size": 2170496
+            },
+            "fileName": "CLC 2021 Caring for the Vulnerable Handout.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6QMI5rS7CT12reSgrefnWE",
+        "type": "Asset",
+        "createdAt": "2021-04-15T21:22:47.506Z",
+        "updatedAt": "2021-04-22T18:53:00.395Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - The Church Deserves the Best Volunteers Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/6QMI5rS7CT12reSgrefnWE/3bb834218d558983534999e750ea2e44/CLC_2021_Best_Volunteers_Breakout.pdf",
+            "details": {
+              "size": 436818
+            },
+            "fileName": "CLC 2021 Best Volunteers Breakout.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6F8RDktouweDfQKWG04E5i",
+        "type": "Asset",
+        "createdAt": "2021-04-15T21:59:52.322Z",
+        "updatedAt": "2021-04-22T18:52:52.730Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - RE:GENERATION for Students Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/6F8RDktouweDfQKWG04E5i/441bef01f8cd7ed28f48ab95749d8220/CLC_2020_REGENERATION_for_Students_Handout.pdf",
+            "details": {
+              "size": 459843
+            },
+            "fileName": "CLC 2020 REGENERATION for Students Handout.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1BO0fzPtGBBquDik86tySN",
+        "type": "Asset",
+        "createdAt": "2021-04-15T22:18:00.222Z",
+        "updatedAt": "2021-04-22T18:52:45.735Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - The Most Welcoming People on Earth Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/1BO0fzPtGBBquDik86tySN/81de34511dbf47bffb6697c2a37e864a/Hospitality_Reimagined_CLC_2021_Handout_.pdf",
+            "details": {
+              "size": 332870
+            },
+            "fileName": "Hospitality Reimagined CLC 2021 Handout .pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4GGX0m3vOdE8SBSs4GSpFr",
+        "type": "Asset",
+        "createdAt": "2021-04-15T22:21:36.295Z",
+        "updatedAt": "2021-04-22T18:52:38.405Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Recovery Ministry Overview Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/4GGX0m3vOdE8SBSs4GSpFr/8fbd42fd1b3cac175abb81dc8269ac06/CLC_2021_Recovery_Ministry_Overview_Handout.pdf",
+            "details": {
+              "size": 468953
+            },
+            "fileName": "CLC 2021 Recovery Ministry Overview Handout.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2EVcJtQ3lOeYQSf96MUx11",
+        "type": "Asset",
+        "createdAt": "2021-04-15T22:34:27.444Z",
+        "updatedAt": "2021-04-22T18:52:20.991Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Owning Your Own Development Breakout Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/2EVcJtQ3lOeYQSf96MUx11/4469c8c0ade1adc341f9b6bd974da505/Breakouts_-_Handout_Own_Your_Development.pdf",
+            "details": {
+              "size": 314199
+            },
+            "fileName": "Breakouts - Handout_Own Your Development.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "31txvJKI9WpVOYfWIT9QmK",
+        "type": "Asset",
+        "createdAt": "2021-04-15T22:36:54.661Z",
+        "updatedAt": "2021-04-22T18:52:13.053Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Helping Couples Survive an Affair Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/31txvJKI9WpVOYfWIT9QmK/1fc7c2aa1a212ae188cd84f3e11d3c25/Helping_Couples_Survive_an_Affair_Handout.pdf",
+            "details": {
+              "size": 112712
+            },
+            "fileName": "Helping Couples Survive an Affair Handout.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3nMPee3bwHAjoZpkqirbUf",
+        "type": "Asset",
+        "createdAt": "2021-04-15T22:37:17.689Z",
+        "updatedAt": "2021-04-22T18:52:02.188Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - How to Respond to Infidelity Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/3nMPee3bwHAjoZpkqirbUf/3d8499cf894658827dc952783c30b264/How_to_Respond_to_Infidelity__1_.pdf",
+            "details": {
+              "size": 87403
+            },
+            "fileName": "How to Respond to Infidelity (1).pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6OWb9ltG5ys30BFT5YzW7V",
+        "type": "Asset",
+        "createdAt": "2021-04-15T22:37:49.279Z",
+        "updatedAt": "2021-04-22T18:51:50.638Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Waiting On a Spouse to Change Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/6OWb9ltG5ys30BFT5YzW7V/18ba0dc9065bd8d1d2328a8c280a12ad/waiting_on_a_spouse_to_change__1_.pdf",
+            "details": {
+              "size": 52358
+            },
+            "fileName": "waiting on a spouse to change (1).pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4bXd8ju3B9FJQIuflZJ5Ls",
+        "type": "Asset",
+        "createdAt": "2021-04-15T22:46:11.219Z",
+        "updatedAt": "2021-04-22T18:51:39.932Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Addiction Free In 24 Hours Breakout Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/4bXd8ju3B9FJQIuflZJ5Ls/88730387323d1625d1296f72dbfaa1b3/CLC21_Addiction_Free_In_24_Hours_Breakout_Handout.pdf",
+            "details": {
+              "size": 1068893
+            },
+            "fileName": "CLC21 Addiction Free In 24 Hours Breakout Handout.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7LlK0l8PNd2yIR6vd0QFha",
+        "type": "Asset",
+        "createdAt": "2021-04-15T22:49:01.853Z",
+        "updatedAt": "2021-04-22T18:50:36.785Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Building the Body of Christ through Small Groups Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/7LlK0l8PNd2yIR6vd0QFha/2203b9181d72918c3745860db7e921fe/DRAFT-BtBoCtSGBreakouts_-_Handout.pdf",
+            "details": {
+              "size": 334339
+            },
+            "fileName": "DRAFT-BtBoCtSGBreakouts - Handout.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "60eaub1uOUmjKygMCgRYyz",
+        "type": "Asset",
+        "createdAt": "2021-04-16T15:14:14.504Z",
+        "updatedAt": "2021-04-22T18:50:26.950Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Women Caring for Women in the Church Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/60eaub1uOUmjKygMCgRYyz/a46eda52e5f79d7471747b35d2e2f493/CLC_2021_Women_Caring_for_Women_Breakout_Handout.pdf",
+            "details": {
+              "size": 491595
+            },
+            "fileName": "CLC 2021 Women Caring for Women Breakout Handout.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5z66uCwvDnmxkxpUkTM8zx",
+        "type": "Asset",
+        "createdAt": "2021-04-16T15:24:38.723Z",
+        "updatedAt": "2021-04-22T18:50:11.657Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Creating a Culture of Authenticity Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/5z66uCwvDnmxkxpUkTM8zx/a264d5a01d50b12270dc5d06f3700082/ReGen-100-Common-Struggles-Handout.pdf",
+            "details": {
+              "size": 109677
+            },
+            "fileName": "ReGen-100-Common-Struggles-Handout.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7sTjqGo1Zwk2JqSUQd6jfk",
+        "type": "Asset",
+        "createdAt": "2021-04-16T15:29:45.269Z",
+        "updatedAt": "2021-04-22T18:49:59.946Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Caring for Friends who Struggle with Same-Sex Attraction or Identify as LGBT+ Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/7sTjqGo1Zwk2JqSUQd6jfk/57723aaee23ed6e01cc391e811b736f4/CLC21_SSA___LGBTQ__Workshop_Handount.pdf",
+            "details": {
+              "size": 1194738
+            },
+            "fileName": "CLC21 SSA & LGBTQ+ Workshop Handount.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "eRatUo9sU7RmqPVk5vnPE",
+        "type": "Asset",
+        "createdAt": "2021-04-20T18:32:17.164Z",
+        "updatedAt": "2021-04-22T18:45:41.400Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Taking Your Teaching From Good to Great Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/eRatUo9sU7RmqPVk5vnPE/8606efc3152de584a1205ad147180aea/CLC_2021_Handout_-_Take_your_teaching_from_good_to_great__1_.pdf",
+            "details": {
+              "size": 330906
+            },
+            "fileName": "CLC 2021 Handout - Take your teaching from good to great (1).pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4Y4supP8gleA9kCzHgPiBD",
+        "type": "Asset",
+        "createdAt": "2021-04-20T18:37:09.885Z",
+        "updatedAt": "2021-04-22T18:45:26.608Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - The Church's Role in Healthcare Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/4Y4supP8gleA9kCzHgPiBD/d0c533d1331b4aa17aa3d4f6a7bbee84/WMH_Breakout_Handout__1_.pdf",
+            "details": {
+              "size": 230522
+            },
+            "fileName": "WMH Breakout Handout (1).pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2iFHM037ieHPyjYixfwvEB",
+        "type": "Asset",
+        "createdAt": "2021-04-15T17:29:29.496Z",
+        "updatedAt": "2021-04-22T18:45:01.631Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - Global Missions Overview Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/2iFHM037ieHPyjYixfwvEB/ca9e42dfefe9bc52c0e05afd856a4e84/CLC2021_Global_Missions_Breakout_Handout.pdf-55-.pdf",
+            "details": {
+              "size": 4441775
+            },
+            "fileName": "CLC2021 Global Missions Breakout Handout.pdf[55].pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5QXP1JU5steyMBZ3uc1eqj",
+        "type": "Asset",
+        "createdAt": "2021-04-15T21:41:10.714Z",
+        "updatedAt": "2021-04-22T18:44:46.114Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 2021 - A Field Guide to Navigate Conflict Handout"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/vsbnbtnlrnnr/5QXP1JU5steyMBZ3uc1eqj/018e3457882c29add26652e786b71477/CLC21_Conflict_Field_Guide_Handout.pdf",
+            "details": {
+              "size": 53175
+            },
+            "fileName": "CLC21 Conflict Field Guide Handout.pdf",
+            "contentType": "application/pdf"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2khVZtMTyVVOh0wjHwgz5w",
+        "type": "Entry",
+        "createdAt": "2021-04-18T23:37:56.176Z",
+        "updatedAt": "2021-04-22T15:03:07.796Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 9,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "re:generation Networking Event"
+        },
+        "title": {
+          "en-US": "re:generation Networking Event"
+        },
+        "description": {
+          "en-US": "Come meet re:generation leaders from other churches!  We will do a short presentation at 6:15 about how re:generation is doing nationally, share some stories, then spend most of the time connecting with re:generation leaders from across the country.\n"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7Ic7VtSGqz00ok8ie66Fk"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-27T18:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T19:00-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5bpt6R9FHcK2c1n8VEj1NR"
+            }
+          }
+        },
+        "capacity": {
+          "en-US": 140
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4GTNGVShbxOaS69C2kDBrN",
+        "type": "Entry",
+        "createdAt": "2021-04-18T23:36:35.728Z",
+        "updatedAt": "2021-04-22T15:02:38.808Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "re|engage Networking Event"
+        },
+        "title": {
+          "en-US": "re|engage Networking Event"
+        },
+        "description": {
+          "en-US": "Come meet re|engage leaders from other churches! We will do a short presentation at 6:15 about how re|engage is doing nationally, share some stories, then spend most of the time connecting with re|engage leaders from across the country."
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "HtzBubMdH4Nv8tMJkGYSg"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-27T18:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T19:00-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "EM0nfBjTgurztu3hgh7yP"
+            }
+          }
+        },
+        "capacity": {
+          "en-US": 140
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "20pMNKh8Vx9pmT2t0iaEat",
+        "type": "Entry",
+        "createdAt": "2021-04-21T21:01:22.756Z",
+        "updatedAt": "2021-04-22T15:00:09.345Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "CLC 2021 - Staff Consulting Announcement"
+        },
+        "title": {
+          "en-US": "Staff Consulting Appointments"
+        },
+        "description": {
+          "en-US": "We are making our staff members from every ministry area available to you. That includes our senior leaders, finance coordinators, IT team, student directors, and everything in between! We don't claim to have all the answers, but if you want to hear a different perspective, bounce some ideas off someone else, or hear what's worked (and what hasn't worked) in our experience, sign up for a time slot.\n\n[Reserve your spot now!](clc://clc/app-link/NodeSingle?nodeId=Event:d24d97963372a28c4618c149248498678c264fc08e10b965e4abe78c15632b10) Don't wait long to reserve your time. Slots will fill up quickly. "
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3HBniJQwbm80xU3lR46G1F"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "iEp03Krco2LNBsHijqe5J",
+        "type": "Entry",
+        "createdAt": "2021-04-21T21:01:40.227Z",
+        "updatedAt": "2021-04-22T14:58:14.547Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "CLC 2021 - re:generation Networking Announce"
+        },
+        "title": {
+          "en-US": "re:generation Networking Event"
+        },
+        "description": {
+          "en-US": "Come meet re:generation leaders from other churches!  We will do a short presentation at 6:15 about how re:generation is doing nationally, share some stories, then spend most of the time connecting with re:generation leaders from across the country.\n\n[Register now to join us on Tuesday night.](clc://clc/app-link/NodeSingle?nodeId=Event:954dda135c7aa36702f713d6a67c4d694e9d56821ad301d65280b6f5901fc6f8)\n"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5bpt6R9FHcK2c1n8VEj1NR"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1MC90VTW5LFkjYOiPxdGij",
+        "type": "Entry",
+        "createdAt": "2021-04-21T21:20:24.750Z",
+        "updatedAt": "2021-04-22T14:57:16.464Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "CLC 2021 - re|engage Networking Announcement"
+        },
+        "title": {
+          "en-US": "re|engage Networking Event "
+        },
+        "description": {
+          "en-US": "Come meet re|engage leaders from other churches!  We will do a short presentation at 6:15 about how re|engage is doing nationally, share some stories, then spend most of the time connecting with re|engage leaders from across the country.\n\n[Register now to join us on Tuesday night.](clc://clc/app-link/NodeSingle?nodeId=Event:3907a80008e2ea8ef60fcb2d9743f2d32c0fea84c6121db9366ac5baebef4734)\n"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "EM0nfBjTgurztu3hgh7yP"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5EGR9zDWf0mvbFuPUVo4mY",
+        "type": "Entry",
+        "createdAt": "2021-04-20T19:52:52.583Z",
+        "updatedAt": "2021-04-22T14:40:04.280Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Recovery Workshop"
+        },
+        "title": {
+          "en-US": "Recovery (re:generation) Workshop"
+        },
+        "description": {
+          "en-US": "In Christ, people can be set free from the destruction of sin. Learn about the radical healing people are receiving in Christ through re:generation, our Biblical 12-step recovery ministry. Through the gospel, daily abiding, authentic community, confession, repentance, and forgiveness, entire churches can change and grow. \n\n*Workshops require advance registration during conference signups.*"
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3UYDdBsorYLjDlfY3UKEtx"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4XPMkF9gGafx5Jvfad9cGy"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "56Vme2T12LJrdIvaQuIvon"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2SeONE5F3AbUA62doszGpS"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "HtzBubMdH4Nv8tMJkGYSg"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-26T13:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-26T16:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "h8yd2ovMwsOGcsbKZlUjN",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:46:53.678Z",
+        "updatedAt": "2021-04-22T14:39:29.349Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "ProLife, Foster Care, and Adoption Workshop (The Life Initiative)"
+        },
+        "title": {
+          "en-US": "ProLife, Foster Care, and Adoption Workshop (The Life Initiative)"
+        },
+        "description": {
+          "en-US": "Learn the needs of your church and county and the assets to discover where you should develop a continuum of care specific to your area, engage with women and men whose stories intertwine with these issues, and discuss how to develop prolife and family restoration initiatives in your church or community.\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6YNiUfKEqjHlljCz4mhSJ9"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1ZrmBTDVZkrwOuteY8RUmV"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-26T13:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-26T16:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "61965yZn0GCmhMCz4q46EO",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:42:44.784Z",
+        "updatedAt": "2021-04-22T14:39:03.614Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Worship Arts Workshop - Monday"
+        },
+        "title": {
+          "en-US": "Worship Arts Workshop"
+        },
+        "description": {
+          "en-US": "No matter the size, tradition, or style of your church, learn and discuss why the core values of your church should affect the worship ministry, why it’s vital to have your identity found in Christ and not in your talent, how to shepherd your worship teams, how to audition and develop more worship leaders and musicians, how to lead a rehearsal, and more.\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "18pJfw6ZzPOR6vUXMsR1E9"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1u1DhfYJkaaOsEI8BZ0tRm"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3ihNPbb8UKMfpTPSf8Bo4x"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "74brjul1vQumxWRv772RXG"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7gLgknGNm7kHS8xu0a18he"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "abS5kUjwon56DyxnsQQIP"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6gCbSxnYr0XJ8DYSkalHZG"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-26T13:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T16:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "70cqDepYFfE1rhI14Ds6BV",
+        "type": "Asset",
+        "createdAt": "2021-04-22T14:38:28.475Z",
+        "updatedAt": "2021-04-22T14:38:28.475Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "J-ONeal"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/70cqDepYFfE1rhI14Ds6BV/713be832ff47c360c46964c1ba05d58f/J-ONeal.jpeg",
+            "details": {
+              "size": 39078,
+              "image": {
+                "width": 640,
+                "height": 640
+              }
+            },
+            "fileName": "J-ONeal.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2Om3tDAzgKGhQXIyY31zJS",
+        "type": "Asset",
+        "createdAt": "2021-04-22T14:37:39.910Z",
+        "updatedAt": "2021-04-22T14:37:39.910Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "E N"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2Om3tDAzgKGhQXIyY31zJS/4259c2274336d3242144e8ebb175204e/Erik_Nieder.jpeg",
+            "details": {
+              "size": 65754,
+              "image": {
+                "width": 640,
+                "height": 640
+              }
+            },
+            "fileName": "Erik_Nieder.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "46oKRXu2qne8quODAMgWtD",
+        "type": "Asset",
+        "createdAt": "2021-04-22T14:36:39.718Z",
+        "updatedAt": "2021-04-22T14:36:39.718Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "H B 20200220 WCC Staff Headshots 01146"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/46oKRXu2qne8quODAMgWtD/8f6f59ca14684461b0f9ca22df634ff5/Hayden_Browning_20200220_WCC_Staff_Headshots_01146.jpeg",
+            "details": {
+              "size": 99560,
+              "image": {
+                "width": 640,
+                "height": 640
+              }
+            },
+            "fileName": "Hayden_Browning_20200220_WCC_Staff_Headshots_01146.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7nupzXjbck12MmPtUtLUNE",
+        "type": "Asset",
+        "createdAt": "2021-04-22T14:35:35.742Z",
+        "updatedAt": "2021-04-22T14:35:35.742Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "D F 20200220 WCC Staff Headshots 01277"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/7nupzXjbck12MmPtUtLUNE/cef45e21fd2c7c05ae21b905eaa7683d/Davy_Flowers_20200220_WCC_Staff_Headshots_01277.jpeg",
+            "details": {
+              "size": 97226,
+              "image": {
+                "width": 640,
+                "height": 640
+              }
+            },
+            "fileName": "Davy_Flowers_20200220_WCC_Staff_Headshots_01277.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "nextPageUrl": "https://cdn.contentful.com/spaces/vsbnbtnlrnnr/environments/master/sync?sync_token=wonDrcKnRgcSOF4-wrDCgcKefWzCgsOxXQhzISXDm3fCoMOIw5fDk8OTw6zDsTzCkcKcKwFVwrwNd8OSRMObw74HbhjClBDDgSjCuMKIPxM_MMO8w7PCnMKJwqNmw7QFw7xiJARPw6rDlm3Drio1wpfDvWnDnsO-w4XCmhUew5w3w5TCh8OLAsKFwoBIwpZew5ROwoHCnz4EwpU5HMKDw4TCr8OBwonDqsObXgnCs8OrO8KRJcOtw4HDrsO_wpXCm8Orw44rwrIXw6TDq09TD8KDwpZkw689wpvCgMO7w64l"
+}

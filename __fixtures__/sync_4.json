@@ -1,0 +1,7138 @@
+{
+  "sys": {
+    "type": "Array"
+  },
+  "items": [
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "ZT90IO4m3tHnlqs2BJ7yG",
+        "type": "Asset",
+        "createdAt": "2021-04-21T00:46:11.041Z",
+        "updatedAt": "2021-04-21T00:46:11.041Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC21 SeniorLeadership"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/ZT90IO4m3tHnlqs2BJ7yG/36c09f9e5ed575b14603109e0b41989c/CLC21_SeniorLeadership.png",
+            "details": {
+              "size": 899595,
+              "image": {
+                "width": 1000,
+                "height": 700
+              }
+            },
+            "fileName": "CLC21_SeniorLeadership.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "60QJqIcZHX35nB7QYgf9f8",
+        "type": "Entry",
+        "createdAt": "2019-03-08T19:24:14.053Z",
+        "updatedAt": "2021-04-21T00:46:03.261Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 12,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "track"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Senior Leaders Track"
+        },
+        "title": {
+          "en-US": "Senior Leaders"
+        },
+        "scheduleItems": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6iTFIu68EPTsMsQkFYYaaq"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5cfhOaTP1zvIo6fUy9neHN"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "t0e7BcOJS07RodnY7lQCM"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "44yBViyAQ3m6yADjd8e7x2"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "76afadgxGYzS3MTeZFx0w3"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4fDUb0v4q0YxG7h122tqHB"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5HXZ8ez7ZyiMOGZ2Smgvrr"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "45kov2WCyxVMow3fUJIVwY"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "38JzQE0n0ItYP8aB3CYpBI"
+              }
+            }
+          ]
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "ZT90IO4m3tHnlqs2BJ7yG"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4rRL5sdEVRDz4jAKHqpv04",
+        "type": "Entry",
+        "createdAt": "2019-03-13T01:39:40.298Z",
+        "updatedAt": "2021-04-21T00:45:42.834Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "track"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Leader Development Track"
+        },
+        "title": {
+          "en-US": "Leader Development"
+        },
+        "scheduleItems": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "LehvSbOYReu54Jj5AIvC3"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3pmPrp1rdVvDQfFycN0GCE"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5cfhOaTP1zvIo6fUy9neHN"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "t0e7BcOJS07RodnY7lQCM"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7G3FFTqlvzIcjuIxFoaSKK"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "44yBViyAQ3m6yADjd8e7x2"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6bzr7Uv2E7cnHbXNoTNuw4"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3DdY2eckFBjVJ7R9oIc1Ib"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6jci0NQr4d51nMvnHSvL3s"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "38JzQE0n0ItYP8aB3CYpBI"
+              }
+            }
+          ]
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1KQheduhuvua7jOO6kx49w"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1KQheduhuvua7jOO6kx49w",
+        "type": "Asset",
+        "createdAt": "2021-04-21T00:45:37.270Z",
+        "updatedAt": "2021-04-21T00:45:37.270Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC21 LeaderDevelopment"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/1KQheduhuvua7jOO6kx49w/5c892b1bc816e9cf587a531517d61f76/CLC21_LeaderDevelopment.png",
+            "details": {
+              "size": 1238218,
+              "image": {
+                "width": 1000,
+                "height": 700
+              }
+            },
+            "fileName": "CLC21_LeaderDevelopment.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "V8NyLUfx4gN8mzESh1Pyh",
+        "type": "Entry",
+        "createdAt": "2019-03-13T01:37:46.515Z",
+        "updatedAt": "2021-04-21T00:45:18.234Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 9,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "track"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Students Track"
+        },
+        "title": {
+          "en-US": "Students"
+        },
+        "scheduleItems": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "67SoBhZo2qffVffLIDk5nj"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "BLzxmjyZCS9UGkRevVnIS"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7LXIngm7N7cC7jtKMRdxMK"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "32zbrB4CwbUg4RDBh47uv0"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1RwyVJynJx8YWJUKL06wjg"
+              }
+            }
+          ]
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1JB41CgdzgYRklNWTe3Bc7"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1JB41CgdzgYRklNWTe3Bc7",
+        "type": "Asset",
+        "createdAt": "2021-04-21T00:45:13.853Z",
+        "updatedAt": "2021-04-21T00:45:13.853Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC21 Students"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/1JB41CgdzgYRklNWTe3Bc7/c47c176291e79d4f7360c5fcca61e8f0/CLC21_Students.png",
+            "details": {
+              "size": 1296546,
+              "image": {
+                "width": 1000,
+                "height": 700
+              }
+            },
+            "fileName": "CLC21_Students.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3DteTRptuh9xixKm9qHpll",
+        "type": "Entry",
+        "createdAt": "2019-03-13T01:38:53.383Z",
+        "updatedAt": "2021-04-21T00:44:47.300Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 10,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "track"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Worship Track"
+        },
+        "title": {
+          "en-US": "Worship"
+        },
+        "scheduleItems": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4i1QWZP7JVkBEmxeAuIsoF"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "43FFMJrrLGDiJCHWncZceh"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "10f0opShLAil0CC7NcABN5"
+              }
+            }
+          ]
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6IWmELEz9qlKrB31M6Awk6"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6IWmELEz9qlKrB31M6Awk6",
+        "type": "Asset",
+        "createdAt": "2021-04-21T00:44:41.603Z",
+        "updatedAt": "2021-04-21T00:44:41.603Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC21 Worship"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/6IWmELEz9qlKrB31M6Awk6/8f3f5bef5e6fa9263f21d6c8ceaae9e4/CLC21_Worship.png",
+            "details": {
+              "size": 1080042,
+              "image": {
+                "width": 1000,
+                "height": 700
+              }
+            },
+            "fileName": "CLC21_Worship.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5X65JbMZcEQng3aqbrSnHf",
+        "type": "Asset",
+        "createdAt": "2021-04-21T00:44:18.926Z",
+        "updatedAt": "2021-04-21T00:44:18.926Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC21 YoungAdults"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5X65JbMZcEQng3aqbrSnHf/3ff20ca260a11b3b12e50b353cfe1c1c/CLC21_YoungAdults.png",
+            "details": {
+              "size": 1282340,
+              "image": {
+                "width": 1000,
+                "height": 700
+              }
+            },
+            "fileName": "CLC21_YoungAdults.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5oQbQCxAXCE5BpNm2iFFRn",
+        "type": "Entry",
+        "createdAt": "2019-03-13T01:36:50.274Z",
+        "updatedAt": "2021-04-21T00:43:51.542Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 10,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "track"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Connecting/Assimilation Track"
+        },
+        "title": {
+          "en-US": "Connecting/Assimilation"
+        },
+        "scheduleItems": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6iTFIu68EPTsMsQkFYYaaq"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6jci0NQr4d51nMvnHSvL3s"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4pm1uXIY0cja8nWC9vgVwg"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6bzr7Uv2E7cnHbXNoTNuw4"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "LehvSbOYReu54Jj5AIvC3"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "13WRQVzZHC228WYcWo2Iur"
+              }
+            }
+          ]
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5DOpGPIYyxkqiwb1R2YqWW"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5DOpGPIYyxkqiwb1R2YqWW",
+        "type": "Asset",
+        "createdAt": "2021-04-21T00:43:46.553Z",
+        "updatedAt": "2021-04-21T00:43:46.553Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC21 Connecting"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5DOpGPIYyxkqiwb1R2YqWW/f620379077b80b6995710d8c3f5312c4/CLC21_Connecting.png",
+            "details": {
+              "size": 640081,
+              "image": {
+                "width": 1000,
+                "height": 700
+              }
+            },
+            "fileName": "CLC21_Connecting.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5sql7SheKi7azUZta9U0p7",
+        "type": "Asset",
+        "createdAt": "2021-04-21T00:42:56.615Z",
+        "updatedAt": "2021-04-21T00:42:56.616Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC21 Women"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5sql7SheKi7azUZta9U0p7/84ec1551ca88fde7e285e8802a05f1b2/CLC21_Women.png",
+            "details": {
+              "size": 997486,
+              "image": {
+                "width": 1000,
+                "height": 700
+              }
+            },
+            "fileName": "CLC21_Women.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7e4PNq4yCyIj6vYz5NHOov",
+        "type": "Entry",
+        "createdAt": "2021-04-20T23:44:38.003Z",
+        "updatedAt": "2021-04-21T00:42:54.208Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "track"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Women"
+        },
+        "title": {
+          "en-US": "Women"
+        },
+        "scheduleItems": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "44yBViyAQ3m6yADjd8e7x2"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3DdY2eckFBjVJ7R9oIc1Ib"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4FLxEPn1Fv0lEzfU7Eo1j4"
+              }
+            }
+          ]
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5sql7SheKi7azUZta9U0p7"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7cnBLR2aRp2TZcFTfC6cxs",
+        "type": "Entry",
+        "createdAt": "2019-03-05T22:55:46.469Z",
+        "updatedAt": "2021-04-20T22:55:25.601Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 9,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Worship Arts Workshop - Tuesday "
+        },
+        "title": {
+          "en-US": "Worship Arts Workshop (Cont.)"
+        },
+        "description": {
+          "en-US": "No matter the size, tradition, or style of your church, learn and discuss why the core values of your church should affect the worship ministry, why it’s vital to have your identity found in Christ and not in your talent, how to shepherd your worship teams, how to audition and develop more worship leaders and musicians, how to lead a rehearsal, and more.\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "18pJfw6ZzPOR6vUXMsR1E9"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6gCbSxnYr0XJ8DYSkalHZG"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-27T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T11:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6OsAQdB1OVmmAnk8xTUsn2",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:17:23.518Z",
+        "updatedAt": "2021-04-20T22:55:06.433Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Young Adults (The Porch) Workshop - Tuesday"
+        },
+        "title": {
+          "en-US": "Young Adults (The Porch) Workshop (Cont.)"
+        },
+        "description": {
+          "en-US": "Come hear how God is working powerfully in and through young adults in their 20s and 30s at The Porch. We’ll share our ministry vision, strategy, and methods; discuss principles for reaching and challenging young adults to live out their purpose in Christ; and present practical approaches in addressing ministry challenges. Let us help you reach this generation for Christ.\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5Kpj7ekXGnwvepfFjQ17K9"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-27T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T11:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "y0SDAWeZoxYX7ccVvOE0n",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:21:37.016Z",
+        "updatedAt": "2021-04-20T22:54:56.334Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Student Ministry Workshop - Tuesday"
+        },
+        "title": {
+          "en-US": "Student Ministry Workshop (Cont.)"
+        },
+        "description": {
+          "en-US": "It’s tough being a teenager. Watermark Students is on a mission to become a place where every student (grades 6-12) in our community can be known and accepted, taught about Jesus, and challenged to grow. Get to know others who are “in the trenches” of student ministry, while also learning the ins and outs of Watermark's approach to making disciples.\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6IibZ52R1aUEmC5DKhdXT1"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-27T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T11:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "65mOD0cqPJ7r5da6DMzdXA",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:23:33.445Z",
+        "updatedAt": "2021-04-20T22:54:45.590Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Recovery Workshop - Tuesday"
+        },
+        "title": {
+          "en-US": "Recovery (re:generation) Workshop (Cont.)"
+        },
+        "description": {
+          "en-US": "In Christ, people can be set free from the destruction of sin. Learn about the radical healing people are receiving in Christ through re:generation, our Biblical 12-step recovery ministry. Through the gospel, daily abiding, authentic community, confession, repentance, and forgiveness, entire churches can change and grow. \n\n*Workshops require advance registration during conference signups.*"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "HtzBubMdH4Nv8tMJkGYSg"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-27T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T11:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1GyKgt35D9ilz8MeXmaNub",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:26:39.274Z",
+        "updatedAt": "2021-04-20T22:54:18.651Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "ProLife, Foster Care, and Adoption Workshop (The Life Initiative) - Tuesday"
+        },
+        "title": {
+          "en-US": "ProLife, Foster Care, and Adoption Workshop (The Life Initiative) (Cont.)"
+        },
+        "description": {
+          "en-US": "Learn the needs of your church and county and the assets to discover where you should develop a continuum of care specific to your area, engage with women and men whose stories intertwine with these issues, and discuss how to develop prolife and family restoration initiatives in your church or community.\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1ZrmBTDVZkrwOuteY8RUmV"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-27T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T11:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "57yp6MvPQPxk1Zem5feGw4",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:24:48.384Z",
+        "updatedAt": "2021-04-20T22:54:09.515Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Operations Workshop - Tuesday"
+        },
+        "title": {
+          "en-US": "Operations Workshop (Cont.)"
+        },
+        "description": {
+          "en-US": "Watermark's Operations Team will share best practices for leading the operations of your church. Learn the unique organizational challenges facing senior church leaders, including finances and budgeting, hiring, staff care, leadership best practices, strategic planning and execution, decision-making, and more.\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2L280lQIzjHlLvt6IYbUxH"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-27T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T11:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "wiBItPZTn9vKvh3Lj1xUK",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:20:31.888Z",
+        "updatedAt": "2021-04-20T22:54:01.398Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Kids' Ministry Workshop - Tuesday"
+        },
+        "title": {
+          "en-US": "Kids' Ministry Workshop (Cont.)"
+        },
+        "description": {
+          "en-US": "Learn how to influence the lives of kids, parents, and leaders by equipping them to be and make disciples. We'll discuss how to recruit, develop, and empower volunteer leaders, while teaching about the character of God and the good news of the gospel. We will also discuss writing and evaluating gospel-centered children’s curriculum, strategies for engaging and equipping parents, and why we never do “childcare.”\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7fKax9Y0NRaRavjfuSTjR9"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-27T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T11:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "02gqlQ16h3s1Q9xc3H7HM",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:29:18.459Z",
+        "updatedAt": "2021-04-20T22:53:48.190Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Outreach & Missions Workshop- Tuesday"
+        },
+        "title": {
+          "en-US": "Outreach & Missions Workshop (Cont.)"
+        },
+        "description": {
+          "en-US": "The Church is God's \"Plan A\" to impact neighborhoods, cities, and the ends of the earth. Learn from Watermark's External Focus team about mobilizing your church body to transform your community. Learn the core ministry values that drive our efforts, how to evaluate service opportunities both locally and globally, \"helping without hurting\" principles, how to disciple your church body through service, and our focus on lay leadership.\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2nyUgc92YLuCUbuC25nzFV"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-27T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T11:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "O0duYsTthaMvn6pb7eYNA",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:14:58.364Z",
+        "updatedAt": "2021-04-20T22:53:29.578Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Community / Connecting Workshop - Tuesday"
+        },
+        "title": {
+          "en-US": "Community / Connecting Workshop (Cont.)"
+        },
+        "description": {
+          "en-US": "For many churches, small groups are the entry point where people first experience biblical community, practice the “one anothers” of Scripture, and begin the process of spiritual transformation. Learn Watermark's guiding principles for community, how to assimilate and form groups, strategies for training leaders, and how to ensure that Members are shepherding one another.\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5Vf1ohn7ko3PmHzZ7iBern"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-27T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T11:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3lpJO2UcKXbsn9YkmdMLBR",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:39:08.236Z",
+        "updatedAt": "2021-04-20T22:51:55.424Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 9,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Student Ministry Workshop"
+        },
+        "title": {
+          "en-US": "Student Ministry Workshop"
+        },
+        "description": {
+          "en-US": "It’s tough being a teenager. Watermark Students is on a mission to become a place where every student (grades 6-12) in our community can be known and accepted, taught about Jesus, and challenged to grow. Get to know others who are “in the trenches” of student ministry, while also learning the ins and outs of Watermark's approach to making disciples.\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6IibZ52R1aUEmC5DKhdXT1"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-26T13:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-26T16:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2UmuGogdp9iinunDrhn4Ji",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:37:40.184Z",
+        "updatedAt": "2021-04-20T22:50:32.852Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Kids' Ministry Workshop"
+        },
+        "title": {
+          "en-US": "Kids' Ministry Workshop"
+        },
+        "description": {
+          "en-US": "Learn how to influence the lives of kids, parents, and leaders by equipping them to be and make disciples. We'll discuss how to recruit, develop, and empower volunteer leaders, while teaching about the character of God and the good news of the gospel. We will also discuss writing and evaluating gospel-centered children’s curriculum, strategies for engaging and equipping parents, and why we never do “childcare.”\n\n*Workshops require advance registration during conference signups.*"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7fKax9Y0NRaRavjfuSTjR9"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-26T13:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-26T16:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "38JzQE0n0ItYP8aB3CYpBI",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:04:49.123Z",
+        "updatedAt": "2021-04-20T22:04:49.123Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Visionaries and Integrators: The Duo Turning Ideas into Action - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "Visionaries and Integrators: The Duo Turning Ideas into Action"
+        },
+        "description": {
+          "en-US": "Churches and teams have trouble executing their big vision. Learn how a healthy visionary and integrator relationship can improve the effectiveness of your church or ministry area (based on the concepts from the book Rocket Fuel)."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4Wreaar5vDUDS5Cqcm2DFl"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "hLWz26KqeVyEHBVflq4uZ"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6YspMsZQVzlFuGMcD088g0"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1ZrmBTDVZkrwOuteY8RUmV",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:04:19.782Z",
+        "updatedAt": "2021-04-20T22:04:28.319Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "location"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "West Tower Room 445"
+        },
+        "title": {
+          "en-US": "West Tower 445"
+        },
+        "map": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5p6ilkMFjhOhR0cI1eF806"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3DdY2eckFBjVJ7R9oIc1Ib",
+        "type": "Entry",
+        "createdAt": "2021-04-20T22:02:45.633Z",
+        "updatedAt": "2021-04-20T22:02:45.633Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Owning Your Development: How every woman needs opportunity, vision, and encouragement - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "Owning Your Development: How every woman needs opportunity, vision, and encouragement"
+        },
+        "description": {
+          "en-US": "Within the church staff, there is an array of wisdom to be cultivated. Learn how to appropriately grow your professional skills, personal goals, and pastoral shepherding by actively seeking out your personal and professional development in a workplace often filled with male superiors."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "abS5kUjwon56DyxnsQQIP"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6ABq3dUJiSMfBJatclJlrg"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "HtzBubMdH4Nv8tMJkGYSg"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "2EVcJtQ3lOeYQSf96MUx11"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "BLzxmjyZCS9UGkRevVnIS",
+        "type": "Entry",
+        "createdAt": "2019-03-07T15:19:24.637Z",
+        "updatedAt": "2021-04-20T22:01:44.035Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 10,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "College Ministry Overview - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "College Ministry Overview"
+        },
+        "description": {
+          "en-US": "How should college ministries help students course correct from the lies the world throws at them? Learn from our college ministry team about connecting students to the local church, discipling them towards spiritual maturity, and training them in biblical literacy."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3wphPeJHOMtDrfJCB5a3uX"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7gtlKsBXAp0H1LWsPxmsq8"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6gCbSxnYr0XJ8DYSkalHZG"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5sBlwfzyHsYW6iqqpFIWXf",
+        "type": "Entry",
+        "createdAt": "2019-03-08T15:50:44.967Z",
+        "updatedAt": "2021-04-20T22:00:14.315Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Recovery Ministry Overview - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "Recovery Ministry Overview"
+        },
+        "description": {
+          "en-US": "Learn how we use biblical recovery to help Christians shepherd one another through any struggle (addiction, pride, sexual struggles, codependency, depression, etc.) toward freedom in Christ."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "56Vme2T12LJrdIvaQuIvon"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4XPMkF9gGafx5Jvfad9cGy"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2L280lQIzjHlLvt6IYbUxH"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4GGX0m3vOdE8SBSs4GSpFr"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6jci0NQr4d51nMvnHSvL3s",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:59:21.683Z",
+        "updatedAt": "2021-04-20T21:59:21.683Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Hospitality Reimagined: The Mission of a Welcoming Church - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "Hospitality Reimagined: The Mission of a Welcoming Church"
+        },
+        "description": {
+          "en-US": "Not every church needs a hospitality team, but every church needs hospitable people. Come and learn how we train and empower our guest experience volunteers."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2hrtIzzAxR2Fu32ogeaE98"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5Kpj7ekXGnwvepfFjQ17K9"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "1BO0fzPtGBBquDik86tySN"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3o9z7khZ3wxdD1VhdUO7XU",
+        "type": "Entry",
+        "createdAt": "2019-03-08T17:03:07.877Z",
+        "updatedAt": "2021-04-20T21:55:11.783Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Church Facilities: Approaches to Maintenance, Design and Construction - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "Church Facilities: Approaches to Maintenance, Design and Construction"
+        },
+        "description": {
+          "en-US": "Find answers to frequently asked questions about campus development and maintenance as we discuss Watermark’s facilities strategy, team structure, building design, construction, and upkeep."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "66jpw0uQyvx3Wcel3oYnP6"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3bepGC1aySEZTvquWaCbFF"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "76afadgxGYzS3MTeZFx0w3",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:53:20.083Z",
+        "updatedAt": "2021-04-20T21:53:20.083Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Starting and Stabilizing Healthy Satellite Campuses and Local Churches - Breakout Session 2 "
+        },
+        "title": {
+          "en-US": "Starting and Stabilizing Healthy Satellite Campuses and Local Churches"
+        },
+        "description": {
+          "en-US": "Learn about multiple methods Watermark has used to launch church campuses into independent local churches."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7Kj8RBnDzk0s7BvMu3Bwab"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2DpyHInlPkk5vI5okjRuPf"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7JoFsFsVsSxSwLCrWf6dph"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "49up5I6bGJsRmxuAS7fbqG",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:51:21.990Z",
+        "updatedAt": "2021-04-20T21:51:21.990Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Single Adult Ministry Overview - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "Single Adult Ministry Overview"
+        },
+        "description": {
+          "en-US": "Single adults can be one of the largest groups in many of our churches, but it can also be one of the greatest missed opportunities. Come hear how we are thinking about ministry to single adults in their 30s, 40s and 50s."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4ol24lpUkCHWsjeK4hXtXV"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4wWoKaGQlGFf8JgkIbHCvP"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6OmXhvbhxQdfsPV7czpa2t"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "LqKtb23SNRrq2pL5sJdqy",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:49:06.146Z",
+        "updatedAt": "2021-04-20T21:49:06.146Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Young Adult Ministry Overview - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "Young Adult Ministry Overview"
+        },
+        "description": {
+          "en-US": "Find out how your church can minister to and through millennials as we deploy them to change the world. We will discuss best practices from The Porch, our midweek ministry that reaches 3,000+ young adults every week."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4rX3apRkjlP2RT90arNnEn"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6YspMsZQVzlFuGMcD088g0"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3pmPrp1rdVvDQfFycN0GCE",
+        "type": "Entry",
+        "createdAt": "2019-03-08T15:54:03.449Z",
+        "updatedAt": "2021-04-20T21:48:35.792Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "A Field Guide to Conflict: Navigating Our Greatest Opportunity To Love One Another - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "A Field Guide to Conflict: Navigating Our Greatest Opportunity To Love One Another"
+        },
+        "description": {
+          "en-US": "Learn tools for healthy, biblical conflict resolution that will unite and sharpen your team and transform your church."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1ILBV0FSrQSEvW7AfpVNxy"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7fKax9Y0NRaRavjfuSTjR9"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5QXP1JU5steyMBZ3uc1eqj"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5YyCRVUgjgB9woVoq1SUnA",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:48:18.098Z",
+        "updatedAt": "2021-04-20T21:48:18.098Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Elementary Ministry Overview - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "Elementary Ministry Overview"
+        },
+        "description": {
+          "en-US": "Hear how we see and welcome elementary kids, teach them about Jesus, and keep them safe and secure."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3BnUpqOzxOOunWhLJMtv3E"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2xTzi6JGsrX62ZdxbNJiv8"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6CXPj1YlJB5ujxLvZCab1n"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "XlN1JJfBoheVjfKt4Ahbv",
+        "type": "Entry",
+        "createdAt": "2019-03-08T16:35:18.342Z",
+        "updatedAt": "2021-04-20T21:47:58.500Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "How To Care For People Experiencing Crisis - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "How To Care For People Experiencing Crisis"
+        },
+        "description": {
+          "en-US": "Learn more about caring for those in crisis and how to inspire your body to be the hands and feet of Christ during times of need. "
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1UMDRyis7j8IFfLFn6RKNZ"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5Vf1ohn7ko3PmHzZ7iBern"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "Cxut8gOSUEx3d39hMgjOk",
+        "type": "Entry",
+        "createdAt": "2019-03-06T16:50:55.890Z",
+        "updatedAt": "2021-04-20T21:47:29.738Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "External Focus Overview - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "External Focus Overview "
+        },
+        "description": {
+          "en-US": "Discover practical ways to think about your organization’s service sweet spot and to deploy the modern-day Samaritans in your church."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3fYfCIq7kpWoOQIG43er9K"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6IibZ52R1aUEmC5DKhdXT1"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4i1QWZP7JVkBEmxeAuIsoF",
+        "type": "Entry",
+        "createdAt": "2021-04-15T21:33:54.798Z",
+        "updatedAt": "2021-04-20T21:47:16.593Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Technical Production Tour - Breakout Session 2 "
+        },
+        "title": {
+          "en-US": "Technical Production Tour"
+        },
+        "description": {
+          "en-US": "Watermark's Production Team will give a tour of the front- and back-of-house support systems all while sharing about their heart for serving and leading behind the scenes."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "aguLiucqhOe9SUQXxqt9b"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6tgGPaFEri02jL7ST7Oa8T"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "66yskwNVuprIWy8HzxzUIN",
+        "type": "Entry",
+        "createdAt": "2021-04-15T17:32:46.563Z",
+        "updatedAt": "2021-04-20T21:45:44.872Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Wednesday Breakouts Session 1"
+        },
+        "title": {
+          "en-US": "Breakout Session 1"
+        },
+        "breakouts": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5HXZ8ez7ZyiMOGZ2Smgvrr"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3Z7hTsrxrwOjczMhnEg0zb"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3sBAsXcTKPncqhorOqZExk"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4TRJPwWFpQGBcx5PctJ7Qf"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "45kov2WCyxVMow3fUJIVwY"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "24R6Dazana1KBgNMgZa8Dy"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "x7y6WSey28z3Gcf7GFcU6"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5AcgyipuCy0ziJQeGLJ7i4"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "rKPB3YzwpQ6xwbZQkt7ur"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5VucFZrdX2hAcCjJRTJq9q"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2bDJN0zPM5tLI7glgpq3nw"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5cfhOaTP1zvIo6fUy9neHN"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "44yBViyAQ3m6yADjd8e7x2"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "LehvSbOYReu54Jj5AIvC3"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7hM66qd6enDICtR5M3OD46"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "43FFMJrrLGDiJCHWncZceh"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7G3FFTqlvzIcjuIxFoaSKK"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "t0e7BcOJS07RodnY7lQCM"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7G3FFTqlvzIcjuIxFoaSKK",
+        "type": "Entry",
+        "createdAt": "2019-03-08T17:23:20.352Z",
+        "updatedAt": "2021-04-20T21:43:49.020Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Lessons for Young Leaders Shepherding People Older than Themselves Breakout Session 1"
+        },
+        "title": {
+          "en-US": "Lessons for Young Leaders Shepherding People Older than Themselves"
+        },
+        "description": {
+          "en-US": "Hear biblical instruction, practical application, and lessons learned from young campus pastors leading teams of people from a variety of ages and life stages."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2DpyHInlPkk5vI5okjRuPf"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "33TgvOJLRx4RdoqaVFi4Yu"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4fDUb0v4q0YxG7h122tqHB",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:43:31.866Z",
+        "updatedAt": "2021-04-20T21:43:31.866Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Starting and Stabilizing Healthy Satellite Campuses and Local Churches - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "Starting and Stabilizing Healthy Satellite Campuses and Local Churches"
+        },
+        "description": {
+          "en-US": "Learn about multiple methods Watermark has used to launch church campuses into independent local churches."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2DpyHInlPkk5vI5okjRuPf"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7Kj8RBnDzk0s7BvMu3Bwab"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7JoFsFsVsSxSwLCrWf6dph"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2t16D72K0owqSaZLt6ueya",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:42:26.275Z",
+        "updatedAt": "2021-04-20T21:42:26.275Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Single Adult Ministry Overview - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "Single Adult Ministry Overview"
+        },
+        "description": {
+          "en-US": "Single adults can be one of the largest groups in many of our churches, but it can also be one of the greatest missed opportunities. Come hear how we are thinking about ministry to single adults in their 30s, 40s and 50s."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4ol24lpUkCHWsjeK4hXtXV"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4wWoKaGQlGFf8JgkIbHCvP"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6OmXhvbhxQdfsPV7czpa2t"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4pm1uXIY0cja8nWC9vgVwg",
+        "type": "Entry",
+        "createdAt": "2021-04-15T22:54:09.686Z",
+        "updatedAt": "2021-04-20T21:41:08.178Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Data Driven Discipleship - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "Data Driven Discipleship"
+        },
+        "description": {
+          "en-US": "Information is powerful. Learn how to use information to effectively care for people and help them take their next step with Christ."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "255CJwGROYPxA38llQy9RH"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7fKax9Y0NRaRavjfuSTjR9"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6iTFIu68EPTsMsQkFYYaaq",
+        "type": "Entry",
+        "createdAt": "2021-04-20T21:40:14.625Z",
+        "updatedAt": "2021-04-20T21:40:14.625Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Building the Body of Christ through Small Groups - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "Building the Body of Christ through Small Groups"
+        },
+        "description": {
+          "en-US": "Community is one of God’s primary tools in the spiritual transformation of His children. See how small groups can move beyond a supper club and into the joy and privilege of helping each member grow in Christ."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4XG2FMG7onjwgflRjyu01I"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2iMN59lb2YnvIZx0o4rVHA"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5Vf1ohn7ko3PmHzZ7iBern"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "7LlK0l8PNd2yIR6vd0QFha"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1xT7YvTHxbOymdzLN28GUE",
+        "type": "Entry",
+        "createdAt": "2021-04-17T18:08:43.970Z",
+        "updatedAt": "2021-04-20T21:36:57.277Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "link"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Farkle Dice Roll"
+        },
+        "url": {
+          "en-US": "https://watermarkchurch.github.io/clc-app-v2/roll.html"
+        },
+        "useInAppBrowser": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7DCk4kGtRqoXZ4MOeOX3rQ",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:44:24.074Z",
+        "updatedAt": "2021-04-20T19:48:55.696Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Recovery Workshop (Advanced re:generation) - Monday"
+        },
+        "title": {
+          "en-US": "Recovery Workshop (Advanced re:generation)"
+        },
+        "description": {
+          "en-US": "In Christ, people can be set free from the destruction of sin. Learn about the radical healing people are receiving in Christ through re:generation, our Biblical 12-step recovery ministry. Through the gospel, daily abiding, authentic community, confession, repentance, and forgiveness, entire churches can change and grow."
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7Ic7VtSGqz00ok8ie66Fk"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-26T13:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T11:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5cfhOaTP1zvIo6fUy9neHN",
+        "type": "Entry",
+        "createdAt": "2021-04-20T18:49:17.429Z",
+        "updatedAt": "2021-04-20T18:49:17.429Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Five Keys to Making Better Decisions - Breakout Session 1"
+        },
+        "title": {
+          "en-US": "Five Keys to Making Better Decisions"
+        },
+        "description": {
+          "en-US": "Ministry is hard enough without shooting yourself in the foot.  Join us as we walk through some of Watermark’s better and worse decisions over the last twenty years (aka The Good, The Bad, and the Ugly), what we learned, and how it has shaped the way we approach decisions today. "
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7Kj8RBnDzk0s7BvMu3Bwab"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2L280lQIzjHlLvt6IYbUxH"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2bDJN0zPM5tLI7glgpq3nw",
+        "type": "Entry",
+        "createdAt": "2021-04-15T21:13:17.178Z",
+        "updatedAt": "2021-04-20T18:46:05.697Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Doctrinal Priorities: How to Distinguish between Essentials and Non-essentials and Why that Matters - Breakout Session 1"
+        },
+        "title": {
+          "en-US": "Doctrinal Priorities: How to Distinguish between Essentials and Non-essentials and Why that Matters"
+        },
+        "description": {
+          "en-US": "From the dinosaurs to the death and resurrection of Jesus, learn about navigating popular theological topics and discover a framework for determining when to take a stand and when to agree to disagree."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1CzEEMjnxk9ETPxwJVYtXI"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6ABq3dUJiSMfBJatclJlrg"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5Kpj7ekXGnwvepfFjQ17K9"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "rKPB3YzwpQ6xwbZQkt7ur",
+        "type": "Entry",
+        "createdAt": "2021-04-15T17:27:29.420Z",
+        "updatedAt": "2021-04-20T18:44:49.700Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "The Church's Role In Community Development - Breakout Session 1"
+        },
+        "title": {
+          "en-US": "The Church's Role In Community Development"
+        },
+        "description": {
+          "en-US": "Are you frustrated with providing handouts to under-resourced individuals? Do you see the same people in your community day after day and wish you could make a real difference in their lives? Does your city view your church as a resource that really helps the community in effective ways? Join us as we explore some key principles in learning how the body of Christ can be deployed in long term impact in your community to really make a difference in the lives of those you seek to serve."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7IScyDUVgVH0gk65QKodj5"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5hFZG5iYEAbra48sOxuW9o"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6EEo9vOoGgZ8tVtzHeT6gw"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "x7y6WSey28z3Gcf7GFcU6",
+        "type": "Entry",
+        "createdAt": "2021-04-15T17:23:27.693Z",
+        "updatedAt": "2021-04-20T18:43:23.513Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "The Benefits of Being Employed by the Church - Breakout Session 1"
+        },
+        "title": {
+          "en-US": "The Benefits of Being Employed by the Church"
+        },
+        "description": {
+          "en-US": "Hear how Watermark's church leadership and Human Resources team determine compensation and benefits for employees – including some unique benefits you might not be familiar with!"
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "YJyhyr47qwljWPJa0GD5K"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7HTbvxdIO4bKe3KnrlwfHP"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1PM1sbmSA9aVPS5q1Nsg2N"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "1ge2HJE7JVqqcgjBhtdj1J"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2rlouDASHOrl0vaZJOlQeq",
+        "type": "Entry",
+        "createdAt": "2021-04-20T18:40:34.531Z",
+        "updatedAt": "2021-04-20T18:40:34.531Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Break"
+        },
+        "title": {
+          "en-US": "Break"
+        },
+        "startTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T16:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "45kov2WCyxVMow3fUJIVwY",
+        "type": "Entry",
+        "createdAt": "2019-03-08T17:34:20.725Z",
+        "updatedAt": "2021-04-20T18:37:54.336Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Watermark Elder Model Panel Discussion Breakout Session 1"
+        },
+        "title": {
+          "en-US": "Watermark Elder Model Panel Discussion"
+        },
+        "description": {
+          "en-US": "Join the Watermark Elders as they discuss the model they have used for 15 years, including: the requirements for Elders, the candidate selection process, roles and expectations, and the necessity for deep community within the Elders."
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7fKax9Y0NRaRavjfuSTjR9"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "26Z8IDnUdlBnuqipvi8qU",
+        "type": "Entry",
+        "createdAt": "2021-04-20T18:35:51.060Z",
+        "updatedAt": "2021-04-20T18:37:39.429Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Break - Wednesday AM"
+        },
+        "title": {
+          "en-US": "Break"
+        },
+        "startTime": {
+          "en-US": "2021-04-28T10:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "24R6Dazana1KBgNMgZa8Dy",
+        "type": "Entry",
+        "createdAt": "2021-04-20T18:37:19.704Z",
+        "updatedAt": "2021-04-20T18:37:29.023Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "The Church's Role in Healthcare - Breakout Session 1"
+        },
+        "title": {
+          "en-US": "The Church's Role in Healthcare"
+        },
+        "description": {
+          "en-US": "Learn how your church can step into healthcare to meet the phsyical and spiritual needs of your neighbors, engage with the lost, and serve your city."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7y9Sv0BRhaDBBsfGlGCdKK"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "Fs4f3kpYxyXG6NNdqxgOe"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4Y4supP8gleA9kCzHgPiBD"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4TRJPwWFpQGBcx5PctJ7Qf",
+        "type": "Entry",
+        "createdAt": "2019-03-08T15:46:53.159Z",
+        "updatedAt": "2021-04-20T18:34:13.196Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Preschool Ministry: Why It Matters - Breakout Session 1"
+        },
+        "title": {
+          "en-US": "Preschool Ministry: Why It Matters"
+        },
+        "description": {
+          "en-US": "Come hear how we guide preschoolers towards following Jesus and being the future church."
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2xTzi6JGsrX62ZdxbNJiv8"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3sBAsXcTKPncqhorOqZExk",
+        "type": "Entry",
+        "createdAt": "2019-03-07T18:22:10.095Z",
+        "updatedAt": "2021-04-20T18:33:56.088Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "A Biblical Approach to Church Security - Breakout Session 1"
+        },
+        "title": {
+          "en-US": "A Biblical Approach to Church Security "
+        },
+        "description": {
+          "en-US": "Discuss how to approach church security from a pastoral perspective, best practices for emergency action plans, and more."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1z9cxLxyVW62Aub5koH3ul"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5Vf1ohn7ko3PmHzZ7iBern"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "43FFMJrrLGDiJCHWncZceh",
+        "type": "Entry",
+        "createdAt": "2019-03-08T15:43:59.462Z",
+        "updatedAt": "2021-04-20T16:57:20.354Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Worship Ministry Overview Breakout Session 1"
+        },
+        "title": {
+          "en-US": "Worship Ministry Overview "
+        },
+        "description": {
+          "en-US": "Hear how our team has learned about leading worship, shepherding the team, developing volunteers, leading rehearsals, setting vision, and developing a healthy, biblical worship culture."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "18pJfw6ZzPOR6vUXMsR1E9"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7Ic7VtSGqz00ok8ie66Fk"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4RuBN1otGPdjF7KoY19KWL",
+        "type": "Entry",
+        "createdAt": "2021-04-14T21:57:31.773Z",
+        "updatedAt": "2021-04-19T00:28:32.438Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Main Stage Session 4"
+        },
+        "title": {
+          "en-US": "Main Stage Session 4"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1odFtvQ3f6ke5e19PG1Fnx"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T16:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T17:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7CLu6mnqHi8d7qSsyePtYn",
+        "type": "Entry",
+        "createdAt": "2021-04-14T21:45:00.616Z",
+        "updatedAt": "2021-04-19T00:27:14.002Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Main Stage Session 3"
+        },
+        "title": {
+          "en-US": "Main Stage Session 3"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1odFtvQ3f6ke5e19PG1Fnx"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T10:30-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6QrpvjQ7fV89wTfChCnH2g",
+        "type": "Entry",
+        "createdAt": "2019-03-06T16:01:57.995Z",
+        "updatedAt": "2021-04-19T00:20:42.530Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Kids Ministry Showcase"
+        },
+        "title": {
+          "en-US": "Watermark Kids Ministry Showcase"
+        },
+        "description": {
+          "en-US": "See and experience the Watermark Kids curriculum in action during a \"Sunday Program\" for elementary-aged kids."
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5Kpj7ekXGnwvepfFjQ17K9"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T18:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T20:00-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7e14TrAyYcgwCofXjYhF2j"
+            }
+          }
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        },
+        "capacity": {
+          "en-US": 100
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "RnisfbWWjjDZJMWAKtTGG",
+        "type": "Entry",
+        "createdAt": "2021-04-15T17:53:08.642Z",
+        "updatedAt": "2021-04-18T22:26:05.509Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "CLC 2019 - 2021 App Announcement Slide"
+        },
+        "title": {
+          "en-US": "Coming Soon - All Things CLC 2021!"
+        },
+        "description": {
+          "en-US": "We are putting the finishing touches on the content for CLC 2021. Check back on Wednesday, April 21 to access everything for CLC 2021 including schedule, breakouts, tracks, and Farkle fun."
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2jklDUOV6a7OdR55BeWHb4"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7CH810A52B7L2MlnEQONBx",
+        "type": "Asset",
+        "createdAt": "2021-04-17T02:41:54.759Z",
+        "updatedAt": "2021-04-17T02:41:54.759Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "placeholder"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/7CH810A52B7L2MlnEQONBx/5191f12f820cdb40b135a05f22bc43eb/placeholder.png",
+            "details": {
+              "size": 198,
+              "image": {
+                "width": 200,
+                "height": 88
+              }
+            },
+            "fileName": "placeholder.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "dM7ZxBCEOF39sN3imLAc2",
+        "type": "Entry",
+        "createdAt": "2021-04-15T21:35:20.763Z",
+        "updatedAt": "2021-04-16T15:35:41.366Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Imaging God: How our View of God Affects our Discipleship and Spiritual Formation - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "Imaging God: How our View of God Affects our Discipleship and Spiritual Formation"
+        },
+        "description": {
+          "en-US": "Explore the theology of discipleship and how to shepherd people in varying stages of spiritual maturity."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1CzEEMjnxk9ETPxwJVYtXI"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6TydijZvZEaEScdMrfyRTv"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3HPpfBsp4MNwM0uu1oxQOl",
+        "type": "Entry",
+        "createdAt": "2021-04-16T15:30:48.050Z",
+        "updatedAt": "2021-04-16T15:30:48.050Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Caring for Friends who Struggle with Same-Sex Attraction or Identify as LGBT+ - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "Caring for Friends who Struggle with Same-Sex Attraction or Identify as LGBT+"
+        },
+        "description": {
+          "en-US": "In today's culture, the Church has failed to represent Christ to the LGBT+ community in both word and deed. Hear how we are trying to minister to those struggling with same-sex attraction or identifying as LGBT+."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2Lm5CBJ0x5ELoR0OPmxHQ4"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "33TgvOJLRx4RdoqaVFi4Yu"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "7sTjqGo1Zwk2JqSUQd6jfk"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6bzr7Uv2E7cnHbXNoTNuw4",
+        "type": "Entry",
+        "createdAt": "2021-04-16T15:26:57.376Z",
+        "updatedAt": "2021-04-16T15:26:57.376Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Our Latest Thoughts on Volunteers, Serving, & Deploying Our Members - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "Our Latest Thoughts on Volunteers, Serving, & Deploying Our Members"
+        },
+        "description": {
+          "en-US": "Watermark continues to learn, change, succeed, and sometimes fail in deploying our Members to serve. Learn about our most current efforts and plans including volunteer recruiting, equipping, surveys, and staff roles, as well as the impact of COVID-19 on the local church."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "68H8HQiyQAbII2njHZyEvE"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7Ic7VtSGqz00ok8ie66Fk"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "13WRQVzZHC228WYcWo2Iur",
+        "type": "Entry",
+        "createdAt": "2021-04-16T15:25:17.214Z",
+        "updatedAt": "2021-04-16T15:25:17.214Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Creating a Culture of Authenticity - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "Creating a Culture of Authenticity"
+        },
+        "description": {
+          "en-US": "Confessing sin and living authentically should be major parts in every believer's walk with Christ. Hear how the Lord has built a culture of authenticity and repentance at Watermark."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2SeONE5F3AbUA62doszGpS"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "HtzBubMdH4Nv8tMJkGYSg"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5z66uCwvDnmxkxpUkTM8zx"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2pGrdjSHSR17guVfzoxNFl",
+        "type": "Entry",
+        "createdAt": "2021-04-16T15:10:27.236Z",
+        "updatedAt": "2021-04-16T15:10:27.236Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "From Skeptics to Scholars: Our 5 Best Practices for Equipping the Body - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "From Skeptics to Scholars: Our 5 Best Practices for Equipping the Body"
+        },
+        "description": {
+          "en-US": "Explore how your church can create innovative ways to help people in different stages of spiritual growth take their next step of faithfulness."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2Jg5Z1B0dJXqgLVzCoj3VJ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1CzEEMjnxk9ETPxwJVYtXI"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5Kpj7ekXGnwvepfFjQ17K9"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6EbUFbbOsot02IWBnj21Mw",
+        "type": "Entry",
+        "createdAt": "2021-04-16T15:07:36.039Z",
+        "updatedAt": "2021-04-16T15:07:36.039Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Church Facilities: Approaches to Maintenance, Design and Construction - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "Church Facilities: Approaches to Maintenance, Design and Construction"
+        },
+        "description": {
+          "en-US": "Find answers to frequently asked questions about campus development and maintenance as we discuss Watermark’s facilities strategy, team structure, building design, construction, and upkeep."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "66jpw0uQyvx3Wcel3oYnP6"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3bepGC1aySEZTvquWaCbFF"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7LXIngm7N7cC7jtKMRdxMK",
+        "type": "Entry",
+        "createdAt": "2021-04-15T23:03:39.818Z",
+        "updatedAt": "2021-04-15T23:03:39.818Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "RE:GENERATION for Students - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "RE:GENERATION for Students"
+        },
+        "description": {
+          "en-US": "Staff and volunteers will share what they have learned after launching a biblical recovery ministry for students in grades 6-12."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "kpSouTRN116duIzHh7PWt"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3YOTjfxp8Xn8BJc4E75C5O"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6F8RDktouweDfQKWG04E5i"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "54NhgDtJbTaNLIT1pfGENC",
+        "type": "Entry",
+        "createdAt": "2021-04-15T22:51:43.911Z",
+        "updatedAt": "2021-04-15T22:51:43.911Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Teaching the Story of the Bible to Kids - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "Teaching the Story of the Bible to Kids"
+        },
+        "description": {
+          "en-US": "Discover the value of the Bible's timeline and how to teach the timeline to kids so they can see it as a collection of smaller stories that point to one big, true story."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2m6Lb9D8MZ3aRFkRs8mw5u"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2xTzi6JGsrX62ZdxbNJiv8"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3yxIEfus6ys7hYfao0bgSi",
+        "type": "Entry",
+        "createdAt": "2021-04-15T22:47:12.389Z",
+        "updatedAt": "2021-04-15T22:47:12.389Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Addiction Free in 24 Hours - Breakout Session 3"
+        },
+        "title": {
+          "en-US": "Addiction Free in 24 Hours"
+        },
+        "description": {
+          "en-US": "Find out how, by the Holy Spirit's will power and with the body of Christ, you can help people find freedom in a single day from addictions to porn, pills, alcohol, control/anxiety, food/body image, materialism, gossip, and more."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3UYDdBsorYLjDlfY3UKEtx"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6TydijZvZEaEScdMrfyRTv"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4bXd8ju3B9FJQIuflZJ5Ls"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T15:45-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "67SoBhZo2qffVffLIDk5nj",
+        "type": "Entry",
+        "createdAt": "2021-04-15T22:31:55.960Z",
+        "updatedAt": "2021-04-15T22:31:55.960Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Watermark Students: Guiding Future Generations to Follow Jesus and Be the Church - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "Watermark Students: Guiding Future Generations to Follow Jesus and Be the Church"
+        },
+        "description": {
+          "en-US": "Watermark Students will share how to create opportunities for students (grades 6-12) to be known and accepted, taught about Jesus, and challenged to grow."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5ok9SxjySz1A4eDErGcGfI"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6XCgExVnKFyLFBY5qD7rgG"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6IibZ52R1aUEmC5DKhdXT1"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3bepGC1aySEZTvquWaCbFF",
+        "type": "Entry",
+        "createdAt": "2021-04-15T22:08:31.207Z",
+        "updatedAt": "2021-04-15T22:08:31.207Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "location"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Kids Building Second Floor Room 19-20"
+        },
+        "title": {
+          "en-US": "Kids Building Second Floor Room 19-20"
+        },
+        "map": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6Vbi7NP6SYUbueUfhLMkUl"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "32zbrB4CwbUg4RDBh47uv0",
+        "type": "Entry",
+        "createdAt": "2021-04-15T22:01:24.850Z",
+        "updatedAt": "2021-04-15T22:01:24.850Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "RE:GENERATION for Students - Breakout Session 2"
+        },
+        "title": {
+          "en-US": "RE:GENERATION for Students"
+        },
+        "description": {
+          "en-US": "Staff and volunteers will share what they have learned after launching a biblical recovery ministry for students in grades 6-12."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "kpSouTRN116duIzHh7PWt"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3YOTjfxp8Xn8BJc4E75C5O"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6F8RDktouweDfQKWG04E5i"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T13:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "Fs4f3kpYxyXG6NNdqxgOe",
+        "type": "Entry",
+        "createdAt": "2021-04-15T21:45:29.733Z",
+        "updatedAt": "2021-04-15T21:45:29.733Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "location"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Kids Second Floor 1-2"
+        },
+        "title": {
+          "en-US": "Kids Second Floor 1-2"
+        },
+        "map": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6Vbi7NP6SYUbueUfhLMkUl"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "t0e7BcOJS07RodnY7lQCM",
+        "type": "Entry",
+        "createdAt": "2019-03-08T16:13:57.578Z",
+        "updatedAt": "2021-04-15T21:30:13.427Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "The Institute: Training Church Leaders Beyond the Walls of Seminary Breakout"
+        },
+        "title": {
+          "en-US": "The Institute: Training Church Leaders Beyond the Walls of Seminary"
+        },
+        "description": {
+          "en-US": "Learn how the Watermark Institute provides biblical training, discipleship, and hands-on ministry experience for the next generation of church leaders."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1UMDRyis7j8IFfLFn6RKNZ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4ol24lpUkCHWsjeK4hXtXV"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6YspMsZQVzlFuGMcD088g0"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "LehvSbOYReu54Jj5AIvC3",
+        "type": "Entry",
+        "createdAt": "2021-04-15T21:23:17.841Z",
+        "updatedAt": "2021-04-15T21:23:17.841Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "The Church Deserves the Best Volunteers"
+        },
+        "title": {
+          "en-US": "The Church Deserves the Best Volunteers"
+        },
+        "description": {
+          "en-US": "Learn how ministries at Watermark recruit volunteers and turn them into leaders. You too can attract, train, and retain the volunteers your ministry needs and deserves."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "kpSouTRN116duIzHh7PWt"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4CQPw20Ho6VQB724XK0lRI"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6IibZ52R1aUEmC5DKhdXT1"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6QMI5rS7CT12reSgrefnWE"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "44yBViyAQ3m6yADjd8e7x2",
+        "type": "Entry",
+        "createdAt": "2021-04-15T21:17:40.211Z",
+        "updatedAt": "2021-04-15T21:17:40.211Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Making Your Church Staff An Awesome Place for Female Leaders"
+        },
+        "title": {
+          "en-US": "Making Your Church Staff An Awesome Place for Female Leaders"
+        },
+        "description": {
+          "en-US": "The Church should be the best place for women to lead and use their gifts. Learn about women in leadership and get practical takeaways for how both men and women can contribute to further cultivating a healthy, God-glorifying environment for female leaders. "
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "hLWz26KqeVyEHBVflq4uZ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "15EbTuhXIiIJfL2A51xiK9"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6gCbSxnYr0XJ8DYSkalHZG"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5AcgyipuCy0ziJQeGLJ7i4",
+        "type": "Entry",
+        "createdAt": "2021-04-15T19:44:12.098Z",
+        "updatedAt": "2021-04-15T19:44:12.098Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Caring for the Vulnerable in our Communities - Breakout Session 1"
+        },
+        "title": {
+          "en-US": "Caring for the Vulnerable in our Communities"
+        },
+        "description": {
+          "en-US": "Learn more about The Life Initiative at Watermark and how it can equip, organize, and mobilize your church to address abortion, foster care, and adoption."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6YNiUfKEqjHlljCz4mhSJ9"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7GYXoDV8pxwJaw5VNSLPXH"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "p6kand0JeVJh3j77qR10g"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3Z7hTsrxrwOjczMhnEg0zb",
+        "type": "Entry",
+        "createdAt": "2021-04-15T17:22:10.077Z",
+        "updatedAt": "2021-04-15T19:19:18.006Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Making Truth Taste Good: How to Counsel from Scripture - Breakout Session 1"
+        },
+        "title": {
+          "en-US": "Making Truth Taste Good: How to Counsel from Scripture"
+        },
+        "description": {
+          "en-US": "Learn about balancing truth and grace in challenging counseling situations, essential components of biblical counsel, and time-tested methodology that helps open the heart of the hearer."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3UYDdBsorYLjDlfY3UKEtx"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6TydijZvZEaEScdMrfyRTv"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4FrlZMFgnlz7ZjFutwsf6F"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "185eoezqFuNbBtIfO3T0Ed",
+        "type": "Entry",
+        "createdAt": "2021-04-15T18:04:15.662Z",
+        "updatedAt": "2021-04-15T18:19:39.825Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Coming Soon - CLC Schedule Item"
+        },
+        "title": {
+          "en-US": "Check by on Wednesday, April 21"
+        },
+        "summary": {
+          "en-US": "We are putting the finishing touches on everything for CLC 2021. Check back on Wednesday, April 21 to see the full schedule for CLC 2021 including schedule, breakouts, tracks, and Farkle fun."
+        },
+        "description": {
+          "en-US": "We are putting the finishing touches on everything for CLC 2021. Check back on Wednesday, April 21 to see the full schedule for CLC 2021 including schedule, breakouts, tracks, and Farkle fun."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3jxtEUoipivQ7TkUfxvPvI",
+        "type": "Entry",
+        "createdAt": "2019-02-21T15:22:50.289Z",
+        "updatedAt": "2021-04-15T18:15:34.875Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 39,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "conference"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "CLC 2019"
+        },
+        "title": {
+          "en-US": "Church Leaders Conference 2019"
+        },
+        "code": {
+          "en-US": "CLC2019"
+        },
+        "days": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7aXhHQrwjaO1cd1bYV9OEc"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3toZA16e57zqDoaeaiveZM"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "buufDk3eG72to3K5pNF1j"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "49YIdT3aciwOXZQ1LtEKmJ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4rptbXv6UUR3PdwxkVQb3c"
+              }
+            }
+          ]
+        },
+        "announcements": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "RnisfbWWjjDZJMWAKtTGG"
+              }
+            }
+          ]
+        },
+        "tracks": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6jXx5FuBLiWWMMa0mLwS9g"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2vnotfLPE0dWbUo23goINi"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "q5ULCZMjzczzIWPltRm87"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5oQbQCxAXCE5BpNm2iFFRn"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3rNcc3XgxuX4qln57NYIXE"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3m7F2ZAccnrECGEfI3BeQG"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4rRL5sdEVRDz4jAKHqpv04"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7yRlydRlECyZeUS7tlfQo7"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "SHBXGsryit3FZDU3bLpzj"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7t9ZB1pK8B6BfE0RXk6KUc"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7Me6d5BsbjIpbpfsiX6yOf"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "60QJqIcZHX35nB7QYgf9f8"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "V8NyLUfx4gN8mzESh1Pyh"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3DteTRptuh9xixKm9qHpll"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3oGXa5iCxSDwVbUsJR8d02"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5tlRNSaGTiPVj3rfemoA2"
+              }
+            }
+          ]
+        },
+        "maps": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "cFW5pVtuTn4Ez4b7FJ9NR"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4eOoYoNbx3H4IK50aaG4Bl"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2sa7yC7ARF8XI8M5Iw5I7M"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "21AiAvxUbLk1dm1eEtvHf2"
+              }
+            }
+          ]
+        },
+        "resources": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1Y7LqvgNUTmWKGHevl78bZ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4dyHaXHmhV1Z3hJDabWq6X"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6ipEnsLsOv5O7yAQvrtbmw"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2babUn5wVDEZBrcEy6UeOR"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1FmiSC0cjYfALL96iVFWj3"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1q3RCgDKDXhkzyZhw7uOZ0"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7aXhHQrwjaO1cd1bYV9OEc",
+        "type": "Entry",
+        "createdAt": "2021-04-15T17:59:40.033Z",
+        "updatedAt": "2021-04-15T18:15:07.097Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "day"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Coming Soon - CLC 2021 Schedule"
+        },
+        "title": {
+          "en-US": "Coming Soon - CLC 2021 Schedule "
+        },
+        "date": {
+          "en-US": "2021-04-21"
+        },
+        "summary": {
+          "en-US": "We are putting the finishing touches on the content for CLC 2021. Check back on Wednesday, April 21 to access everything for CLC 2021 including schedule, breakouts, tracks, and Farkle fun."
+        },
+        "scheduleItem": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "185eoezqFuNbBtIfO3T0Ed"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5tlRNSaGTiPVj3rfemoA2",
+        "type": "Entry",
+        "createdAt": "2021-04-15T17:57:46.371Z",
+        "updatedAt": "2021-04-15T18:05:39.931Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "track"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Coming Soon - Tracks"
+        },
+        "title": {
+          "en-US": "Coming Soon - CLC 2021 Tracks "
+        },
+        "description": {
+          "en-US": "We are putting the finishing touches on the breaouts and showcases for CLC 2021. Check back on Wednesday, April 21 to begin planning your schedule for CLC 2021."
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2jklDUOV6a7OdR55BeWHb4"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2jklDUOV6a7OdR55BeWHb4",
+        "type": "Asset",
+        "createdAt": "2021-04-15T17:53:02.953Z",
+        "updatedAt": "2021-04-15T17:53:02.953Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC21-Email-Header-DR-1200x675"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2jklDUOV6a7OdR55BeWHb4/5235c9b7cefc118f676eea40d9090071/CLC21-Email-Header-DR-1200x675.jpg",
+            "details": {
+              "size": 2675558,
+              "image": {
+                "width": 5000,
+                "height": 2813
+              }
+            },
+            "fileName": "CLC21-Email-Header-DR-1200x675.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5HXZ8ez7ZyiMOGZ2Smgvrr",
+        "type": "Entry",
+        "createdAt": "2021-04-15T17:05:33.351Z",
+        "updatedAt": "2021-04-15T17:05:33.351Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Take Your Teaching From Good to Great - Breakout Session 1"
+        },
+        "title": {
+          "en-US": "Take Your Teaching From Good to Great"
+        },
+        "description": {
+          "en-US": "Come and learn best practices in persuasively, effectively, and creatively teaching God’s Word and preparing sermons."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "Tdp808EAfWpbTOjvU98pC"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1odFtvQ3f6ke5e19PG1Fnx"
+            }
+          }
+        },
+        "downloads": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "eRatUo9sU7RmqPVk5vnPE"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2021-04-28T11:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T12:00-05:00"
+        },
+        "eventType": {
+          "en-US": "Breakout"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2RHgdF08pEVCaS3Tny0Rnk",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:22:20.325Z",
+        "updatedAt": "2021-04-14T22:22:20.325Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "re:generation Leader Meeting Showcase"
+        },
+        "title": {
+          "en-US": "re:generation Leader Meeting Showcase"
+        },
+        "description": {
+          "en-US": "Join us as our leaders encourage, train, and pray for one another as we prepare to serve people pursuing recovery in Christ."
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6gCbSxnYr0XJ8DYSkalHZG"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-26T17:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-26T18:20-05:00"
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7Id2yilGaBhGZFieAOD1Fk",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:22:17.232Z",
+        "updatedAt": "2021-04-14T22:22:17.232Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "re:generation Showcase"
+        },
+        "title": {
+          "en-US": "re:generation Showcase"
+        },
+        "description": {
+          "en-US": "Do you have habits to break, hurts to shake, or ground to take in your relationship with God? At re:generation, Watermark’s 12-step discipleship recovery program, we believe anyone can experience new life by working through biblical steps within authentic community and find freedom and healing in Christ. You will never be the same. "
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6tgGPaFEri02jL7ST7Oa8T"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2021-04-26T17:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-26T20:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6gCbSxnYr0XJ8DYSkalHZG",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:19:54.366Z",
+        "updatedAt": "2021-04-14T22:19:54.366Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "location"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "West Tower 3rd Floor South"
+        },
+        "title": {
+          "en-US": "West Tower 3rd Floor South"
+        },
+        "map": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5FeeLj0MojrTbopdVuFKPz"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6tgGPaFEri02jL7ST7Oa8T",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:13:31.364Z",
+        "updatedAt": "2021-04-14T22:13:31.364Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "location"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Main Auditorium"
+        },
+        "title": {
+          "en-US": "Main Auditorium"
+        },
+        "map": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2ooxQiiJj48eGJlc1UCOtu"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "357sCdYKn1Al7Dv2EqaBix",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:06:02.016Z",
+        "updatedAt": "2021-04-14T22:06:02.016Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Students Showcase: Shoreline"
+        },
+        "title": {
+          "en-US": "Students Showcase: Shoreline"
+        },
+        "description": {
+          "en-US": "Shoreline is Watermark's monthly gathering of high school students for worship, teaching, and connection. We are committed to guiding future generations to follow Jesus and be the Church."
+        },
+        "startTime": {
+          "en-US": "2021-04-28T18:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T21:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4RBMkVncAeGgukgTKxE1N4",
+        "type": "Entry",
+        "createdAt": "2021-04-14T22:04:24.625Z",
+        "updatedAt": "2021-04-14T22:04:24.625Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Watermark Kids' Ministry Showcase"
+        },
+        "title": {
+          "en-US": "Watermark Kids' Ministry Showcase"
+        },
+        "description": {
+          "en-US": "See and experience the Watermark Kids curriculum in action during a \"Sunday Program\" for elementary-aged kids."
+        },
+        "startTime": {
+          "en-US": "2021-04-28T18:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T00:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4wqR7V4NOg1TjyhcSdlecm",
+        "type": "Entry",
+        "createdAt": "2021-04-14T21:59:30.923Z",
+        "updatedAt": "2021-04-14T21:59:30.923Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Merge Showcase"
+        },
+        "title": {
+          "en-US": "Merge Showcase"
+        },
+        "startTime": {
+          "en-US": "2021-04-28T18:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T21:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "52tsGMZgTMTpn9kL9ltAQP",
+        "type": "Entry",
+        "createdAt": "2021-04-14T21:54:43.228Z",
+        "updatedAt": "2021-04-14T21:54:43.228Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Break"
+        },
+        "title": {
+          "en-US": "Break"
+        },
+        "startTime": {
+          "en-US": "2021-04-28T14:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-28T14:45-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4Alwew3VKGmvzAgmk8qxSq",
+        "type": "Entry",
+        "createdAt": "2021-04-14T21:32:02.508Z",
+        "updatedAt": "2021-04-14T21:32:02.508Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "The Porch Showcase"
+        },
+        "title": {
+          "en-US": "The Porch Showcase"
+        },
+        "startTime": {
+          "en-US": "2021-04-27T18:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T22:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3bk32tNJ5juPHGgOSBGA6V",
+        "type": "Entry",
+        "createdAt": "2021-04-14T21:25:52.059Z",
+        "updatedAt": "2021-04-14T21:25:52.059Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Tuesday - Break"
+        },
+        "title": {
+          "en-US": "Break"
+        },
+        "startTime": {
+          "en-US": "2021-04-27T14:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T15:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3piCfBD8m9rJmFDHk0n4ZU",
+        "type": "Entry",
+        "createdAt": "2021-04-14T21:06:33.383Z",
+        "updatedAt": "2021-04-14T21:06:33.383Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Workshops List - Day 2"
+        },
+        "title": {
+          "en-US": "Workshops"
+        },
+        "summary": {
+          "en-US": "A pre-conference opportunity to get an in-depth look at one of Watermark’s core ministries. "
+        },
+        "startTime": {
+          "en-US": "2021-04-27T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2021-04-27T11:30-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "71H9Z4BBRAzD3DYsxYBj3v",
+        "type": "Entry",
+        "createdAt": "2019-03-21T18:14:51.223Z",
+        "updatedAt": "2021-04-13T03:33:02.682Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Lunch - Tuesday"
+        },
+        "title": {
+          "en-US": "Lunch"
+        },
+        "summary": {
+          "en-US": "Provided for Ministry Workshop attendees"
+        },
+        "startTime": {
+          "en-US": "2019-04-02T11:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-02T13:00-05:00"
+        },
+        "capacity": {
+          "en-US": 100
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3ud2cFHWJk1kPg4nGyA8y7",
+        "type": "Entry",
+        "createdAt": "2021-02-15T17:44:15.806Z",
+        "updatedAt": "2021-02-15T17:45:33.418Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Session 1 - Leadership Workbook"
+        },
+        "title": {
+          "en-US": "Session 1 - Leadership Workbook"
+        },
+        "description": {
+          "en-US": "### Making It Practical\n\n- What are the big Ideas to remember?\n- What habit do I need to implement?\n- What conversations do I need to have?\n\n---\n\n### Session 1 Recap\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium mattis lacinia. Ut sodales odio eu velit tempor sollicitudin commodo sit amet dui. Mauris porttitor nibh vel felis congue, id sollicitudin elit mollis. \n\n- Aenean aliquam urna at mi tincidunt vehicula. Proin ipsum libero, feugiat dignissim porta et, faucibus sit amet ex. \n- Donec et velit eget mi tincidunt posuere. Sed tellus sem, rutrum ut dui non, facilisis feugiat leo. Aenean malesuada ac orci eu tincidunt. Aliquam leo massa, egestas eget ornare non, mattis eu purus. \n- Proin quis tristique augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur sodales sollicitudin. \n- Morbi orci nisl, tempus quis est ut, tempus suscipit sapien. Praesent tincidunt turpis elit, non ornare tellus ultrices non.\n\nIn eget odio accumsan, ullamcorper justo ut, ullamcorper lectus. Suspendisse consequat nisi et lacus cursus, consequat imperdiet diam malesuada. Praesent pulvinar, massa tempor mollis viverra, turpis purus tempus nulla, quis lacinia velit libero nec ipsum. "
+        },
+        "publishAt": {
+          "en-US": "2021-02-15T00:00-06:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6pDgIwZumpr1lALbwZnctT"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "nextPageUrl": "https://cdn.contentful.com/spaces/vsbnbtnlrnnr/environments/master/sync?sync_token=wonDrcKnRgcSOF4-wrDCgcKefWzCgsOxXQhzISXDm3fCoMOIw5fDk8OTw6zDsTzCkcKcKwFVwrwNd8OSRMObw74HbhjClBDDgSjCuMKIPxM_MMO8w7PCnMKJwqNmw7QFw7xiJARPw6rDlm3Drio1wpfDvWnDnsO-FMKECcKLw6TDvk9rwqTCl1Qyc33CkCgVw5VWWANPw7ArwpvDg1zDmAfDuAnDkCovwr5uw6XCt8K9DMKNw6LCjRYgwrXDm8K7JA0LTMOCwpZoBMOywpbDqlrCl0LDl8O1"
+}

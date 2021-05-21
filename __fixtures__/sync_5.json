@@ -1,0 +1,5287 @@
+{
+  "sys": {
+    "type": "Array"
+  },
+  "items": [
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5J2kE92eVtAcNfLIwbthOl",
+        "type": "Entry",
+        "createdAt": "2019-04-04T16:50:10.443Z",
+        "updatedAt": "2019-04-08T14:25:42.129Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "CLC 2020"
+        },
+        "title": {
+          "en-US": "CLC 2020 Presale"
+        },
+        "description": {
+          "en-US": "CLC 2020 is happening! April 28-30, 2020. We’re making a special pre-sale opportunity available to all CLC 2019 attendees. This price is for you and anyone else you personally invite (your team back home). The link is in your inbox right now – along with your survey. Price will be good for 7 days. __The email is in your inbox right now.__"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "ulhy9feZpOu4k8pvkwQiY"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7JAmpcg3cBC1lKC8CCoIg9",
+        "type": "Entry",
+        "createdAt": "2019-04-04T17:04:11.329Z",
+        "updatedAt": "2019-04-04T17:04:11.329Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Post Conference Resources"
+        },
+        "title": {
+          "en-US": "Conference Resources"
+        },
+        "summary": {
+          "en-US": "Everything from CLC 2019 + MORE"
+        },
+        "description": {
+          "en-US": "We get it. It's a lot to take in. Keynotes, breakouts sessions and other ministry resources will be available in about a month.  Be on the lookout for an email."
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7fXtPeTK4e5b4hCb3V50C7"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7fXtPeTK4e5b4hCb3V50C7",
+        "type": "Asset",
+        "createdAt": "2019-04-04T17:00:32.732Z",
+        "updatedAt": "2019-04-04T17:00:32.732Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Post Conference Resources"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/7fXtPeTK4e5b4hCb3V50C7/658deeae3e37ba9cf272a36fc7d2b675/Post_Conference_Resources.png",
+            "details": {
+              "size": 560536,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "Post Conference Resources.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6KZFdQTSWmzVbiydXS4RgL",
+        "type": "Asset",
+        "createdAt": "2019-04-04T16:52:57.495Z",
+        "updatedAt": "2019-04-04T16:52:57.495Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Post-Con-Survey"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/6KZFdQTSWmzVbiydXS4RgL/a1e80b63236f71eab96558c031667e6f/Post-Con-Survey.png",
+            "details": {
+              "size": 570704,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "Post-Con-Survey.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "ulhy9feZpOu4k8pvkwQiY",
+        "type": "Asset",
+        "createdAt": "2019-04-04T16:27:57.650Z",
+        "updatedAt": "2019-04-04T16:27:57.650Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC-2020"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/ulhy9feZpOu4k8pvkwQiY/6d1f29e57123b1ed5ffabda1360d2df1/CLC-2020.png",
+            "details": {
+              "size": 472827,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "CLC-2020.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3jZ8kPrLNT3imlOhIsfG56",
+        "type": "Asset",
+        "createdAt": "2019-04-04T15:40:35.787Z",
+        "updatedAt": "2019-04-04T15:40:35.787Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "things-to-do-in-dallas (1)"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/3jZ8kPrLNT3imlOhIsfG56/bcf6fd96f35a880fc2cd5323488b4139/things-to-do-in-dallas__1_.png",
+            "details": {
+              "size": 1028919,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "things-to-do-in-dallas (1).png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "O9EyOhh9UyY6dT11FMLrx",
+        "type": "Entry",
+        "createdAt": "2019-03-08T20:52:13.295Z",
+        "updatedAt": "2019-04-04T14:38:09.188Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Main Stage Session 5"
+        },
+        "title": {
+          "en-US": "Main Stage Session 5"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1odFtvQ3f6ke5e19PG1Fnx"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2019-04-04T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-04T11:30-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "32YQwhnqw5ehmEGUnstF0Q",
+        "type": "Entry",
+        "createdAt": "2019-04-03T21:14:41.510Z",
+        "updatedAt": "2019-04-03T22:34:26.488Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "International Attendee Gathering"
+        },
+        "title": {
+          "en-US": "International Gathering"
+        },
+        "summary": {
+          "en-US": "Breakfast will be provided"
+        },
+        "description": {
+          "en-US": "We would like to invite all international participants to join our External Focus team to gather, connect and discuss Watermark's involvement internationally.\n\nBreakfast will be provided."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3fYfCIq7kpWoOQIG43er9K"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7Ic7VtSGqz00ok8ie66Fk"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2019-04-04T07:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-04T08:45-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1nUUiVYZ3ux8UIH8R4rmo0"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1nUUiVYZ3ux8UIH8R4rmo0",
+        "type": "Asset",
+        "createdAt": "2019-04-03T21:19:33.026Z",
+        "updatedAt": "2019-04-03T21:19:33.026Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC-App-ExternalFocus"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/1nUUiVYZ3ux8UIH8R4rmo0/faf3959a41967d27d1fb74d3f8aa0223/CLC-App-ExternalFocus.png",
+            "details": {
+              "size": 289915,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "CLC-App-ExternalFocus.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5WmZjAdYfo6HrhFC9PRuWV",
+        "type": "Entry",
+        "createdAt": "2019-03-08T17:38:22.618Z",
+        "updatedAt": "2019-04-03T12:49:04.027Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 9,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Church Planting Interest Breakfast"
+        },
+        "title": {
+          "en-US": "Church Planting Interest Breakfast"
+        },
+        "summary": {
+          "en-US": "Training for the next generation of pastors"
+        },
+        "description": {
+          "en-US": "Join the Watermark Institute team to learn more about the Watermark Church Planting Cohort, a ten-month immersive experience for the next generation of pastors who have a clear and specific intention to church plant.\n\nInformation on the Church Planting Cohort is available at [watermark.org/institute](http://www.watermark.org/dallas/ministries/watermark-institute).\n\nBreakfast will be served in the Town Center."
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6TydijZvZEaEScdMrfyRTv"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2019-04-03T07:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-03T08:30-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3KXbqiVvdyA2EtgTd3Kfr5"
+            }
+          }
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2d8fyYBrjlHGh2QZIkzIuA",
+        "type": "Asset",
+        "createdAt": "2019-03-20T18:36:55.987Z",
+        "updatedAt": "2019-04-02T21:07:12.852Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC19 App PhoneMap RJ ETower1F"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2d8fyYBrjlHGh2QZIkzIuA/c523a208782ad20311b9e8bf85611866/New-CLC19_App_PhoneMap_RJ_ETower1F.jpg",
+            "details": {
+              "size": 94406,
+              "image": {
+                "width": 540,
+                "height": 960
+              }
+            },
+            "fileName": "New-CLC19 App PhoneMap RJ ETower1F.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "14hrkU5nlRDd20nBAx6bjU",
+        "type": "Asset",
+        "createdAt": "2019-03-20T03:58:14.173Z",
+        "updatedAt": "2019-04-02T21:05:46.590Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC19 App PhoneMap RJ ETower1F"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/14hrkU5nlRDd20nBAx6bjU/9ff178525f5e892ee57be3442720f57a/New-CLC19_App_PhoneMap_RJ_ETower1F.jpg",
+            "details": {
+              "size": 94406,
+              "image": {
+                "width": 540,
+                "height": 960
+              }
+            },
+            "fileName": "New-CLC19 App PhoneMap RJ ETower1F.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6pQMehUyt1rJKQ6MO2Dbj",
+        "type": "Entry",
+        "createdAt": "2019-03-28T21:14:31.164Z",
+        "updatedAt": "2019-04-02T13:14:25.646Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "re|engage Leader meeting"
+        },
+        "title": {
+          "en-US": "re|engage Leader meeting"
+        },
+        "description": {
+          "en-US": "Join us as our re|engage leaders build relationships and sharpen one another as they shepherd other married couples."
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6TydijZvZEaEScdMrfyRTv"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2019-04-03T17:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-03T18:20-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "43nsqjbP9Jr2hn0WT13tdv"
+            }
+          }
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1q3RCgDKDXhkzyZhw7uOZ0",
+        "type": "Entry",
+        "createdAt": "2019-04-01T19:15:05.643Z",
+        "updatedAt": "2019-04-01T19:18:57.710Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Food Recommendations"
+        },
+        "title": {
+          "en-US": "Local Food Spots From Our Staff"
+        },
+        "summary": {
+          "en-US": "We polled our staff for a few local recommendations.  "
+        },
+        "description": {
+          "en-US": "The first thing you need to know is that CLC lunches and dinners are worth staying for. In case you find yourself in need of another meal, here are a few recommendations from our staff.\n\n### Local Spots\n-  Mattito’s\n-  Asian Mint\n-  Chipotle\n-  Torchy’s Tacos (get the queso!)\n-  Ten50 BBQ\n-  Street's Fine Chicken\n-  Shake Shack \n-  Twisted Root\n\n### Quick-Bite Favorites\n- Chick-fil-A\n- In-N-Out\n- Raising Cane’s\n- Whataburger\n- Pot Belly Sandwich Shop\n- Sonic\n- Freebirds \n\n### Dessert\n- Cinnaholic\n- Steel City Pops\n- Frost Gelato\n\n### Breakfast Spots\n- Crossroads Diner \n- Maple Leaf Diner \n- Cindi’s New York Deli \n\n### Looking to Explore Dallas\nTrinity Groves, located in a redeveloped portion of West Dallas, not only serves as a multi-eatery “restaurant incubator” with great patio dining, but it also offers a walking bridge and great views of downtown Dallas. (Be sure to stop at Kate Weiser Chocolate, even if it’s only to view her chocolate creations.)\n\nDeep Ellum (east of Downtown) or Bishop Arts (southwest Dallas) are highly walkable, revitalized areas full of culture, shops, and food. I’d personally give the edge to Bishop Arts, but Deep Ellum is edgier, if that’s your scene. If you want to explore a little bit closer in, spend some time on Lower Greenville or wander Mockingbird Station.\n\n"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3uJTvOhpOHRYqH9eC5A5Qh",
+        "type": "Entry",
+        "createdAt": "2019-03-06T15:57:18.151Z",
+        "updatedAt": "2019-04-01T13:51:28.740Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Multiplying Like Moses:  Shepherding God's People (Community Showcase)"
+        },
+        "title": {
+          "en-US": "Multiplying Like Moses:  Shepherding God's People Showcase"
+        },
+        "description": {
+          "en-US": "Join us for breakfast Wednesday morning as Watermark’s Elders, staff, and some of our most strategic lay leaders share how we shepherd and care for God’s people. Includes Q&A following breakfast."
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2wtYmPNap8AWgNMId5GJGk"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2019-04-03T06:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-03T08:30-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4ux7Fl8ZrJr8ryy248uocV"
+            }
+          }
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1Uw5OIxagpRQQ05aiuzufV",
+        "type": "Entry",
+        "createdAt": "2019-03-21T18:26:36.337Z",
+        "updatedAt": "2019-04-01T13:45:48.148Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Prodigal Showcase"
+        },
+        "title": {
+          "en-US": "Prodigal Showcase"
+        },
+        "description": {
+          "en-US": "The Prodigal helps people overcome the impact of poor choices by loved ones as a result of rebellion, addictions, sexual sins, etc."
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "33TgvOJLRx4RdoqaVFi4Yu"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2019-04-02T18:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-02T20:30-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2Nk5N56DIXa9VtprgHI2Rn"
+            }
+          }
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1bdMLO89z1s2xBgYI0osCk",
+        "type": "Entry",
+        "createdAt": "2019-03-28T21:19:54.827Z",
+        "updatedAt": "2019-03-31T22:25:17.575Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "re|engage Showcase (Multi-Part)"
+        },
+        "title": {
+          "en-US": "re|engage Showcase"
+        },
+        "summary": {
+          "en-US": "Leader Meeting followed by Ministry Event"
+        },
+        "description": {
+          "en-US": "Re|engage offers hope to marriages by helping couples move toward oneness through stories of grace, teaching, and small groups. This ministry is a marriage enrichment program; whether couples are struggling to get along, have broken relationships, or simply want to grow closer together, marriages in any condition can benefit."
+        },
+        "breakouts": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6pQMehUyt1rJKQ6MO2Dbj"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3yKZf4QRWhSrpewcJOiFTT"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2019-04-03T17:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-03T19:15-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "43nsqjbP9Jr2hn0WT13tdv"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6KBibXdWXcq4iN0fijdnkV",
+        "type": "Entry",
+        "createdAt": "2019-03-31T22:21:14.006Z",
+        "updatedAt": "2019-03-31T22:21:38.519Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "The Porch Showcase (Multi-Part)"
+        },
+        "title": {
+          "en-US": "The Porch Showcase"
+        },
+        "description": {
+          "en-US": "The Porch challenges young adults to take the next step of faith and connect with others who will spur them on to full devotion to Christ.  \n"
+        },
+        "breakouts": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "KMcltQVYLJcuc21TmSfLL"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3ywdFH1WTMqz1TlYN8bcd2"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2019-04-02T18:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-02T20:30-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1RQvaZWIT2p1ikPOGN71mB"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "KMcltQVYLJcuc21TmSfLL",
+        "type": "Entry",
+        "createdAt": "2019-03-31T22:12:04.055Z",
+        "updatedAt": "2019-03-31T22:20:47.677Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "The Porch Leader Meeting"
+        },
+        "title": {
+          "en-US": "The Porch Leader Meeting"
+        },
+        "description": {
+          "en-US": "Join us for an All Volunteer Meeting of the Porch teams."
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2wtYmPNap8AWgNMId5GJGk"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2019-04-02T18:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-02T19:00-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1RQvaZWIT2p1ikPOGN71mB"
+            }
+          }
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3ywdFH1WTMqz1TlYN8bcd2",
+        "type": "Entry",
+        "createdAt": "2019-03-31T22:13:32.944Z",
+        "updatedAt": "2019-03-31T22:13:32.944Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "The Porch Ministry Event"
+        },
+        "title": {
+          "en-US": "The Porch"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1odFtvQ3f6ke5e19PG1Fnx"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2019-04-02T19:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-02T20:30-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1RQvaZWIT2p1ikPOGN71mB"
+            }
+          }
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2tlp41Gjao2pNTuZuqBZ2O",
+        "type": "Asset",
+        "createdAt": "2019-03-08T15:56:38.056Z",
+        "updatedAt": "2019-03-31T22:02:55.449Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "John-Elmore"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2tlp41Gjao2pNTuZuqBZ2O/01117b33827a2c79ca8283cf18515302/elmore.jpeg",
+            "details": {
+              "size": 13635,
+              "image": {
+                "width": 300,
+                "height": 300
+              }
+            },
+            "fileName": "elmore.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2FwVQKt5GrJT1QxkI7n2wB",
+        "type": "Entry",
+        "createdAt": "2019-03-31T21:39:02.744Z",
+        "updatedAt": "2019-03-31T21:39:02.744Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "re:generation workshop (Tuesday)"
+        },
+        "title": {
+          "en-US": " Workshop"
+        },
+        "description": {
+          "en-US": "At re:generation, we believe that anyone can experience new life and freedom by working through steps of healing given to us by God through the Bible. All who are tired, broken or hurting are invited to come find recovery in Jesus Christ."
+        },
+        "startTime": {
+          "en-US": "2019-04-02T09:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-02T11:30-05:00"
+        },
+        "eventType": {
+          "en-US": "Workshop"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1sYlBp5uxFjtVCpzotm9IF",
+        "type": "Asset",
+        "createdAt": "2019-03-29T20:45:19.866Z",
+        "updatedAt": "2019-03-29T20:45:19.866Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Ethan Pope"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/1sYlBp5uxFjtVCpzotm9IF/498e6f397b3e5c06ebb710797e825aee/Ethan_Pope.jpg",
+            "details": {
+              "size": 47115,
+              "image": {
+                "width": 177,
+                "height": 240
+              }
+            },
+            "fileName": "Ethan Pope.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2Ib4rDvhrDojQTotFEDyih",
+        "type": "Entry",
+        "createdAt": "2019-03-19T16:38:28.021Z",
+        "updatedAt": "2019-03-29T20:11:01.572Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Welcome Message from Todd"
+        },
+        "title": {
+          "en-US": "Four Words That Changed Everything"
+        },
+        "summary": {
+          "en-US": "A Special Welcome from Todd Wagner, Senior Pastor & Elder."
+        },
+        "description": {
+          "en-US": "We know that today, God is going to do something in the world to make\nHis name known. God will change hearts, humble the proud, heal the hurting, and meet critical needs in and through His people. Because we know that God is constantly at work in our city, nation, and the world, we must begin each day by asking…\n\n__LORD, WHY NOT US?__\n\nThose four words have changed everything as we, as a family of faith, have sought to be about God’s business. That prayer also might be the beginning of God-ordained transformation in your community, your church, your family, and beyond, if He chooses.\n\nAs the days grow darker and our society becomes increasingly marked by division, rancor, rebellion, and the destruction of innocent lives, it’s never been more important:\n- for the hearts of God’s people to be completely His;\n- for God’s people to be passionate about both holding fast to truth and advancing His Kingdom;\n- and for us to continually strengthen, encourage, and admonish one another as long as it is called today, lest we be hardened by the deceitfulness of sin. (Hebrews 3:13)\n\nSo as we gather over the next few days, let us ask God to search our hearts to see where we might take new ground. Let us pray fervently for the wisdom and commitment to be bold in our leadership and our service of God’s great vision for His Church. Let’s make war against the enemies of doubt, distraction, and discouragement so our hearts are ready for the magnificent mission Our King sets before us.\n\nI pray that our time together will be used by God to embolden and encourage you as you shepherd the flock God has entrusted you with. My hope is that a year from now, we look back and marvel at the way God moved as we humbly and continually asked Him, __LORD, WHY NOT US?__  \n  \nLet's go, Church!\n  \nTodd Wagner  \nSenior Pastor, Elder"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "42vciaWAyZSffTaXKL62Dx"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2fDjy0eQH1rtp3lPrV6q5O",
+        "type": "Asset",
+        "createdAt": "2019-03-29T17:07:27.590Z",
+        "updatedAt": "2019-03-29T17:07:27.590Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Drew Zeiler"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2fDjy0eQH1rtp3lPrV6q5O/81a3bd75f37d2f6d431052e92093dbfe/Drew_Zeiler.jpg",
+            "details": {
+              "size": 38602,
+              "image": {
+                "width": 260,
+                "height": 200
+              }
+            },
+            "fileName": "Drew Zeiler.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2LbGVGwQiNrMvpYbowQjHh",
+        "type": "Asset",
+        "createdAt": "2019-03-29T17:03:29.520Z",
+        "updatedAt": "2019-03-29T17:03:29.520Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Jason Cirone"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2LbGVGwQiNrMvpYbowQjHh/5c059d733050f07d08e3cdf874264649/20190205-2.jpg",
+            "details": {
+              "size": 20353,
+              "image": {
+                "width": 300,
+                "height": 300
+              }
+            },
+            "fileName": "20190205-2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1EZn5mYH0hO3Yw2J2dr7lJ",
+        "type": "Asset",
+        "createdAt": "2019-03-29T17:00:51.600Z",
+        "updatedAt": "2019-03-29T17:00:51.600Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Jonathan-Jones"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/1EZn5mYH0hO3Yw2J2dr7lJ/d72c92740e7200e78e86531dc6df5b79/Jonathan_Jones.jpg",
+            "details": {
+              "size": 157198,
+              "image": {
+                "width": 500,
+                "height": 500
+              }
+            },
+            "fileName": "J J.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3ifwgGmCA6twIF4fR1FZgY",
+        "type": "Asset",
+        "createdAt": "2019-03-29T16:58:27.358Z",
+        "updatedAt": "2019-03-29T16:58:27.358Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Daniel-Merchen"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/3ifwgGmCA6twIF4fR1FZgY/a7d3e66b898b3819d15abcf1fb221f5b/Daniel_Merchen.jpg",
+            "details": {
+              "size": 50342,
+              "image": {
+                "width": 240,
+                "height": 185
+              }
+            },
+            "fileName": "D M.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "55SET5zeD1mL0npyRSiwsL",
+        "type": "Asset",
+        "createdAt": "2019-03-29T16:24:58.500Z",
+        "updatedAt": "2019-03-29T16:24:58.500Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Graham-Shelby"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/55SET5zeD1mL0npyRSiwsL/ec48d4a2acb1b8062a3c350ecd249b7b/20181211-6.jpg",
+            "details": {
+              "size": 17876,
+              "image": {
+                "width": 300,
+                "height": 300
+              }
+            },
+            "fileName": "20181211-6.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "79UXQ8af7HeIilbATYNzNy",
+        "type": "Asset",
+        "createdAt": "2019-03-29T16:23:26.766Z",
+        "updatedAt": "2019-03-29T16:23:26.766Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Joe-Daly"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/79UXQ8af7HeIilbATYNzNy/4727944b2099a09ff71e862343eab70e/Joe_Daly.jpg",
+            "details": {
+              "size": 38498,
+              "image": {
+                "width": 260,
+                "height": 200
+              }
+            },
+            "fileName": "Joe Daly.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3yKZf4QRWhSrpewcJOiFTT",
+        "type": "Entry",
+        "createdAt": "2019-03-28T21:19:49.387Z",
+        "updatedAt": "2019-03-29T03:56:16.642Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "re|engage Ministry (Event)"
+        },
+        "title": {
+          "en-US": "re|engage Ministry"
+        },
+        "description": {
+          "en-US": "Re|engage offers hope to marriages by helping couples move toward oneness through stories of grace, teaching, and small groups. This ministry is a marriage enrichment program; whether couples are struggling to get along, have broken relationships, or simply want to grow closer together, marriages in any condition can benefit."
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1odFtvQ3f6ke5e19PG1Fnx"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2019-04-03T18:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-03T19:15-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "43nsqjbP9Jr2hn0WT13tdv"
+            }
+          }
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6JfdHFlptykuj82C4EFL81",
+        "type": "Entry",
+        "createdAt": "2019-03-28T21:26:48.184Z",
+        "updatedAt": "2019-03-29T03:48:59.919Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Merge Leader Meeting"
+        },
+        "title": {
+          "en-US": "Merge Leader Meeting"
+        },
+        "description": {
+          "en-US": "Our Merge leadership team meets together before every session for a time of worship, fellowship, and prayer."
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2wtYmPNap8AWgNMId5GJGk"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2019-04-03T17:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-03T18:20-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3cSN64UeLw9oaQ37VQ35xX"
+            }
+          }
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5BStqwmGPFkPSZ0Fz8xJs6",
+        "type": "Entry",
+        "createdAt": "2019-03-06T14:43:51.277Z",
+        "updatedAt": "2019-03-29T02:38:22.905Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "re:generation Leader Meeting Showcase"
+        },
+        "title": {
+          "en-US": "re:generation Leader Meeting "
+        },
+        "description": {
+          "en-US": "Join us as our leaders encourage, train, and pray for one another as we prepare to serve people pursuing recovery in Christ.\n  \nDinner provided.  "
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6Ma4cWkmXlqw3txYQWjlgH"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2019-04-01T17:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-01T18:20-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5JRnRQw8pWe1O9gJCKTn0B"
+            }
+          }
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "39DxA9NLMeJrPAu9NjKcEL",
+        "type": "Asset",
+        "createdAt": "2019-03-28T23:23:28.847Z",
+        "updatedAt": "2019-03-28T23:23:28.847Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Josh-Thames"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/39DxA9NLMeJrPAu9NjKcEL/f9bb14d7670241b5209215f8513cb29d/Josh_Thames.jpg",
+            "details": {
+              "size": 154342,
+              "image": {
+                "width": 500,
+                "height": 500
+              }
+            },
+            "fileName": "Josh Thames.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4EvHGZrZgyTkqAQfA2LCcn",
+        "type": "Asset",
+        "createdAt": "2019-03-28T23:21:26.878Z",
+        "updatedAt": "2019-03-28T23:21:26.878Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Alaina-Haas"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/4EvHGZrZgyTkqAQfA2LCcn/2a9e8af973cc4f8d5b4c5f65a90cb0ac/Alaina_Anderson.jpg",
+            "details": {
+              "size": 165310,
+              "image": {
+                "width": 500,
+                "height": 500
+              }
+            },
+            "fileName": "Alaina Anderson.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "66mcWPfneGw3cHl0MqrCuI",
+        "type": "Entry",
+        "createdAt": "2019-03-28T21:30:13.973Z",
+        "updatedAt": "2019-03-28T21:30:13.973Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Merge Showcase (Multi-Part)"
+        },
+        "title": {
+          "en-US": "Merge Showcase"
+        },
+        "summary": {
+          "en-US": "Leader meeting followed by Merge ministry"
+        },
+        "description": {
+          "en-US": "Merge offers engaged and seriously dating couples a unique opportunity to learn and receive counsel about marriage in a safe, challenging, and authentic environment."
+        },
+        "breakouts": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6JfdHFlptykuj82C4EFL81"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6e4KFGd7rgOGvy5mSSCS0q"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2019-04-03T17:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-03T20:30-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3cSN64UeLw9oaQ37VQ35xX"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "535BGTbJ09JuUCoPjpirR2",
+        "type": "Entry",
+        "createdAt": "2019-03-06T16:23:44.590Z",
+        "updatedAt": "2019-03-28T21:03:33.801Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Summit Showcase (Men's Bible Study)"
+        },
+        "title": {
+          "en-US": "Summit Showcase"
+        },
+        "description": {
+          "en-US": "At Summit, Todd Wagner will walk us through how to honor God, inspire others, and act like men."
+        },
+        "speakers": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4oAPbJZkm54aZ6iUByXM6x"
+              }
+            }
+          ]
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1odFtvQ3f6ke5e19PG1Fnx"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2019-04-04T06:30-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-04T08:00-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5gZMCTmydq1EqSikh0FTrl"
+            }
+          }
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5WdqlRzrBJZHagZBET8MYk",
+        "type": "Asset",
+        "createdAt": "2019-03-28T20:59:32.096Z",
+        "updatedAt": "2019-03-28T20:59:35.242Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Liz-McKee"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5WdqlRzrBJZHagZBET8MYk/5fcf88e23b3f186eb6b02502890c889d/Liz-Brock.jpg",
+            "details": {
+              "size": 175236,
+              "image": {
+                "width": 1080,
+                "height": 1080
+              }
+            },
+            "fileName": "Liz-Brock.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4elKSWId3RqhXEUmik9WC4",
+        "type": "Asset",
+        "createdAt": "2019-03-28T20:55:58.176Z",
+        "updatedAt": "2019-03-28T20:55:58.176Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Chris-Mano"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/4elKSWId3RqhXEUmik9WC4/43a322401973998ef5cd9a0bf4ea720b/Chris-Mano.jpg",
+            "details": {
+              "size": 145483,
+              "image": {
+                "width": 500,
+                "height": 500
+              }
+            },
+            "fileName": "Chris-Mano.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6R9kCajFMOIBMKuE1ayMt6",
+        "type": "Asset",
+        "createdAt": "2019-03-28T20:49:42.208Z",
+        "updatedAt": "2019-03-28T20:49:42.208Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Harrison-Ross"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/6R9kCajFMOIBMKuE1ayMt6/d4cf865da64420bd3d73a1008fce9ec0/Harrison_Ross.jpg",
+            "details": {
+              "size": 45989,
+              "image": {
+                "width": 260,
+                "height": 198
+              }
+            },
+            "fileName": "H R.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5Ak1AnaX1MtMsTSaIVUoNJ",
+        "type": "Asset",
+        "createdAt": "2019-03-14T18:08:27.315Z",
+        "updatedAt": "2019-03-28T20:42:55.548Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3
+      },
+      "fields": {
+        "title": {
+          "en-US": "ReGen Leader Meeting 6884"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5Ak1AnaX1MtMsTSaIVUoNJ/2c659b508d09328bcc072edf23372bb3/ReGen_Leader_Meeting_6884.jpg",
+            "details": {
+              "size": 93144,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "ReGen_Leader_Meeting_6884.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2IJ3SEeRJODNqPxou4DtIV",
+        "type": "Asset",
+        "createdAt": "2019-03-28T20:40:11.784Z",
+        "updatedAt": "2019-03-28T20:40:11.784Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Jeff-Kramer"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2IJ3SEeRJODNqPxou4DtIV/f5b6219513e4727d0d4793d9eb52869b/Jeff_Kramer.jpg",
+            "details": {
+              "size": 11581,
+              "image": {
+                "width": 260,
+                "height": 200
+              }
+            },
+            "fileName": "Jeff Kramer.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2m2XnrZshjHkKjleEqZ8x6",
+        "type": "Asset",
+        "createdAt": "2019-03-28T20:38:27.695Z",
+        "updatedAt": "2019-03-28T20:38:27.695Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Robin-Koehling"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2m2XnrZshjHkKjleEqZ8x6/535575a725e1ddc47050aeb1e058b04e/Robin_Koehling.jpg",
+            "details": {
+              "size": 14419,
+              "image": {
+                "width": 260,
+                "height": 200
+              }
+            },
+            "fileName": "Robin Koehling.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2LpFoxvVRNoHPJm75Mki5c",
+        "type": "Asset",
+        "createdAt": "2019-03-28T19:54:02.061Z",
+        "updatedAt": "2019-03-28T19:54:02.061Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Bindra"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2LpFoxvVRNoHPJm75Mki5c/2b038bbef43c79fb66cce72f9ccbd472/Bindra.jpeg",
+            "details": {
+              "size": 16490,
+              "image": {
+                "width": 300,
+                "height": 300
+              }
+            },
+            "fileName": "Bindra.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3hH0qXM6fJQJM2P1AJ5DdD",
+        "type": "Asset",
+        "createdAt": "2019-03-28T19:45:16.089Z",
+        "updatedAt": "2019-03-28T19:45:16.089Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Rick-Wisner"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/3hH0qXM6fJQJM2P1AJ5DdD/0a0fc8c334ea89c8b0a9e17b231bb244/Rick_Wisner.jpg",
+            "details": {
+              "size": 13676,
+              "image": {
+                "width": 260,
+                "height": 200
+              }
+            },
+            "fileName": "Rick Wisner.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5WRxUHnJFm5cAOoKFBMxKw",
+        "type": "Asset",
+        "createdAt": "2019-03-28T19:39:11.456Z",
+        "updatedAt": "2019-03-28T19:39:11.456Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Mark Wampler"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5WRxUHnJFm5cAOoKFBMxKw/2a3a162b0f4c4ce1ff7b4455f549116c/Mark_Wampler.jpg",
+            "details": {
+              "size": 38351,
+              "image": {
+                "width": 260,
+                "height": 200
+              }
+            },
+            "fileName": "Mark Wampler.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3OS1QO0uo6aIL2Fq9kLaFj",
+        "type": "Asset",
+        "createdAt": "2019-03-28T19:25:51.703Z",
+        "updatedAt": "2019-03-28T19:25:51.703Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Marc Bellah"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/3OS1QO0uo6aIL2Fq9kLaFj/8b7fb2980170979154238115816b9884/Marc_Bellah.jpg",
+            "details": {
+              "size": 59384,
+              "image": {
+                "width": 500,
+                "height": 500
+              }
+            },
+            "fileName": "Marc Bellah.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "59q5E54zQ8YKsjdELuUNKF",
+        "type": "Asset",
+        "createdAt": "2019-03-05T22:23:01.356Z",
+        "updatedAt": "2019-03-28T18:47:50.533Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Gigi-Hornberger-2"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/59q5E54zQ8YKsjdELuUNKF/4657d4ba29a3de4273dc369f645cf531/Gigi-Hornberger-2.jpg",
+            "details": {
+              "size": 206099,
+              "image": {
+                "width": 1000,
+                "height": 1000
+              }
+            },
+            "fileName": "Gigi-Hornberger-2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2eOb7ShjTU1WosPizxNH1i",
+        "type": "Asset",
+        "createdAt": "2019-03-07T15:17:59.501Z",
+        "updatedAt": "2019-03-28T18:47:19.569Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Daniel-Crawford"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2eOb7ShjTU1WosPizxNH1i/450a70bdebb68ce7d733b4fce72c8972/Daniel-Crawford.jpg",
+            "details": {
+              "size": 141106,
+              "image": {
+                "width": 1000,
+                "height": 1000
+              }
+            },
+            "fileName": "Daniel-Crawford.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7mmu6dg2OCMKthiSIdF4jP",
+        "type": "Asset",
+        "createdAt": "2019-03-08T19:04:34.645Z",
+        "updatedAt": "2019-03-28T18:46:41.650Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "20180519-COLOR-3 180529 170116"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/7mmu6dg2OCMKthiSIdF4jP/b186c235d2880f51cf27c6b2341d0b22/20180519-COLOR-3_180529_170116.jpg",
+            "details": {
+              "size": 244569,
+              "image": {
+                "width": 1000,
+                "height": 1000
+              }
+            },
+            "fileName": "20180519-COLOR-3_180529_170116.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2Je2aAILMEVltqaEppEnNJ",
+        "type": "Asset",
+        "createdAt": "2019-03-14T18:04:07.480Z",
+        "updatedAt": "2019-03-28T18:46:14.892Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Community App"
+        },
+        "description": {
+          "en-US": "Community App"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2Je2aAILMEVltqaEppEnNJ/b747798bf5733585ab4d16d0a529873f/Community_App_0228.jpg",
+            "details": {
+              "size": 430641,
+              "image": {
+                "width": 1920,
+                "height": 1282
+              }
+            },
+            "fileName": "Community_App_0228.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4fL1N7vR0g4Mpb3ODByWfI",
+        "type": "Asset",
+        "createdAt": "2019-03-08T18:33:23.293Z",
+        "updatedAt": "2019-03-28T18:43:54.993Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Karen-Henson"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/4fL1N7vR0g4Mpb3ODByWfI/865ab2e3c17006793256787ecbeca6f6/Karen-Henson.jpg",
+            "details": {
+              "size": 152608,
+              "image": {
+                "width": 1000,
+                "height": 1000
+              }
+            },
+            "fileName": "Karen-Henson.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "40rXysQDIwgsCmqEW7HrSU",
+        "type": "Asset",
+        "createdAt": "2019-03-26T19:02:43.236Z",
+        "updatedAt": "2019-03-28T14:30:00.727Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Marriage-track"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/40rXysQDIwgsCmqEW7HrSU/5a80b8e18e1434441e7ed884defdfc14/marriage-track-3.png",
+            "details": {
+              "size": 841161,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "marriage-track-3.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7kzZ7Gr9qD85xF8XeBjSj9",
+        "type": "Asset",
+        "createdAt": "2019-03-18T23:26:48.556Z",
+        "updatedAt": "2019-03-28T14:28:38.680Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3
+      },
+      "fields": {
+        "title": {
+          "en-US": "Worship option 2"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/7kzZ7Gr9qD85xF8XeBjSj9/6a42b00987190263e22312f81ce565dc/Worship-track-1.png",
+            "details": {
+              "size": 752889,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "Worship-track-1.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1fXxeQTAfkemOXoxLOQF9i",
+        "type": "Asset",
+        "createdAt": "2019-03-26T22:15:51.015Z",
+        "updatedAt": "2019-03-28T14:23:00.605Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Well-Showcase"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/1fXxeQTAfkemOXoxLOQF9i/52023e291242d2d2ea08834762e6d70a/Well-Showcase.png",
+            "details": {
+              "size": 147347,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "Well-Showcase.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6ipEnsLsOv5O7yAQvrtbmw",
+        "type": "Entry",
+        "createdAt": "2019-03-19T19:05:52.836Z",
+        "updatedAt": "2019-03-28T14:08:05.036Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 8,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Guest Services"
+        },
+        "title": {
+          "en-US": "Guest Services"
+        },
+        "description": {
+          "en-US": "Want to meet with a specific Watermark ministry team?\nStop by Guest Services and we will connect you.   \n   \n### __Location__  \nTown Center\n   \n### Guest Services\n- Lost & Found  \n- First Aid  \n- CLC Booklets and Campus Maps\n  \n### WI-FI\nWi-Fi is available inside the buildings. Select the “Watermark Guest” network.\nNo password is needed.\n   \n### __EMAIL CONTACT__\n[clc@watermark.org](mailto:clc@watermark.org)\n  \n### __EMERGENCY PHONE #__ \n214.361.2275 (between 9:00 AM–5:00 PM)\n972.439.0949 (after hours)\n"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "689xorSYeslK4BsFpIjMSv"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "689xorSYeslK4BsFpIjMSv",
+        "type": "Asset",
+        "createdAt": "2019-03-28T14:07:57.720Z",
+        "updatedAt": "2019-03-28T14:07:57.720Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Guest-Services-1"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/689xorSYeslK4BsFpIjMSv/5df3088e4d67716c4cf0af402beced84/Guest-Services-1.png",
+            "details": {
+              "size": 685674,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "Guest-Services-1.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "74SN60SvzXucutvoZ9lUps",
+        "type": "Asset",
+        "createdAt": "2019-03-28T13:32:05.441Z",
+        "updatedAt": "2019-03-28T13:32:05.441Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Coffee-2"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/74SN60SvzXucutvoZ9lUps/45c3452ef23fe95c8eeeaefb2d4069bd/Coffee-2.png",
+            "details": {
+              "size": 840821,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "Coffee-2.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "22x41A2F3HpmGr44sCEk65",
+        "type": "Asset",
+        "createdAt": "2019-03-28T13:19:50.948Z",
+        "updatedAt": "2019-03-28T13:20:30.093Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Connecting-Track"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/22x41A2F3HpmGr44sCEk65/5a4aeb277f299651f17e42254a0cb170/Connecting1",
+            "details": {
+              "size": 692143,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "Connecting1",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2sa7yC7ARF8XI8M5Iw5I7M",
+        "type": "Entry",
+        "createdAt": "2019-03-28T00:42:18.727Z",
+        "updatedAt": "2019-03-28T00:42:18.727Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "location"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Prayer Room"
+        },
+        "title": {
+          "en-US": "Prayer Room"
+        },
+        "map": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4b1GPrMHHNPQ0xKV5HTnbH"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4b1GPrMHHNPQ0xKV5HTnbH",
+        "type": "Asset",
+        "createdAt": "2019-03-28T00:41:49.605Z",
+        "updatedAt": "2019-03-28T00:41:49.605Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC19 App PhoneMap RJ PrayerRoom"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/4b1GPrMHHNPQ0xKV5HTnbH/8e2279a5a9986ec795f0e012c3a99733/CLC19_App_PhoneMap_RJ_PrayerRoom.jpg",
+            "details": {
+              "size": 300328,
+              "image": {
+                "width": 1080,
+                "height": 1920
+              }
+            },
+            "fileName": "CLC19 App PhoneMap RJ PrayerRoom.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1gUOEk3VTiFri7laBWuvZQ",
+        "type": "Entry",
+        "createdAt": "2019-03-06T16:21:48.218Z",
+        "updatedAt": "2019-03-28T00:35:48.270Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 5,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "WELL Showcase"
+        },
+        "title": {
+          "en-US": "WELL Showcase"
+        },
+        "description": {
+          "en-US": "The goal of WELL is to help participants understand what the Bible says about stewarding your body for God’s glory. Come to our morning workout ready to learn and sweat (or simply observe). You’ll have time afterward to clean up at the hotel before the conference begins. "
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "59jxpwflzQlAgx085P1q72"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2019-04-03T06:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-03T07:15-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1fXxeQTAfkemOXoxLOQF9i"
+            }
+          }
+        },
+        "eventType": {
+          "en-US": "Showcase"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "59jxpwflzQlAgx085P1q72",
+        "type": "Entry",
+        "createdAt": "2019-03-28T00:34:51.578Z",
+        "updatedAt": "2019-03-28T00:34:51.578Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "location"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "South Parking Lot"
+        },
+        "title": {
+          "en-US": "South Lot"
+        },
+        "map": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "63kBb9SPvW4zeWxHFlRETo"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "63kBb9SPvW4zeWxHFlRETo",
+        "type": "Asset",
+        "createdAt": "2019-03-28T00:34:41.348Z",
+        "updatedAt": "2019-03-28T00:34:41.348Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC19 App PhoneMap RJ WELL"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/63kBb9SPvW4zeWxHFlRETo/35c19b745e3b665e036f5f44be15461a/CLC19_App_PhoneMap_RJ_WELL.jpg",
+            "details": {
+              "size": 305549,
+              "image": {
+                "width": 1080,
+                "height": 1920
+              }
+            },
+            "fileName": "CLC19 App PhoneMap RJ WELL.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7gdnMGTRQS8EkkgQ3mk4Kh",
+        "type": "Asset",
+        "createdAt": "2019-03-20T03:57:12.080Z",
+        "updatedAt": "2019-03-27T16:23:16.560Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC19 App PhoneMap RJ Parking"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/7gdnMGTRQS8EkkgQ3mk4Kh/0fb71cfd2605d257003cf96c5ed67247/CLC19_App_PhoneMap_RJ_Parking.jpg",
+            "details": {
+              "size": 414735,
+              "image": {
+                "width": 1080,
+                "height": 1920
+              }
+            },
+            "fileName": "CLC19 App PhoneMap RJ Parking.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "25xuDld2jStkIzev7dwo0t",
+        "type": "Asset",
+        "createdAt": "2019-03-15T16:21:14.880Z",
+        "updatedAt": "2019-03-27T16:22:12.745Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC19 App PhoneMap RJ WTower3F"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/25xuDld2jStkIzev7dwo0t/f5fcf14f05324085d1c7b7b0d12c49f7/CLC19_App_PhoneMap_RJ_WTower3F__1_.jpg",
+            "details": {
+              "size": 344416,
+              "image": {
+                "width": 1080,
+                "height": 1920
+              }
+            },
+            "fileName": "CLC19 App PhoneMap RJ WTower3F (1).jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5p6ilkMFjhOhR0cI1eF806",
+        "type": "Asset",
+        "createdAt": "2019-03-15T16:31:48.887Z",
+        "updatedAt": "2019-03-27T16:21:43.464Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC19 App PhoneMap RJ WTower4F"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5p6ilkMFjhOhR0cI1eF806/324794771e2af5e865004ad2812786ad/CLC19_App_PhoneMap_RJ_WTower4F.jpg",
+            "details": {
+              "size": 347341,
+              "image": {
+                "width": 1080,
+                "height": 1920
+              }
+            },
+            "fileName": "CLC19 App PhoneMap RJ WTower4F.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4GHppgmURRxXS3GvvdSe2J",
+        "type": "Asset",
+        "createdAt": "2019-03-15T16:32:35.655Z",
+        "updatedAt": "2019-03-27T16:20:58.018Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC19 App PhoneMap RJ WTower2F"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/4GHppgmURRxXS3GvvdSe2J/6018a3509eb115f68b630354b0c4d638/CLC19_App_PhoneMap_RJ_WTower2F.jpg",
+            "details": {
+              "size": 341514,
+              "image": {
+                "width": 1080,
+                "height": 1920
+              }
+            },
+            "fileName": "CLC19 App PhoneMap RJ WTower2F.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6Ma4cWkmXlqw3txYQWjlgH",
+        "type": "Entry",
+        "createdAt": "2019-03-05T22:50:19.519Z",
+        "updatedAt": "2019-03-27T16:20:25.468Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "location"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "West Tower 3rd Floor South"
+        },
+        "title": {
+          "en-US": "West Tower 3rd Floor South"
+        },
+        "map": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5FeeLj0MojrTbopdVuFKPz"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5FeeLj0MojrTbopdVuFKPz",
+        "type": "Asset",
+        "createdAt": "2019-03-27T16:20:14.326Z",
+        "updatedAt": "2019-03-27T16:20:14.326Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC19 App PhoneMap RJ WTower3F (1)"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5FeeLj0MojrTbopdVuFKPz/1381a42d228f2d52f163241885a34df7/CLC19_App_PhoneMap_RJ_WTower3F__1_.jpg",
+            "details": {
+              "size": 344416,
+              "image": {
+                "width": 1080,
+                "height": 1920
+              }
+            },
+            "fileName": "CLC19 App PhoneMap RJ WTower3F (1).jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4hnjGq45tgDDnRco6SVmHl",
+        "type": "Entry",
+        "createdAt": "2019-03-27T02:07:42.568Z",
+        "updatedAt": "2019-03-27T02:12:44.282Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Breakout Sesh 1"
+        },
+        "title": {
+          "en-US": "Breakout Sesh 1"
+        },
+        "summary": {
+          "en-US": "Breakout Sesh 1"
+        },
+        "description": {
+          "en-US": "Breakout Sesh 1"
+        },
+        "breakouts": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "54oGcGrU51DdE523Bz7qwK"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7y0NqhbRkb4q5IVrsJRW1v"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2019-03-26T22:00-04:00"
+        },
+        "endTime": {
+          "en-US": "2019-03-26T22:25-04:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "7y0NqhbRkb4q5IVrsJRW1v",
+        "type": "Entry",
+        "createdAt": "2019-03-27T02:12:08.299Z",
+        "updatedAt": "2019-03-27T02:12:08.299Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "e2"
+        },
+        "title": {
+          "en-US": "e2"
+        },
+        "summary": {
+          "en-US": "e2"
+        },
+        "description": {
+          "en-US": "e2"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "54oGcGrU51DdE523Bz7qwK",
+        "type": "Entry",
+        "createdAt": "2019-03-27T02:11:51.642Z",
+        "updatedAt": "2019-03-27T02:11:51.642Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "e1"
+        },
+        "title": {
+          "en-US": "e1"
+        },
+        "summary": {
+          "en-US": "e1"
+        },
+        "description": {
+          "en-US": "e1"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5gyWi8nMV5lhUjQTeJdTg0",
+        "type": "Entry",
+        "createdAt": "2019-03-27T02:08:01.134Z",
+        "updatedAt": "2019-03-27T02:10:52.503Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 4,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Breakout Sesh 2"
+        },
+        "title": {
+          "en-US": "Breakout Sesh 2"
+        },
+        "summary": {
+          "en-US": "Breakout Sesh 2"
+        },
+        "description": {
+          "en-US": "Breakout Sesh 2"
+        },
+        "breakouts": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4M0PzCEMFmnNMEItK7z72U"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2019-03-26T22:25-04:00"
+        },
+        "endTime": {
+          "en-US": "2019-03-26T12:00-04:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4M0PzCEMFmnNMEItK7z72U",
+        "type": "Entry",
+        "createdAt": "2019-03-27T02:09:41.088Z",
+        "updatedAt": "2019-03-27T02:09:41.088Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Event 1"
+        },
+        "title": {
+          "en-US": "Event 1"
+        },
+        "summary": {
+          "en-US": "Event 1"
+        },
+        "description": {
+          "en-US": "Event 1"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1KahHvnkR8vUmlzvkGXv6x",
+        "type": "Entry",
+        "createdAt": "2019-03-27T02:06:59.130Z",
+        "updatedAt": "2019-03-27T02:08:37.982Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "day"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Tue"
+        },
+        "title": {
+          "en-US": "Tue"
+        },
+        "date": {
+          "en-US": "2019-03-26"
+        },
+        "scheduleItem": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4hnjGq45tgDDnRco6SVmHl"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5gyWi8nMV5lhUjQTeJdTg0"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "10fJ3evBdry85C1PrS2P1U",
+        "type": "Entry",
+        "createdAt": "2019-03-27T02:06:19.656Z",
+        "updatedAt": "2019-03-27T02:06:19.656Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "conference"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Conrad's Test Conference"
+        },
+        "title": {
+          "en-US": "Eyes only"
+        },
+        "code": {
+          "en-US": "CONRAD"
+        },
+        "days": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "10lRNnZKBj3j2SRZbaIkR9"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1KahHvnkR8vUmlzvkGXv6x"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "10lRNnZKBj3j2SRZbaIkR9",
+        "type": "Entry",
+        "createdAt": "2019-03-27T02:05:34.209Z",
+        "updatedAt": "2019-03-27T02:05:34.209Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "day"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Mon"
+        },
+        "title": {
+          "en-US": "Mon"
+        },
+        "date": {
+          "en-US": "2019-03-25"
+        },
+        "scheduleItem": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2JYVM8W74qZXtIsshJuJx7"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2JYVM8W74qZXtIsshJuJx7",
+        "type": "Entry",
+        "createdAt": "2019-03-27T02:05:27.218Z",
+        "updatedAt": "2019-03-27T02:05:27.218Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Test Event 1"
+        },
+        "title": {
+          "en-US": "Test Event 1"
+        },
+        "summary": {
+          "en-US": "Test Event 1"
+        },
+        "description": {
+          "en-US": "Test Event 1"
+        },
+        "startTime": {
+          "en-US": "2019-03-25T12:00-04:00"
+        },
+        "endTime": {
+          "en-US": "2019-03-25T14:00-04:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6te2bxuVOIfRLnmyDkic5w",
+        "type": "Asset",
+        "createdAt": "2019-03-26T19:21:11.467Z",
+        "updatedAt": "2019-03-26T19:21:11.467Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Workshops-S1"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/6te2bxuVOIfRLnmyDkic5w/9a54a2afd806162f358a6bf136b03a2f/Workshops-S1.png",
+            "details": {
+              "size": 632305,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "Workshops-S1.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "1SyyAAPSztFrPezPKJozAl",
+        "type": "Asset",
+        "createdAt": "2019-03-26T19:00:10.857Z",
+        "updatedAt": "2019-03-26T19:00:10.857Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "YA2-track"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/1SyyAAPSztFrPezPKJozAl/4180e50c39bd4f3cb0a5ddd93d197e5d/YA2-track.png",
+            "details": {
+              "size": 677965,
+              "image": {
+                "width": 1000,
+                "height": 501
+              }
+            },
+            "fileName": "YA2-track.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3SN2hnI5Tw4u5B1Zgsq8kG",
+        "type": "Entry",
+        "createdAt": "2019-03-08T18:02:39.142Z",
+        "updatedAt": "2019-03-26T18:54:15.828Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 7,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "breakouts"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "2019 Breakouts: Part 3"
+        },
+        "title": {
+          "en-US": "Breakouts: Part 3"
+        },
+        "breakouts": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "AueppbTQwWAwtkJE5SFqn"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "16RBfhgOoCZATfoK9QgNqh"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7CNHOokhoyjbvlON6u59aG"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6SGKC1gPTmSM2xd3OajC6Z"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6qTfUjQjvU3UnyrKONWxdD"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1LJyTCKJUCyzgbLxXwHxt5"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6krN9CYJVwP094m1SzvnRN"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1Nfoh0vSfvEgDifX3oUDqh"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "XlN1JJfBoheVjfKt4Ahbv"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7G3FFTqlvzIcjuIxFoaSKK"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7mzmF4X8gyQkGUnkKQKIY0"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3bUbtoVABBh4dwTbAl3mlj"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5VmbjtLLC6PVuH7zHwhj0q"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6Cuom8g9imPZreBJnmNUKZ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7CEtUvscFuJIsy7aztXJYs"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6fWPKpB9jUgv7CjkK0NV7V"
+              }
+            }
+          ]
+        },
+        "startTime": {
+          "en-US": "2019-04-03T14:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-03T15:45-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "3KXbqiVvdyA2EtgTd3Kfr5",
+        "type": "Asset",
+        "createdAt": "2019-03-26T17:40:44.158Z",
+        "updatedAt": "2019-03-26T17:40:44.158Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "WM-Institute-showcase"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/3KXbqiVvdyA2EtgTd3Kfr5/15ba26eaa12c4db8cb7200885e63801e/WM-Institute-showcase.png",
+            "details": {
+              "size": 42669,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "WM-Institute-showcase.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5gZMCTmydq1EqSikh0FTrl",
+        "type": "Asset",
+        "createdAt": "2019-03-19T01:48:26.481Z",
+        "updatedAt": "2019-03-26T17:33:23.573Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Summit Showcase"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5gZMCTmydq1EqSikh0FTrl/da47b23936ecdde4ccddd5ab23ed048a/Summit-showcase.png",
+            "details": {
+              "size": 46948,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "Summit-showcase.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4ux7Fl8ZrJr8ryy248uocV",
+        "type": "Asset",
+        "createdAt": "2019-03-26T16:57:47.714Z",
+        "updatedAt": "2019-03-26T17:09:44.045Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Community-showcase"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/4ux7Fl8ZrJr8ryy248uocV/d485e097076b37ecd92bff8be4f1d2c9/Community-showcase.png",
+            "details": {
+              "size": 95874,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "Community-showcase.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6erQtHuocw8rxrBDGHaNJK",
+        "type": "Asset",
+        "createdAt": "2019-03-19T01:52:21.240Z",
+        "updatedAt": "2019-03-26T17:09:00.154Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Worship-showcase"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/6erQtHuocw8rxrBDGHaNJK/4054177f5b0a29b8cdb8959e6d8086d8/Worship-showcase.png",
+            "details": {
+              "size": 44414,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "Worship-showcase.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2Nk5N56DIXa9VtprgHI2Rn",
+        "type": "Asset",
+        "createdAt": "2019-03-26T16:38:24.518Z",
+        "updatedAt": "2019-03-26T16:51:14.098Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Prodigal-showcase"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2Nk5N56DIXa9VtprgHI2Rn/41506a02f236d254e90971d396c52740/Prodigal-showcase.png",
+            "details": {
+              "size": 105881,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "Prodigal-showcase.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "42vciaWAyZSffTaXKL62Dx",
+        "type": "Asset",
+        "createdAt": "2019-03-19T16:38:04.234Z",
+        "updatedAt": "2019-03-25T11:30:59.195Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLC 5622"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/42vciaWAyZSffTaXKL62Dx/9a79cd45d2cb59545515d49b3f8ed446/Lawn-Tables.png",
+            "details": {
+              "size": 1438186,
+              "image": {
+                "width": 1000,
+                "height": 667
+              }
+            },
+            "fileName": "Lawn-Tables.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5AKbOcXadBZZSrc8CXcVaw",
+        "type": "Asset",
+        "createdAt": "2019-03-25T00:10:59.716Z",
+        "updatedAt": "2019-03-25T00:10:59.716Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "Local-missino"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/5AKbOcXadBZZSrc8CXcVaw/119366b1ae83d901fdc508f7e7937663/Local-missino.png",
+            "details": {
+              "size": 890600,
+              "image": {
+                "width": 1000,
+                "height": 667
+              }
+            },
+            "fileName": "Local-missino.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6KLxH30lOHOBofDurk7Dfx",
+        "type": "Asset",
+        "createdAt": "2019-03-18T23:31:13.394Z",
+        "updatedAt": "2019-03-24T23:13:00.967Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Leader Development"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/6KLxH30lOHOBofDurk7Dfx/85dcf9ee70d2d9861d0c71f99e289515/Leader_Development.jpg",
+            "details": {
+              "size": 140742,
+              "image": {
+                "width": 1000,
+                "height": 667
+              }
+            },
+            "fileName": "Leader Development.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "22GqKF58u0Vyhme6uHpdqL",
+        "type": "Asset",
+        "createdAt": "2019-03-15T03:06:17.022Z",
+        "updatedAt": "2019-03-24T23:12:28.555Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Family-ministry"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/22GqKF58u0Vyhme6uHpdqL/5835a58e0103f9ca5c194628b2e50243/Family-ministry.png",
+            "details": {
+              "size": 1011899,
+              "image": {
+                "width": 1000,
+                "height": 667
+              }
+            },
+            "fileName": "Family-ministry.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6pDgIwZumpr1lALbwZnctT",
+        "type": "Asset",
+        "createdAt": "2019-03-18T23:32:21.994Z",
+        "updatedAt": "2019-03-24T23:07:45.373Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Hot Topics"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/6pDgIwZumpr1lALbwZnctT/76732462797912d93c9df3a4be1b0b2f/Hot_Topics_.jpg",
+            "details": {
+              "size": 107567,
+              "image": {
+                "width": 1000,
+                "height": 667
+              }
+            },
+            "fileName": "Hot Topics .jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2Wz3dfeYhuOOQW0wTf9u4q",
+        "type": "Asset",
+        "createdAt": "2019-03-15T02:29:09.437Z",
+        "updatedAt": "2019-03-24T22:54:21.426Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "Arts-and-Tech"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2Wz3dfeYhuOOQW0wTf9u4q/56635df5e8176bcf99889c3eedc0e22f/Arts-and-Tech.png",
+            "details": {
+              "size": 1029772,
+              "image": {
+                "width": 1000,
+                "height": 667
+              }
+            },
+            "fileName": "Arts-and-Tech.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "2GDv587WMMHVz9l8hs2H08",
+        "type": "Asset",
+        "createdAt": "2019-03-24T21:22:07.488Z",
+        "updatedAt": "2019-03-24T22:39:20.805Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2
+      },
+      "fields": {
+        "title": {
+          "en-US": "WMR-logo"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/2GDv587WMMHVz9l8hs2H08/3578dae1e4cf808a202a22148dfa7274/WMR-logo.png",
+            "details": {
+              "size": 62413,
+              "image": {
+                "width": 1000,
+                "height": 500
+              }
+            },
+            "fileName": "WMR-logo.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6IXQnXTGPdTgjH9OkjeX9c",
+        "type": "Entry",
+        "createdAt": "2019-03-21T18:35:17.515Z",
+        "updatedAt": "2019-03-22T04:24:34.758Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "announcement"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "CLP - March 11, 2019"
+        },
+        "title": {
+          "en-US": "CLP: Encouraging Others"
+        },
+        "summary": {
+          "en-US": "Adam and John interview Blake H, Director of Dallas Campus Ministries, and Todd Wagner, Senior Pastor of Watermark Community Church, about how to effectively encourage others. "
+        },
+        "mediaUrl": {
+          "en-US": "https://s3.amazonaws.com/media-files.watermark.org/assets/20190304/631d1a77-b9d7-4664-b011-811684133215/Watermark-Podcast-E36.mp3"
+        },
+        "publishAt": {
+          "en-US": "2019-03-21T13:00-05:00"
+        },
+        "art": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "18Cpo6VnAwBUc5oAMwbF5v"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "18Cpo6VnAwBUc5oAMwbF5v",
+        "type": "Asset",
+        "createdAt": "2019-03-22T04:24:22.132Z",
+        "updatedAt": "2019-03-22T04:24:22.132Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1
+      },
+      "fields": {
+        "title": {
+          "en-US": "CLPodcast Assets 2019 03 EP39 Blog Header RJ"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/vsbnbtnlrnnr/18Cpo6VnAwBUc5oAMwbF5v/56fbc4b9f42f62e2780fbb6e450ce192/CLPodcast_Assets_2019_03_EP39_Blog_Header_RJ.jpg",
+            "details": {
+              "size": 975676,
+              "image": {
+                "width": 1920,
+                "height": 1080
+              }
+            },
+            "fileName": "CLPodcast Assets 2019_03 EP39 Blog Header RJ.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "5Exej4n0zO3Luufrgv3d7g",
+        "type": "Entry",
+        "createdAt": "2019-03-21T18:43:19.787Z",
+        "updatedAt": "2019-03-21T18:43:19.787Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Doors Open - Thursday"
+        },
+        "title": {
+          "en-US": "Doors Open"
+        },
+        "location": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1odFtvQ3f6ke5e19PG1Fnx"
+            }
+          }
+        },
+        "startTime": {
+          "en-US": "2019-04-04T08:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-04T09:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "551MECqwQWVe4DaOtDYykf",
+        "type": "Entry",
+        "createdAt": "2019-03-21T18:41:09.214Z",
+        "updatedAt": "2019-03-21T18:41:09.214Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Dinner - Wednesday"
+        },
+        "title": {
+          "en-US": "Dinner"
+        },
+        "summary": {
+          "en-US": "Provided"
+        },
+        "startTime": {
+          "en-US": "2019-04-03T17:00-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-03T18:30-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "6GTpQ75IXXulpDPLm26ijN",
+        "type": "Entry",
+        "createdAt": "2019-03-21T18:39:09.214Z",
+        "updatedAt": "2019-03-21T18:39:09.214Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "event"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Break - Wednesday: 3"
+        },
+        "title": {
+          "en-US": "Break"
+        },
+        "startTime": {
+          "en-US": "2019-04-03T15:45-05:00"
+        },
+        "endTime": {
+          "en-US": "2019-04-03T16:00-05:00"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "vsbnbtnlrnnr"
+          }
+        },
+        "id": "4LiqKZFU9QxzIg6360OATU",
+        "type": "Entry",
+        "createdAt": "2019-03-21T14:15:30.832Z",
+        "updatedAt": "2019-03-21T18:38:24.258Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "day"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "March 21, 2019"
+        },
+        "title": {
+          "en-US": "TEST"
+        },
+        "date": {
+          "en-US": "2019-03-21"
+        },
+        "summary": {
+          "en-US": "Make sure this day disappears off the schedule tomorrow"
+        },
+        "scheduleItem": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4xqIOlG6sc99VX4QVRb5Sr"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "nextPageUrl": "https://cdn.contentful.com/spaces/vsbnbtnlrnnr/environments/master/sync?sync_token=wonDrcKnRgcSOF4-wrDCgcKefWzCgsOxXQhzISXDm3fCoMOIw5fDk8OTw6zDsTzCkcKcKwFVwrwNd8OSRMObw74HbhjClBDDgSjCuMKIPxM_MMO8w7PCnMKJwqNmw7QFw7xiJARPw6rDlm3Drio1wpfDvWnDnsO-Z8OgYzZQVUnDn3fCiUjDisO9bsO-B8O_NTjCuSESdMKIwptYwokuwqEFw5lCwr7ClsOpXWTDgDldwqF1wpTCicOnasOrVcOsecKvw6N7w4zDoQzCmmx-w5pCDxbCig"
+}
