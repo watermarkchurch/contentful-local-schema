@@ -68,7 +68,7 @@ export default class ContentTypeResolverBuilder {
         throw new Error(`Value in field ${field.id} is not a link! (was '${link}')`)
       }
 
-      if (link.linkType == 'Asset') {
+      if (field.linkType == 'Asset') {
         const resolved = await dataSource.getAsset(link.sys.id)
         return {
           __typename: 'Asset',

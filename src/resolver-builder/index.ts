@@ -1,6 +1,9 @@
-import type {Resolvers} from '@apollo/client'
+import type {Resolver, Resolvers} from '@apollo/client'
+import type { Asset, AssetCollection, ContentfulClientApi, Entry, EntryCollection } from "contentful";
+
 import path from 'path'
 import { ContentfulDataSource } from '../dataSource';
+import { assetFieldResolver } from '../types';
 import type { ContentType } from '../util';
 import ContentTypeResolverBuilder from './content-type-resolver-builder';
 import QueryResolverBuilder from './query-resolver-builder';
@@ -53,6 +56,7 @@ export default class ResolverBuilder {
           }
         }, {})
       },
+      Asset: assetFieldResolver(),
       ...contentfulSchema.contentTypes.reduce((types, ct) => {
         return {
           ...types,

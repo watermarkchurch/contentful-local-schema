@@ -1,4 +1,5 @@
-
+import type { Resolver } from '@apollo/client'
+import type { Asset as ContentfulAsset, AssetCollection as ContentfulAssetCollection } from "contentful";
 import { GraphQLFloat, GraphQLInt, GraphQLInterfaceType, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLScalarType, GraphQLString } from 'graphql'
 
 export const GraphQLNever = new GraphQLScalarType({
@@ -70,6 +71,19 @@ export const Asset = new GraphQLObjectType({
     height: { type: GraphQLInt },
   }
 })
+
+export function assetFieldResolver(): { [field: string]: Resolver } {
+  return {
+    title: (asset: ContentfulAsset) => asset.fields.title,
+    description: (asset: ContentfulAsset) => asset.fields.description,
+    contentType: (asset: ContentfulAsset) => asset.fields.file?.contentType,
+    fileName: (asset: ContentfulAsset) => asset.fields.file?.fileName,
+    url: (asset: ContentfulAsset) => asset.fields.file?.url,
+    size: (asset: ContentfulAsset) => asset.fields.file?.details?.size,
+    width: (asset: ContentfulAsset) => asset.fields.file?.details?.image?.width,
+    height: (asset: ContentfulAsset) => asset.fields.file?.details?.image?.height,
+  }
+}
 
 export const AssetCollection = new GraphQLObjectType({
   name: 'AssetCollection',
