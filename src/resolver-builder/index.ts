@@ -49,7 +49,7 @@ export default class ResolverBuilder {
         ...contentfulSchema.contentTypes.reduce((resolvers, ct) => {
           return {
             ...resolvers,
-            ...new QueryResolverBuilder(this.dataSource, ct).build()
+            ...new QueryResolverBuilder(this.dataSource, ct).build().Query
           }
         }, {})
       },

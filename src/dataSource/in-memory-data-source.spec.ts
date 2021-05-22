@@ -48,5 +48,10 @@ describe('InMemoryDataSource', () => {
       const items = instance.getEntries({ 'sys.id': '2dVyGMdo3yydeL0QMuc5Cx' })
       expect(items.items[0].fields.name).toEqual('Rachel S')
     })
+
+    it('name', () => {
+      const items = instance.getEntries({ 'name': 'Rachel S' })
+      expect(items.items[0].sys.id).toEqual('2dVyGMdo3yydeL0QMuc5Cx')
+    })
   })
 })
