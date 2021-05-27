@@ -189,5 +189,44 @@ describe("integration", () => {
           ])
       });
     });
+
+    describe('single asset query', () => {
+      it("gets item", async () => {
+        const result = await client.query({
+          query: gql`
+            query getAsset($id: string!) {
+              asset(id: $id) @client {
+                sys {
+                  id
+                }
+                title
+                description
+                fileName
+                contentType
+                url
+                size
+                width
+                height
+              }
+            }
+          `,
+          variables: {
+            id: "36SvzmmQXUW5naOO1iN2oY",
+          },
+        });
+
+        expect(result.errors).toBeUndefined();
+        const { asset } = result.data;
+        expect(asset.sys.id).toEqual("36SvzmmQXUW5naOO1iN2oY");
+        expect(asset.title).toEqual("Test Image");
+        expect(asset.description).toEqual("test image description");
+        expect(asset.fileName).toEqual("heros-journey-circle.jpg");
+        expect(asset.contentType).toEqual("image/jpeg");
+        expect(asset.url).toEqual("//images.ctfassets.net/xxxxxx/36SvzmmQXUW5naOO1iN2oY/d6044773b6254cc22538c71ee1f59eb4/heros-journey-circle.jpg");
+        expect(asset.size).toEqual(118542);
+        expect(asset.width).toEqual(450);
+        expect(asset.height).toEqual(450);
+      })
+    })
   });
 });

@@ -49,10 +49,11 @@ export default class ResolverBuilder {
 
     return {
       Query: {
+        ...new QueryResolverBuilder(this.dataSource, 'Asset').build().Query,
         ...contentfulSchema.contentTypes.reduce((resolvers, ct) => {
           return {
             ...resolvers,
-            ...new QueryResolverBuilder(this.dataSource, ct).build().Query
+            ...new QueryResolverBuilder(this.dataSource, ct.sys.id).build().Query
           }
         }, {})
       },

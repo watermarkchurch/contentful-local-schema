@@ -50,7 +50,7 @@ describe('LocalTypePolicyBuilder', () => {
     // act
     const resolvers = new QueryResolverBuilder(
         fakeDataSource,
-        sectionBlockTextContentType
+        sectionBlockTextContentType.sys.id
       ).build()
 
     const client = new ApolloClient({
@@ -133,7 +133,7 @@ describe('LocalTypePolicyBuilder', () => {
     // act
     const resolvers = new QueryResolverBuilder(
         fakeDataSource,
-        sectionBlockTextContentType
+        sectionBlockTextContentType.sys.id
       ).build()
 
     const client = new ApolloClient({
