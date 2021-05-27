@@ -228,5 +228,51 @@ describe("integration", () => {
         expect(asset.height).toEqual(450);
       })
     })
+
+    describe('entry collection query', () => {
+      it('gets all items', async () => {
+        const result = await client.query({
+          query: gql`
+            query getConferences($id: string!) {
+              conferenceCollection @client {
+                total
+                items {
+                  title
+                }
+              }
+            }
+          `,
+        });
+
+        expect(result.errors).toBeUndefined();
+        const { conferenceCollection } = result.data;
+        expect(conferenceCollection.total).toEqual(3)
+        expect(conferenceCollection.items.map((c: any) => c.title))
+          .toEqual(['Church Leaders Conference 2019', 'Eyes only', 'CLC 2021'])
+      })
+    })
+
+    describe('asset collection query', () => {
+      it('gets all items', async () => {
+        const result = await client.query({
+          query: gql`
+            query getAssets($id: string!) {
+              assetCollection @client {
+                total
+                items {
+                  title
+                }
+              }
+            }
+          `,
+        });
+
+        expect(result.errors).toBeUndefined();
+        const { assetCollection } = result.data;
+        expect(assetCollection.total).toEqual(268)
+        expect(assetCollection.items[0].title).toEqual("poppins")
+        expect(assetCollection.items[267].title).toEqual("Post Conference Survey")
+      })
+    })
   });
 });

@@ -58,10 +58,13 @@ export default class QueryResolverBuilder {
 
   private buildCollectionResolver(): Resolver {
     const dataSource = this.dataSource
+    const contentTypeId = this.contentTypeId
 
     if (this.contentTypeId == 'Asset') {
       return async (_, args) => {
-        const collection = await dataSource.getAssets()
+        const collection = await dataSource.getAssets({
+          ...args?.filter
+        })
         
         return {
           skip: collection.skip,
@@ -78,7 +81,10 @@ export default class QueryResolverBuilder {
     }
 
     return async (_, args) => {
-      const collection = await dataSource.getEntries()
+      const collection = await dataSource.getEntries({
+        content_type: contentTypeId,
+        ...args?.filter
+      })
       
       return {
         skip: collection.skip,
