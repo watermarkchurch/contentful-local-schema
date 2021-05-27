@@ -101,6 +101,7 @@ export default class ContentTypeResolverBuilder {
 
       if (linkType == 'Asset') {
         const collection = await dataSource.getAssets({
+          ...args,
           'sys.id[in]': linkIDs
         })
 
@@ -118,6 +119,7 @@ export default class ContentTypeResolverBuilder {
       }
 
       const collection = await dataSource.getEntries({
+        ...args,
         'sys.id[in]': linkIDs
       })
       

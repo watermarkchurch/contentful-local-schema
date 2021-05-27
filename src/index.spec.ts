@@ -250,6 +250,32 @@ describe("integration", () => {
         expect(conferenceCollection.items.map((c: any) => c.title))
           .toEqual(['Church Leaders Conference 2019', 'Eyes only', 'CLC 2021'])
       })
+
+      it('skips and limits', async () => {
+        const result = await client.query({
+          query: gql`
+            query getEvents($id: string!) {
+              eventCollection(skip: 1, limit: 5) @client {
+                total
+                skip
+                limit
+                items {
+                  title
+                }
+              }
+            }
+          `,
+        });
+
+        expect(result.errors).toBeUndefined();
+        const { eventCollection } = result.data;
+        expect(eventCollection.total).toEqual(148)
+        expect(eventCollection.skip).toEqual(1)
+        expect(eventCollection.limit).toEqual(5)
+        expect(eventCollection.items.length).toEqual(5)
+        expect(eventCollection.items[0].title).toEqual("Worship Arts Workshop (Cont.)")
+        expect(eventCollection.items[4].title).toEqual("Watermark Kids Ministry Showcase")
+      })
     })
 
     describe('asset collection query', () => {
@@ -272,6 +298,32 @@ describe("integration", () => {
         expect(assetCollection.total).toEqual(268)
         expect(assetCollection.items[0].title).toEqual("poppins")
         expect(assetCollection.items[267].title).toEqual("Post Conference Survey")
+      })
+
+      it('skips and limits', async () => {
+        const result = await client.query({
+          query: gql`
+            query getAssets($id: string!) {
+              assetCollection(skip: 1, limit: 12) @client {
+                total
+                skip
+                limit
+                items {
+                  title
+                }
+              }
+            }
+          `,
+        });
+
+        expect(result.errors).toBeUndefined();
+        const { assetCollection } = result.data;
+        expect(assetCollection.total).toEqual(268)
+        expect(assetCollection.skip).toEqual(1)
+        expect(assetCollection.limit).toEqual(12)
+        expect(assetCollection.items.length).toEqual(12)
+        expect(assetCollection.items[0].title).toEqual("Test Image")
+        expect(assetCollection.items[11].title).toEqual("RH HS-3")
       })
     })
   });

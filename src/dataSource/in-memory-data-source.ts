@@ -38,20 +38,34 @@ export class InMemoryDataSource implements ContentfulDataSource {
     }
   }
   public getAssets(query?: any): AssetCollection {
-    let filters = query ? this.parseQuery(query) : []
+    const filters = query ? this.parseQuery(query) : []
+    const skip = query?.skip || 0
+    const limit = query?.limit || 0
+
+    let skipped = 0
+    let matchCount = 0
 
     const items: Asset[] = []
     for(const asset of this._assets.values()) {
       if (filters.findIndex((f) => !f(asset)) == -1) {
         // No filters returned false.
+        matchCount++
+        if (skipped < skip) {
+          skipped++
+          continue
+        }
+        if (limit > 0 && items.length >= limit) {
+          continue
+        }
+
         items.push(this.denormalizeForLocale(asset, query?.locale || this.defaultLocale))
       }
     }
 
     return {
-      total: items.length,
-      skip: 0,
-      limit: 0,
+      total: matchCount,
+      skip,
+      limit,
       items,
       toPlainObject() {
         return this
@@ -66,20 +80,34 @@ export class InMemoryDataSource implements ContentfulDataSource {
     }
   }
   public getEntries<T = { [key: string]: any }>(query?: any): EntryCollection<T> {
-    let filters = query ? this.parseQuery(query) : []
+    const filters = query ? this.parseQuery(query) : []
+    const skip = query?.skip || 0
+    const limit = query?.limit || 0
+
+    let skipped = 0
+    let matchCount = 0
 
     const items: Entry<T>[] = []
     for(const entry of this._entries.values()) {
       if (filters.findIndex((f) => !f(entry)) == -1) {
         // No filters returned false.
+        matchCount++
+
+        if (skipped < skip) {
+          skipped++
+          continue
+        }
+        if (limit > 0 && items.length >= limit) {
+          continue
+        }
         items.push(this.denormalizeForLocale(entry, query?.locale || this.defaultLocale))
       }
     }
 
     return {
-      total: items.length,
-      skip: 0,
-      limit: 0,
+      total: matchCount,
+      skip,
+      limit,
       items,
       toPlainObject() {
         return this
@@ -92,12 +120,14 @@ export class InMemoryDataSource implements ContentfulDataSource {
 
   private parseQuery(query: any): Filter[] {
     const filters: Filter[] =
-      Object.keys(query).map<Filter>((key) => {
-        const value = query[key]
+      Object.keys(query)
+      .filter((key) => !['skip', 'limit', 'locale'].includes(key))
+      .map<Filter>((key) => {
         if (key == 'content_type') {
           // special case
           return (e) => e.sys.contentType.sys.id == query.content_type
         }
+        const expected = query[key]
   
         let op = 'eq'
         const match = /\[(?<op>\w+)\]$/.exec(key)
@@ -109,11 +139,11 @@ export class InMemoryDataSource implements ContentfulDataSource {
         const s = selector(key, this.defaultLocale)
         switch(op) {
           case 'eq':
-            return eqOp(s, value)
+            return eqOp(s, expected)
           case 'ne':
-            return neOp(s, value)
+            return neOp(s, expected)
           case 'in':
-            return inOp(s, value)
+            return inOp(s, expected)
           default:
             throw new Error(`Operator not implemented: '${op}'`)
         }

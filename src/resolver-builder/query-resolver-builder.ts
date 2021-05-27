@@ -63,7 +63,7 @@ export default class QueryResolverBuilder {
     if (this.contentTypeId == 'Asset') {
       return async (_, args) => {
         const collection = await dataSource.getAssets({
-          ...args?.filter
+          ...args
         })
         
         return {
@@ -83,7 +83,7 @@ export default class QueryResolverBuilder {
     return async (_, args) => {
       const collection = await dataSource.getEntries({
         content_type: contentTypeId,
-        ...args?.filter
+        ...args
       })
       
       return {
