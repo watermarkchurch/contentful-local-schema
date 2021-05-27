@@ -96,7 +96,7 @@ export default class ContentTypeResolverBuilder {
           throw new Error(`Value in field ${field.id} is not a link! (was '${link}')`)
         }
 
-        return link.id as string
+        return link.sys.id as string
       }).filter(present)
 
       if (linkType == 'Asset') {
