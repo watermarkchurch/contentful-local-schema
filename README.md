@@ -6,23 +6,29 @@ See https://www.apollographql.com/docs/react/local-state/local-resolvers/ for de
 
 ## Usage
 
+First, download the 'contentful-schema.json' file and commit it to your project repo:
+```bash
+$ npx contentful-local-schema
+$ git add ./contentful-schema.json
+$ git commit
+```
+
+Next, use the utilities to load the schema with resolvers into your Apollo client:
 ```ts
-import { createLocalResolvers, createSchema, InMemoryDataSource } from "contentful-local-schema";
+import { createLocalResolvers, createSchema, withSync, InMemoryDataSource } from "contentful-local-schema";
 import { ApolloClient, gql, InMemoryCache } from "@apollo/client";
 import {createClient} from 'contentful';
 
 // Create the schema
 const schema: GraphQLSchema = await createSchema()
 
-// Initialize the data source by querying Contentful (or some other method)
-const dataSource = new InMemoryDataSource()
+// Initialize the data source via Contentful sync (or some other method of your choosing)
 const contentfulClient = createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
   space: process.env.CONTENTFUL_SPACE_ID,
 })
-const sync = await contentfulClient.sync({ initial: true })
-sync.entries.forEach((e: any) => ds.index(e));
-sync.assets.forEach((a: any) => ds.index(a));
+const dataSource = withSync(new InMemoryDataSource(), contentfulClient)
+await dataSource.sync()
 
 // Build the local resolvers around the data source
 const resolvers = await createLocalResolvers(dataSource);
@@ -38,7 +44,7 @@ const client = new ApolloClient({
 // Query the apollo client
 const result = await client.query({
   query: gql`
-    query getevent($id: string!) {
+    query getEvent($id: string!) {
       event(id: $id) @client {
         sys {
           id

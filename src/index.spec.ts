@@ -1,8 +1,9 @@
 import { ApolloClient, gql, InMemoryCache, Resolvers } from "@apollo/client";
+import { createClient } from "contentful";
 import { GraphQLSchema } from "graphql";
 import path from "path";
 
-import { createLocalResolvers, createSchema } from ".";
+import { createLocalResolvers, createSchema, withSync } from ".";
 import { ContentfulDataSource } from "./dataSource";
 import { InMemoryDataSource } from "./dataSource/in-memory-data-source";
 
@@ -327,4 +328,35 @@ describe("integration", () => {
       })
     })
   });
+
+  describe('withSync', () => {
+    it('updates the data source', async () => {
+      // TODO: nock the sync API calls
+      const contentfulClient = createClient({
+        accessToken: 'integration-test',
+        space: 'integration-test',
+      })
+
+      // Typescript: assert that in-memory-data-source can be wrapped with sync
+      const dataSource = withSync(new InMemoryDataSource(), contentfulClient)
+      // Typescript: and also passed to createLocalResolvers
+      const resolvers = await createLocalResolvers(dataSource, {
+        filename: path.join(
+          __dirname,
+          "../__fixtures__/contentful-schema.json"
+        )
+      })
+
+      // act
+      await dataSource.sync()
+
+      // assert
+      const entry = resolvers.Query.speaker(undefined, { id: '1CzEEMjnxk9ETPxwJVYtXI' })
+      expect(entry?.fields.title).toEqual('Nate W')
+      const asset = resolvers.Query.asset(undefined, { id: 'ZRoQKnIDHGIA7wl43fR8h' })
+      expect(asset?.fields.title).toEqual('Outdoor Gathering Space')
+
+      expect(dataSource.getToken()).toEqual('FEnChMOBwr1Yw4TCqsK2LcKpCH3CjsORI8Oewq4AwrIybcKxaS7DosKAwqPChsKFccO9QMOmwphiwrNCfjEEw68kagIswr8kw7LDssOXW8OsbUIKKsKncsKIwr3DhzEVNMOew7Y8wq4hZiJIGsKWZBXDlsKECQ')
+    })
+  })
 });

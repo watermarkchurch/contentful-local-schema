@@ -4,17 +4,27 @@ import cloneDeep from 'lodash/cloneDeep'
 import type { Asset, AssetCollection, ContentfulClientApi, Entry, EntryCollection } from "contentful";
 import { ContentfulDataSource } from ".";
 import { isAsset, isDeletedAsset, isDeletedEntry, isEntry, SyncItem } from '../util';
+import { Syncable } from '../syncEngine';
 
 
-export class InMemoryDataSource implements ContentfulDataSource {
+export class InMemoryDataSource implements ContentfulDataSource, Syncable {
   private readonly _entries: Map<string, Entry<any>>
   private readonly _assets: Map<string, Asset>
+  private _syncToken: string | undefined;
 
   constructor(
     private readonly defaultLocale = 'en-US',
   ) {
     this._entries = new Map()
     this._assets = new Map()
+  }
+
+  public getToken() {
+    return this._syncToken
+  }
+
+  public setToken(token: string) {
+    this._syncToken = token
   }
 
   public index(syncItem: SyncItem): void {

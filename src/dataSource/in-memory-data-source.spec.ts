@@ -1,3 +1,4 @@
+import { Syncable } from "../syncEngine"
 import { InMemoryDataSource } from "./in-memory-data-source"
 
 const syncInitial = require('../../__fixtures__/sync_initial.json')
@@ -41,6 +42,14 @@ describe('InMemoryDataSource', () => {
     expect(entries.items.length).toEqual(68)
     expect(assets.total).toEqual(32)
     expect(assets.items.length).toEqual(32)
+  })
+
+  it('handles sync token', async () => {
+    const i: Syncable = instance
+
+    expect(await i.getToken()).toBeUndefined()
+    await i.setToken('1234')
+    expect(await i.getToken()).toEqual('1234')
   })
 
   describe('querying by', () => {
