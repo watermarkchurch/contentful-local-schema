@@ -38,7 +38,7 @@ export default class ResolverBuilder {
     this.options = opts
   }
 
-  public async build(): Promise<Resolvers> {
+  public build(): Resolvers {
     let contentfulSchema: { contentTypes: ContentType[] }
     if ('contentTypes' in this.options) {
       contentfulSchema = { contentTypes: this.options.contentTypes }

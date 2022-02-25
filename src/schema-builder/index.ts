@@ -37,7 +37,7 @@ export default class SchemaBuilder {
     this.options = opts
   }
 
-  public async build(): Promise<GraphQLSchema> {
+  public build(): GraphQLSchema {
     let contentfulSchema: { contentTypes: ContentType[] }
     if ('contentTypes' in this.options) {
       contentfulSchema = { contentTypes: this.options.contentTypes }

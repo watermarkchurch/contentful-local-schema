@@ -8,6 +8,8 @@ import SchemaBuilder, { SchemaBuilderOptions } from "./schema-builder"
 import { SchemaDownloader, SchemaDownloaderOptions } from "./schema-downloader"
 import SyncEngine, { Syncable } from "./syncEngine"
 
+export { InMemoryDataSource } from './dataSource/in-memory-data-source'
+
 /**
  * Downloads the Contentful schema via the management API and creates
  * the contentful-schema.json file.
@@ -32,10 +34,10 @@ export async function downloadContentfulSchema(
  *   generate the GraphQL schema (default: './contentful-schema.json')
  * @returns 
  */
-export async function createSchema(
+export function createSchema(
   options?: Partial<SchemaBuilderOptions>
-): Promise<GraphQLSchema> {
-  return await new SchemaBuilder({
+): GraphQLSchema {
+  return new SchemaBuilder({
     ...defaults,
     ...options
   }).build()
@@ -54,11 +56,11 @@ export async function createSchema(
  *  const dataSource = withSync(new InMemoryDataSource())
  *  createLocalResolvers(dataSource)
  */
-export async function createLocalResolvers(
+export function createLocalResolvers(
   dataSource: ContentfulDataSource,
   options?: Partial<SchemaBuilderOptions>
-): Promise<Resolvers> {
-  return await new ResolverBuilder(
+): Resolvers {
+  return new ResolverBuilder(
     dataSource,
     {
       ...defaults,
