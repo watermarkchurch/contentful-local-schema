@@ -22,7 +22,7 @@ export default class SyncEngine {
 
     let collection = await this.client.sync(
       token ?
-        { token } :
+        { nextSyncToken: token } :
         { initial: true }
     );
 
