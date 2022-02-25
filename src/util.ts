@@ -1,6 +1,14 @@
 import type { Asset, Entry, Sys } from "contentful"
 import inflection from "inflection"
 
+export function tryParseJson(json: string): unknown | null {
+  try {
+    return JSON.parse(json)
+  } catch(ex) {
+    return null
+  }
+}
+
 export interface ContentType {
   sys: {
     id: string

@@ -3,7 +3,7 @@ import { SyncItem } from "../util";
 
 
 export interface Syncable {
-  getToken(): string | undefined | Promise<string | undefined>
+  getToken(): string | undefined | null | Promise<string | undefined | null>
   setToken(token: string): void | Promise<void>
   index(syncItem: SyncItem): void | Promise<void>
 }

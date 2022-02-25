@@ -3,14 +3,14 @@ import cloneDeep from 'lodash/cloneDeep'
 
 import type { Asset, AssetCollection, ContentfulClientApi, Entry, EntryCollection } from "contentful";
 import { ContentfulDataSource } from ".";
-import { isAsset, isDeletedAsset, isDeletedEntry, isEntry, SyncItem } from '../util';
+import { isAsset, isDeletedAsset, isDeletedEntry, isEntry, SyncItem, tryParseJson } from '../util';
 import { Syncable } from '../syncEngine';
 
 
 export class InMemoryDataSource implements ContentfulDataSource, Syncable {
   private readonly _entries: Map<string, Entry<any>>
   private readonly _assets: Map<string, Asset>
-  private _syncToken: string | undefined;
+  private _syncToken: string | undefined | null;
 
   constructor(
     private readonly defaultLocale = 'en-US',
@@ -128,6 +128,33 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable {
     }
   }
 
+  public async export(storage: WritableAsyncStorage): Promise<void> {
+    await Promise.all([
+      storage.setItem(`InMemoryDataSource/entries`,
+        JSON.stringify(Object.fromEntries(this._entries))),
+      
+      storage.setItem(`InMemoryDataSource/assets`,
+        JSON.stringify(Object.fromEntries(this._assets))),
+
+      this._syncToken ?
+        storage.setItem(`InMemoryDataSource/token`, this._syncToken) :
+        storage.removeItem(`InMemoryDataSource/token`),
+    ])
+  }
+
+  public async import(storage: ReadableAsyncStorage): Promise<void> {
+    await Promise.all([
+      storage.getItem(`InMemoryDataSource/entries`)
+        .then((data) => deserializeMap(data, this._entries)),
+      
+      storage.getItem(`InMemoryDataSource/assets`)
+        .then((data) => deserializeMap(data, this._assets)),
+
+      storage.getItem(`InMemoryDataSource/token`)
+        .then((value) => { this._syncToken = value })
+    ])
+  }
+
   private parseQuery(query: any): Filter[] {
     const filters: Filter[] =
       Object.keys(query)
@@ -191,7 +218,23 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable {
   }
 }
 
+interface WritableAsyncStorage {
+  setItem(key: string, value: string): Promise<void>
+  removeItem(key: string): Promise<void>
+}
 
+interface ReadableAsyncStorage {
+  getItem(key: string): Promise<string | null>
+}
+
+function deserializeMap(raw: string | null, map: Map<string, any>) {
+  if (!raw) { return }
+
+  const data = tryParseJson(raw) as Record<string, any>
+  for (const [key, value] of Object.entries(data)) {
+    map.set(key, value)
+  }
+}
 
 type Filter = (e: Entry<any> | Asset) => boolean
 
