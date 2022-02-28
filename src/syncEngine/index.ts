@@ -1,6 +1,5 @@
 import type { ContentfulClientApi } from "contentful";
-import { SyncItem } from "../util";
-
+import { SyncItem } from "../dataSource"
 
 export interface Syncable {
   getToken(): string | undefined | null | Promise<string | undefined | null>
@@ -8,7 +7,7 @@ export interface Syncable {
   index(syncItem: SyncItem): void | Promise<void>
 }
 
-export default class SyncEngine {
+export class SyncEngine {
 
   constructor(
     private readonly dataSource: Syncable,
@@ -40,4 +39,22 @@ export default class SyncEngine {
     }
     await this.dataSource.setToken(collection.nextSyncToken)
   }
+}
+
+/**
+ * Enhances a dataSource with a Contentful client to keep it up to date via the
+ * Sync API.
+ * @param dataSource The data source to store data e.g. InMemoryDataSource, PostgresDataSource
+ * @param client The Contentful client that allows us to sync data to the data source
+ * @returns The same data source enhanced with the sync() method
+ */
+ export function withSync<DataSource extends Syncable>(
+  dataSource: DataSource,
+  client: Pick<ContentfulClientApi, 'sync'>
+): DataSource & Pick<SyncEngine, 'sync'> {
+  const syncEngine = new SyncEngine(dataSource, client)
+
+  return Object.assign(dataSource, {
+    sync: syncEngine.sync.bind(syncEngine)
+  })
 }

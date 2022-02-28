@@ -1,4 +1,5 @@
 import { Syncable } from "../syncEngine"
+import { DeletedEntry } from "../util"
 import { InMemoryDataSource } from "./in-memory-data-source"
 
 const syncInitial = require('../../__fixtures__/sync_initial.json')
@@ -50,6 +51,24 @@ describe('InMemoryDataSource', () => {
     expect(await i.getToken()).toBeUndefined()
     await i.setToken('1234')
     expect(await i.getToken()).toEqual('1234')
+  })
+
+  it('handles deletion of entries', () => {
+    const item0 = syncInitial.items[0]
+
+    const deletedEntry: DeletedEntry = {
+      sys: {
+        ...item0.sys,
+        updatedAt: '2021-05-03T14:17:34.000Z',
+        type: 'DeletedEntry'
+      }
+    }
+
+    instance.index(deletedEntry)
+    const got = instance.getEntry(item0.sys.id, { locale: '*' })
+    expect(got).toBeFalsy()
+    const result = instance.getEntries({ 'title': 'Give Us Some Feedback' })
+    expect(result.items.length).toEqual(0)
   })
 
   describe('querying by', () => {

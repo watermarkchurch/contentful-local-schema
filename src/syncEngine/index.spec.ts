@@ -1,7 +1,7 @@
 
 import nock from 'nock'
 import { createClient } from "contentful";
-import SyncEngine from '.';
+import {SyncEngine} from '.';
 import { InMemoryDataSource } from '..';
 
 const contentfulClient = createClient({

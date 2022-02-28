@@ -1,5 +1,6 @@
 import type { Asset, Entry, Sys } from "contentful"
 import inflection from "inflection"
+import { DeletedAsset, DeletedEntry } from "./dataSource"
 
 export function tryParseJson(json: string): unknown | null {
   try {
@@ -53,20 +54,6 @@ export function present(value: string | undefined | null | ''): value is string 
     return false
   }
   return true
-}
-
-export type SyncItem =
-  Entry<any> |
-  Asset |
-  DeletedEntry |
-  DeletedAsset
-
-interface DeletedEntry {
-  sys: Sys & { type: 'DeletedEntry' }
-}
-
-interface DeletedAsset {
-  sys: Sys & { type: 'DeletedAsset' }
 }
 
 export function isEntry(e: any): e is Entry<any> {

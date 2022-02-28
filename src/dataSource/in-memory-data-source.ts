@@ -1,15 +1,16 @@
 import get from 'lodash/get'
 import cloneDeep from 'lodash/cloneDeep'
 
-import type { Asset, AssetCollection, ContentfulClientApi, Entry, EntryCollection } from "contentful";
-import { ContentfulDataSource } from ".";
-import { isAsset, isDeletedAsset, isDeletedEntry, isEntry, SyncItem, tryParseJson } from '../util';
+import type { Asset, AssetCollection, Entry, EntryCollection } from "contentful";
+import { ContentfulDataSource, DeletedAsset, DeletedEntry, SyncItem } from ".";
+import { isAsset, isDeletedAsset, isDeletedEntry, isEntry, tryParseJson } from '../util';
 import { Syncable } from '../syncEngine';
+import { Exportable } from '../backup';
 
 
-export class InMemoryDataSource implements ContentfulDataSource, Syncable {
-  private readonly _entries: Map<string, Entry<any>>
-  private readonly _assets: Map<string, Asset>
+export class InMemoryDataSource implements ContentfulDataSource, Syncable, Exportable {
+  private readonly _entries: Map<string, Entry<any> | DeletedEntry>
+  private readonly _assets: Map<string, Asset | DeletedAsset>
   private _syncToken: string | undefined | null;
 
   constructor(
@@ -28,14 +29,18 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable {
   }
 
   public index(syncItem: SyncItem): void {
-    if (isEntry(syncItem)) {
-      this._entries.set(syncItem.sys.id, cloneDeep(syncItem))
-    } else if(isAsset(syncItem)) {
-      this._assets.set(syncItem.sys.id, cloneDeep(syncItem))
-    } else if(isDeletedEntry(syncItem)) {
-      this._entries.delete(syncItem.sys.id)
-    } else if(isDeletedAsset(syncItem)) {
-      this._assets.delete(syncItem.sys.id)
+    if (isEntry(syncItem) || isDeletedEntry(syncItem)) {
+      const prev = this._entries.get(syncItem.sys.id)
+      if (!prev || Date.parse(prev.sys.updatedAt) <= Date.parse(syncItem.sys.updatedAt)) {
+        this._entries.set(syncItem.sys.id, cloneDeep(syncItem))
+      }
+
+    } else if(isAsset(syncItem) || isDeletedAsset(syncItem)) {
+      const prev = this._assets.get(syncItem.sys.id)
+      if (!prev || Date.parse(prev.sys.updatedAt) <= Date.parse(syncItem.sys.updatedAt)) {
+        this._assets.set(syncItem.sys.id, cloneDeep(syncItem))
+      }
+
     } else {
       throw new Error(`Unrecognized sync item: ${(syncItem as any)?.sys?.type}`)
     }
@@ -43,10 +48,11 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable {
 
   public getAsset(id: string, query?: any): Asset | undefined {
     const asset = this._assets.get(id)
-    if (asset) {
+    if (asset && !isDeletedAsset(asset)) {
       return this.denormalizeForLocale(asset, query?.locale || this.defaultLocale)
     }
   }
+
   public getAssets(query?: any): AssetCollection {
     const filters = query ? this.parseQuery(query) : []
     const skip = query?.skip || 0
@@ -57,6 +63,8 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable {
 
     const items: Asset[] = []
     for(const asset of this._assets.values()) {
+      if (isDeletedAsset(asset)) { continue }
+
       if (filters.findIndex((f) => !f(asset)) == -1) {
         // No filters returned false.
         matchCount++
@@ -85,7 +93,7 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable {
 
   public getEntry<T>(id: string, query?: any): Entry<T> | undefined {
     const entry = this._entries.get(id)
-    if (entry) {
+    if (entry && !isDeletedEntry(entry)) {
       return this.denormalizeForLocale(entry, query?.locale || this.defaultLocale)
     }
   }
@@ -99,6 +107,8 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable {
 
     const items: Entry<T>[] = []
     for(const entry of this._entries.values()) {
+      if (isDeletedEntry(entry)) { continue }
+
       if (filters.findIndex((f) => !f(entry)) == -1) {
         // No filters returned false.
         matchCount++
@@ -128,31 +138,13 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable {
     }
   }
 
-  public async export(storage: WritableAsyncStorage): Promise<void> {
-    await Promise.all([
-      storage.setItem(`InMemoryDataSource/entries`,
-        JSON.stringify(Object.fromEntries(this._entries))),
-      
-      storage.setItem(`InMemoryDataSource/assets`,
-        JSON.stringify(Object.fromEntries(this._assets))),
-
-      this._syncToken ?
-        storage.setItem(`InMemoryDataSource/token`, this._syncToken) :
-        storage.removeItem(`InMemoryDataSource/token`),
-    ])
-  }
-
-  public async import(storage: ReadableAsyncStorage): Promise<void> {
-    await Promise.all([
-      storage.getItem(`InMemoryDataSource/entries`)
-        .then((data) => deserializeMap(data, this._entries)),
-      
-      storage.getItem(`InMemoryDataSource/assets`)
-        .then((data) => deserializeMap(data, this._assets)),
-
-      storage.getItem(`InMemoryDataSource/token`)
-        .then((value) => { this._syncToken = value })
-    ])
+  public *export() {
+    for(let v of this._entries.values()) {
+      yield v
+    }
+    for(let v of this._assets.values()) {
+      yield v
+    }
   }
 
   private parseQuery(query: any): Filter[] {
@@ -215,24 +207,6 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable {
 
     e.sys.locale = locale
     return e
-  }
-}
-
-interface WritableAsyncStorage {
-  setItem(key: string, value: string): Promise<void>
-  removeItem(key: string): Promise<void>
-}
-
-interface ReadableAsyncStorage {
-  getItem(key: string): Promise<string | null>
-}
-
-function deserializeMap(raw: string | null, map: Map<string, any>) {
-  if (!raw) { return }
-
-  const data = tryParseJson(raw) as Record<string, any>
-  for (const [key, value] of Object.entries(data)) {
-    map.set(key, value)
   }
 }
 

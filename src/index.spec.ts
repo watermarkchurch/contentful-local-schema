@@ -386,7 +386,6 @@ describe("integration", () => {
       const entry = await resolvers.Query.speaker(undefined, { id: '1CzEEMjnxk9ETPxwJVYtXI' })
       expect(entry?.fields.name).toEqual('Nate W')
       const asset = await resolvers.Query.asset(undefined, { id: '2QXPOAoka6WPDV9BoweHw8' })
-      console.log('asset', asset)
       expect(asset?.fields.title).toEqual('Shane-Everett')
 
       expect(dataSource.getToken()).toEqual('FEnChMOBwr1Yw4TCqsK2LcKpCH3CjsORI8Oewq4AwrIybcKxaS7DosKAwqPChsKFccO9QMOmwphiwrNCfjEEw68kagIswr8kw7LDssOXW8OsbUIKKsKncsKIwr3DhzEVNMOew7Y8wq4hZiJIGsKWZBXDlsKECQ')

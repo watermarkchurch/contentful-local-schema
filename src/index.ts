@@ -1,14 +1,15 @@
 import type { Resolvers } from "@apollo/client"
-import type { ContentfulClientApi } from "contentful"
 import { GraphQLSchema } from "graphql"
 import { ContentfulDataSource } from "./dataSource"
 import defaults from "./defaults"
 import ResolverBuilder from "./resolver-builder"
 import SchemaBuilder, { SchemaBuilderOptions } from "./schema-builder"
 import { SchemaDownloader, SchemaDownloaderOptions } from "./schema-downloader"
-import SyncEngine, { Syncable } from "./syncEngine"
+
 
 export { InMemoryDataSource } from './dataSource/in-memory-data-source'
+export { SyncEngine, Syncable, withSync } from './syncEngine'
+export { Exportable, withBackup } from './backup'
 
 /**
  * Downloads the Contentful schema via the management API and creates
@@ -67,22 +68,4 @@ export function createLocalResolvers(
       ...options
     }
   ).build()
-}
-
-/**
- * Wraps a dataSource with a Contentful client to keep it up to date via the
- * Sync API.
- * @param dataSource The data source to store data e.g. InMemoryDataSource, PostgresDataSource
- * @param client The Contentful client that allows us to sync data to the data source
- * @returns The same data source with an additional "sync" method
- */
-export function withSync<DataSource extends Syncable>(
-  dataSource: DataSource,
-  client: Pick<ContentfulClientApi, 'sync'>
-): DataSource & Pick<SyncEngine, 'sync'> {
-  const syncEngine = new SyncEngine(dataSource, client)
-
-  return Object.assign(dataSource, {
-    sync: syncEngine.sync.bind(syncEngine)
-  })
 }
