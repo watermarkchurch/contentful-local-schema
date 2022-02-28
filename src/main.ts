@@ -78,7 +78,7 @@ async function Run(args: IArgv) {
   const download = args.download ||
     !(await pathExists(schemaFile))
   if (download) {
-    await downloadContentfulSchema(options, fs)
+    await downloadContentfulSchema(fs, options)
   }
 
   if (!(await pathExists(schemaFile))) {

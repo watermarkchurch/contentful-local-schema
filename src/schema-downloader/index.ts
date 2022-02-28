@@ -32,9 +32,8 @@ export class SchemaDownloader {
   private readonly options: Readonly<SchemaDownloaderOptions>
   private readonly client: any
   private readonly semaphore: Limiter
-  private readonly fs: typeof FS
 
-  constructor(options?: Partial<SchemaDownloaderOptions>, fs?: typeof FS) {
+  constructor(options?: Partial<SchemaDownloaderOptions>) {
     const opts: SchemaDownloaderOptions = Object.assign({
       filename: './contentful-schema.json',
       managementToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN,
@@ -57,11 +56,9 @@ export class SchemaDownloader {
       interval: 'second',
       tokensPerInterval: 4,
     })
-
-    this.fs = fs || require('fs-extra')
   }
 
-  public async downloadSchema() {
+  public async downloadSchema(fs: typeof FS) {
     const {
       contentTypes,
       editorInterfaces,
@@ -69,14 +66,14 @@ export class SchemaDownloader {
 
     // Use callback API to avoid dependency on fs-extra
     return new Promise<void>((res, rej) => {
-      this.fs.writeFile(this.options.filename, JSON.stringify({
+      fs.writeFile(this.options.filename, JSON.stringify({
         contentTypes,
         editorInterfaces,
       }, undefined, '  '), (ex) => {
         if (ex) { return rej(ex) }
 
         // contentful-shell and the wcc-contentful gem both add a newline at the end of the file.
-        this.fs.appendFile(this.options.filename, '\n', (ex) => {
+        fs.appendFile(this.options.filename, '\n', (ex) => {
           if (ex) { return rej(ex) }
 
           res()

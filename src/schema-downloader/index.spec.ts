@@ -134,7 +134,7 @@ it('creates the file in the appropriate directory', async () => {
         filename: path.join(tmpdir.name, '/contentful-schema.json')
       })
 
-      await instance.downloadSchema()
+      await instance.downloadSchema(fs)
 
       expect(await fs.pathExists(path.join(tmpdir.name, `/contentful-schema.json`))).toEqual(true)
     } finally {
@@ -150,7 +150,7 @@ it('writes file with proper formatting', async () => {
         filename: path.join(tmpdir.name, '/contentful-schema.json')
       })
 
-      await instance.downloadSchema()
+      await instance.downloadSchema(fs)
 
       const contents = (await fs.readFile(path.join(tmpdir.name, 'contentful-schema.json'))).toString()
       const expected = (await fs.readFile(path.join(__dirname, 'fixtures/contentful-schema.json'))).toString()

@@ -22,13 +22,13 @@ export { Exportable, withBackup } from './backup'
  * @returns 
  */
 export async function downloadContentfulSchema(
+  fs: typeof FS,
   options?: Partial<SchemaDownloaderOptions>,
-  fs?: typeof FS
 ) {
   return await new SchemaDownloader({
     ...defaults,
     ...options
-  }, fs).downloadSchema()
+  }).downloadSchema(fs)
 }
 
 /**
