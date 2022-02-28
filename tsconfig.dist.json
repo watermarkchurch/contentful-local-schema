@@ -5,6 +5,7 @@
   },
   "exclude": [
     "**/*.test.ts",
+    "**/*.spec.ts",
     "**/tmp/**/*.ts",
     "**/templates/**/*.ts"
   ]

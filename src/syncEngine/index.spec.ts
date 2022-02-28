@@ -73,6 +73,7 @@ describe('SyncEngine', () => {
       "sys": {
         "id": "6RPLNBrHzAwg4X58WFkCBc",
         "type": "Entry",
+        "updatedAt": "2022-02-02T22:22:22.222Z",
         "contentType": {
           "sys": {
             "type": "Link",
@@ -91,6 +92,7 @@ describe('SyncEngine', () => {
       "sys": {
         "id": "1QJlrZxpJrSqaLOg0i1tvt",
         "type": "Asset",
+        "updatedAt": "2022-02-02T22:22:22.222Z",
       },
       "fields": {
         "title": {
@@ -111,12 +113,14 @@ describe('SyncEngine', () => {
             "sys": {
               "id": "6RPLNBrHzAwg4X58WFkCBc",
               "type": "DeletedEntry",
+              "updatedAt": "2022-02-02T23:33:33.33Z",
             }
           },
           {
             "sys": {
               "id": "1QJlrZxpJrSqaLOg0i1tvt",
               "type": "DeletedAsset",
+              "updatedAt": "2022-02-02T23:33:33.33Z",
             }
           }
         ],

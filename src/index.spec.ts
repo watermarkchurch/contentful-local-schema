@@ -2,6 +2,7 @@ import { ApolloClient, gql, InMemoryCache, Resolvers } from "@apollo/client";
 import { createClient } from "contentful";
 import { GraphQLSchema } from "graphql";
 import path from "path";
+import nock from 'nock'
 
 import { createLocalResolvers, createSchema, withSync } from ".";
 import { ContentfulDataSource } from "./dataSource";
@@ -330,11 +331,42 @@ describe("integration", () => {
   });
 
   describe('withSync', () => {
+    const syncInitial = require('../__fixtures__/sync_initial.json')
+    const syncPages = [
+      require('../__fixtures__/sync_2.json'),
+      require('../__fixtures__/sync_3.json'),
+      require('../__fixtures__/sync_4.json'),
+      require('../__fixtures__/sync_5.json'),
+      require('../__fixtures__/sync_6.json'),
+      require('../__fixtures__/sync_7.json')
+    ]
+
+    beforeEach(() => {
+      if (!nock.isActive()) {
+        nock.activate()
+      }
+  
+      nock('https://cdn.contentful.com')
+        .get('/spaces/xxxxxx/environments/master/sync?initial=true')
+        .reply(200, JSON.stringify(syncInitial))
+  
+      let nextUrl = syncInitial.nextPageUrl
+      syncPages.forEach((page) => {
+        nock('https://cdn.contentful.com')
+          .get(nextUrl.replace('https://cdn.contentful.com', ''))
+          .reply(200, page)
+  
+        nextUrl = page.nextPageUrl
+      })
+    })
+
     it('updates the data source', async () => {
-      // TODO: nock the sync API calls
+      
       const contentfulClient = createClient({
         accessToken: 'integration-test',
-        space: 'integration-test',
+        space: 'xxxxxx',
+        retryLimit: 0,
+        retryOnError: false
       })
 
       // Typescript: assert that in-memory-data-source can be wrapped with sync
@@ -351,10 +383,11 @@ describe("integration", () => {
       await dataSource.sync()
 
       // assert
-      const entry = resolvers.Query.speaker(undefined, { id: '1CzEEMjnxk9ETPxwJVYtXI' })
-      expect(entry?.fields.title).toEqual('Nate W')
-      const asset = resolvers.Query.asset(undefined, { id: 'ZRoQKnIDHGIA7wl43fR8h' })
-      expect(asset?.fields.title).toEqual('Outdoor Gathering Space')
+      const entry = await resolvers.Query.speaker(undefined, { id: '1CzEEMjnxk9ETPxwJVYtXI' })
+      expect(entry?.fields.name).toEqual('Nate W')
+      const asset = await resolvers.Query.asset(undefined, { id: '2QXPOAoka6WPDV9BoweHw8' })
+      console.log('asset', asset)
+      expect(asset?.fields.title).toEqual('Shane-Everett')
 
       expect(dataSource.getToken()).toEqual('FEnChMOBwr1Yw4TCqsK2LcKpCH3CjsORI8Oewq4AwrIybcKxaS7DosKAwqPChsKFccO9QMOmwphiwrNCfjEEw68kagIswr8kw7LDssOXW8OsbUIKKsKncsKIwr3DhzEVNMOew7Y8wq4hZiJIGsKWZBXDlsKECQ')
     })
