@@ -21,6 +21,10 @@ describe('SchemaDownloader', () => {
     contentTypes = schema.contentTypes
     editorInterfaces = schema.editorInterfaces
 
+    if (!nock.isActive()) {
+      nock.activate()
+    }
+
     nock('https://api.contentful.com')
       .get('/spaces/testspace')
       .reply(200, {
@@ -118,6 +122,10 @@ describe('SchemaDownloader', () => {
       })
   })
 
+  afterEach(() => {
+    nock.restore()
+  })
+
 it('creates the file in the appropriate directory', async () => {
     const tmpdir = tmp.dirSync()
     try {
@@ -134,7 +142,7 @@ it('creates the file in the appropriate directory', async () => {
     }
   })
 
-it('writes file with proper formatting', async (t) => {
+it('writes file with proper formatting', async () => {
     const tmpdir = tmp.dirSync()
     try {
       const instance = new SchemaDownloader({
