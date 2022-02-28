@@ -5,6 +5,7 @@ import defaults from "./defaults"
 import ResolverBuilder from "./resolver-builder"
 import SchemaBuilder, { SchemaBuilderOptions } from "./schema-builder"
 import { SchemaDownloader, SchemaDownloaderOptions } from "./schema-downloader"
+import type FS from 'fs'
 
 
 export { InMemoryDataSource } from './dataSource/in-memory-data-source'
@@ -21,12 +22,13 @@ export { Exportable, withBackup } from './backup'
  * @returns 
  */
 export async function downloadContentfulSchema(
-  options?: Partial<SchemaDownloaderOptions>
+  options?: Partial<SchemaDownloaderOptions>,
+  fs?: typeof FS
 ) {
   return await new SchemaDownloader({
     ...defaults,
     ...options
-  }).downloadSchema()
+  }, fs).downloadSchema()
 }
 
 /**

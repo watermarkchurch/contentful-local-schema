@@ -1,7 +1,6 @@
 import type {Resolver, Resolvers} from '@apollo/client'
 import type { Asset, AssetCollection, ContentfulClientApi, Entry, EntryCollection } from "contentful";
 
-import path from 'path'
 import { ContentfulDataSource } from '../dataSource';
 import { assetFieldResolver } from '../types';
 import type { ContentType } from '../util';
@@ -15,7 +14,6 @@ interface IBaseOptions {
 
 type IOptions = IBaseOptions & (
   {
-    directory: string
     filename: string
   } | {
     contentTypes: any[]
@@ -30,8 +28,7 @@ export default class ResolverBuilder {
     options?: Partial<IOptions>
   ) {
     const opts: IOptions = Object.assign({
-      directory: '.',
-      filename: 'contentful-schema.json',
+      filename: './contentful-schema.json',
       logger: console,
     } as IOptions, options)
 
@@ -43,8 +40,7 @@ export default class ResolverBuilder {
     if ('contentTypes' in this.options) {
       contentfulSchema = { contentTypes: this.options.contentTypes }
     } else {
-      const file = path.resolve(this.options.directory || '.', this.options.filename)
-      contentfulSchema = require(file)
+      contentfulSchema = require(this.options.filename)
     }
 
     return {

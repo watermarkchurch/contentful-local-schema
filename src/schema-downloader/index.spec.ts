@@ -9,7 +9,7 @@ let contentTypes: any
 let editorInterfaces: any
 
 const opts = {
-  directory: '/tmp/db',
+  filename: '/tmp/db/contentful-schema.json',
   managementToken: 'test',
   space: 'testspace',
 }
@@ -131,7 +131,7 @@ it('creates the file in the appropriate directory', async () => {
     try {
       const instance = new SchemaDownloader({
         ...opts,
-        directory: tmpdir.name
+        filename: path.join(tmpdir.name, '/contentful-schema.json')
       })
 
       await instance.downloadSchema()
@@ -147,7 +147,7 @@ it('writes file with proper formatting', async () => {
     try {
       const instance = new SchemaDownloader({
         ...opts,
-        directory: tmpdir.name
+        filename: path.join(tmpdir.name, '/contentful-schema.json')
       })
 
       await instance.downloadSchema()

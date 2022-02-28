@@ -1,16 +1,10 @@
 import { Limiter } from 'async-toolbox'
 import {createClient} from 'contentful-management'
-import * as fs from 'fs-extra'
-import * as path from 'path'
+import type FS from 'fs'
 
 export interface SchemaDownloaderOptions {
   /**
-   * The directory where the schema file is located.  Defaults to
-   * the local directory.
-   */
-  directory: string
-  /**
-   * The name of the schema file.  Defaults to 'contentful-schema.json'.
+   * The name of the schema file.  Defaults to './contentful-schema.json'.
    */
   filename: string
   /**
@@ -38,11 +32,11 @@ export class SchemaDownloader {
   private readonly options: Readonly<SchemaDownloaderOptions>
   private readonly client: any
   private readonly semaphore: Limiter
+  private readonly fs: typeof FS
 
-  constructor(options?: Partial<SchemaDownloaderOptions>) {
+  constructor(options?: Partial<SchemaDownloaderOptions>, fs?: typeof FS) {
     const opts: SchemaDownloaderOptions = Object.assign({
-      directory: '.',
-      filename: 'contentful-schema.json',
+      filename: './contentful-schema.json',
       managementToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN,
       space: process.env.CONTENTFUL_SPACE_ID,
       environment: process.env.CONTENTFUL_ENVIRONMENT || 'master',
@@ -63,6 +57,8 @@ export class SchemaDownloader {
       interval: 'second',
       tokensPerInterval: 4,
     })
+
+    this.fs = fs || require('fs-extra')
   }
 
   public async downloadSchema() {
@@ -71,17 +67,23 @@ export class SchemaDownloader {
       editorInterfaces,
     } = await this.getSchemaFromSpace()
 
-    if (this.options.directory) {
-      await fs.mkdirp(this.options.directory)
-    }
-    const file = path.join(this.options.directory || '.', this.options.filename)
-    await fs.writeFile(file, JSON.stringify({
-      contentTypes,
-      editorInterfaces,
-    }, undefined, '  '))
+    // Use callback API to avoid dependency on fs-extra
+    return new Promise<void>((res, rej) => {
+      this.fs.writeFile(this.options.filename, JSON.stringify({
+        contentTypes,
+        editorInterfaces,
+      }, undefined, '  '), (ex) => {
+        if (ex) { return rej(ex) }
 
-    // contentful-shell and the wcc-contentful gem both add a newline at the end of the file.
-    await fs.appendFile(file, '\n')
+        // contentful-shell and the wcc-contentful gem both add a newline at the end of the file.
+        this.fs.appendFile(this.options.filename, '\n', (ex) => {
+          if (ex) { return rej(ex) }
+
+          res()
+        })
+      })
+
+    })
   }
 
   private async getSchemaFromSpace() {

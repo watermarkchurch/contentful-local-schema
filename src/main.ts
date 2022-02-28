@@ -1,7 +1,8 @@
-import * as fs from 'fs-extra'
+import fs from 'fs'
 import { printSchema } from 'graphql'
 import * as path from 'path'
 import * as yargs from 'yargs'
+import {promisify} from 'util'
 
 import { createSchema, downloadContentfulSchema } from './index'
 
@@ -60,33 +61,39 @@ const verboseLogger = {
   }
 }
 
+const pathExists = promisify(fs.exists)
+const mkdir = promisify(fs.mkdir)
+const writeFile = promisify(fs.writeFile)
+
 // tslint:disable-next-line:no-shadowed-variable
 async function Run(args: IArgv) {
   const options = {
-    directory: path.dirname(args.file),
-    filename: path.basename(args.file),
+    filename: args.file,
     logger: args.verbose ? verboseLogger : defaultLogger,
     ...args,
-    file: undefined as never // prefer directory + filename
   }
 
-  const schemaFile = path.join(options.directory, options.filename)
+  const schemaFile = options.filename
 
   const download = args.download ||
-    !(await fs.pathExists(schemaFile))
+    !(await pathExists(schemaFile))
   if (download) {
-    await downloadContentfulSchema(options)
+    await downloadContentfulSchema(options, fs)
   }
 
-  if (!(await fs.pathExists(schemaFile))) {
+  if (!(await pathExists(schemaFile))) {
     throw new Error(`Schema file does not exist at '${schemaFile}'!  Please download it with the --download option .`)
   }
 
   const schema = await createSchema(options)
 
   if (options.out && options.out != '-') {
-    await fs.mkdirp(path.dirname(options.out))
-    await fs.writeFile(options.out, printSchema(schema))
+    const dirname = path.dirname(options.out)
+    if (!await pathExists(dirname)) {
+      await mkdir(dirname)
+    }
+    
+    await writeFile(options.out, printSchema(schema))
   } else {
     console.log(printSchema(schema))
   }

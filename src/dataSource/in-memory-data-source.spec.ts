@@ -1,5 +1,5 @@
 import { Syncable } from "../syncEngine"
-import { DeletedEntry } from "../util"
+import { DeletedEntry } from "../dataSource"
 import { InMemoryDataSource } from "./in-memory-data-source"
 
 const syncInitial = require('../../__fixtures__/sync_initial.json')
