@@ -1,6 +1,6 @@
 import { Limiter } from 'async-toolbox'
-import {createClient} from 'contentful-management'
 import type FS from 'fs'
+import { SimpleCMAClient } from './client'
 
 export interface SchemaDownloaderOptions {
   /**
@@ -30,7 +30,7 @@ export interface SchemaDownloaderOptions {
 
 export class SchemaDownloader {
   private readonly options: Readonly<SchemaDownloaderOptions>
-  private readonly client: any
+  private readonly client: SimpleCMAClient
   private readonly semaphore: Limiter
 
   constructor(options?: Partial<SchemaDownloaderOptions>) {
@@ -47,9 +47,10 @@ export class SchemaDownloader {
     }
 
     this.options = opts
-    this.client = createClient({
+    this.client = new SimpleCMAClient({
+      spaceId: opts.space,
+      environmentId: opts.environment,
       accessToken: opts.managementToken,
-      requestLogger: this.requestLogger,
       responseLogger: this.responseLogger,
     })
     this.semaphore = new Limiter({
@@ -84,27 +85,23 @@ export class SchemaDownloader {
   }
 
   private async getSchemaFromSpace() {
-    const space = await this.semaphore.lock<any>(() =>
-      this.client.getSpace(this.options.space))
-    const env = await this.semaphore.lock<any>(() =>
-      space.getEnvironment(this.options.environment))
+    
+    const contentTypesResp = await this.semaphore.lock(() =>
+      toArray(this.client.getContentTypes()))
 
-    const contentTypesResp = await this.semaphore.lock<any>(() =>
-      env.getContentTypes())
-
-    const editorInterfaces = (await Promise.all<any>(
-      contentTypesResp.items.map((ct: any) =>
-        this.semaphore.lock<any>(async () =>
+    const editorInterfaces = (await Promise.all(
+      contentTypesResp.map((ct) =>
+        this.semaphore.lock(async () =>
         sortControls(
           stripSys(
-            (await ct.getEditorInterface())
-              .toPlainObject(),
+            await this.client.getEditorInterface(ct.sys.id),
           ),
         ),
       )),
     )).sort(byContentType)
-    const contentTypes = contentTypesResp.items.map((ct: any) =>
-      stripSys(ct.toPlainObject()))
+
+    const contentTypes = contentTypesResp.map((ct) =>
+      stripSys(ct))
       .sort(byId)
 
     return {
@@ -113,13 +110,17 @@ export class SchemaDownloader {
     }
   }
 
-  private requestLogger = (config: any) => {
-    // console.log('req', config)
+  private responseLogger = (response: Response) => {
+    this.options.logger.debug(response.status, response.url)
   }
+}
 
-  private responseLogger = (response: any) => {
-    this.options.logger.debug(response.status, response.config.url)
+async function toArray<T>(generator: AsyncGenerator<T, void, void>): Promise<T[]> {
+  const results: T[] = []
+  for await (const item of generator) {
+    results.push(item)
   }
+  return results
 }
 
 function stripSys(obj: any): any {
