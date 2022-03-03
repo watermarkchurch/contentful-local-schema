@@ -80,7 +80,6 @@ async function Run(args: IArgv) {
     !(await pathExists(schemaFile))
   if (download) {
     await downloadContentfulSchema(options, {
-      fs,
       fetch
     })
   }

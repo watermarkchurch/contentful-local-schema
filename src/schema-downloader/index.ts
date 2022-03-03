@@ -1,5 +1,5 @@
 import { Limiter } from 'async-toolbox'
-import type FS from 'fs'
+import fs from 'fs'
 import { SimpleCMAClient } from './client'
 
 export interface SchemaDownloaderOptions {
@@ -29,7 +29,6 @@ export interface SchemaDownloaderOptions {
 }
 
 export interface SchemaDownloaderDependencies {
-  fs: typeof FS,
   fetch: typeof globalThis.fetch
 }
 
@@ -38,7 +37,6 @@ export class SchemaDownloader {
   private readonly client: SimpleCMAClient
   private readonly semaphore: Limiter
 
-  private fs: typeof FS
   private fetch: typeof globalThis.fetch
 
   constructor(
@@ -60,7 +58,6 @@ export class SchemaDownloader {
       throw new Error('Space ID not given!')
     }
 
-    this.fs = dependencies?.fs || require('fs')
     this.fetch = dependencies?.fetch || globalThis.fetch
 
     this.options = opts
@@ -84,14 +81,14 @@ export class SchemaDownloader {
 
     // Use callback API to avoid dependency on fs-extra
     return new Promise<void>((res, rej) => {
-      this.fs.writeFile(this.options.filename, JSON.stringify({
+      fs.writeFile(this.options.filename, JSON.stringify({
         contentTypes,
         editorInterfaces,
       }, undefined, '  '), (ex) => {
         if (ex) { return rej(ex) }
 
         // contentful-shell and the wcc-contentful gem both add a newline at the end of the file.
-        this.fs.appendFile(this.options.filename, '\n', (ex) => {
+        fs.appendFile(this.options.filename, '\n', (ex) => {
           if (ex) { return rej(ex) }
 
           res()

@@ -39,12 +39,12 @@ export async function downloadContentfulSchema(
  * @returns 
  */
 export function createSchema(
-  options?: Partial<SchemaBuilderOptions>
+  options: SchemaBuilderOptions
 ): GraphQLSchema {
-  return new SchemaBuilder({
+  return new SchemaBuilder().build({
     ...defaults,
     ...options
-  }).build()
+  })
 }
 
 /**
