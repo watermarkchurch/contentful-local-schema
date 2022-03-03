@@ -3,10 +3,11 @@
   "version": "0.0.5",
   "main": "dist/index.js",
   "files": [
+    "bin",
     "dist",
     "README.md"
   ],
-  "bin": "./dist/main.js",
+  "bin": "./bin/contentful-local-schema",
   "author": "gburgett (gburgett@watermark.org)",
   "license": "MIT",
   "private": false,

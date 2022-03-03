@@ -3,6 +3,7 @@ import { printSchema } from 'graphql'
 import * as path from 'path'
 import * as yargs from 'yargs'
 import {promisify} from 'util'
+import fetch from 'cross-fetch'
 
 import { createSchema, downloadContentfulSchema } from './index'
 
@@ -68,7 +69,7 @@ const writeFile = promisify(fs.writeFile)
 // tslint:disable-next-line:no-shadowed-variable
 async function Run(args: IArgv) {
   const options = {
-    filename: args.file,
+    filename: args.file || './contentful-schema.json',
     logger: args.verbose ? verboseLogger : defaultLogger,
     ...args,
   }
@@ -78,7 +79,10 @@ async function Run(args: IArgv) {
   const download = args.download ||
     !(await pathExists(schemaFile))
   if (download) {
-    await downloadContentfulSchema(fs, options)
+    await downloadContentfulSchema(options, {
+      fs,
+      fetch
+    })
   }
 
   if (!(await pathExists(schemaFile))) {
@@ -99,9 +103,9 @@ async function Run(args: IArgv) {
   }
 }
 
-let file = 'contentful-schema.json'
+let file = './contentful-schema.json'
 if (fs.existsSync('db') && fs.statSync('db').isDirectory()) {
-  file = 'db/contentful-schema.json'
+  file = './db/contentful-schema.json'
 }
 
 const args = Object.assign<IArgv, Partial<IArgv>>(

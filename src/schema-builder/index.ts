@@ -1,5 +1,6 @@
 import { GraphQLFieldConfigMap, GraphQLObjectType, GraphQLSchema, GraphQLString } from "graphql";
 import inflection from "inflection";
+import path from 'path'
 
 import ContentTypeWriter from "./content-type-writer";
 import type { ContentType } from "../util";
@@ -23,7 +24,7 @@ export default class SchemaBuilder {
 
   constructor(options?: Partial<SchemaBuilderOptions>) {
     const opts: SchemaBuilderOptions = Object.assign({
-      filename: 'contentful-schema.json',
+      filename: './contentful-schema.json',
       logger: console,
     } as SchemaBuilderOptions, options)
 
@@ -35,7 +36,7 @@ export default class SchemaBuilder {
     if ('contentTypes' in this.options) {
       contentfulSchema = { contentTypes: this.options.contentTypes }
     } else {
-      contentfulSchema = require(this.options.filename)
+      contentfulSchema = require(path.resolve(this.options.filename))
     }
 
     const contentTypeMap = new Map()

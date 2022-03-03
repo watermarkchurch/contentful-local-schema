@@ -28,12 +28,23 @@ export interface SchemaDownloaderOptions {
   logger: { debug: Console['debug'] }
 }
 
+export interface SchemaDownloaderDependencies {
+  fs: typeof FS,
+  fetch: typeof globalThis.fetch
+}
+
 export class SchemaDownloader {
   private readonly options: Readonly<SchemaDownloaderOptions>
   private readonly client: SimpleCMAClient
   private readonly semaphore: Limiter
 
-  constructor(options?: Partial<SchemaDownloaderOptions>) {
+  private fs: typeof FS
+  private fetch: typeof globalThis.fetch
+
+  constructor(
+    options?: Partial<SchemaDownloaderOptions>,
+    dependencies?: Partial<SchemaDownloaderDependencies>
+  ) {
     const opts: SchemaDownloaderOptions = Object.assign({
       filename: './contentful-schema.json',
       managementToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN,
@@ -45,6 +56,12 @@ export class SchemaDownloader {
     if (!opts.managementToken) {
       throw new Error('No managementToken given!')
     }
+    if (!opts.space) {
+      throw new Error('Space ID not given!')
+    }
+
+    this.fs = dependencies?.fs || require('fs')
+    this.fetch = dependencies?.fetch || globalThis.fetch
 
     this.options = opts
     this.client = new SimpleCMAClient({
@@ -52,14 +69,14 @@ export class SchemaDownloader {
       environmentId: opts.environment,
       accessToken: opts.managementToken,
       responseLogger: this.responseLogger,
-    })
+    }, this.fetch)
     this.semaphore = new Limiter({
       interval: 'second',
       tokensPerInterval: 4,
     })
   }
 
-  public async downloadSchema(fs: typeof FS) {
+  public async downloadSchema() {
     const {
       contentTypes,
       editorInterfaces,
@@ -67,14 +84,14 @@ export class SchemaDownloader {
 
     // Use callback API to avoid dependency on fs-extra
     return new Promise<void>((res, rej) => {
-      fs.writeFile(this.options.filename, JSON.stringify({
+      this.fs.writeFile(this.options.filename, JSON.stringify({
         contentTypes,
         editorInterfaces,
       }, undefined, '  '), (ex) => {
         if (ex) { return rej(ex) }
 
         // contentful-shell and the wcc-contentful gem both add a newline at the end of the file.
-        fs.appendFile(this.options.filename, '\n', (ex) => {
+        this.fs.appendFile(this.options.filename, '\n', (ex) => {
           if (ex) { return rej(ex) }
 
           res()
