@@ -4,33 +4,10 @@ import { ContentfulDataSource } from "./dataSource"
 import defaults from "./defaults"
 import ResolverBuilder from "./resolver-builder"
 import SchemaBuilder, { SchemaBuilderOptions } from "./schema-builder"
-import { SchemaDownloader, SchemaDownloaderDependencies, SchemaDownloaderOptions } from "./schema-downloader"
-
 
 export { InMemoryDataSource } from './dataSource/in-memory-data-source'
 export { SyncEngine, Syncable, withSync } from './syncEngine'
 export { Exportable, withBackup } from './backup'
-
-/**
- * Downloads the Contentful schema via the management API and creates
- * the contentful-schema.json file.
- * 
- * 
- * @param options (Optional) Where to store the contentful content type file
- *   (default: './contentful-schema.json')
- * @returns 
- */
-export async function downloadContentfulSchema(
-  options?: Partial<SchemaDownloaderOptions>,
-  dependencies?: Partial<SchemaDownloaderDependencies>
-) {
-  return await new SchemaDownloader({
-    ...defaults,
-    ...options
-  }, {
-    ...dependencies
-  }).downloadSchema()
-}
 
 /**
  * Creates a GraphQL schema from the given set of content types.
@@ -41,10 +18,7 @@ export async function downloadContentfulSchema(
 export function createSchema(
   options: SchemaBuilderOptions
 ): GraphQLSchema {
-  return new SchemaBuilder().build({
-    ...defaults,
-    ...options
-  })
+  return new SchemaBuilder(options).build()
 }
 
 /**

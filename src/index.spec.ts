@@ -3,12 +3,14 @@ import { createClient } from "contentful";
 import { GraphQLSchema } from "graphql";
 import path from "path";
 import nock from 'nock'
+import fs from 'fs-extra'
 
 import { createLocalResolvers, createSchema, withSync } from ".";
 import { ContentfulDataSource } from "./dataSource";
 import { InMemoryDataSource } from "./dataSource/in-memory-data-source";
 
 const fixture = require("../__fixtures__/contentful-export-2021-05-07T16-34-28.json");
+const contentfulSchema = require("../__fixtures__/contentful-schema.json");
 
 describe("integration", () => {
   describe("Apollo client w/ local resolvers", () => {
@@ -19,10 +21,7 @@ describe("integration", () => {
 
     beforeEach(async () => {
       const options = {
-        filename: path.join(
-          __dirname,
-          "../__fixtures__/contentful-schema.json"
-        ),
+        contentTypes: contentfulSchema.contentTypes,
       };
       schema = await createSchema(options);
       const ds = new InMemoryDataSource();
@@ -373,10 +372,7 @@ describe("integration", () => {
       const dataSource = withSync(new InMemoryDataSource(), contentfulClient)
       // Typescript: and also passed to createLocalResolvers
       const resolvers = await createLocalResolvers(dataSource, {
-        filename: path.join(
-          __dirname,
-          "../__fixtures__/contentful-schema.json"
-        )
+        contentTypes: contentfulSchema.contentTypes
       })
 
       // act

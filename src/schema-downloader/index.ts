@@ -1,6 +1,7 @@
 import { Limiter } from 'async-toolbox'
 import fs from 'fs'
 import { SimpleCMAClient } from './client'
+import defaults from "../defaults"
 
 export interface SchemaDownloaderOptions {
   /**
@@ -30,6 +31,27 @@ export interface SchemaDownloaderOptions {
 
 export interface SchemaDownloaderDependencies {
   fetch: typeof globalThis.fetch
+}
+
+/**
+ * Downloads the Contentful schema via the management API and creates
+ * the contentful-schema.json file.
+ * 
+ * 
+ * @param options (Optional) Where to store the contentful content type file
+ *   (default: './contentful-schema.json')
+ * @returns 
+ */
+ export default async function downloadContentfulSchema(
+  options?: Partial<SchemaDownloaderOptions>,
+  dependencies?: Partial<SchemaDownloaderDependencies>
+) {
+  return await new SchemaDownloader({
+    ...defaults,
+    ...options
+  }, {
+    ...dependencies
+  }).downloadSchema()
 }
 
 export class SchemaDownloader {

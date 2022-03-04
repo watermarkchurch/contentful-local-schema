@@ -5,7 +5,8 @@ import * as yargs from 'yargs'
 import {promisify} from 'util'
 import fetch from 'cross-fetch'
 
-import { createSchema, downloadContentfulSchema } from './index'
+import { createSchema } from './index'
+import downloadContentfulSchema from './schema-downloader'
 
 interface IArgv {
   /** The schema file to load for code generation */
@@ -65,6 +66,7 @@ const verboseLogger = {
 const pathExists = promisify(fs.exists)
 const mkdir = promisify(fs.mkdir)
 const writeFile = promisify(fs.writeFile)
+const readFile = promisify(fs.readFile)
 
 // tslint:disable-next-line:no-shadowed-variable
 async function Run(args: IArgv) {
@@ -88,7 +90,10 @@ async function Run(args: IArgv) {
     throw new Error(`Schema file does not exist at '${schemaFile}'!  Please download it with the --download option .`)
   }
 
-  const schema = await createSchema(options)
+  const contentfulSchema = JSON.parse((await readFile(schemaFile)).toString())
+  const schema = createSchema({
+    contentTypes: contentfulSchema.contentTypes
+  })
 
   if (options.out && options.out != '-') {
     const dirname = path.dirname(options.out)
