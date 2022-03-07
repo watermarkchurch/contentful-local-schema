@@ -2,7 +2,7 @@ import inflection from 'inflection'
 import GraphQLJSON from 'graphql-type-json';
 
 import { GraphQLBoolean, GraphQLEnumType, GraphQLEnumValueConfigMap, GraphQLFieldConfigMap, GraphQLFloat, GraphQLInt, GraphQLInterfaceType, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLOutputType, GraphQLScalarType, GraphQLString, GraphQLType, GraphQLUnionType } from 'graphql'
-import { Asset, AssetCollection, Entry, EntryCollection, GraphQLLocation, GraphQLNever } from '../types'
+import { GraphQLNever, Namespace } from '../types'
 import { ContentType, ContentTypeField, idToName, isLinkContentTypeValidation } from '../util';
 
 export default class ContentTypeWriter {
@@ -13,12 +13,13 @@ export default class ContentTypeWriter {
   constructor(
     private readonly contentType: ContentType,
     private readonly contentTypeMap: Map<string, GraphQLObjectType>,
-    private readonly collectionTypeMap: Map<string, GraphQLObjectType>
+    private readonly collectionTypeMap: Map<string, GraphQLObjectType>,
+    private readonly namespace: Namespace
   ) {
     this.linkedTypes = []
 
     const name = idToName(contentType.sys.id)
-    this.className = name
+    this.className = this.namespace.toType(name)
   }
 
   public write = () => {
@@ -26,7 +27,7 @@ export default class ContentTypeWriter {
 
     const type = new GraphQLObjectType({
       name: this.className,
-      interfaces: [Entry],
+      interfaces: [this.namespace.Entry],
       fields: () => {
         const fields: GraphQLFieldConfigMap<any, any> = {}
         contentType.fields.forEach((f) =>
@@ -78,20 +79,20 @@ export default class ContentTypeWriter {
       case 'Boolean':
         return GraphQLBoolean
       case 'Location':
-        return GraphQLLocation
+        return this.namespace.GraphQLLocation
       case 'Link':
         if (field.linkType == 'Asset') {
-          return Asset
+          return this.namespace.Asset
         } else {
           return this.resolveLinkContentType(field)
         }
       case 'Array':
         const itemType = this.writeFieldType(Object.assign({ id: field.id }, field.items))
         if (field.items!.type == 'Link') {
-          if (itemType == Asset) {
-            return AssetCollection
-          } else if (itemType == Entry) {
-            return EntryCollection
+          if (itemType == this.namespace.Asset) {
+            return this.namespace.AssetCollection
+          } else if (itemType == this.namespace.Entry) {
+            return this.namespace.EntryCollection
           }
           return this.writeLinkCollectionType(itemType)
         } else {
@@ -107,12 +108,12 @@ export default class ContentTypeWriter {
       field.validations.filter(isLinkContentTypeValidation).find((v) =>
         v.linkContentType.length > 0)
     if (!validation) {
-      return Entry
+      return this.namespace.Entry
     }
 
     this.linkedTypes.push(...validation.linkContentType)
     if (validation.linkContentType.length == 1) {
-      const name = idToName(validation.linkContentType[0])
+      const name = this.namespace.toType(idToName(validation.linkContentType[0]))
       const resolved = this.contentTypeMap.get(name)
       if (!resolved) {
         throw new Error(`Could not resolve content type '${name}'`)
@@ -120,12 +121,12 @@ export default class ContentTypeWriter {
       return resolved
     }
 
-    const unionName = unionTypeDefName(this.contentType.sys.id, field)
+    const unionName = this.namespace.toType(unionTypeDefName(this.contentType.sys.id, field))
 
     return new GraphQLUnionType({
       name: unionName,
       types: () => validation.linkContentType.map((val: any) => {
-        const name = idToName(val)
+        const name =  this.namespace.toType(idToName(val))
         const resolved = this.contentTypeMap.get(name)
         if (!resolved) {
           throw new Error(`Could not resolve content type '${name}'`)
@@ -136,12 +137,14 @@ export default class ContentTypeWriter {
   }
 
   public writeLinkCollectionType(itemType: any): GraphQLObjectType {
-    if (this.collectionTypeMap.has(itemType.name)) {
-      const collection = this.collectionTypeMap.get(itemType.name)!
+    const name = this.namespace.toType(itemType.name)
+
+    if (this.collectionTypeMap.has(name)) {
+      const collection = this.collectionTypeMap.get(name)!
       return collection
     } else {
       const collection = new GraphQLObjectType({
-        name: `${itemType.name}Collection`,
+        name: `${name}Collection`,
         fields: {
           skip: { type: new GraphQLNonNull(GraphQLInt) },
           limit: { type: new GraphQLNonNull(GraphQLInt) },
@@ -149,7 +152,7 @@ export default class ContentTypeWriter {
           items: { type: new GraphQLNonNull(new GraphQLList(itemType)) }
         }
       })
-      this.collectionTypeMap.set(itemType.name, collection)
+      this.collectionTypeMap.set(name, collection)
       return collection
     }
   }
@@ -161,7 +164,7 @@ export default class ContentTypeWriter {
 
     const validation = field.validations.find((v: any) => v.in && v.in.length > 0)
     if (validation) {
-      const name = unionTypeDefName(this.contentType.sys.id, field)
+      const name = this.namespace.toType(unionTypeDefName(this.contentType.sys.id, field))
       
 
       return new GraphQLEnumType({

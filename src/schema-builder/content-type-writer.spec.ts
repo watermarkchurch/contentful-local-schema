@@ -1,5 +1,8 @@
 import { GraphQLObjectType, GraphQLSchema, printSchema } from "graphql";
+import { namespace } from "../types";
 import ContentTypeWriter from "./content-type-writer";
+
+const ns = namespace()
 
 describe("ContentTypeWriter", () => {
   it("writes a simple type", () => {
@@ -60,7 +63,8 @@ describe("ContentTypeWriter", () => {
         ],
       } as any,
       new Map(),
-      new Map()
+      new Map(),
+      ns
     );
 
     const { type, collection } = instance.write();
@@ -180,7 +184,8 @@ describe("ContentTypeWriter", () => {
         ],
       } as any,
       new Map(),
-      new Map()
+      new Map(),
+      ns
     );
 
     const { type, collection } = instance.write();
@@ -347,7 +352,8 @@ describe("ContentTypeWriter", () => {
         ],
       } as any,
       map,
-      new Map()
+      new Map(),
+      ns
     );
 
     const { type, collection } = instance.write();

@@ -57,6 +57,58 @@ describe("SchemaBuilder", () => {
     expect(printed).toMatch('asset(id: String): Asset')
     expect(printed).toMatch('assetCollection(skip: String, limit: String): AssetCollection')
   })
+
+  describe("with namespace", async () => {
+    it("namespaces all schema types", async () => {
+      const instance = new SchemaBuilder({
+        contentTypes: contentfulSchema.contentTypes as ContentType[],
+
+        namespace: 'Test1'
+      })
+  
+      const schema = await instance.build()
+
+      const printed = printSchema(schema)
+      expect(printed).toMatch('type Test1_SectionBlockText')
+      expect(printed).toMatch('enum Test1_SectionBlockTextStyle')
+      expect(printed).toMatch('type Test1_Page')
+      expect(printed).toMatch('union Test1_PageSection')
+      expect(printed).not.toMatch('Test1_Test1_')
+    })
+
+    it("namespaces the base types", async () => {
+      const instance = new SchemaBuilder({
+        contentTypes: contentfulSchema.contentTypes as ContentType[],
+
+        namespace: 'Test1'
+      })
+  
+      const schema = await instance.build()
+
+      const printed = printSchema(schema)
+      expect(printed).toMatch('interface Test1_Entry')
+      expect(printed).not.toMatch('implements Entry')
+      expect(printed).toMatch('type Test1_Page implements Test1_Entry')
+      expect(printed).toMatch('type Test1_Sys')
+      expect(printed).toMatch('type Test1_Asset')
+      expect(printed).toMatch('type Test1_AssetCollection')
+      expect(printed).not.toMatch('items:[Asset]')
+
+      expect(printed).toMatch('asset(id: String): Test1_Asset')
+    })
+
+    it("nothing looks weird", async () => {
+      const instance = new SchemaBuilder({
+        contentTypes: contentfulSchema.contentTypes as ContentType[],
+
+        namespace: 'Test1'
+      })
+  
+      const schema = await instance.build()
+
+      expect(printSchema(schema)).toMatchSnapshot()
+    })
+  })
 })
 
 const contentfulSchema = {

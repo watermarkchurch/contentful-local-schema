@@ -3,16 +3,23 @@ import inflection from "inflection";
 
 import ContentTypeWriter from "./content-type-writer";
 import type { ContentType } from "../util";
-import { Asset, AssetCollection } from "../types";
+import { namespace, Namespace } from "../types";
 
 export type SchemaBuilderOptions = {
   contentTypes: ContentType[]
+
+  /**
+   * Wrap all types and query methods in this namespace
+   */
+  namespace?: string
 }
 
 export default class SchemaBuilder {
 
+  private readonly namespace: Namespace
+
   constructor(private readonly options: SchemaBuilderOptions) {
-    
+    this.namespace = namespace(options.namespace)
   }
 
   public build(): GraphQLSchema {
@@ -21,17 +28,17 @@ export default class SchemaBuilder {
     const contentTypeMap = new Map()
     const helperTypeMap = new Map()
     const graphQLTypes = contentfulSchema.contentTypes.map((ct) =>
-      new ContentTypeWriter(ct, contentTypeMap, helperTypeMap).write())
+      new ContentTypeWriter(ct, contentTypeMap, helperTypeMap, this.namespace).write())
 
     const baseFields: GraphQLFieldConfigMap<any, any> = {
       asset: {
-        type: Asset,
+        type: this.namespace.Asset,
         args: {
           id: { type: GraphQLString}
         }
       },
       assetCollection: {
-        type: AssetCollection,
+        type: this.namespace.AssetCollection,
         args: {
           skip: { type: GraphQLString },
           limit: { type: GraphQLString },
