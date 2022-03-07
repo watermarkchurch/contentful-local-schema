@@ -2,7 +2,7 @@ import { GraphQLObjectType, GraphQLSchema, printSchema } from "graphql";
 import { namespace } from "../types";
 import ContentTypeWriter from "./content-type-writer";
 
-const ns = namespace()
+const ns = namespace();
 
 describe("ContentTypeWriter", () => {
   it("writes a simple type", () => {
@@ -114,8 +114,7 @@ describe("ContentTypeWriter", () => {
         limit: Int!
         total: Int!
         items: [SectionBlockText]!
-      }
-      "
+      }"
     `);
   });
 
@@ -246,8 +245,7 @@ describe("ContentTypeWriter", () => {
         limit: Int!
         total: Int!
         items: [SectionCarousel]!
-      }
-      "
+      }"
     `);
   });
 
@@ -415,10 +413,9 @@ describe("ContentTypeWriter", () => {
       type SectionCarouselFake
 
       enum PageFlag {
-        Not Shareable
-        Set Campus Cookie
-      }
-      "
+        not_shareable
+        set_campus_cookie
+      }"
     `);
   });
 });

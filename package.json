@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "async-toolbox": "^0.7.3",
-    "graphql": "^15.5.0",
+    "graphql": ">= 14",
     "graphql-type-json": "^0.3.2",
     "inflection": "^1.13.1",
     "yargs": "^16.2.0"

@@ -170,7 +170,7 @@ export default class ContentTypeWriter {
       return new GraphQLEnumType({
         name,
         values: validation.in.reduce((map: GraphQLEnumValueConfigMap, val: any) => {
-          map[val.toString()] = {
+          map[inflection.underscore(idToName(val.toString()))] = {
             value: val
           }
           return map
