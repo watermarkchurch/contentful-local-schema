@@ -1,14 +1,15 @@
-import type {Resolver, Resolvers} from '@apollo/client'
-import type { Asset, AssetCollection, ContentfulClientApi, Entry, EntryCollection } from "contentful";
+import type {Resolvers} from '@apollo/client'
 
 import { ContentfulDataSource } from '../dataSource';
-import { assetFieldResolver } from '../types';
+import { assetFieldResolver, namespacedTypeName } from '../types';
 import type { ContentType } from '../util';
 import ContentTypeResolverBuilder from './content-type-resolver-builder';
 import QueryResolverBuilder from './query-resolver-builder';
 
 
 interface IBaseOptions {
+  namespace?: string
+
   logger: { debug: Console['debug'] },
 }
 
@@ -42,25 +43,29 @@ export default class ResolverBuilder {
     } else {
       contentfulSchema = require(this.options.filename)
     }
+    const {namespace} = this.options
 
-    return {
+    const resolvers: Resolvers = {
       Query: {
-        ...new QueryResolverBuilder(this.dataSource, 'Asset').build().Query,
+        ...new QueryResolverBuilder(this.dataSource, this.options, 'Asset').build().Query,
         ...contentfulSchema.contentTypes.reduce((resolvers, ct) => {
           return {
             ...resolvers,
-            ...new QueryResolverBuilder(this.dataSource, ct.sys.id).build().Query
+            ...new QueryResolverBuilder(this.dataSource, this.options, ct.sys.id).build().Query
           }
         }, {})
       },
-      Asset: assetFieldResolver(),
       ...contentfulSchema.contentTypes.reduce((types, ct) => {
         return {
           ...types,
-          ...new ContentTypeResolverBuilder(this.dataSource, ct).build()
+          ...new ContentTypeResolverBuilder(this.dataSource, this.options, ct).build()
         }
       }, {})
     }
+
+    resolvers[namespacedTypeName('Asset', namespace)] = assetFieldResolver()
+
+    return resolvers
   }
 
 }

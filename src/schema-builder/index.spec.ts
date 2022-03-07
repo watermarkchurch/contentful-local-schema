@@ -58,7 +58,7 @@ describe("SchemaBuilder", () => {
     expect(printed).toMatch('assetCollection(skip: String, limit: String): AssetCollection')
   })
 
-  describe("with namespace", async () => {
+  describe("with namespace", () => {
     it("namespaces all schema types", async () => {
       const instance = new SchemaBuilder({
         contentTypes: contentfulSchema.contentTypes as ContentType[],

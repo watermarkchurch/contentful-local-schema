@@ -102,11 +102,15 @@ export function namespace(ns?: string) {
   }
 
   function toType(name: string): string {
-    if (namespaceName && !name.startsWith(namespaceName + '_')) {
-      name = `${namespaceName}_${name}`
-    }
-    return name
+    return namespacedTypeName(name, namespaceName)
   }
+}
+
+export function namespacedTypeName(name: string, namespace: string | undefined) {
+  if (namespace && !name.startsWith(namespace + '_')) {
+    name = `${namespace}_${name}`
+  }
+  return name
 }
 
 export function assetFieldResolver(): { [field: string]: Resolver } {

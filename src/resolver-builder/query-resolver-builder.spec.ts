@@ -2,7 +2,7 @@ import {ApolloClient, InMemoryCache} from '@apollo/client'
 import { GraphQLList, GraphQLObjectType, GraphQLString } from 'graphql'
 import gql from 'graphql-tag'
 import { ContentfulDataSource } from '../dataSource'
-import { Entry } from '../types'
+import { namespace } from '../types'
 import { ContentType } from '../util'
 import QueryResolverBuilder from './query-resolver-builder'
 
@@ -50,6 +50,7 @@ describe('LocalTypePolicyBuilder', () => {
     // act
     const resolvers = new QueryResolverBuilder(
         fakeDataSource,
+        {},
         sectionBlockTextContentType.sys.id
       ).build()
 
@@ -133,6 +134,7 @@ describe('LocalTypePolicyBuilder', () => {
     // act
     const resolvers = new QueryResolverBuilder(
         fakeDataSource,
+        {},
         sectionBlockTextContentType.sys.id
       ).build()
 
@@ -175,6 +177,8 @@ describe('LocalTypePolicyBuilder', () => {
     })
   })
 })
+
+const {Entry} = namespace()
 
 const SectionBlockText = new GraphQLObjectType({
   name: 'SectionBlockText',

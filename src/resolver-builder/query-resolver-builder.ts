@@ -2,12 +2,14 @@ import type { Resolver } from "@apollo/client";
 import type { Asset, Entry } from "contentful";
 import inflection from "inflection";
 import type { ContentfulDataSource } from "../dataSource";
+import { Namespace, namespacedTypeName } from "../types";
 import { ContentType, idToName } from "../util";
 
 export default class QueryResolverBuilder {
 
   constructor(
     private readonly dataSource: ContentfulDataSource,
+    private readonly options: { namespace?: string },
     private readonly contentTypeId: string
   ) {
 
@@ -28,8 +30,11 @@ export default class QueryResolverBuilder {
 
   private buildEntryResolver(): Resolver {
     const dataSource = this.dataSource
+    const {namespace} = this.options
 
     if(this.contentTypeId == 'Asset') {
+      const AssetTypeName = namespacedTypeName('Asset', namespace)
+
       return async (_, args) => {
         if (!args || !args.id) { throw new Error('ID must be provided') }
         const entry = await dataSource.getAsset(args.id)
@@ -37,7 +42,7 @@ export default class QueryResolverBuilder {
           return null
         }
         return {
-          __typename: 'Asset',
+          __typename: AssetTypeName,
           ...entry
         }
       }
@@ -49,8 +54,9 @@ export default class QueryResolverBuilder {
       if (!entry) {
         return null
       }
+      const typename = namespacedTypeName(idToName(entry.sys.contentType.sys.id), namespace)
       return {
-        __typename: idToName(entry.sys.contentType.sys.id),
+        __typename: typename,
         ...entry
       }
     }
@@ -59,8 +65,11 @@ export default class QueryResolverBuilder {
   private buildCollectionResolver(): Resolver {
     const dataSource = this.dataSource
     const contentTypeId = this.contentTypeId
+    const {namespace} = this.options
 
     if (this.contentTypeId == 'Asset') {
+      const AssetTypeName = namespacedTypeName('Asset', namespace)
+
       return async (_, args) => {
         const collection = await dataSource.getAssets({
           ...args
@@ -72,7 +81,7 @@ export default class QueryResolverBuilder {
           total: collection.total,
           items: collection.items.map((asset) => (
             {
-              __typename: 'Asset',
+              __typename: AssetTypeName,
               ...asset
             }
           ))
@@ -92,7 +101,10 @@ export default class QueryResolverBuilder {
         total: collection.total,
         items: collection.items.map((entry) => (
           {
-            __typename: idToName(entry.sys.contentType.sys.id),
+            __typename: namespacedTypeName(
+              idToName(entry.sys.contentType.sys.id),
+              namespace
+            ),
             ...entry
           }
         ))

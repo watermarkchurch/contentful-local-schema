@@ -1,11 +1,13 @@
 import type { Resolver, Resolvers } from "@apollo/client";
 import { ContentType, ContentTypeField, idToName, present } from "../util";
 import { ContentfulDataSource } from "../dataSource";
+import { namespacedTypeName } from "../types";
 
 export default class ContentTypeResolverBuilder {
 
   constructor(
     private readonly dataSource: ContentfulDataSource,
+    private readonly options: { namespace?: string },
     private readonly contentType: ContentType
   ) {
 
@@ -14,7 +16,7 @@ export default class ContentTypeResolverBuilder {
   public build(): Resolvers {
     const contentType = this.contentType
     const fields: { [field: string]: Resolver } = {}
-    const typeName = idToName(this.contentType.sys.id)
+    const typeName = namespacedTypeName(idToName(this.contentType.sys.id), this.options.namespace)
 
     contentType.fields.forEach((f) => 
       fields[f.id] = this.fieldResolver(f))
@@ -60,6 +62,8 @@ export default class ContentTypeResolverBuilder {
 
   private linkResolver(field: ContentTypeField): Resolver {
     const dataSource = this.dataSource
+    const {namespace} = this.options
+    const AssetTypeName = namespacedTypeName('Asset', namespace)
 
     return async (entry) => {
       const link = entry.fields[field.id]
@@ -71,13 +75,13 @@ export default class ContentTypeResolverBuilder {
       if (field.linkType == 'Asset') {
         const resolved = await dataSource.getAsset(link.sys.id)
         return {
-          __typename: 'Asset',
+          __typename: AssetTypeName,
           ...resolved
         }
       } else {
         const resolved = await dataSource.getEntry(link.sys.id)
         return {
-          __typename: idToName(entry.sys.contentType.sys.id),
+          __typename: namespacedTypeName(idToName(entry.sys.contentType.sys.id), namespace),
           ...resolved
         }
       }
@@ -86,6 +90,8 @@ export default class ContentTypeResolverBuilder {
 
   private collectionResolver(field: ContentTypeField): Resolver {
     const dataSource = this.dataSource
+    const {namespace} = this.options
+    const AssetTypeName = namespacedTypeName('Asset', namespace)
     const linkType = field.items!.linkType!
 
     return async (entry, args) => {
@@ -111,7 +117,7 @@ export default class ContentTypeResolverBuilder {
           total: collection.total,
           items: collection.items.map((entry) => (
             {
-              __typename: 'Asset',
+              __typename: AssetTypeName,
               ...entry
             }
           ))
@@ -129,7 +135,10 @@ export default class ContentTypeResolverBuilder {
         total: collection.total,
         items: collection.items.map((entry) => (
           {
-            __typename: idToName(entry.sys.contentType.sys.id),
+            __typename: namespacedTypeName(
+              idToName(entry.sys.contentType.sys.id),
+              namespace
+            ),
             ...entry
           }
         ))
