@@ -338,7 +338,8 @@ describe("integration", () => {
     beforeEach(async () => {
       const options = {
         contentTypes: contentfulSchema.contentTypes,
-        namespace: 'Local'
+        namespace: 'Local',
+        queryNamespace: 'local'
       };
       schema = await createSchema(options);
       const ds = new InMemoryDataSource();
@@ -362,14 +363,16 @@ describe("integration", () => {
         const result = await client.query({
           query: gql`
             query getevent($id: string!) {
-              event(id: $id) @client {
-                sys {
-                  id
+              local @client {
+                event(id: $id) {
+                  sys {
+                    id
+                  }
+                  title
+                  summary
+                  eventType
+                  capacity
                 }
-                title
-                summary
-                eventType
-                capacity
               }
             }
           `,
@@ -379,7 +382,7 @@ describe("integration", () => {
         });
 
         expect(result.errors).toBeUndefined();
-        const { event } = result.data;
+        const { local: { event } } = result.data;
         expect(event.sys.id).toEqual("7cnBLR2aRp2TZcFTfC6cxs");
         expect(event.title).toEqual("Worship Arts Workshop (Cont.)");
         expect(event.summary).toBeUndefined();
@@ -391,12 +394,14 @@ describe("integration", () => {
         const result = await client.query({
           query: gql`
             query getevent($id: string!) {
-              event(id: $id) @client {
-                location {
-                  sys {
-                    id
+              local @client {
+                event(id: $id) @client {
+                  location {
+                    sys {
+                      id
+                    }
+                    title
                   }
-                  title
                 }
               }
             }
@@ -407,7 +412,7 @@ describe("integration", () => {
         });
 
         expect(result.errors).toBeUndefined();
-        const { event } = result.data;
+        const { local: {event} } = result.data;
         expect(event.location.sys.id).toEqual("6gCbSxnYr0XJ8DYSkalHZG");
         expect(event.location.title).toEqual("West Tower 3rd Floor South");
       });
@@ -416,18 +421,20 @@ describe("integration", () => {
         const result = await client.query({
           query: gql`
             query getevent($id: string!) {
-              event(id: $id) @client {
-                art {
-                  sys {
-                    id
+              local @client {
+                event(id: $id) @client {
+                  art {
+                    sys {
+                      id
+                    }
+                    title
+                    fileName
+                    contentType
+                    url
+                    size
+                    width
+                    height
                   }
-                  title
-                  fileName
-                  contentType
-                  url
-                  size
-                  width
-                  height
                 }
               }
             }
@@ -438,7 +445,7 @@ describe("integration", () => {
         });
 
         expect(result.errors).toBeUndefined();
-        const { event } = result.data;
+        const { local: { event } } = result.data;
         expect(event.art.sys.id).toEqual("5JRnRQw8pWe1O9gJCKTn0B");
         expect(event.art.title).toEqual("Regen-showcase");
         expect(event.art.fileName).toEqual("ReGen App Header.jpg");
@@ -455,11 +462,13 @@ describe("integration", () => {
         const result = await client.query({
           query: gql`
             query getevent($id: string!) {
-              event(id: $id) @client {
-                speakers {
-                  total
-                  items {
-                    name
+              local @client {
+                event(id: $id) @client {
+                  speakers {
+                    total
+                    items {
+                      name
+                    }
                   }
                 }
               }
@@ -471,7 +480,7 @@ describe("integration", () => {
         });
 
         expect(result.errors).toBeUndefined();
-        const { event } = result.data;
+        const { local: { event } } = result.data;
         expect(event.speakers.total).toEqual(2);
         expect(event.speakers.items.map((i: any) => i.name)).toEqual([
           "C W",
@@ -483,11 +492,13 @@ describe("integration", () => {
         const result = await client.query({
           query: gql`
             query getevent($id: string!) {
-              event(id: $id) @client {
-                downloads {
-                  total
-                  items {
-                    url
+              local @client {
+                event(id: $id) @client {
+                  downloads {
+                    total
+                    items {
+                      url
+                    }
                   }
                 }
               }
@@ -499,7 +510,7 @@ describe("integration", () => {
         });
 
         expect(result.errors).toBeUndefined();
-        const { event } = result.data;
+        const { local: { event } } = result.data;
         expect(event.downloads.total).toEqual(2);
         expect(event.downloads.items.map((i: any) => i.url))
           .toEqual([

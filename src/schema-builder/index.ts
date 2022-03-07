@@ -3,15 +3,20 @@ import inflection from "inflection";
 
 import ContentTypeWriter from "./content-type-writer";
 import type { ContentType } from "../util";
-import { namespace, Namespace } from "../types";
+import { namespace, Namespace, namespacedTypeName } from "../types";
 
 export type SchemaBuilderOptions = {
   contentTypes: ContentType[]
 
   /**
-   * Wrap all types and query methods in this namespace
+   * Prefixes all types with this namespace
    */
   namespace?: string
+
+  /**
+   * Wraps all top level queries in this namespace
+   */
+  queryNamespace?: string
 }
 
 export default class SchemaBuilder {
@@ -46,8 +51,10 @@ export default class SchemaBuilder {
       }
     }
 
-    const Query = new GraphQLObjectType({
-      name: 'Query',
+    const {queryNamespace} = this.options
+    const QueryTypeName = namespacedTypeName('Query', queryNamespace)
+    const QueryType = new GraphQLObjectType({
+      name: QueryTypeName,
       fields: graphQLTypes.reduce((fields, {type, collection}) => {
         const queryFieldName = inflection.camelize(type.name, true)
         fields[queryFieldName] = {
@@ -67,6 +74,22 @@ export default class SchemaBuilder {
       }, baseFields as GraphQLFieldConfigMap<any, any>)
     })
 
+    if (!queryNamespace) {
+      // No namespace - the Query is at the root of the schema
+      return new GraphQLSchema({
+        query: QueryType
+      })
+    }
+
+    // A Query object with a single field that wraps up our actual Query object
+    const Query = new GraphQLObjectType({
+      name: 'Query',
+      fields: {
+        [queryNamespace]: {
+          type: QueryType
+        }
+      }
+    })
     return new GraphQLSchema({
       query: Query
     })

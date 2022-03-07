@@ -9,6 +9,7 @@ import QueryResolverBuilder from './query-resolver-builder';
 
 interface IBaseOptions {
   namespace?: string
+  queryNamespace?: string
 
   logger: { debug: Console['debug'] },
 }
@@ -43,24 +44,38 @@ export default class ResolverBuilder {
     } else {
       contentfulSchema = require(this.options.filename)
     }
-    const {namespace} = this.options
+    const {namespace, queryNamespace} = this.options
 
     const resolvers: Resolvers = {
-      Query: {
-        ...new QueryResolverBuilder(this.dataSource, this.options, 'Asset').build().Query,
-        ...contentfulSchema.contentTypes.reduce((resolvers, ct) => {
-          return {
-            ...resolvers,
-            ...new QueryResolverBuilder(this.dataSource, this.options, ct.sys.id).build().Query
-          }
-        }, {})
-      },
       ...contentfulSchema.contentTypes.reduce((types, ct) => {
         return {
           ...types,
           ...new ContentTypeResolverBuilder(this.dataSource, this.options, ct).build()
         }
       }, {})
+    }
+
+    const Query = {
+      ...new QueryResolverBuilder(this.dataSource, this.options, 'Asset').build().Query,
+      ...contentfulSchema.contentTypes.reduce((resolvers, ct) => {
+        return {
+          ...resolvers,
+          ...new QueryResolverBuilder(this.dataSource, this.options, ct.sys.id).build().Query
+        }
+      }, {})
+    }
+
+    if (queryNamespace) {
+      // we put the Query inside a namespaced type that we reference in the top level
+      const QueryTypeName = namespacedTypeName('Query', queryNamespace)
+      resolvers[QueryTypeName] = Query
+      resolvers['Query'] = {}
+      resolvers['Query'][queryNamespace] = () => {
+        return { __typename: QueryTypeName }
+      }
+    } else {
+      // we directly add our resolvers to the query
+      resolvers['Query'] = Query
     }
 
     resolvers[namespacedTypeName('Asset', namespace)] = assetFieldResolver()
