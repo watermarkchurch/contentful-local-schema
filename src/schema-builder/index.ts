@@ -2,7 +2,7 @@ import { GraphQLFieldConfigMap, GraphQLObjectType, GraphQLSchema, GraphQLString 
 import inflection from "inflection";
 
 import ContentTypeWriter from "./content-type-writer";
-import type { ContentType } from "../util";
+import { ContentType, idToName } from "../util";
 import { namespace, Namespace, namespacedTypeName } from "../types";
 
 export type SchemaBuilderOptions = {
@@ -32,8 +32,10 @@ export default class SchemaBuilder {
 
     const contentTypeMap = new Map()
     const helperTypeMap = new Map()
-    const graphQLTypes = contentfulSchema.contentTypes.map((ct) =>
-      new ContentTypeWriter(ct, contentTypeMap, helperTypeMap, this.namespace).write())
+    const graphQLTypes = contentfulSchema.contentTypes.map((ct) => ({
+      contentType: ct.sys.id,
+      ...new ContentTypeWriter(ct, contentTypeMap, helperTypeMap, this.namespace).write()
+    }))
 
     const baseFields: GraphQLFieldConfigMap<any, any> = {
       asset: {
@@ -55,8 +57,8 @@ export default class SchemaBuilder {
     const QueryTypeName = namespacedTypeName('Query', queryNamespace)
     const QueryType = new GraphQLObjectType({
       name: QueryTypeName,
-      fields: graphQLTypes.reduce((fields, {type, collection}) => {
-        const queryFieldName = inflection.camelize(type.name, true)
+      fields: graphQLTypes.reduce((fields, {contentType, type, collection}) => {
+        const queryFieldName = inflection.camelize(idToName(contentType), true)
         fields[queryFieldName] = {
           type,
           args: {

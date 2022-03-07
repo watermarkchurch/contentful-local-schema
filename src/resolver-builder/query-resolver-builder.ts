@@ -1,9 +1,8 @@
 import type { Resolver } from "@apollo/client";
-import type { Asset, Entry } from "contentful";
 import inflection from "inflection";
 import type { ContentfulDataSource } from "../dataSource";
-import { Namespace, namespacedTypeName } from "../types";
-import { ContentType, idToName } from "../util";
+import { namespacedTypeName } from "../types";
+import { idToName } from "../util";
 
 export default class QueryResolverBuilder {
 

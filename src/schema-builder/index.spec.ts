@@ -97,6 +97,20 @@ describe("SchemaBuilder", () => {
       expect(printed).toMatch('asset(id: String): Test1_Asset')
     })
 
+    it("does not namespace the query fields", async () => {
+      const instance = new SchemaBuilder({
+        contentTypes: contentfulSchema.contentTypes as ContentType[],
+
+        namespace: 'Test1'
+      })
+  
+      const schema = await instance.build()
+
+      const printed = printSchema(schema)
+      expect(printed).toMatch(' page(id: String): Test1_Page')
+      expect(printed).toMatch(' pageCollection(skip: String, limit: String): Test1_PageCollection')
+    })
+
     it("nothing looks weird", async () => {
       const instance = new SchemaBuilder({
         contentTypes: contentfulSchema.contentTypes as ContentType[],

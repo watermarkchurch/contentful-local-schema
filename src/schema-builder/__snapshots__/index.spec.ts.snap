@@ -4,14 +4,14 @@ exports[`SchemaBuilder with namespace nothing looks weird 1`] = `
 "type Query {
   asset(id: String): Test1_Asset
   assetCollection(skip: String, limit: String): Test1_AssetCollection
-  test1Sectionblocktext(id: String): Test1_SectionBlockText
-  test1SectionblocktextCollection(skip: String, limit: String): Test1_SectionBlockTextCollection
-  test1Page(id: String): Test1_Page
-  test1PageCollection(skip: String, limit: String): Test1_PageCollection
-  test1Sectioncarousel(id: String): Test1_SectionCarousel
-  test1SectioncarouselCollection(skip: String, limit: String): Test1_SectionCarouselCollection
-  test1Pagemetadata(id: String): Test1_PageMetadata
-  test1PagemetadataCollection(skip: String, limit: String): Test1_PageMetadataCollection
+  sectionBlockText(id: String): Test1_SectionBlockText
+  sectionBlockTextCollection(skip: String, limit: String): Test1_SectionBlockTextCollection
+  page(id: String): Test1_Page
+  pageCollection(skip: String, limit: String): Test1_PageCollection
+  sectionCarousel(id: String): Test1_SectionCarousel
+  sectionCarouselCollection(skip: String, limit: String): Test1_SectionCarouselCollection
+  pageMetadata(id: String): Test1_PageMetadata
+  pageMetadataCollection(skip: String, limit: String): Test1_PageMetadataCollection
 }
 
 type Test1_Asset {
