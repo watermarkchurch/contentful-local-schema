@@ -45,6 +45,18 @@ describe("SchemaBuilder", () => {
     const printed = printSchema(schema)
     expect(printed).toMatch(/^\s*something: Entry\s*$/m);
   })
+
+  it("includes asset in query", async () => {
+    const instance = new SchemaBuilder({
+      contentTypes: []
+    })
+
+    const schema = await instance.build()
+
+    const printed = printSchema(schema)
+    expect(printed).toMatch('asset(id: String): Asset')
+    expect(printed).toMatch('assetCollection(skip: String, limit: String): AssetCollection')
+  })
 })
 
 const contentfulSchema = {

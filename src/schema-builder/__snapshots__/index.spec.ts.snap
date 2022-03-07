@@ -2,6 +2,8 @@
 
 exports[`SchemaBuilder writes schema 1`] = `
 "type Query {
+  asset(id: String): Asset
+  assetCollection(skip: String, limit: String): AssetCollection
   sectionBlockText(id: String): SectionBlockText
   sectionBlockTextCollection(skip: String, limit: String): SectionBlockTextCollection
   page(id: String): Page
@@ -12,16 +14,17 @@ exports[`SchemaBuilder writes schema 1`] = `
   pageMetadataCollection(skip: String, limit: String): PageMetadataCollection
 }
 
-type SectionBlockText implements Entry {
-  internalTitle: Never
-  body: String!
-  bookmarkTitle: String
-  style: SectionBlockTextStyle
-}
-
-interface Entry {
+type Asset {
   sys: Sys
   contentfulMetadata: ContentfulMetadata
+  title: String
+  description: String
+  contentType: String
+  fileName: String
+  url: String
+  size: Int
+  width: Int
+  height: Int
 }
 
 type Sys {
@@ -37,6 +40,25 @@ type ContentfulMetadata {
 type ContentfulTag {
   id: String!
   name: String!
+}
+
+type AssetCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Asset]!
+}
+
+type SectionBlockText implements Entry {
+  internalTitle: Never
+  body: String!
+  bookmarkTitle: String
+  style: SectionBlockTextStyle
+}
+
+interface Entry {
+  sys: Sys
+  contentfulMetadata: ContentfulMetadata
 }
 
 scalar Never
@@ -97,26 +119,6 @@ union PageSection = SectionBlockText | SectionCarousel
 type SectionCarousel implements Entry {
   images: AssetCollection
   slideInterval: Float
-}
-
-type AssetCollection {
-  skip: Int!
-  limit: Int!
-  total: Int!
-  items: [Asset]!
-}
-
-type Asset {
-  sys: Sys
-  contentfulMetadata: ContentfulMetadata
-  title: String
-  description: String
-  contentType: String
-  fileName: String
-  url: String
-  size: Int
-  width: Int
-  height: Int
 }
 
 enum PageFlag {

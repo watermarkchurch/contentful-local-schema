@@ -3,7 +3,7 @@ import inflection from "inflection";
 
 import ContentTypeWriter from "./content-type-writer";
 import type { ContentType } from "../util";
-
+import { Asset, AssetCollection } from "../types";
 
 export type SchemaBuilderOptions = {
   contentTypes: ContentType[]
@@ -23,6 +23,22 @@ export default class SchemaBuilder {
     const graphQLTypes = contentfulSchema.contentTypes.map((ct) =>
       new ContentTypeWriter(ct, contentTypeMap, helperTypeMap).write())
 
+    const baseFields: GraphQLFieldConfigMap<any, any> = {
+      asset: {
+        type: Asset,
+        args: {
+          id: { type: GraphQLString}
+        }
+      },
+      assetCollection: {
+        type: AssetCollection,
+        args: {
+          skip: { type: GraphQLString },
+          limit: { type: GraphQLString },
+        }
+      }
+    }
+
     const Query = new GraphQLObjectType({
       name: 'Query',
       fields: graphQLTypes.reduce((fields, {type, collection}) => {
@@ -41,7 +57,7 @@ export default class SchemaBuilder {
           }
         }
         return fields
-      }, {} as GraphQLFieldConfigMap<any, any>)
+      }, baseFields as GraphQLFieldConfigMap<any, any>)
     })
 
     return new GraphQLSchema({
