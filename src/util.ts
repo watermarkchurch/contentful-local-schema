@@ -71,3 +71,7 @@ export function isDeletedEntry(e: any): e is DeletedEntry {
 export function isDeletedAsset(e: any): e is DeletedAsset {
   return e && e.sys && e.sys.type == 'DeletedAsset'
 }
+
+export function unionTypeDefName(contentType: string, field: { id: string }) {
+  return `${idToName(contentType)}${inflection.singularize(idToName(field.id))}`
+}

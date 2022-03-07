@@ -3,7 +3,7 @@ import GraphQLJSON from 'graphql-type-json';
 
 import { GraphQLBoolean, GraphQLEnumType, GraphQLEnumValueConfigMap, GraphQLFieldConfigMap, GraphQLFloat, GraphQLInt, GraphQLInterfaceType, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLOutputType, GraphQLScalarType, GraphQLString, GraphQLType, GraphQLUnionType } from 'graphql'
 import { GraphQLNever, Namespace } from '../types'
-import { ContentType, ContentTypeField, idToName, isLinkContentTypeValidation } from '../util';
+import { ContentType, ContentTypeField, idToName, isLinkContentTypeValidation, unionTypeDefName } from '../util';
 
 export default class ContentTypeWriter {
   public readonly className: string
@@ -178,9 +178,5 @@ export default class ContentTypeWriter {
       })
     }
   }
-}
-
-function unionTypeDefName(contentType: string, field: { id: string }) {
-  return `${idToName(contentType)}${inflection.singularize(idToName(field.id))}`
 }
 

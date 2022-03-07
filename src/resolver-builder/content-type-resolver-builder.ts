@@ -1,5 +1,5 @@
 import type { Resolver, Resolvers } from "@apollo/client";
-import { ContentType, ContentTypeField, idToName, present } from "../util";
+import { ContentType, ContentTypeField, idToName, isLinkContentTypeValidation, present, unionTypeDefName } from "../util";
 import { ContentfulDataSource } from "../dataSource";
 import { namespacedTypeName } from "../types";
 
@@ -106,6 +106,15 @@ export default class ContentTypeResolverBuilder {
     const AssetTypeName = namespacedTypeName('Asset', namespace)
     const linkType = field.items!.linkType!
 
+    const CollectionTypeName =
+      linkType == 'Asset' ?
+        'AssetCollection' :
+        // duplicate the logic in content-type-writer.ts for union fields
+        getCollectionTypeName(
+          this.contentType.sys.id,
+          Object.assign({ id: field.id }, field.items),
+          namespace) + 'Collection'
+
     return async (entry, args) => {
       const links = entry.fields[field.id] as any[]
       const linkIDs = links.map((link: any) => {
@@ -124,6 +133,7 @@ export default class ContentTypeResolverBuilder {
         })
 
         return {
+          __typename: AssetTypeName + 'Collection',
           skip: collection.skip,
           limit: collection.limit,
           total: collection.total,
@@ -142,6 +152,7 @@ export default class ContentTypeResolverBuilder {
       })
       
       return {
+        __typename: CollectionTypeName,
         skip: collection.skip,
         limit: collection.limit,
         total: collection.total,
@@ -157,4 +168,29 @@ export default class ContentTypeResolverBuilder {
       }
     }
   }
+}
+
+function getCollectionTypeName(thisContentTypeId: string, field: ContentTypeField, namespace: string | undefined): string {
+  if (!field) { throw new Error(`Missing items!`) }
+
+  const validation = field.validations &&
+      field.validations.filter(isLinkContentTypeValidation).find((v) =>
+        v.linkContentType.length > 0)
+
+  if (!validation) {
+    return namespacedTypeName('Entry', namespace)
+  }
+
+  if (validation.linkContentType.length == 1) {
+    return namespacedTypeName(idToName(validation.linkContentType[0]), namespace)
+  }
+
+  const unionName = namespacedTypeName(
+    unionTypeDefName(
+      thisContentTypeId,
+      field
+    ),
+    namespace
+  )
+  return unionName
 }

@@ -1,9 +1,7 @@
 import { ApolloClient, gql, InMemoryCache, Resolvers } from "@apollo/client";
 import { createClient } from "contentful";
-import { GraphQLSchema, printSchema } from "graphql";
-import path from "path";
+import { GraphQLSchema } from "graphql";
 import nock from 'nock'
-import fs from 'fs-extra'
 
 import { createLocalResolvers, createSchema, withSync } from ".";
 import { ContentfulDataSource } from "./dataSource";
@@ -524,6 +522,40 @@ describe("integration", () => {
             "//assets.ctfassets.net/xxxxxx/Ezf3U7innNmCIbsjGnNCg/cb900bb72bca8c69b12a4072904e935b/CLC2021-SocialPlatformsBestPractices.pdf",
           ])
       });
+
+      it("resolves typename of included union collection", async () => {
+        const result = await client.query({
+          query: gql`
+            query getScheduleDay($id: string!) {
+              local @client {
+                day(id: $id) {
+                  scheduleItem {
+                    __typename
+                    total
+                    items {
+                      __typename
+                      ... on Local_Breakouts {
+                        title
+                      }
+                      ... on Local_Event {
+                        title
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          `,
+          variables: {
+            id: "4XxyEnB0ri5MVN3GHprnom",
+          },
+        });
+
+        const { local: { day } } = result.data
+        expect(day.scheduleItem.__typename).toEqual('Local_DayScheduleItemCollection')
+        expect(day.scheduleItem.items[0].__typename).toEqual('Local_Event')
+        expect(day.scheduleItem.items[1].__typename).toEqual('Local_Event')
+      })
     });
   })
 
