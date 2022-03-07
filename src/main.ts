@@ -19,6 +19,9 @@ interface IArgv {
   space?: string,
   environment?: string
   verbose?: boolean
+
+  namespace?: string,
+  queryNamespace?: string
 }
 
 yargs
@@ -29,6 +32,13 @@ yargs
   .option('out', {
     alias: 'o',
     describe: 'Where to place the generated gql file.',
+  })
+  .option('namespace', {
+    type: 'string',
+    describe: 'Prefixes all types with a certain name',
+  })
+  .option('queryNamespace', {
+    describe: 'Wraps the top level Query object inside a field with this name'
   })
   .option('download', {
     boolean: true,
@@ -92,7 +102,9 @@ async function Run(args: IArgv) {
 
   const contentfulSchema = JSON.parse((await readFile(schemaFile)).toString())
   const schema = createSchema({
-    contentTypes: contentfulSchema.contentTypes
+    contentTypes: contentfulSchema.contentTypes,
+    namespace: options.namespace,
+    queryNamespace: options.queryNamespace
   })
 
   if (options.out && options.out != '-') {
