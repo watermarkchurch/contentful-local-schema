@@ -113,8 +113,15 @@ export function namespacedTypeName(name: string, namespace: string | undefined) 
   return name
 }
 
-export function assetFieldResolver(): { [field: string]: Resolver } {
+export function assetFieldResolver(namespace: string | undefined): { [field: string]: Resolver } {
+  const SysTypeName = namespacedTypeName('Sys', namespace)
   return {
+    sys: (asset: ContentfulAsset) => {
+      return {
+        __typename: SysTypeName,
+        ...asset.sys
+      }
+    },
     title: (asset: ContentfulAsset) => asset.fields.title,
     description: (asset: ContentfulAsset) => asset.fields.description,
     contentType: (asset: ContentfulAsset) => asset.fields.file?.contentType,

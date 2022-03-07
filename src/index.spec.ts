@@ -101,6 +101,7 @@ describe("integration", () => {
               event(id: $id) @client {
                 art {
                   sys {
+                    __typename
                     id
                   }
                   title
@@ -123,6 +124,7 @@ describe("integration", () => {
         const { event } = result.data;
         expect(event.art.sys.id).toEqual("5JRnRQw8pWe1O9gJCKTn0B");
         expect(event.art.title).toEqual("Regen-showcase");
+        expect(event.art.sys.__typename).toEqual('Sys')
         expect(event.art.fileName).toEqual("ReGen App Header.jpg");
         expect(event.art.contentType).toEqual("image/jpeg");
         expect(event.art.url).toEqual(
@@ -399,6 +401,7 @@ describe("integration", () => {
                   location {
                     sys {
                       id
+                      __typename
                     }
                     title
                   }
@@ -414,6 +417,7 @@ describe("integration", () => {
         expect(result.errors).toBeUndefined();
         const { local: {event} } = result.data;
         expect(event.location.sys.id).toEqual("6gCbSxnYr0XJ8DYSkalHZG");
+        expect(event.location.sys.__typename).toEqual("Local_Sys");
         expect(event.location.title).toEqual("West Tower 3rd Floor South");
       });
 
@@ -426,6 +430,7 @@ describe("integration", () => {
                   art {
                     sys {
                       id
+                      __typename
                     }
                     title
                     fileName
@@ -447,6 +452,7 @@ describe("integration", () => {
         expect(result.errors).toBeUndefined();
         const { local: { event } } = result.data;
         expect(event.art.sys.id).toEqual("5JRnRQw8pWe1O9gJCKTn0B");
+        expect(event.art.sys.__typename).toEqual('Local_Sys')
         expect(event.art.title).toEqual("Regen-showcase");
         expect(event.art.fileName).toEqual("ReGen App Header.jpg");
         expect(event.art.contentType).toEqual("image/jpeg");

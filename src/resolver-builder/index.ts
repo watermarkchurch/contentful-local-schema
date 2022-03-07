@@ -78,7 +78,7 @@ export default class ResolverBuilder {
       resolvers['Query'] = Query
     }
 
-    resolvers[namespacedTypeName('Asset', namespace)] = assetFieldResolver()
+    resolvers[namespacedTypeName('Asset', namespace)] = assetFieldResolver(namespace)
 
     return resolvers
   }

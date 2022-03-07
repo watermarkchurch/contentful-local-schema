@@ -1,3 +1,4 @@
+
 import { printSchema } from "graphql"
 import SchemaBuilder from "."
 import { ContentType } from "../util"
@@ -90,6 +91,7 @@ describe("SchemaBuilder", () => {
       expect(printed).not.toMatch('implements Entry')
       expect(printed).toMatch('type Test1_Page implements Test1_Entry')
       expect(printed).toMatch('type Test1_Sys')
+      expect(printed).not.toMatch('type Sys')
       expect(printed).toMatch('type Test1_Asset')
       expect(printed).toMatch('type Test1_AssetCollection')
       expect(printed).not.toMatch('items:[Asset]')

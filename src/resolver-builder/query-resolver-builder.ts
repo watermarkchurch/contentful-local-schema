@@ -75,6 +75,7 @@ export default class QueryResolverBuilder {
         })
         
         return {
+          __typename: AssetTypeName + 'Collection',
           skip: collection.skip,
           limit: collection.limit,
           total: collection.total,
@@ -93,17 +94,20 @@ export default class QueryResolverBuilder {
         content_type: contentTypeId,
         ...args
       })
+
+      const EntryTypeName = namespacedTypeName(
+        idToName(contentTypeId),
+        namespace
+      )
       
       return {
+        __typename: EntryTypeName + 'Collection',
         skip: collection.skip,
         limit: collection.limit,
         total: collection.total,
         items: collection.items.map((entry) => (
           {
-            __typename: namespacedTypeName(
-              idToName(entry.sys.contentType.sys.id),
-              namespace
-            ),
+            __typename: EntryTypeName,
             ...entry
           }
         ))

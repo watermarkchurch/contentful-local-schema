@@ -15,7 +15,9 @@ export default class ContentTypeResolverBuilder {
 
   public build(): Resolvers {
     const contentType = this.contentType
-    const fields: { [field: string]: Resolver } = {}
+    const fields: { [field: string]: Resolver } = {
+      sys: this.sysResolver()
+    }
     const typeName = namespacedTypeName(idToName(this.contentType.sys.id), this.options.namespace)
 
     contentType.fields.forEach((f) => 
@@ -24,6 +26,16 @@ export default class ContentTypeResolverBuilder {
     const withTypeName: Resolvers = {}
     withTypeName[typeName] = fields
     return withTypeName
+  }
+
+  private sysResolver(): Resolver {
+    const SysTypeName = namespacedTypeName('Sys', this.options.namespace)
+    return (entry) => {
+      return {
+        __typename: SysTypeName,
+        ...entry.sys
+      }
+    }
   }
 
   private fieldResolver(field: ContentTypeField): Resolver {

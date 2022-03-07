@@ -70,6 +70,7 @@ describe('LocalTypePolicyBuilder', () => {
       query: gql`
       query findBlockText($id: String!) {
         sectionBlockText(id:$id) @client {
+          __typename
           body
         }
       }
@@ -78,11 +79,10 @@ describe('LocalTypePolicyBuilder', () => {
     })
 
     expect(result.data.sectionBlockText).toMatchObject({
+      __typename: 'SectionBlockText',
       body: 'test body'
     })
   })
-
-
 
   it('resolves a collection type', async () => {
     const schema = [
@@ -154,6 +154,7 @@ describe('LocalTypePolicyBuilder', () => {
       query: gql`
       query findBlockText($id: String!) {
         sectionBlockTextCollection @client {
+          __typename
           total
           skip
           limit
@@ -166,6 +167,7 @@ describe('LocalTypePolicyBuilder', () => {
     })
 
     const collection = result.data.sectionBlockTextCollection
+    expect(collection.__typename).toEqual('SectionBlockTextCollection')
     expect(collection.total).toEqual(2)
     expect(collection.skip).toEqual(0)
     expect(collection.limit).toEqual(100)
