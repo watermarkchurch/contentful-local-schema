@@ -18,7 +18,8 @@
     "build": "tsc --project tsconfig.dist.json",
     "check-types": "tsc --noemit",
     "test": "jest",
-    "clean": "tsc --build --clean"
+    "clean": "tsc --build --clean",
+    "prepack": "yarn build"
   },
   "devDependencies": {
     "@apollo/client": "^3.3.16",

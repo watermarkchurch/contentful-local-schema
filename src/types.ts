@@ -4,7 +4,8 @@ import { GraphQLFloat, GraphQLInt, GraphQLInterfaceType, GraphQLList, GraphQLNon
 import inflection from 'inflection';
 
 export const GraphQLNever = new GraphQLScalarType({
-  name: 'Never'
+  name: 'Never',
+  serialize: () => null
 })
 
 export type Namespace = ReturnType<typeof namespace>
