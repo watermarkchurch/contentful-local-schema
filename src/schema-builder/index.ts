@@ -50,6 +50,19 @@ export default class SchemaBuilder {
           skip: { type: GraphQLString },
           limit: { type: GraphQLString },
         }
+      },
+      entry: {
+        type: this.namespace.Entry,
+        args: {
+          id: { type: GraphQLString}
+        }
+      },
+      entryCollection: {
+        type: this.namespace.EntryCollection,
+        args: {
+          skip: { type: GraphQLString },
+          limit: { type: GraphQLString },
+        }
       }
     }
 

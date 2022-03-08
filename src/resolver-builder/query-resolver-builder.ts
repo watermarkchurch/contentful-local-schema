@@ -89,6 +89,31 @@ export default class QueryResolverBuilder {
       }
     }
 
+    if (this.contentTypeId == 'Entry') {
+      // special case - no content_type and no filters, browse all entries
+      return async (_, args) => {
+        const collection = await dataSource.getEntries({...args})
+  
+        const EntryTypeName = namespacedTypeName('Entry', namespace)
+        
+        return {
+          __typename: EntryTypeName + 'Collection',
+          skip: collection.skip,
+          limit: collection.limit,
+          total: collection.total,
+          items: collection.items.map((entry) => {
+            // each entry may be a different type
+            const typename = namespacedTypeName(idToName(entry.sys.contentType.sys.id), namespace)
+
+            return {
+              __typename: typename,
+              ...entry
+            }
+          })
+        }
+      }
+    }
+
     return async (_, args) => {
       const collection = await dataSource.getEntries({
         content_type: contentTypeId,

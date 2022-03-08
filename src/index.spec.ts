@@ -62,9 +62,9 @@ describe("integration", () => {
         const { event } = result.data;
         expect(event.sys.id).toEqual("7cnBLR2aRp2TZcFTfC6cxs");
         expect(event.title).toEqual("Worship Arts Workshop (Cont.)");
-        expect(event.summary).toBeUndefined();
+        expect(event.summary).toBeNull();
         expect(event.eventType).toEqual("Workshop");
-        expect(event.capacity).toBeUndefined();
+        expect(event.capacity).toBeNull();
       });
 
       it("resolves included single entry", async () => {
@@ -189,6 +189,31 @@ describe("integration", () => {
             "//assets.ctfassets.net/xxxxxx/Ezf3U7innNmCIbsjGnNCg/cb900bb72bca8c69b12a4072904e935b/CLC2021-SocialPlatformsBestPractices.pdf",
           ])
       });
+
+      it("gets item from generic 'entry' query", async() => {
+        const result = await client.query({
+          query: gql`
+            query getevent($id: string!) {
+              entry(id: $id) @client {
+                sys {
+                  id
+                }
+                ... on Event {
+                  title
+                }
+              }
+            }
+          `,
+          variables: {
+            id: "7cnBLR2aRp2TZcFTfC6cxs",
+          },
+        });
+
+        expect(result.errors).toBeUndefined();
+        const { entry } = result.data;
+        expect(entry.sys.id).toEqual("7cnBLR2aRp2TZcFTfC6cxs");
+        expect(entry.title).toEqual("Worship Arts Workshop (Cont.)");
+      })
     });
 
     describe('single asset query', () => {
@@ -276,6 +301,31 @@ describe("integration", () => {
         expect(eventCollection.items.length).toEqual(5)
         expect(eventCollection.items[0].title).toEqual("Worship Arts Workshop (Cont.)")
         expect(eventCollection.items[4].title).toEqual("Watermark Kids Ministry Showcase")
+      })
+
+      it("browses item from generic 'entryCollection' query", async() => {
+        const result = await client.query({
+          query: gql`
+            query getEntries($id: string!) {
+              entryCollection(skip: 1, limit: 2) @client {
+                total
+                items {
+                  sys { id }
+                  __typename
+                  title
+                }
+              }
+            }
+          `,
+        });
+
+        expect(result.errors).toBeUndefined();
+        const { entryCollection } = result.data;
+        expect(entryCollection.total).toEqual(347)
+        expect(entryCollection.items.map((c: any) => c.title))
+          .toEqual([' Workshop', 'Main Auditorium'])
+        expect(entryCollection.items.map((c: any) => c.__typename))
+          .toEqual(['Event', 'Location'])
       })
     })
 
@@ -385,9 +435,9 @@ describe("integration", () => {
         const { local: { event } } = result.data;
         expect(event.sys.id).toEqual("7cnBLR2aRp2TZcFTfC6cxs");
         expect(event.title).toEqual("Worship Arts Workshop (Cont.)");
-        expect(event.summary).toBeUndefined();
+        expect(event.summary).toBeNull();
         expect(event.eventType).toEqual("Workshop");
-        expect(event.capacity).toBeUndefined();
+        expect(event.capacity).toBeNull();
       });
 
       it("resolves included single entry", async () => {

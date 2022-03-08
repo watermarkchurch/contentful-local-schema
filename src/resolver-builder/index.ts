@@ -56,6 +56,7 @@ export default class ResolverBuilder {
     }
 
     const Query = {
+      ...new QueryResolverBuilder(this.dataSource, this.options, 'Entry').build().Query,
       ...new QueryResolverBuilder(this.dataSource, this.options, 'Asset').build().Query,
       ...contentfulSchema.contentTypes.reduce((resolvers, ct) => {
         return {

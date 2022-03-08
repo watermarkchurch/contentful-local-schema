@@ -11,6 +11,8 @@ scalar Never
 type Query {
   asset(id: String): Test1_Asset
   assetCollection(skip: String, limit: String): Test1_AssetCollection
+  entry(id: String): Test1_Entry
+  entryCollection(skip: String, limit: String): Test1_EntryCollection
   sectionBlockText(id: String): Test1_SectionBlockText
   sectionBlockTextCollection(skip: String, limit: String): Test1_SectionBlockTextCollection
   page(id: String): Test1_Page
@@ -53,6 +55,13 @@ type Test1_ContentfulTag {
 interface Test1_Entry {
   sys: Test1_Sys
   contentfulMetadata: Test1_ContentfulMetadata
+}
+
+type Test1_EntryCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Test1_Entry]!
 }
 
 type Test1_Page implements Test1_Entry {
@@ -177,6 +186,13 @@ interface Entry {
   contentfulMetadata: ContentfulMetadata
 }
 
+type EntryCollection {
+  skip: Int!
+  limit: Int!
+  total: Int!
+  items: [Entry]!
+}
+
 \\"\\"\\"
 The \`JSON\` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
 \\"\\"\\"
@@ -235,6 +251,8 @@ type PageSectionCollection {
 type Query {
   asset(id: String): Asset
   assetCollection(skip: String, limit: String): AssetCollection
+  entry(id: String): Entry
+  entryCollection(skip: String, limit: String): EntryCollection
   sectionBlockText(id: String): SectionBlockText
   sectionBlockTextCollection(skip: String, limit: String): SectionBlockTextCollection
   page(id: String): Page
