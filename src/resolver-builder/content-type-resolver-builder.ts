@@ -49,7 +49,7 @@ export default class ContentTypeResolverBuilder {
       case 'Integer':
       case 'Number':
       case 'Boolean':
-        return (entry) => entry.fields[field.id]
+        return (entry) => entry.fields[field.id] || null
       case 'Location':
         return (entry) => ({
           __typename: 'Location',
@@ -62,7 +62,7 @@ export default class ContentTypeResolverBuilder {
           return this.collectionResolver(field)
         } else {
           // Simple list - get the items
-          return (entry) => entry.fields[field.id]
+          return (entry) => entry.fields[field.id] || []
         }
       default:
         return (entry) => ({

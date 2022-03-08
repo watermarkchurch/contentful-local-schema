@@ -123,13 +123,13 @@ export function assetFieldResolver(namespace: string | undefined): { [field: str
         ...asset.sys
       }
     },
-    title: (asset: ContentfulAsset) => asset.fields.title,
-    description: (asset: ContentfulAsset) => asset.fields.description,
-    contentType: (asset: ContentfulAsset) => asset.fields.file?.contentType,
-    fileName: (asset: ContentfulAsset) => asset.fields.file?.fileName,
-    url: (asset: ContentfulAsset) => asset.fields.file?.url,
-    size: (asset: ContentfulAsset) => asset.fields.file?.details?.size,
-    width: (asset: ContentfulAsset) => asset.fields.file?.details?.image?.width,
-    height: (asset: ContentfulAsset) => asset.fields.file?.details?.image?.height,
+    title: (asset: ContentfulAsset) => asset.fields.title || null,
+    description: (asset: ContentfulAsset) => asset.fields.description || null,
+    contentType: (asset: ContentfulAsset) => asset.fields.file?.contentType || null,
+    fileName: (asset: ContentfulAsset) => asset.fields.file?.fileName || null,
+    url: (asset: ContentfulAsset) => asset.fields.file?.url || null,
+    size: (asset: ContentfulAsset) => asset.fields.file?.details?.size || null,
+    width: (asset: ContentfulAsset) => asset.fields.file?.details?.image?.width || null,
+    height: (asset: ContentfulAsset) => asset.fields.file?.details?.image?.height || null,
   }
 }
