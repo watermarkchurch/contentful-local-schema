@@ -2,7 +2,7 @@ import type {Resolvers} from '@apollo/client'
 
 import { ContentfulDataSource } from '../dataSource';
 import { assetFieldResolver, namespacedTypeName } from '../types';
-import type { ContentType } from '../util';
+import { ContentType, generateUUID } from '../util';
 import ContentTypeResolverBuilder from './content-type-resolver-builder';
 import QueryResolverBuilder from './query-resolver-builder';
 
@@ -72,7 +72,10 @@ export default class ResolverBuilder {
       resolvers[QueryTypeName] = Query
       resolvers['Query'] = {}
       resolvers['Query'][queryNamespace] = () => {
-        return { __typename: QueryTypeName }
+        return {
+          __typename: QueryTypeName,
+          __id: generateUUID(),
+        }
       }
     } else {
       // we directly add our resolvers to the query

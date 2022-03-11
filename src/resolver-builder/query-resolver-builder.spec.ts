@@ -6,7 +6,7 @@ import { namespace } from '../types'
 import { ContentType } from '../util'
 import QueryResolverBuilder from './query-resolver-builder'
 
-describe('LocalTypePolicyBuilder', () => {
+describe('QueryResolverBuilder', () => {
   let fakeDataSource: {
     [fn in keyof ContentfulDataSource]: jest.Mock
   }
@@ -71,6 +71,7 @@ describe('LocalTypePolicyBuilder', () => {
       query findBlockText($id: String!) {
         sectionBlockText(id:$id) @client {
           __typename
+          _id
           body
         }
       }
@@ -80,6 +81,7 @@ describe('LocalTypePolicyBuilder', () => {
 
     expect(result.data.sectionBlockText).toMatchObject({
       __typename: 'SectionBlockText',
+      _id: '1234',
       body: 'test body'
     })
   })

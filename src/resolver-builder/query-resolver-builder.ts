@@ -2,7 +2,7 @@ import type { Resolver } from "@apollo/client";
 import inflection from "inflection";
 import type { ContentfulDataSource } from "../dataSource";
 import { namespacedTypeName } from "../types";
-import { idToName } from "../util";
+import { generateUUID, idToName } from "../util";
 
 export default class QueryResolverBuilder {
 
@@ -42,6 +42,7 @@ export default class QueryResolverBuilder {
         }
         return {
           __typename: AssetTypeName,
+          _id: entry.sys.id,
           ...entry
         }
       }
@@ -56,6 +57,7 @@ export default class QueryResolverBuilder {
       const typename = namespacedTypeName(idToName(entry.sys.contentType.sys.id), namespace)
       return {
         __typename: typename,
+        _id: entry.sys.id,
         ...entry
       }
     }
@@ -76,12 +78,14 @@ export default class QueryResolverBuilder {
         
         return {
           __typename: AssetTypeName + 'Collection',
+          _id: generateUUID(),
           skip: collection.skip,
           limit: collection.limit,
           total: collection.total,
           items: collection.items.map((asset) => (
             {
               __typename: AssetTypeName,
+              _id: asset.sys.id,
               ...asset
             }
           ))
@@ -98,6 +102,7 @@ export default class QueryResolverBuilder {
         
         return {
           __typename: EntryTypeName + 'Collection',
+          _id: generateUUID(),
           skip: collection.skip,
           limit: collection.limit,
           total: collection.total,
@@ -107,6 +112,7 @@ export default class QueryResolverBuilder {
 
             return {
               __typename: typename,
+              _id: entry.sys.id,
               ...entry
             }
           })
@@ -127,12 +133,14 @@ export default class QueryResolverBuilder {
       
       return {
         __typename: EntryTypeName + 'Collection',
+        _id: generateUUID(),
         skip: collection.skip,
         limit: collection.limit,
         total: collection.total,
         items: collection.items.map((entry) => (
           {
             __typename: EntryTypeName,
+            _id: entry.sys.id,
             ...entry
           }
         ))

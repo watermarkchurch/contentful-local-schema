@@ -1,5 +1,5 @@
 import type { Resolver, Resolvers } from "@apollo/client";
-import { ContentType, ContentTypeField, idToName, isLinkContentTypeValidation, present, unionTypeDefName } from "../util";
+import { ContentType, ContentTypeField, generateUUID, idToName, isLinkContentTypeValidation, present, unionTypeDefName } from "../util";
 import { ContentfulDataSource } from "../dataSource";
 import { namespacedTypeName } from "../types";
 
@@ -33,6 +33,7 @@ export default class ContentTypeResolverBuilder {
     return (entry) => {
       return {
         __typename: SysTypeName,
+        _id: entry.sys.id,
         ...entry.sys
       }
     }
@@ -53,6 +54,7 @@ export default class ContentTypeResolverBuilder {
       case 'Location':
         return (entry) => ({
           __typename: 'Location',
+          _id: [entry.sys.id, field.id].join('/'),
           ...entry.fields[field.id]
         })
       case 'Link':
@@ -67,6 +69,7 @@ export default class ContentTypeResolverBuilder {
       default:
         return (entry) => ({
           __typename: 'JSON',
+          _id: [entry.sys.id, field.id].join('/'),
           ...entry.fields[field.id]
         })
     }
@@ -86,14 +89,18 @@ export default class ContentTypeResolverBuilder {
 
       if (field.linkType == 'Asset') {
         const resolved = await dataSource.getAsset(link.sys.id)
+        if (!resolved) { return null }
         return {
           __typename: AssetTypeName,
+          _id: resolved.sys.id,
           ...resolved
         }
       } else {
         const resolved = await dataSource.getEntry(link.sys.id)
+        if (!resolved) { return null }
         return {
-          __typename: namespacedTypeName(idToName(entry.sys.contentType.sys.id), namespace),
+          __typename: namespacedTypeName(idToName(resolved.sys.contentType.sys.id), namespace),
+          _id: resolved.sys.id,
           ...resolved
         }
       }
@@ -134,12 +141,14 @@ export default class ContentTypeResolverBuilder {
 
         return {
           __typename: AssetTypeName + 'Collection',
+          _id: generateUUID(),
           skip: collection.skip,
           limit: collection.limit,
           total: collection.total,
           items: collection.items.map((entry) => (
             {
               __typename: AssetTypeName,
+              _id: entry.sys.id,
               ...entry
             }
           ))
@@ -153,6 +162,7 @@ export default class ContentTypeResolverBuilder {
       
       return {
         __typename: CollectionTypeName,
+        _id: generateUUID(),
         skip: collection.skip,
         limit: collection.limit,
         total: collection.total,
@@ -162,6 +172,7 @@ export default class ContentTypeResolverBuilder {
               idToName(entry.sys.contentType.sys.id),
               namespace
             ),
+            _id: entry.sys.id,
             ...entry
           }
         ))

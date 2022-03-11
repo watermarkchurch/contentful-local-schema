@@ -120,6 +120,7 @@ export function assetFieldResolver(namespace: string | undefined): { [field: str
     sys: (asset: ContentfulAsset) => {
       return {
         __typename: SysTypeName,
+        _id: asset.sys.id,
         ...asset.sys
       }
     },
