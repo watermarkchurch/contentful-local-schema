@@ -123,8 +123,8 @@ export default class ContentTypeResolverBuilder {
           namespace) + 'Collection'
 
     return async (entry, args) => {
-      const links = entry.fields[field.id] as any[]
-      const linkIDs = links.map((link: any) => {
+      const links: any[] | undefined = entry.fields[field.id]
+      const linkIDs = (links || []).map((link: any) => {
         if (!link) { return null }
         if (!link.sys || link.sys.type != 'Link') {
           throw new Error(`Value in field ${field.id} is not a link! (was '${link}')`)
