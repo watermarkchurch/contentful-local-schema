@@ -74,7 +74,7 @@ export default class ResolverBuilder {
       resolvers['Query'][queryNamespace] = () => {
         return {
           __typename: QueryTypeName,
-          __id: generateUUID(),
+          _id: QueryTypeName,
         }
       }
     } else {
