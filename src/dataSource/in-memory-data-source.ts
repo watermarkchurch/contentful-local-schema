@@ -159,9 +159,9 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
         const expected = query[key]
   
         let op = 'eq'
-        const match = /\[(?<op>\w+)\]$/.exec(key)
-        if (match && match.groups && match.groups.op) {
-          op = match.groups.op
+        const match = /\[(\w+)\]$/.exec(key)
+        if (match && match[1]) {
+          op = match[1]
           key = key.substring(0, match.index)
         }
 
