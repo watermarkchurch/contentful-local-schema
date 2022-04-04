@@ -136,8 +136,13 @@ export default class ContentTypeResolverBuilder {
       if (linkType == 'Asset') {
         const collection = await dataSource.getAssets({
           ...args,
+          limit: linkIDs.length,
           'sys.id[in]': linkIDs
         })
+
+        // they need to be ordered properly
+        const itemsById = reduceById(collection.items)
+        const items = linkIDs.map((id) => itemsById[id])
 
         return {
           __typename: AssetTypeName + 'Collection',
@@ -145,11 +150,11 @@ export default class ContentTypeResolverBuilder {
           skip: collection.skip,
           limit: collection.limit,
           total: collection.total,
-          items: collection.items.map((entry) => (
+          items: items.map((asset) => (
             {
               __typename: AssetTypeName,
-              _id: entry.sys.id,
-              ...entry
+              _id: asset.sys.id,
+              ...asset
             }
           ))
         }
@@ -157,16 +162,21 @@ export default class ContentTypeResolverBuilder {
 
       const collection = await dataSource.getEntries({
         ...args,
+        limit: linkIDs.length,
         'sys.id[in]': linkIDs
       })
-      
+
+      // they need to be ordered properly
+      const itemsById = reduceById(collection.items)
+      const items = linkIDs.map((id) => itemsById[id])
+
       return {
         __typename: CollectionTypeName,
         _id: generateUUID(),
         skip: collection.skip,
         limit: collection.limit,
         total: collection.total,
-        items: collection.items.map((entry) => (
+        items: items.map((entry) => (
           {
             __typename: namespacedTypeName(
               idToName(entry.sys.contentType.sys.id),
@@ -204,4 +214,11 @@ function getCollectionTypeName(thisContentTypeId: string, field: ContentTypeFiel
     namespace
   )
   return unionName
+}
+
+function reduceById<T extends { sys: { id: string } }>(entries: T[]): Record<string, T> {
+  return entries.reduce((h, e) => {
+    h[e.sys.id] = e
+    return h
+  }, {} as Record<string, T>)
 }

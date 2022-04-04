@@ -136,28 +136,43 @@ describe("integration", () => {
       it("resolves included collection", async () => {
         const result = await client.query({
           query: gql`
-            query getevent($id: string!) {
-              event(id: $id) @client {
-                speakers {
+            query getConference($id: string!) {
+              conference(id: $id) @client {
+                tracks {
                   total
                   items {
-                    name
+                    title
                   }
                 }
               }
             }
           `,
           variables: {
-            id: "BLzxmjyZCS9UGkRevVnIS",
+            id: "doyAUR5XEVx4jK4NGvS8z",
           },
         });
 
         expect(result.errors).toBeUndefined();
-        const { event } = result.data;
-        expect(event.speakers.total).toEqual(2);
-        expect(event.speakers.items.map((i: any) => i.name)).toEqual([
-          "C W",
-          "A N",
+        const { conference } = result.data;
+        expect(conference.tracks.total).toEqual(16);
+        // expected in order
+        expect(conference.tracks.items.map((i: any) => i.title)).toEqual([
+          "Arts & Technology",
+          "Church and Culture",
+          "Connecting/Assimilation",
+          "Community Groups",
+          "Equipping & Discipleship",
+          "Kids & Families",
+          "Leader Development",
+          "Local & International Impact ",
+          "Marriage",
+          "Operations",
+          "Recovery",
+          "Senior Leaders",
+          "Students",
+          "Women",
+          "Worship",
+          "Young Adults"
         ]);
       });
 
