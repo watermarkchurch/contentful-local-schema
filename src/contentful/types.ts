@@ -9,6 +9,32 @@ export interface SyncCollection {
 }
 
 
+export interface ContentType {
+  sys: {
+    id: string
+  },
+  fields: ContentTypeField[]
+}
+
+export interface ContentTypeField {
+  id: string
+  type: string
+  omitted?: boolean
+  required?: boolean
+  validations?: Array<unknown | LinkContentTypeValidation>
+  linkType?: 'Asset' | 'Entry'
+  items?: {
+    type: string,
+    linkType?: 'Asset' | 'Entry'
+    validations?: Array<unknown | LinkContentTypeValidation>
+  }
+}
+
+export interface LinkContentTypeValidation {
+  linkContentType: string[]
+}
+
+
 export interface Sys {
   type: string;
   id: string;

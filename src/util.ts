@@ -1,4 +1,4 @@
-import type { Asset, Entry } from './contentful/types'
+import type { Asset, Entry, LinkContentTypeValidation } from './contentful/types'
 import inflection from 'inflection'
 import { DeletedAsset, DeletedEntry } from './dataSource'
 
@@ -8,31 +8,6 @@ export function tryParseJson(json: string): unknown | null {
   } catch(ex) {
     return null
   }
-}
-
-export interface ContentType {
-  sys: {
-    id: string
-  },
-  fields: ContentTypeField[]
-}
-
-export interface ContentTypeField {
-  id: string
-  type: string
-  omitted?: boolean
-  required?: boolean
-  validations?: Array<unknown | LinkContentTypeValidation>
-  linkType?: 'Asset' | 'Entry'
-  items?: {
-    type: string,
-    linkType?: 'Asset' | 'Entry'
-    validations?: Array<unknown | LinkContentTypeValidation>
-  }
-}
-
-export interface LinkContentTypeValidation {
-  linkContentType: string[]
 }
 
 export function isLinkContentTypeValidation(v: any): v is LinkContentTypeValidation {
@@ -47,13 +22,19 @@ export function idToName(id: string) {
   return id
 }
 
-export function present(value: string | undefined | null | ''): value is string {
-  if (!value) { return false }
-
-  if (!/\S/.test(value)) {
-    return false
+export function present<T>(value: T | undefined | null | ''): value is T {
+  if (typeof value == 'string') {
+    return /\S/.test(value)
   }
-  return true
+
+  return !!value
+}
+
+
+export function assertPresent<T>(value: T | undefined | null | ''): asserts value is T {
+  if (!present(value)) {
+    throw new Error(`value '${value}' was not present`)
+  }
 }
 
 export function isEntry(e: any): e is Entry<any> {

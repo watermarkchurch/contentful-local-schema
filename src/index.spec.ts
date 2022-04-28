@@ -4,6 +4,7 @@ import { GraphQLSchema } from 'graphql'
 import nock from 'nock'
 
 import { createLocalResolvers, createSchema, withSync } from '.'
+import type {ContentType} from './contentful/types'
 import { ContentfulDataSource } from './dataSource'
 import { InMemoryDataSource } from './dataSource/in-memory-data-source'
 import { addSync } from './syncEngine'
@@ -20,7 +21,7 @@ describe('integration', () => {
 
     beforeEach(async () => {
       const options = {
-        contentTypes: contentfulSchema.contentTypes,
+        contentTypes: contentfulSchema.contentTypes as ContentType[],
       }
       schema = await createSchema(options)
       const ds = new InMemoryDataSource()
@@ -403,7 +404,7 @@ describe('integration', () => {
 
     beforeEach(async () => {
       const options = {
-        contentTypes: contentfulSchema.contentTypes,
+        contentTypes: contentfulSchema.contentTypes as ContentType[],
         namespace: 'Local',
         queryNamespace: 'local'
       }
@@ -669,7 +670,7 @@ describe('integration', () => {
       const dataSource = withSync(new InMemoryDataSource(), contentfulClient)
       // Typescript: and also passed to createLocalResolvers
       const resolvers = await createLocalResolvers(dataSource, {
-        contentTypes: contentfulSchema.contentTypes
+        contentTypes: contentfulSchema.contentTypes as ContentType[]
       })
 
       // act
@@ -698,7 +699,7 @@ describe('integration', () => {
       addSync(dataSource, contentfulClient)
       // Typescript: and also passed to createLocalResolvers
       const resolvers = await createLocalResolvers(dataSource, {
-        contentTypes: contentfulSchema.contentTypes
+        contentTypes: contentfulSchema.contentTypes as ContentType[]
       })
 
       // act

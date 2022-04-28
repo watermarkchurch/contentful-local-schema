@@ -1,7 +1,7 @@
 
 import { printSchema } from 'graphql'
 import SchemaBuilder from '.'
-import { ContentType } from '../util'
+import { ContentType } from '../contentful/types'
 
 describe('SchemaBuilder', () => {
   it('writes schema', async () => {

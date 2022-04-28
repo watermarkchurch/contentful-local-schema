@@ -2,7 +2,8 @@ import { GraphQLFieldConfigMap, GraphQLObjectType, GraphQLSchema, GraphQLString 
 import inflection from 'inflection'
 
 import ContentTypeWriter from './content-type-writer'
-import { ContentType, idToName } from '../util'
+import { idToName } from '../util'
+import { ContentType } from '../contentful/types'
 import { namespace, Namespace, namespacedTypeName } from '../types'
 
 export type SchemaBuilderOptions = {

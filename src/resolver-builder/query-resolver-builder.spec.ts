@@ -3,7 +3,7 @@ import { GraphQLList, GraphQLObjectType, GraphQLString } from 'graphql'
 import gql from 'graphql-tag'
 import { ContentfulDataSource } from '../dataSource'
 import { namespace } from '../types'
-import { ContentType } from '../util'
+import { ContentType } from '../contentful/types'
 import QueryResolverBuilder from './query-resolver-builder'
 
 describe('QueryResolverBuilder', () => {

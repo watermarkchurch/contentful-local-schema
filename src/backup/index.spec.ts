@@ -36,7 +36,7 @@ describe('withBackup', () => {
       await dataSource.backup()
 
       const got = JSON.parse(storage.get('test1/entries')!)
-      expect(got.size).toEqual(syncInitial.items.size)
+      expect(got.length).toEqual(syncInitial.items.length)
       const item = got.find((i: any) => i.sys.id == '6RPLNBrHzAwg4X58WFkCBc')
       expect(item).toEqual(syncInitial.items[0])
 
@@ -60,7 +60,7 @@ describe('withBackup', () => {
       await dataSource.backup()
 
       const got = JSON.parse(storage.get('test1/entries')!)
-      expect(got.size).toEqual(syncInitial.items.size)
+      expect(got.length).toEqual(syncInitial.items.length)
       const item = got.find((i: any) => i.sys.id == '6RPLNBrHzAwg4X58WFkCBc')
       expect(item).toEqual(syncInitial.items[0])
 

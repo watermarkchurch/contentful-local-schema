@@ -2,7 +2,7 @@ import type {Resolvers} from '@apollo/client'
 
 import { ContentfulDataSource } from '../dataSource'
 import { assetFieldResolver, namespacedTypeName } from '../types'
-import { ContentType } from '../util'
+import { ContentType } from '../contentful/types'
 import ContentTypeResolverBuilder from './content-type-resolver-builder'
 import QueryResolverBuilder from './query-resolver-builder'
 
