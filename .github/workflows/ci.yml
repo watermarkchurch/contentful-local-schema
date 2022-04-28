@@ -3,24 +3,27 @@ name: CI
 on: pull_request
 
 jobs:
-  # lint:
-  #   runs-on: ubuntu-latest
+  lint:
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #   - uses: actions/checkout@v3
-  #   - name: Use Node 14
-  #     uses: actions/setup-node@v3
-  #     with:
-  #       node-version: 14
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node 14
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
 
-  #   - name: Install Yarn
-  #     run: npm install -g yarn
+    - name: Install Yarn
+      run: npm install -g yarn
 
-  #   - name: Install Dependencies
-  #     run: yarn --ignore-scripts
+    - name: Install Dependencies
+      run: yarn --ignore-scripts
 
-  #   - name: Lint
-  #     run: yarn lint
+    - name: Lint
+      run: yarn lint
+
+    - name: check types
+      run: yarn check-types
 
   test:
     runs-on: ubuntu-latest
