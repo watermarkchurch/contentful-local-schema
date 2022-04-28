@@ -1,5 +1,9 @@
 # Contentful Local Schema
 
+[![Build status](https://github.com/watermarkchurch/contentful-local-schema/actions/workflows/ci.yml/badge.svg)](https://github.com/watermarkchurch/contentful-local-schema/actions)
+[![codecov](https://codecov.io/gh/watermarkchurch/contentful-local-schema/branch/master/graph/badge.svg?token=5BA3HYCLM2)](https://codecov.io/gh/watermarkchurch/contentful-local-schema)
+[![npm version](https://badge.fury.io/js/contentful-local-schema.svg)](https://www.npmjs.com/package/contentful-local-schema)
+
 The `contentful-local-schema` package exposes utilities to create a local
 GraphQL schema and resolvers that can be queried using the `@client` directive.
 See https://www.apollographql.com/docs/react/local-state/local-resolvers/ for details.
