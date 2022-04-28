@@ -6,6 +6,7 @@ import nock from 'nock'
 import { createLocalResolvers, createSchema, withSync } from ".";
 import { ContentfulDataSource } from "./dataSource";
 import { InMemoryDataSource } from "./dataSource/in-memory-data-source";
+import { addSync } from "./syncEngine";
 
 const fixture = require("../__fixtures__/contentful-export-2021-05-07T16-34-28.json");
 const contentfulSchema = require("../__fixtures__/contentful-schema.json");
@@ -665,6 +666,35 @@ describe("integration", () => {
 
       // Typescript: assert that in-memory-data-source can be wrapped with sync
       const dataSource = withSync(new InMemoryDataSource(), contentfulClient)
+      // Typescript: and also passed to createLocalResolvers
+      const resolvers = await createLocalResolvers(dataSource, {
+        contentTypes: contentfulSchema.contentTypes
+      })
+
+      // act
+      await dataSource.sync()
+
+      // assert
+      const entry = await resolvers.Query.speaker(undefined, { id: '1CzEEMjnxk9ETPxwJVYtXI' })
+      expect(entry?.fields.name).toEqual('Nate W')
+      const asset = await resolvers.Query.asset(undefined, { id: '2QXPOAoka6WPDV9BoweHw8' })
+      expect(asset?.fields.title).toEqual('Shane-Everett')
+
+      expect(dataSource.getToken()).toEqual('FEnChMOBwr1Yw4TCqsK2LcKpCH3CjsORI8Oewq4AwrIybcKxaS7DosKAwqPChsKFccO9QMOmwphiwrNCfjEEw68kagIswr8kw7LDssOXW8OsbUIKKsKncsKIwr3DhzEVNMOew7Y8wq4hZiJIGsKWZBXDlsKECQ')
+    })
+
+    it('addSync performs typescript assertion', async () => {
+      
+      const contentfulClient = createClient({
+        accessToken: 'integration-test',
+        space: 'xxxxxx',
+        retryLimit: 0,
+        retryOnError: false
+      })
+
+      // Typescript: assert that in-memory-data-source can be wrapped with sync
+      const dataSource = new InMemoryDataSource()
+      addSync(dataSource, contentfulClient)
       // Typescript: and also passed to createLocalResolvers
       const resolvers = await createLocalResolvers(dataSource, {
         contentTypes: contentfulSchema.contentTypes

@@ -1,7 +1,7 @@
 import get from 'lodash/get'
 import cloneDeep from 'lodash/cloneDeep'
 
-import type { Asset, AssetCollection, Entry, EntryCollection } from "contentful";
+import type { Asset, AssetCollection, Entry, EntryCollection } from "../contentful/types";
 import { ContentfulDataSource, DeletedAsset, DeletedEntry, SyncItem } from ".";
 import { isAsset, isDeletedAsset, isDeletedEntry, isEntry, tryParseJson } from '../util';
 import { Syncable } from '../syncEngine';
@@ -84,10 +84,7 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
       total: matchCount,
       skip,
       limit,
-      items,
-      toPlainObject() {
-        return this
-      }
+      items
     }
   }
 
@@ -128,13 +125,7 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
       total: matchCount,
       skip,
       limit,
-      items,
-      toPlainObject() {
-        return this
-      },
-      stringifySafe() {
-        throw new Error(`Not Implemented`)
-      }
+      items
     }
   }
 

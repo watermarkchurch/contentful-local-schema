@@ -79,15 +79,15 @@ yarn add contentful-local-schema
 
 ### If using typescript:
 
-This package relies on types from `@apollo/client` and `contentful`.  If you
-don't already have these as peer dependencies, you should install them as
+This package relies on types from `@apollo/client`.  If you
+don't already have it as a peer dependency, you should install it as
 dev dependencies in order to compile with Typescript.
 
 ```
-npm install --save-dev @apollo/client contentful
+npm install --save-dev @apollo/client
 ```
 
 ```
-yarn add --dev @apollo/client contentful
+yarn add --dev @apollo/client
 ```
 

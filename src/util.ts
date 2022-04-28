@@ -1,4 +1,4 @@
-import type { Asset, Entry, Sys } from "contentful"
+import type { Asset, Entry } from "./contentful/types"
 import inflection from "inflection"
 import { DeletedAsset, DeletedEntry } from "./dataSource"
 
