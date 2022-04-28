@@ -1,5 +1,5 @@
 import { SpaceLink } from 'contentful'
-import type { Asset, AssetCollection, Entry, EntryCollection, Sys } from '../contentful/types'
+import type { Asset, AssetCollection, Entry, EntryCollection } from '../contentful/types'
 
 export interface ContentfulDataSource {
   getAsset(id: string): Promise<Asset | undefined> | Asset | undefined
