@@ -17,7 +17,7 @@
   "scripts": {
     "build": "tsc --project tsconfig.dist.json",
     "check-types": "tsc --noemit",
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint .",
     "fix": "eslint --fix .",
     "clean": "tsc --build --clean",
