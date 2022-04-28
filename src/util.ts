@@ -1,6 +1,6 @@
-import type { Asset, Entry } from "./contentful/types"
-import inflection from "inflection"
-import { DeletedAsset, DeletedEntry } from "./dataSource"
+import type { Asset, Entry, LinkContentTypeValidation } from './contentful/types'
+import inflection from 'inflection'
+import { DeletedAsset, DeletedEntry } from './dataSource'
 
 export function tryParseJson(json: string): unknown | null {
   try {
@@ -8,31 +8,6 @@ export function tryParseJson(json: string): unknown | null {
   } catch(ex) {
     return null
   }
-}
-
-export interface ContentType {
-  sys: {
-    id: string
-  },
-  fields: ContentTypeField[]
-}
-
-export interface ContentTypeField {
-  id: string
-  type: string
-  omitted?: boolean
-  required?: boolean
-  validations?: Array<unknown | LinkContentTypeValidation>
-  linkType?: 'Asset' | 'Entry'
-  items?: {
-    type: string,
-    linkType?: 'Asset' | 'Entry'
-    validations?: Array<unknown | LinkContentTypeValidation>
-  }
-}
-
-export interface LinkContentTypeValidation {
-  linkContentType: string[]
 }
 
 export function isLinkContentTypeValidation(v: any): v is LinkContentTypeValidation {
@@ -47,13 +22,19 @@ export function idToName(id: string) {
   return id
 }
 
-export function present(value: string | undefined | null | ''): value is string {
-  if (!value) { return false }
-
-  if (!/\S/.test(value)) {
-    return false
+export function present<T>(value: T | undefined | null | ''): value is T {
+  if (typeof value == 'string') {
+    return /\S/.test(value)
   }
-  return true
+
+  return !!value
+}
+
+
+export function assertPresent<T>(value: T | undefined | null | ''): asserts value is T {
+  if (!present(value)) {
+    throw new Error(`value '${value}' was not present`)
+  }
 }
 
 export function isEntry(e: any): e is Entry<any> {
@@ -78,17 +59,17 @@ export function unionTypeDefName(contentType: string, field: { id: string }) {
 
 // https://stackoverflow.com/a/8809472/2192243
 export function generateUUID() { // Public Domain/MIT
-  var d = new Date().getTime();//Timestamp
-  var d2 = ((typeof performance !== 'undefined') && performance.now && (performance.now()*1000)) || 0;//Time in microseconds since page-load or 0 if unsupported
+  let d = new Date().getTime()//Timestamp
+  let d2 = ((typeof performance !== 'undefined') && performance.now && (performance.now()*1000)) || 0//Time in microseconds since page-load or 0 if unsupported
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-      var r = Math.random() * 16;//random number between 0 and 16
-      if(d > 0){//Use timestamp until depleted
-          r = (d + r)%16 | 0;
-          d = Math.floor(d/16);
-      } else {//Use microseconds since page-load if supported
-          r = (d2 + r)%16 | 0;
-          d2 = Math.floor(d2/16);
-      }
-      return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
-  });
+    let r = Math.random() * 16//random number between 0 and 16
+    if(d > 0){//Use timestamp until depleted
+      r = (d + r)%16 | 0
+      d = Math.floor(d/16)
+    } else {//Use microseconds since page-load if supported
+      r = (d2 + r)%16 | 0
+      d2 = Math.floor(d2/16)
+    }
+    return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16)
+  })
 }

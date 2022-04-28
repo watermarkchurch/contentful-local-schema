@@ -1,25 +1,25 @@
-import { GraphQLObjectType, GraphQLSchema, printSchema } from "graphql";
-import { namespace } from "../types";
-import ContentTypeWriter from "./content-type-writer";
+import { GraphQLObjectType, GraphQLSchema, printSchema } from 'graphql'
+import { namespace } from '../types'
+import ContentTypeWriter from './content-type-writer'
 
-const ns = namespace();
+const ns = namespace()
 
-describe("ContentTypeWriter", () => {
-  it("writes a simple type", () => {
+describe('ContentTypeWriter', () => {
+  it('writes a simple type', () => {
     const instance = new ContentTypeWriter(
       {
         sys: {
-          id: "section-block-text",
-          type: "ContentType",
+          id: 'section-block-text',
+          type: 'ContentType',
         },
-        displayField: "internalTitle",
-        name: "Section: Block Text",
-        description: "Markdown free-text block",
+        displayField: 'internalTitle',
+        name: 'Section: Block Text',
+        description: 'Markdown free-text block',
         fields: [
           {
-            id: "internalTitle",
-            name: "Internal Title (Contentful Only)",
-            type: "Symbol",
+            id: 'internalTitle',
+            name: 'Internal Title (Contentful Only)',
+            type: 'Symbol',
             localized: false,
             required: true,
             validations: [],
@@ -27,9 +27,9 @@ describe("ContentTypeWriter", () => {
             omitted: true,
           },
           {
-            id: "body",
-            name: "Body",
-            type: "Text",
+            id: 'body',
+            name: 'Body',
+            type: 'Text',
             localized: false,
             required: true,
             validations: [],
@@ -37,9 +37,9 @@ describe("ContentTypeWriter", () => {
             omitted: false,
           },
           {
-            id: "bookmarkTitle",
-            name: "Bookmark Title",
-            type: "Symbol",
+            id: 'bookmarkTitle',
+            name: 'Bookmark Title',
+            type: 'Symbol',
             localized: true,
             required: false,
             validations: [],
@@ -47,14 +47,14 @@ describe("ContentTypeWriter", () => {
             omitted: false,
           },
           {
-            id: "style",
-            name: "Style",
-            type: "Symbol",
+            id: 'style',
+            name: 'Style',
+            type: 'Symbol',
             localized: false,
             required: false,
             validations: [
               {
-                in: ["default", "narrow"],
+                in: ['default', 'narrow'],
               },
             ],
             disabled: false,
@@ -65,9 +65,9 @@ describe("ContentTypeWriter", () => {
       new Map(),
       new Map(),
       ns
-    );
+    )
 
-    const { type, collection } = instance.write();
+    const { type, collection } = instance.write()
 
     expect(printObject(type, collection)).toMatchInlineSnapshot(`
       "type ContentfulMetadata {
@@ -116,26 +116,25 @@ describe("ContentTypeWriter", () => {
         environmentId: String
       }
       "
-    `);
-  });
+    `)
+  })
 
-  it("writes assets", () => {
+  it('writes assets', () => {
     const instance = new ContentTypeWriter(
       {
         sys: {
-          id: "section-carousel",
-          type: "ContentType",
+          id: 'section-carousel',
+          type: 'ContentType',
         },
-        displayField: "internalTitle",
-        name: "Section: Carousel",
+        displayField: 'internalTitle',
+        name: 'Section: Carousel',
         description:
-          "Renders a carousel of images that automatically progresses from one to the next",
+          'Renders a carousel of images that automatically progresses from one to the next',
         fields: [
-          ,
           {
-            id: "images",
-            name: "Images",
-            type: "Array",
+            id: 'images',
+            name: 'Images',
+            type: 'Array',
             localized: false,
             required: false,
             validations: [
@@ -149,10 +148,10 @@ describe("ContentTypeWriter", () => {
             disabled: false,
             omitted: false,
             items: {
-              type: "Link",
+              type: 'Link',
               validations: [
                 {
-                  linkMimetypeGroup: ["image"],
+                  linkMimetypeGroup: ['image'],
                 },
                 {
                   assetFileSize: {
@@ -161,13 +160,13 @@ describe("ContentTypeWriter", () => {
                   },
                 },
               ],
-              linkType: "Asset",
+              linkType: 'Asset',
             },
           },
           {
-            id: "slideInterval",
-            name: "Slide Interval (Seconds)",
-            type: "Number",
+            id: 'slideInterval',
+            name: 'Slide Interval (Seconds)',
+            type: 'Number',
             localized: false,
             required: false,
             validations: [
@@ -186,9 +185,9 @@ describe("ContentTypeWriter", () => {
       new Map(),
       new Map(),
       ns
-    );
+    )
 
-    const { type, collection } = instance.write();
+    const { type, collection } = instance.write()
 
     expect(printObject(type, collection)).toMatchInlineSnapshot(`
       "type Asset {
@@ -248,30 +247,30 @@ describe("ContentTypeWriter", () => {
         environmentId: String
       }
       "
-    `);
-  });
+    `)
+  })
 
-  it("writes links", () => {
+  it('writes links', () => {
     const map = new Map();
-    ["PageMetadata", "SectionBlockText", "SectionCarousel"].forEach((type) =>
+    ['PageMetadata', 'SectionBlockText', 'SectionCarousel'].forEach((type) =>
       map.set(type, new GraphQLObjectType({ name: `${type}Fake`, fields: {} }))
-    );
+    )
 
     const instance = new ContentTypeWriter(
       {
         sys: {
-          id: "page",
-          type: "ContentType",
+          id: 'page',
+          type: 'ContentType',
         },
-        displayField: "internalTitle",
-        name: "Page",
+        displayField: 'internalTitle',
+        name: 'Page',
         description:
-          "A page describes a collection of sections that correspondto a URL slug",
+          'A page describes a collection of sections that correspondto a URL slug',
         fields: [
           {
-            id: "title",
-            name: "Title",
-            type: "Symbol",
+            id: 'title',
+            name: 'Title',
+            type: 'Symbol',
             localized: false,
             required: true,
             validations: [],
@@ -279,72 +278,72 @@ describe("ContentTypeWriter", () => {
             omitted: false,
           },
           {
-            id: "subpages",
-            name: "Subpages",
-            type: "Array",
+            id: 'subpages',
+            name: 'Subpages',
+            type: 'Array',
             localized: false,
             required: false,
             validations: [],
             disabled: false,
             omitted: false,
             items: {
-              type: "Link",
+              type: 'Link',
               validations: [
                 {
-                  linkContentType: ["page"],
+                  linkContentType: ['page'],
                 },
               ],
-              linkType: "Entry",
+              linkType: 'Entry',
             },
           },
           {
-            id: "meta",
-            name: "Meta",
-            type: "Link",
+            id: 'meta',
+            name: 'Meta',
+            type: 'Link',
             localized: false,
             required: false,
             validations: [
               {
-                linkContentType: ["pageMetadata"],
+                linkContentType: ['pageMetadata'],
               },
             ],
             disabled: false,
             omitted: false,
-            linkType: "Entry",
+            linkType: 'Entry',
           },
           {
-            id: "sections",
-            name: "Sections",
-            type: "Array",
+            id: 'sections',
+            name: 'Sections',
+            type: 'Array',
             localized: false,
             required: false,
             validations: [],
             disabled: false,
             omitted: false,
             items: {
-              type: "Link",
+              type: 'Link',
               validations: [
                 {
-                  linkContentType: ["section-block-text", "section-carousel"],
+                  linkContentType: ['section-block-text', 'section-carousel'],
                 },
               ],
-              linkType: "Entry",
+              linkType: 'Entry',
             },
           },
           {
-            id: "flags",
-            name: "Flags",
-            type: "Array",
+            id: 'flags',
+            name: 'Flags',
+            type: 'Array',
             localized: false,
             required: false,
             validations: [],
             disabled: false,
             omitted: false,
             items: {
-              type: "Symbol",
+              type: 'Symbol',
               validations: [
                 {
-                  in: ["Not Shareable", "Set Campus Cookie"],
+                  in: ['Not Shareable', 'Set Campus Cookie'],
                 },
               ],
             },
@@ -354,9 +353,9 @@ describe("ContentTypeWriter", () => {
       map,
       new Map(),
       ns
-    );
+    )
 
-    const { type, collection } = instance.write();
+    const { type, collection } = instance.write()
 
     expect(printObject(type, collection)).toMatchInlineSnapshot(`
       "type ContentfulMetadata {
@@ -419,25 +418,25 @@ describe("ContentTypeWriter", () => {
         environmentId: String
       }
       "
-    `);
-  });
-});
+    `)
+  })
+})
 
 function printObject(...objects: GraphQLObjectType[]) {
   const schema = new GraphQLSchema({
     query: new GraphQLObjectType(
       objects.reduce(
         (config, obj) => {
-          config.fields[obj.name] = { type: obj };
-          return config;
+          config.fields[obj.name] = { type: obj }
+          return config
         },
         {
-          name: "Query",
+          name: 'Query',
           fields: {} as { [key: string]: { type: GraphQLObjectType } },
         }
       )
     ),
-  });
+  })
 
-  return printSchema(schema);
+  return printSchema(schema)
 }

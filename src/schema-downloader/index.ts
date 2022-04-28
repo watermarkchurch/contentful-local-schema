@@ -1,7 +1,7 @@
 import { Limiter } from 'async-toolbox'
 import fs from 'fs'
 import { SimpleCMAClient } from './client'
-import defaults from "../defaults"
+import defaults from '../defaults'
 
 export interface SchemaDownloaderOptions {
   /**
@@ -42,7 +42,7 @@ export interface SchemaDownloaderDependencies {
  *   (default: './contentful-schema.json')
  * @returns 
  */
- export default async function downloadContentfulSchema(
+export default async function downloadContentfulSchema(
   options?: Partial<SchemaDownloaderOptions>,
   dependencies?: Partial<SchemaDownloaderDependencies>
 ) {
@@ -128,12 +128,12 @@ export class SchemaDownloader {
     const editorInterfaces = (await Promise.all(
       contentTypesResp.map((ct) =>
         this.semaphore.lock(async () =>
-        sortControls(
-          stripSys(
-            await this.client.getEditorInterface(ct.sys.id),
+          sortControls(
+            stripSys(
+              await this.client.getEditorInterface(ct.sys.id),
+            ),
           ),
-        ),
-      )),
+        )),
     )).sort(byContentType)
 
     const contentTypes = contentTypesResp.map((ct) =>

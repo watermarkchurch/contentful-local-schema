@@ -1,9 +1,10 @@
 import inflection from 'inflection'
-import GraphQLJSON from 'graphql-type-json';
+import GraphQLJSON from 'graphql-type-json'
 
-import { GraphQLBoolean, GraphQLEnumType, GraphQLEnumValueConfigMap, GraphQLFieldConfigMap, GraphQLFloat, GraphQLInt, GraphQLInterfaceType, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLOutputType, GraphQLScalarType, GraphQLString, GraphQLType, GraphQLUnionType } from 'graphql'
+import { GraphQLBoolean, GraphQLEnumType, GraphQLEnumValueConfigMap, GraphQLFieldConfigMap, GraphQLFloat, GraphQLInt, GraphQLInterfaceType, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLOutputType, GraphQLString, GraphQLUnionType } from 'graphql'
 import { GraphQLNever, Namespace } from '../types'
-import { ContentType, ContentTypeField, idToName, isLinkContentTypeValidation, unionTypeDefName } from '../util';
+import { idToName, isLinkContentTypeValidation, unionTypeDefName } from '../util'
+import { ContentType, ContentTypeField } from '../contentful/types'
 
 export default class ContentTypeWriter {
   public readonly className: string
@@ -68,38 +69,40 @@ export default class ContentTypeWriter {
       return GraphQLNever
     }
     switch (field.type) {
-      case 'Symbol':
-      case 'Text':
-      case 'Date':
-        return this.writePotentialUnionType(field) || GraphQLString
-      case 'Integer':
-        return this.writePotentialUnionType(field) || GraphQLInt
-      case 'Number':
-        return this.writePotentialUnionType(field) || GraphQLFloat
-      case 'Boolean':
-        return GraphQLBoolean
-      case 'Location':
-        return this.namespace.GraphQLLocation
-      case 'Link':
-        if (field.linkType == 'Asset') {
-          return this.namespace.Asset
-        } else {
-          return this.resolveLinkContentType(field)
+    case 'Symbol':
+    case 'Text':
+    case 'Date':
+      return this.writePotentialUnionType(field) || GraphQLString
+    case 'Integer':
+      return this.writePotentialUnionType(field) || GraphQLInt
+    case 'Number':
+      return this.writePotentialUnionType(field) || GraphQLFloat
+    case 'Boolean':
+      return GraphQLBoolean
+    case 'Location':
+      return this.namespace.GraphQLLocation
+    case 'Link':
+      if (field.linkType == 'Asset') {
+        return this.namespace.Asset
+      } else {
+        return this.resolveLinkContentType(field)
+      }
+    case 'Array':
+    {
+      const itemType = this.writeFieldType(Object.assign({ id: field.id }, field.items))
+      if (field.items && field.items.type == 'Link') {
+        if (itemType == this.namespace.Asset) {
+          return this.namespace.AssetCollection
+        } else if (itemType == this.namespace.Entry) {
+          return this.namespace.EntryCollection
         }
-      case 'Array':
-        const itemType = this.writeFieldType(Object.assign({ id: field.id }, field.items))
-        if (field.items!.type == 'Link') {
-          if (itemType == this.namespace.Asset) {
-            return this.namespace.AssetCollection
-          } else if (itemType == this.namespace.Entry) {
-            return this.namespace.EntryCollection
-          }
-          return this.writeLinkCollectionType(itemType)
-        } else {
-          return new GraphQLList(itemType)
-        }
-      default:
-        return GraphQLJSON
+        return this.writeLinkCollectionType(itemType)
+      } else {
+        return new GraphQLList(itemType)
+      }
+    }
+    default:
+      return GraphQLJSON
     }
   }
 
@@ -139,11 +142,9 @@ export default class ContentTypeWriter {
   public writeLinkCollectionType(itemType: any): GraphQLObjectType {
     const name = this.namespace.toType(itemType.name)
 
-    if (this.collectionTypeMap.has(name)) {
-      const collection = this.collectionTypeMap.get(name)!
-      return collection
-    } else {
-      const collection = new GraphQLObjectType({
+    let collection = this.collectionTypeMap.get(name)
+    if (!collection) {
+      collection = new GraphQLObjectType({
         name: `${name}Collection`,
         fields: {
           skip: { type: new GraphQLNonNull(GraphQLInt) },
@@ -153,8 +154,8 @@ export default class ContentTypeWriter {
         }
       })
       this.collectionTypeMap.set(name, collection)
-      return collection
     }
+    return collection
   }
 
   public writePotentialUnionType(field: any) {

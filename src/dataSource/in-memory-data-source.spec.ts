@@ -1,8 +1,9 @@
-import { Syncable } from "../syncEngine"
-import { DeletedEntry } from "../dataSource"
-import { InMemoryDataSource } from "./in-memory-data-source"
+import { Syncable } from '../syncEngine'
+import { DeletedEntry } from '../dataSource'
+import { InMemoryDataSource } from './in-memory-data-source'
 
-const syncInitial = require('../../__fixtures__/sync_initial.json')
+import syncInitial from '../../__fixtures__/sync_initial.json'
+import { assertPresent } from '../util'
 
 describe('InMemoryDataSource', () => {
   let instance: InMemoryDataSource
@@ -25,6 +26,7 @@ describe('InMemoryDataSource', () => {
   it('gets a synced asset', () => {
     const expected = syncInitial.items.find((i: any) => i.sys.id == '5PPyBNpCxFOROmqRZZJEVw')
 
+    assertPresent(expected)
     const got = instance.getAsset(expected.sys.id, { locale: '*' })
 
     expect(got).toEqual(expected)
@@ -56,13 +58,14 @@ describe('InMemoryDataSource', () => {
   it('handles deletion of entries', () => {
     const item0 = syncInitial.items[0]
 
-    const deletedEntry: DeletedEntry = {
+    const deletedEntry = {
       sys: {
         ...item0.sys,
         updatedAt: '2021-05-03T14:17:34.000Z',
-        type: 'DeletedEntry'
+        deletedAt: '2021-05-03T14:17:34.000Z',
+        type: 'DeletedEntry',
       }
-    }
+    } as DeletedEntry
 
     instance.index(deletedEntry)
     const got = instance.getEntry(item0.sys.id, { locale: '*' })

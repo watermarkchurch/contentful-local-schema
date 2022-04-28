@@ -1,4 +1,5 @@
 // babel.config.js
+// eslint-disable-next-line no-undef
 module.exports = {
   presets: [
     [
@@ -8,4 +9,4 @@ module.exports = {
     ],
     '@babel/preset-typescript'
   ],
-};
+}

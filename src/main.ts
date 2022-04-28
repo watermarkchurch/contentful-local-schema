@@ -64,12 +64,12 @@ yargs
   })
 
 const defaultLogger = {
-  debug() { }
+  debug() { return }
 }
 const verboseLogger = {
-  debug() {
+  debug(...args: any[]) {
     // debug to stderr because we'll print the GQL schema to stdout
-    return console.error.call(this, arguments)
+    return console.error.call(this, args)
   }
 }
 

@@ -1,7 +1,7 @@
 import type { Resolver } from '@apollo/client'
-import type { Asset as ContentfulAsset } from "./contentful/types";
-import { GraphQLFloat, GraphQLInt, GraphQLInterfaceType, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLScalarType, GraphQLString, GraphQLType } from 'graphql'
-import inflection from 'inflection';
+import type { Asset as ContentfulAsset } from './contentful/types'
+import { GraphQLFloat, GraphQLInt, GraphQLInterfaceType, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLScalarType, GraphQLString } from 'graphql'
+import inflection from 'inflection'
 
 export const GraphQLNever = new GraphQLScalarType({
   name: 'Never',

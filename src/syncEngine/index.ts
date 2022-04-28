@@ -1,5 +1,5 @@
-import { SyncCollection } from "../contentful/types"
-import { SyncItem } from "../dataSource"
+import { SyncCollection } from '../contentful/types'
+import { SyncItem } from '../dataSource'
 
 
 export interface ContentfulClientApi {
@@ -24,11 +24,11 @@ export class SyncEngine {
   public async sync(): Promise<void> {
     const token = await this.dataSource.getToken()
 
-    let collection = await this.client.sync(
+    const collection = await this.client.sync(
       token ?
         { nextSyncToken: token } :
         { initial: true }
-    );
+    )
 
     for(const e of collection.entries) {
       await this.dataSource.index(e)

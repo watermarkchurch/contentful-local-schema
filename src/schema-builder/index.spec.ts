@@ -1,10 +1,10 @@
 
-import { printSchema } from "graphql"
-import SchemaBuilder from "."
-import { ContentType } from "../util"
+import { printSchema } from 'graphql'
+import SchemaBuilder from '.'
+import { ContentType } from '../contentful/types'
 
-describe("SchemaBuilder", () => {
-  it("writes schema", async () => {
+describe('SchemaBuilder', () => {
+  it('writes schema', async () => {
     const instance = new SchemaBuilder({
       contentTypes: contentfulSchema.contentTypes as ContentType[]
     })
@@ -14,26 +14,26 @@ describe("SchemaBuilder", () => {
     expect(printSchema(schema)).toMatchSnapshot()
   })
 
-  it("handles unknown link type", async () => {
+  it('handles unknown link type', async () => {
     const instance = new SchemaBuilder({
       contentTypes: [
         {
           sys: {
-            id: "section-unknown-link",
-            type: "ContentType",
+            id: 'section-unknown-link',
+            type: 'ContentType',
           },
-          name: "Section: Unknown Link",
+          name: 'Section: Unknown Link',
           fields: [
             {
-              id: "something",
-              name: "Something",
-              type: "Link",
+              id: 'something',
+              name: 'Something',
+              type: 'Link',
               localized: false,
               required: false,
               // no validations
               disabled: false,
               omitted: false,
-              linkType: "Entry",
+              linkType: 'Entry',
             },
           ]
         } as any,
@@ -44,10 +44,10 @@ describe("SchemaBuilder", () => {
     const schema = await instance.build()
 
     const printed = printSchema(schema)
-    expect(printed).toMatch(/^\s*something: Entry\s*$/m);
+    expect(printed).toMatch(/^\s*something: Entry\s*$/m)
   })
 
-  it("includes asset in query", async () => {
+  it('includes asset in query', async () => {
     const instance = new SchemaBuilder({
       contentTypes: []
     })
@@ -59,8 +59,8 @@ describe("SchemaBuilder", () => {
     expect(printed).toMatch('assetCollection(skip: String, limit: String): AssetCollection')
   })
 
-  describe("with namespace", () => {
-    it("namespaces all schema types", async () => {
+  describe('with namespace', () => {
+    it('namespaces all schema types', async () => {
       const instance = new SchemaBuilder({
         contentTypes: contentfulSchema.contentTypes as ContentType[],
 
@@ -77,7 +77,7 @@ describe("SchemaBuilder", () => {
       expect(printed).not.toMatch('Test1_Test1_')
     })
 
-    it("namespaces the base types", async () => {
+    it('namespaces the base types', async () => {
       const instance = new SchemaBuilder({
         contentTypes: contentfulSchema.contentTypes as ContentType[],
 
@@ -99,7 +99,7 @@ describe("SchemaBuilder", () => {
       expect(printed).toMatch('asset(id: String): Test1_Asset')
     })
 
-    it("does not namespace the query fields", async () => {
+    it('does not namespace the query fields', async () => {
       const instance = new SchemaBuilder({
         contentTypes: contentfulSchema.contentTypes as ContentType[],
 
@@ -113,7 +113,7 @@ describe("SchemaBuilder", () => {
       expect(printed).toMatch(' pageCollection(skip: String, limit: String): Test1_PageCollection')
     })
 
-    it("nothing looks weird", async () => {
+    it('nothing looks weird', async () => {
       const instance = new SchemaBuilder({
         contentTypes: contentfulSchema.contentTypes as ContentType[],
 
@@ -131,17 +131,17 @@ const contentfulSchema = {
   contentTypes: [
     {
       sys: {
-        id: "section-block-text",
-        type: "ContentType",
+        id: 'section-block-text',
+        type: 'ContentType',
       },
-      displayField: "internalTitle",
-      name: "Section: Block Text",
-      description: "Markdown free-text block",
+      displayField: 'internalTitle',
+      name: 'Section: Block Text',
+      description: 'Markdown free-text block',
       fields: [
         {
-          id: "internalTitle",
-          name: "Internal Title (Contentful Only)",
-          type: "Symbol",
+          id: 'internalTitle',
+          name: 'Internal Title (Contentful Only)',
+          type: 'Symbol',
           localized: false,
           required: true,
           validations: [],
@@ -149,9 +149,9 @@ const contentfulSchema = {
           omitted: true,
         },
         {
-          id: "body",
-          name: "Body",
-          type: "Text",
+          id: 'body',
+          name: 'Body',
+          type: 'Text',
           localized: false,
           required: true,
           validations: [],
@@ -159,9 +159,9 @@ const contentfulSchema = {
           omitted: false,
         },
         {
-          id: "bookmarkTitle",
-          name: "Bookmark Title",
-          type: "Symbol",
+          id: 'bookmarkTitle',
+          name: 'Bookmark Title',
+          type: 'Symbol',
           localized: true,
           required: false,
           validations: [],
@@ -169,14 +169,14 @@ const contentfulSchema = {
           omitted: false,
         },
         {
-          id: "style",
-          name: "Style",
-          type: "Symbol",
+          id: 'style',
+          name: 'Style',
+          type: 'Symbol',
           localized: false,
           required: false,
           validations: [
             {
-              in: ["default", "narrow"],
+              in: ['default', 'narrow'],
             },
           ],
           disabled: false,
@@ -186,18 +186,18 @@ const contentfulSchema = {
     },
     {
       sys: {
-        id: "page",
-        type: "ContentType",
+        id: 'page',
+        type: 'ContentType',
       },
-      displayField: "internalTitle",
-      name: "Page",
+      displayField: 'internalTitle',
+      name: 'Page',
       description:
-        "A page describes a collection of sections that correspondto a URL slug",
+        'A page describes a collection of sections that correspondto a URL slug',
       fields: [
         {
-          id: "title",
-          name: "Title",
-          type: "Symbol",
+          id: 'title',
+          name: 'Title',
+          type: 'Symbol',
           localized: false,
           required: true,
           validations: [],
@@ -205,72 +205,72 @@ const contentfulSchema = {
           omitted: false,
         },
         {
-          id: "subpages",
-          name: "Subpages",
-          type: "Array",
+          id: 'subpages',
+          name: 'Subpages',
+          type: 'Array',
           localized: false,
           required: false,
           validations: [],
           disabled: false,
           omitted: false,
           items: {
-            type: "Link",
+            type: 'Link',
             validations: [
               {
-                linkContentType: ["page"],
+                linkContentType: ['page'],
               },
             ],
-            linkType: "Entry",
+            linkType: 'Entry',
           },
         },
         {
-          id: "meta",
-          name: "Meta",
-          type: "Link",
+          id: 'meta',
+          name: 'Meta',
+          type: 'Link',
           localized: false,
           required: false,
           validations: [
             {
-              linkContentType: ["pageMetadata"],
+              linkContentType: ['pageMetadata'],
             },
           ],
           disabled: false,
           omitted: false,
-          linkType: "Entry",
+          linkType: 'Entry',
         },
         {
-          id: "sections",
-          name: "Sections",
-          type: "Array",
+          id: 'sections',
+          name: 'Sections',
+          type: 'Array',
           localized: false,
           required: false,
           validations: [],
           disabled: false,
           omitted: false,
           items: {
-            type: "Link",
+            type: 'Link',
             validations: [
               {
-                linkContentType: ["section-block-text", "section-carousel"],
+                linkContentType: ['section-block-text', 'section-carousel'],
               },
             ],
-            linkType: "Entry",
+            linkType: 'Entry',
           },
         },
         {
-          id: "flags",
-          name: "Flags",
-          type: "Array",
+          id: 'flags',
+          name: 'Flags',
+          type: 'Array',
           localized: false,
           required: false,
           validations: [],
           disabled: false,
           omitted: false,
           items: {
-            type: "Symbol",
+            type: 'Symbol',
             validations: [
               {
-                in: ["Not Shareable", "Set Campus Cookie"],
+                in: ['Not Shareable', 'Set Campus Cookie'],
               },
             ],
           },
@@ -279,18 +279,18 @@ const contentfulSchema = {
     },
     {
       sys: {
-        id: "section-carousel",
-        type: "ContentType",
+        id: 'section-carousel',
+        type: 'ContentType',
       },
-      displayField: "internalTitle",
-      name: "Section: Carousel",
+      displayField: 'internalTitle',
+      name: 'Section: Carousel',
       description:
-        "Renders a carousel of images that automatically progresses from one to the next",
+        'Renders a carousel of images that automatically progresses from one to the next',
       fields: [
         {
-          id: "images",
-          name: "Images",
-          type: "Array",
+          id: 'images',
+          name: 'Images',
+          type: 'Array',
           localized: false,
           required: false,
           validations: [
@@ -304,10 +304,10 @@ const contentfulSchema = {
           disabled: false,
           omitted: false,
           items: {
-            type: "Link",
+            type: 'Link',
             validations: [
               {
-                linkMimetypeGroup: ["image"],
+                linkMimetypeGroup: ['image'],
               },
               {
                 assetFileSize: {
@@ -316,13 +316,13 @@ const contentfulSchema = {
                 },
               },
             ],
-            linkType: "Asset",
+            linkType: 'Asset',
           },
         },
         {
-          id: "slideInterval",
-          name: "Slide Interval (Seconds)",
-          type: "Number",
+          id: 'slideInterval',
+          name: 'Slide Interval (Seconds)',
+          type: 'Number',
           localized: false,
           required: false,
           validations: [
@@ -339,73 +339,73 @@ const contentfulSchema = {
       ],
     },
     {
-      "sys": {
-        "id": "pageMetadata",
-        "type": "ContentType"
+      'sys': {
+        'id': 'pageMetadata',
+        'type': 'ContentType'
       },
-      "displayField": "internalTitle",
-      "name": "Page Metadata",
-      "description": "Page Metadata contains SEO information about a page",
-      "fields": [
+      'displayField': 'internalTitle',
+      'name': 'Page Metadata',
+      'description': 'Page Metadata contains SEO information about a page',
+      'fields': [
         {
-          "id": "canonicalLink",
-          "name": "Canonical Link",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "validations": [
+          'id': 'canonicalLink',
+          'name': 'Canonical Link',
+          'type': 'Symbol',
+          'localized': false,
+          'required': false,
+          'validations': [
             {
-              "unique": true
+              'unique': true
             },
             {
-              "regexp": {
-                "pattern": "^(ftp|http|https):\\/\\/(\\w+:{0,1}\\w*@)?(\\S+)(:[0-9]+)?(\\/|\\/([\\w#!:.?+=&%@!\\-\\/]))?$"
+              'regexp': {
+                'pattern': '^(ftp|http|https):\\/\\/(\\w+:{0,1}\\w*@)?(\\S+)(:[0-9]+)?(\\/|\\/([\\w#!:.?+=&%@!\\-\\/]))?$'
               }
             }
           ],
-          "disabled": false,
-          "omitted": false
+          'disabled': false,
+          'omitted': false
         },
         {
-          "id": "metaKeywords",
-          "name": "Meta Keywords",
-          "type": "Text",
-          "localized": false,
-          "required": false,
-          "validations": [],
-          "disabled": false,
-          "omitted": false
+          'id': 'metaKeywords',
+          'name': 'Meta Keywords',
+          'type': 'Text',
+          'localized': false,
+          'required': false,
+          'validations': [],
+          'disabled': false,
+          'omitted': false
         },
         {
-          "id": "metaFlag",
-          "name": "Meta Flag",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "validations": [],
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
+          'id': 'metaFlag',
+          'name': 'Meta Flag',
+          'type': 'Array',
+          'localized': false,
+          'required': false,
+          'validations': [],
+          'disabled': false,
+          'omitted': false,
+          'items': {
+            'type': 'Symbol',
+            'validations': [
               {
-                "in": [
-                  "no-follow",
-                  "no-index"
+                'in': [
+                  'no-follow',
+                  'no-index'
                 ]
               }
             ]
           }
         },
         {
-          "id": "structuredData",
-          "name": "Structured Data",
-          "type": "Object",
-          "localized": false,
-          "required": false,
-          "validations": [],
-          "disabled": false,
-          "omitted": false
+          'id': 'structuredData',
+          'name': 'Structured Data',
+          'type': 'Object',
+          'localized': false,
+          'required': false,
+          'validations': [],
+          'disabled': false,
+          'omitted': false
         }
       ]
     }

@@ -108,7 +108,7 @@ describe('SchemaDownloader', () => {
           items: contentTypes,
         })
       })
-    const interfaceRegexp = /content_types\/([^\/]+)\/editor_interface/
+    const interfaceRegexp = /content_types\/([^/]+)\/editor_interface/
     nock('https://api.contentful.com')
       .get((uri) => interfaceRegexp.test(uri))
       .times(Infinity)
@@ -130,7 +130,7 @@ describe('SchemaDownloader', () => {
     nock.restore()
   })
 
-it('creates the file in the appropriate directory', async () => {
+  it('creates the file in the appropriate directory', async () => {
     const tmpdir = tmp.dirSync()
     try {
       const instance = new SchemaDownloader({
@@ -140,13 +140,13 @@ it('creates the file in the appropriate directory', async () => {
 
       await instance.downloadSchema()
 
-      expect(await fs.pathExists(path.join(tmpdir.name, `/contentful-schema.json`))).toEqual(true)
+      expect(await fs.pathExists(path.join(tmpdir.name, '/contentful-schema.json'))).toEqual(true)
     } finally {
       await fs.remove(tmpdir.name)
     }
   })
 
-it('writes file with proper formatting', async () => {
+  it('writes file with proper formatting', async () => {
     const tmpdir = tmp.dirSync()
     try {
       const instance = new SchemaDownloader({
