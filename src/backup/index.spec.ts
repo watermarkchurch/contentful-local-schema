@@ -1,6 +1,6 @@
 import { InMemoryDataSource } from "../dataSource/in-memory-data-source"
 
-import { withBackup, DataSourceWithBackup } from './index'
+import { withBackup, DataSourceWithBackup, addBackup } from './index'
 
 const syncInitial = require('../../__fixtures__/sync_initial.json')
 
@@ -32,6 +32,26 @@ describe('withBackup', () => {
 
   describe('backup', () => {
     it('writes entries to key', async () => {
+      await dataSource.backup()
+
+      const got = JSON.parse(storage.get('test1/entries')!)
+      expect(got.size).toEqual(syncInitial.items.size)
+      const item = got.find((i: any) => i.sys.id == '6RPLNBrHzAwg4X58WFkCBc')
+      expect(item).toEqual(syncInitial.items[0])
+
+      expect(storage.get('test1/token')).toEqual('testtoken')
+    })
+
+    it('addBackup asserts datasource is backupable', async () => {
+      const dataSource = new InMemoryDataSource()
+      addBackup(dataSource, {
+        setItem: (key: string, value: string) => {
+          storage.set(key, value);
+          return Promise.resolve()
+        },
+        getItem: (key: string) => Promise.resolve(storage.get(key) || null),
+      }, 'test1')
+
       await dataSource.backup()
 
       const got = JSON.parse(storage.get('test1/entries')!)

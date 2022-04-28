@@ -39,6 +39,22 @@ export interface DataSourceWithBackup {
  * @param prefix The key prefix under which to store the data
  * @returns The same DataSource enhanced with the backup() and restore() methods
  */
+export function addBackup<TDataSource extends Exportable & Syncable>(
+  dataSource: TDataSource,
+  storage: WritableKeyValueStorage & ReadableKeyValueStorage,
+  prefix: string
+): asserts dataSource is TDataSource & DataSourceWithBackup {
+  withBackup(dataSource, storage, prefix)
+}
+
+/**
+ * Enhances a DataSource with AsyncStorage to make a convenient backup and
+ * restore system.
+ * @param dataSource The data source with canonical data eg InMemoryDataSource
+ * @param storage A Key-Value Pair storage system like AsyncStorage
+ * @param prefix The key prefix under which to store the data
+ * @returns The same DataSource enhanced with the backup() and restore() methods
+ */
 export function withBackup<TDataSource extends Exportable & Syncable>(
   dataSource: TDataSource,
   storage: WritableKeyValueStorage & ReadableKeyValueStorage,
