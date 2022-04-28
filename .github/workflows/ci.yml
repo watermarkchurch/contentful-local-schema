@@ -36,10 +36,10 @@ jobs:
       run: npm install -g yarn
 
     - name: Install Dependencies
-      run: yarn --ignore-scripts
+      run: yarn
 
     - name: Jest
-      run: yarn test -- -- -- --forceExit
+      run: yarn test
 
     # - name: Codecov
     #   uses: codecov/codecov-action@v1
