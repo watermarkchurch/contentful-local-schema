@@ -51,6 +51,10 @@ describe('withBackup', () => {
         },
         getItem: (key: string) => Promise.resolve(storage.get(key) || null),
       }, 'test1')
+      syncInitial.items.map((item: any) => {
+        dataSource.index(item)
+      })
+      dataSource.setToken('testtoken')
 
       await dataSource.backup()
 
