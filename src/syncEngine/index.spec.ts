@@ -1,8 +1,8 @@
 
 import nock from 'nock'
-import { createClient } from "contentful";
-import {SyncEngine} from '.';
-import { InMemoryDataSource } from '..';
+import { createClient } from 'contentful'
+import {SyncEngine} from '.'
+import { InMemoryDataSource } from '..'
 
 const contentfulClient = createClient({
   accessToken: 'integration-test',
@@ -11,7 +11,7 @@ const contentfulClient = createClient({
   retryOnError: false
 })
 
-const syncInitial = require('../../__fixtures__/sync_initial.json')
+import syncInitial from '../../__fixtures__/sync_initial.json'
 const syncPages = [
   require('../../__fixtures__/sync_2.json'),
   require('../../__fixtures__/sync_3.json'),
@@ -70,33 +70,33 @@ describe('SyncEngine', () => {
   it('uses stored sync token to sync again', async () => {
     // an entry and asset from a previous sync
     store.index({
-      "sys": {
-        "id": "6RPLNBrHzAwg4X58WFkCBc",
-        "type": "Entry",
-        "updatedAt": "2022-02-02T22:22:22.222Z",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "announcement"
+      'sys': {
+        'id': '6RPLNBrHzAwg4X58WFkCBc',
+        'type': 'Entry',
+        'updatedAt': '2022-02-02T22:22:22.222Z',
+        'contentType': {
+          'sys': {
+            'type': 'Link',
+            'linkType': 'ContentType',
+            'id': 'announcement'
           }
         }
       },
-      "fields": {
-        "title": {
-          "en-US": "Give Us Some Feedback"
+      'fields': {
+        'title': {
+          'en-US': 'Give Us Some Feedback'
         }
       }
     } as any)
     store.index({
-      "sys": {
-        "id": "1QJlrZxpJrSqaLOg0i1tvt",
-        "type": "Asset",
-        "updatedAt": "2022-02-02T22:22:22.222Z",
+      'sys': {
+        'id': '1QJlrZxpJrSqaLOg0i1tvt',
+        'type': 'Asset',
+        'updatedAt': '2022-02-02T22:22:22.222Z',
       },
-      "fields": {
-        "title": {
-          "en-US": "poppins"
+      'fields': {
+        'title': {
+          'en-US': 'poppins'
         },
       }
     } as any)
@@ -105,26 +105,26 @@ describe('SyncEngine', () => {
     nock('https://cdn.contentful.com')
       .get('/spaces/xxxxxx/environments/master/sync?sync_token=1234')
       .reply(200, {
-        "sys": {
-          "type": "Array"
+        'sys': {
+          'type': 'Array'
         },
-        "items": [
+        'items': [
           {
-            "sys": {
-              "id": "6RPLNBrHzAwg4X58WFkCBc",
-              "type": "DeletedEntry",
-              "updatedAt": "2022-02-02T23:33:33.33Z",
+            'sys': {
+              'id': '6RPLNBrHzAwg4X58WFkCBc',
+              'type': 'DeletedEntry',
+              'updatedAt': '2022-02-02T23:33:33.33Z',
             }
           },
           {
-            "sys": {
-              "id": "1QJlrZxpJrSqaLOg0i1tvt",
-              "type": "DeletedAsset",
-              "updatedAt": "2022-02-02T23:33:33.33Z",
+            'sys': {
+              'id': '1QJlrZxpJrSqaLOg0i1tvt',
+              'type': 'DeletedAsset',
+              'updatedAt': '2022-02-02T23:33:33.33Z',
             }
           }
         ],
-        "nextSyncUrl": "https://cdn.contentful.com/spaces/xxxxxx/environments/master/sync?sync_token=5678"
+        'nextSyncUrl': 'https://cdn.contentful.com/spaces/xxxxxx/environments/master/sync?sync_token=5678'
       })
 
     await subject.sync()

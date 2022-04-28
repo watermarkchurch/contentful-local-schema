@@ -93,7 +93,7 @@ export class SimpleCMAClient {
 
       if (resp.status == 429) {
         const reset = resp.headers.get('X-Contentful-RateLimit-Reset')
-        if (!reset) { throw new Error(`Rate-limited with no X-Contentful-RateLimit-Reset header!`) }
+        if (!reset) { throw new Error('Rate-limited with no X-Contentful-RateLimit-Reset header!') }
 
         await wait(parseFloat(reset) * 1000)
         continue

@@ -1,6 +1,6 @@
-import { SyncItem } from "../dataSource";
-import { Syncable } from "../syncEngine";
-import { present } from "../util";
+import { SyncItem } from '../dataSource'
+import { Syncable } from '../syncEngine'
+import { present } from '../util'
 
 export interface Exportable {
   /**

@@ -1,9 +1,9 @@
-import { GraphQLFieldConfigMap, GraphQLObjectType, GraphQLSchema, GraphQLString } from "graphql";
-import inflection from "inflection";
+import { GraphQLFieldConfigMap, GraphQLObjectType, GraphQLSchema, GraphQLString } from 'graphql'
+import inflection from 'inflection'
 
-import ContentTypeWriter from "./content-type-writer";
-import { ContentType, idToName } from "../util";
-import { namespace, Namespace, namespacedTypeName } from "../types";
+import ContentTypeWriter from './content-type-writer'
+import { ContentType, idToName } from '../util'
+import { namespace, Namespace, namespacedTypeName } from '../types'
 
 export type SchemaBuilderOptions = {
   contentTypes: ContentType[]
@@ -28,7 +28,7 @@ export default class SchemaBuilder {
   }
 
   public build(): GraphQLSchema {
-    let contentfulSchema = { contentTypes: this.options.contentTypes }
+    const contentfulSchema = { contentTypes: this.options.contentTypes }
 
     const contentTypeMap = new Map()
     const helperTypeMap = new Map()

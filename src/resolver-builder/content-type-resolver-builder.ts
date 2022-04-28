@@ -1,7 +1,7 @@
-import type { Resolver, Resolvers } from "@apollo/client";
-import { ContentType, ContentTypeField, generateUUID, idToName, isLinkContentTypeValidation, present, unionTypeDefName } from "../util";
-import { ContentfulDataSource } from "../dataSource";
-import { namespacedTypeName } from "../types";
+import type { Resolver, Resolvers } from '@apollo/client'
+import { ContentType, ContentTypeField, generateUUID, idToName, isLinkContentTypeValidation, present, unionTypeDefName } from '../util'
+import { ContentfulDataSource } from '../dataSource'
+import { namespacedTypeName } from '../types'
 
 export default class ContentTypeResolverBuilder {
 
@@ -44,34 +44,34 @@ export default class ContentTypeResolverBuilder {
       return () => undefined
     }
     switch (field.type) {
-      case 'Symbol':
-      case 'Text':
-      case 'Date':
-      case 'Integer':
-      case 'Number':
-      case 'Boolean':
-        return (entry) => entry.fields[field.id] || null
-      case 'Location':
-        return (entry) => ({
-          __typename: 'Location',
-          _id: [entry.sys.id, field.id].join('/'),
-          ...entry.fields[field.id]
-        })
-      case 'Link':
-        return this.linkResolver(field)
-      case 'Array':
-        if (field.items && field.items.type == 'Link') {
-          return this.collectionResolver(field)
-        } else {
-          // Simple list - get the items
-          return (entry) => entry.fields[field.id] || []
-        }
-      default:
-        return (entry) => ({
-          __typename: 'JSON',
-          _id: [entry.sys.id, field.id].join('/'),
-          ...entry.fields[field.id]
-        })
+    case 'Symbol':
+    case 'Text':
+    case 'Date':
+    case 'Integer':
+    case 'Number':
+    case 'Boolean':
+      return (entry) => entry.fields[field.id] || null
+    case 'Location':
+      return (entry) => ({
+        __typename: 'Location',
+        _id: [entry.sys.id, field.id].join('/'),
+        ...entry.fields[field.id]
+      })
+    case 'Link':
+      return this.linkResolver(field)
+    case 'Array':
+      if (field.items && field.items.type == 'Link') {
+        return this.collectionResolver(field)
+      } else {
+        // Simple list - get the items
+        return (entry) => entry.fields[field.id] || []
+      }
+    default:
+      return (entry) => ({
+        __typename: 'JSON',
+        _id: [entry.sys.id, field.id].join('/'),
+        ...entry.fields[field.id]
+      })
     }
   }
 
@@ -192,7 +192,7 @@ export default class ContentTypeResolverBuilder {
 }
 
 function getCollectionTypeName(thisContentTypeId: string, field: ContentTypeField, namespace: string | undefined): string {
-  if (!field) { throw new Error(`Missing items!`) }
+  if (!field) { throw new Error('Missing items!') }
 
   const validation = field.validations &&
       field.validations.filter(isLinkContentTypeValidation).find((v) =>

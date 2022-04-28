@@ -49,10 +49,10 @@ describe('QueryResolverBuilder', () => {
 
     // act
     const resolvers = new QueryResolverBuilder(
-        fakeDataSource,
-        {},
-        sectionBlockTextContentType.sys.id
-      ).build()
+      fakeDataSource,
+      {},
+      sectionBlockTextContentType.sys.id
+    ).build()
 
     const client = new ApolloClient({
       cache: new InMemoryCache(),
@@ -135,10 +135,10 @@ describe('QueryResolverBuilder', () => {
 
     // act
     const resolvers = new QueryResolverBuilder(
-        fakeDataSource,
-        {},
-        sectionBlockTextContentType.sys.id
-      ).build()
+      fakeDataSource,
+      {},
+      sectionBlockTextContentType.sys.id
+    ).build()
 
     const client = new ApolloClient({
       cache: new InMemoryCache(),
@@ -196,17 +196,17 @@ const SectionBlockText = new GraphQLObjectType({
 
 const sectionBlockTextContentType = {
   sys: {
-    id: "section-block-text",
-    type: "ContentType",
+    id: 'section-block-text',
+    type: 'ContentType',
   },
-  displayField: "internalTitle",
-  name: "Section: Block Text",
-  description: "Markdown free-text block",
+  displayField: 'internalTitle',
+  name: 'Section: Block Text',
+  description: 'Markdown free-text block',
   fields: [
     {
-      id: "internalTitle",
-      name: "Internal Title (Contentful Only)",
-      type: "Symbol",
+      id: 'internalTitle',
+      name: 'Internal Title (Contentful Only)',
+      type: 'Symbol',
       localized: false,
       required: true,
       validations: [],
@@ -214,9 +214,9 @@ const sectionBlockTextContentType = {
       omitted: true,
     },
     {
-      id: "body",
-      name: "Body",
-      type: "Text",
+      id: 'body',
+      name: 'Body',
+      type: 'Text',
       localized: false,
       required: true,
       validations: [],
@@ -224,9 +224,9 @@ const sectionBlockTextContentType = {
       omitted: false,
     },
     {
-      id: "bookmarkTitle",
-      name: "Bookmark Title",
-      type: "Symbol",
+      id: 'bookmarkTitle',
+      name: 'Bookmark Title',
+      type: 'Symbol',
       localized: true,
       required: false,
       validations: [],
@@ -234,14 +234,14 @@ const sectionBlockTextContentType = {
       omitted: false,
     },
     {
-      id: "style",
-      name: "Style",
-      type: "Symbol",
+      id: 'style',
+      name: 'Style',
+      type: 'Symbol',
       localized: false,
       required: false,
       validations: [
         {
-          in: ["default", "narrow"],
+          in: ['default', 'narrow'],
         },
       ],
       disabled: false,

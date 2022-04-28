@@ -1,17 +1,17 @@
 import get from 'lodash/get'
 import cloneDeep from 'lodash/cloneDeep'
 
-import type { Asset, AssetCollection, Entry, EntryCollection } from "../contentful/types";
-import { ContentfulDataSource, DeletedAsset, DeletedEntry, SyncItem } from ".";
-import { isAsset, isDeletedAsset, isDeletedEntry, isEntry, tryParseJson } from '../util';
-import { Syncable } from '../syncEngine';
-import { Exportable } from '../backup';
+import type { Asset, AssetCollection, Entry, EntryCollection } from '../contentful/types'
+import { ContentfulDataSource, DeletedAsset, DeletedEntry, SyncItem } from '.'
+import { isAsset, isDeletedAsset, isDeletedEntry, isEntry } from '../util'
+import { Syncable } from '../syncEngine'
+import { Exportable } from '../backup'
 
 
 export class InMemoryDataSource implements ContentfulDataSource, Syncable, Exportable {
   private readonly _entries: Map<string, Entry<any> | DeletedEntry>
   private readonly _assets: Map<string, Asset | DeletedAsset>
-  private _syncToken: string | undefined | null;
+  private _syncToken: string | undefined | null
 
   constructor(
     private readonly defaultLocale = 'en-US',
@@ -130,10 +130,10 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
   }
 
   public *export() {
-    for(let v of this._entries.values()) {
+    for(const v of this._entries.values()) {
       yield v
     }
-    for(let v of this._assets.values()) {
+    for(const v of this._assets.values()) {
       yield v
     }
   }
@@ -141,23 +141,23 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
   private parseQuery(query: any): Filter[] {
     const filters: Filter[] =
       Object.keys(query)
-      .filter((key) => !['skip', 'limit', 'locale'].includes(key))
-      .map<Filter>((key) => {
-        if (key == 'content_type') {
+        .filter((key) => !['skip', 'limit', 'locale'].includes(key))
+        .map<Filter>((key) => {
+          if (key == 'content_type') {
           // special case
-          return (e) => e.sys.contentType.sys.id == query.content_type
-        }
-        const expected = query[key]
+            return (e) => e.sys.contentType.sys.id == query.content_type
+          }
+          const expected = query[key]
   
-        let op = 'eq'
-        const match = /\[(\w+)\]$/.exec(key)
-        if (match && match[1]) {
-          op = match[1]
-          key = key.substring(0, match.index)
-        }
+          let op = 'eq'
+          const match = /\[(\w+)\]$/.exec(key)
+          if (match && match[1]) {
+            op = match[1]
+            key = key.substring(0, match.index)
+          }
 
-        const s = selector(key, this.defaultLocale)
-        switch(op) {
+          const s = selector(key, this.defaultLocale)
+          switch(op) {
           case 'eq':
             return eqOp(s, expected)
           case 'ne':
@@ -166,8 +166,8 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
             return inOp(s, expected)
           default:
             throw new Error(`Operator not implemented: '${op}'`)
-        }
-      })
+          }
+        })
   
     return filters
   }
@@ -202,12 +202,6 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
 }
 
 type Filter = (e: Entry<any> | Asset) => boolean
-
-const Operators = [
-  'eq',
-  'ne',
-  'in',
-] as const
 
 const SysFields = [
   'id'
