@@ -8,3 +8,5 @@ dist
 coverage
 .nyc_output
 tmp
+
+package-lock.json
