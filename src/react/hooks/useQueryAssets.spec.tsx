@@ -6,7 +6,7 @@ import { wait } from 'async-toolbox'
 
 import { InMemoryDataSource } from '../../dataSource/in-memory-data-source'
 import { LocalSchemaProvider } from '../context'
-import type { Asset, AssetCollection } from '../../contentful/types'
+import type { Asset } from '../../contentful/types'
 import { useQueryAssets } from './useQueryAssets'
 
 import fixture from '../../../__fixtures__/contentful-export-2021-05-07T16-34-28.json'

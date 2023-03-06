@@ -70,23 +70,7 @@ describe('ContentTypeWriter', () => {
     const { type, collection } = instance.write()
 
     expect(printObject(type, collection)).toMatchInlineSnapshot(`
-      "type ContentfulMetadata {
-        tags: [ContentfulTag]!
-      }
-
-      type ContentfulTag {
-        id: String!
-        name: String!
-      }
-
-      interface Entry {
-        sys: Sys
-        contentfulMetadata: ContentfulMetadata
-      }
-
-      scalar Never
-
-      type Query {
+      "type Query {
         SectionBlockText: SectionBlockText
         SectionBlockTextCollection: SectionBlockTextCollection
       }
@@ -98,16 +82,9 @@ describe('ContentTypeWriter', () => {
         style: SectionBlockTextStyle
       }
 
-      type SectionBlockTextCollection {
-        skip: Int!
-        limit: Int!
-        total: Int!
-        items: [SectionBlockText]!
-      }
-
-      enum SectionBlockTextStyle {
-        default
-        narrow
+      interface Entry {
+        sys: Sys
+        contentfulMetadata: ContentfulMetadata
       }
 
       type Sys {
@@ -115,7 +92,29 @@ describe('ContentTypeWriter', () => {
         spaceId: String
         environmentId: String
       }
-      "
+
+      type ContentfulMetadata {
+        tags: [ContentfulTag]!
+      }
+
+      type ContentfulTag {
+        id: String!
+        name: String!
+      }
+
+      scalar Never
+
+      enum SectionBlockTextStyle {
+        default
+        narrow
+      }
+
+      type SectionBlockTextCollection {
+        skip: Int!
+        limit: Int!
+        total: Int!
+        items: [SectionBlockText]!
+      }"
     `)
   })
 
@@ -190,7 +189,44 @@ describe('ContentTypeWriter', () => {
     const { type, collection } = instance.write()
 
     expect(printObject(type, collection)).toMatchInlineSnapshot(`
-      "type Asset {
+      "type Query {
+        SectionCarousel: SectionCarousel
+        SectionCarouselCollection: SectionCarouselCollection
+      }
+
+      type SectionCarousel implements Entry {
+        images: AssetCollection
+        slideInterval: Float
+      }
+
+      interface Entry {
+        sys: Sys
+        contentfulMetadata: ContentfulMetadata
+      }
+
+      type Sys {
+        id: String
+        spaceId: String
+        environmentId: String
+      }
+
+      type ContentfulMetadata {
+        tags: [ContentfulTag]!
+      }
+
+      type ContentfulTag {
+        id: String!
+        name: String!
+      }
+
+      type AssetCollection {
+        skip: Int!
+        limit: Int!
+        total: Int!
+        items: [Asset]!
+      }
+
+      type Asset {
         sys: Sys
         contentfulMetadata: ContentfulMetadata
         title: String
@@ -203,50 +239,12 @@ describe('ContentTypeWriter', () => {
         height: Int
       }
 
-      type AssetCollection {
-        skip: Int!
-        limit: Int!
-        total: Int!
-        items: [Asset]!
-      }
-
-      type ContentfulMetadata {
-        tags: [ContentfulTag]!
-      }
-
-      type ContentfulTag {
-        id: String!
-        name: String!
-      }
-
-      interface Entry {
-        sys: Sys
-        contentfulMetadata: ContentfulMetadata
-      }
-
-      type Query {
-        SectionCarousel: SectionCarousel
-        SectionCarouselCollection: SectionCarouselCollection
-      }
-
-      type SectionCarousel implements Entry {
-        images: AssetCollection
-        slideInterval: Float
-      }
-
       type SectionCarouselCollection {
         skip: Int!
         limit: Int!
         total: Int!
         items: [SectionCarousel]!
-      }
-
-      type Sys {
-        id: String
-        spaceId: String
-        environmentId: String
-      }
-      "
+      }"
     `)
   })
 
@@ -358,18 +356,9 @@ describe('ContentTypeWriter', () => {
     const { type, collection } = instance.write()
 
     expect(printObject(type, collection)).toMatchInlineSnapshot(`
-      "type ContentfulMetadata {
-        tags: [ContentfulTag]!
-      }
-
-      type ContentfulTag {
-        id: String!
-        name: String!
-      }
-
-      interface Entry {
-        sys: Sys
-        contentfulMetadata: ContentfulMetadata
+      "type Query {
+        Page: Page
+        PageCollection: PageCollection
       }
 
       type Page implements Entry {
@@ -380,6 +369,26 @@ describe('ContentTypeWriter', () => {
         flags: [PageFlag]
       }
 
+      interface Entry {
+        sys: Sys
+        contentfulMetadata: ContentfulMetadata
+      }
+
+      type Sys {
+        id: String
+        spaceId: String
+        environmentId: String
+      }
+
+      type ContentfulMetadata {
+        tags: [ContentfulTag]!
+      }
+
+      type ContentfulTag {
+        id: String!
+        name: String!
+      }
+
       type PageCollection {
         skip: Int!
         limit: Int!
@@ -387,14 +396,7 @@ describe('ContentTypeWriter', () => {
         items: [Page]!
       }
 
-      enum PageFlag {
-        not_shareable
-        set_campus_cookie
-      }
-
       type PageMetadataFake
-
-      union PageSection = SectionBlockTextFake | SectionCarouselFake
 
       type PageSectionCollection {
         skip: Int!
@@ -403,21 +405,16 @@ describe('ContentTypeWriter', () => {
         items: [PageSection]!
       }
 
-      type Query {
-        Page: Page
-        PageCollection: PageCollection
-      }
+      union PageSection = SectionBlockTextFake | SectionCarouselFake
 
       type SectionBlockTextFake
 
       type SectionCarouselFake
 
-      type Sys {
-        id: String
-        spaceId: String
-        environmentId: String
-      }
-      "
+      enum PageFlag {
+        not_shareable
+        set_campus_cookie
+      }"
     `)
   })
 })
