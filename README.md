@@ -10,14 +10,19 @@ See https://www.apollographql.com/docs/react/local-state/local-resolvers/ for de
 
 ## Usage with GraphQL
 
-First, download the 'contentful-schema.json' file and commit it to your project repo:
+Ensure you have the GraphQL peer dependencies installed
+```bash
+$ npm install graphql graphql-type-json
+```
+
+Next, download the 'contentful-schema.json' file and commit it to your project repo:
 ```bash
 $ npx contentful-local-schema
 $ git add ./contentful-schema.json
 $ git commit
 ```
 
-Next, use the utilities to load the schema with resolvers into your Apollo client:
+Then, use the utilities to load the schema with resolvers into your Apollo client:
 ```ts
 import { withSync, InMemoryDataSource } from "contentful-local-schema";
 import { createLocalResolvers, createSchema } from "contentful-local-schema/graphql";
