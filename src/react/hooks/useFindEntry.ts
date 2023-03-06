@@ -13,16 +13,14 @@ import { useDataSource } from '../context'
  * for the initial load use case.
  */
 export type UseFindEntryResult<T> =
-  [undefined, { error?: undefined, loading: true }] |
-  [Entry<T> | null | undefined, { error: Error, loading: false }] |
-  [Entry<T> | null | undefined, { error?: undefined, loading: false }]
-
+  [Entry<T> | null | undefined, { error?: undefined, loading: boolean, refreshing: boolean }, () => Promise<void>]
 
 export function useFindEntry<T = any>(id: string): UseFindEntryResult<T> {
-  const [dataSource, updatedAt] = useDataSource()
+  const [dataSource, updatedAt, refresh] = useDataSource()
 
   const [found, setFound] = useState<Entry<any>>()
   const [loading, setLoading] = useState(true)
+  const [refreshing, setRefreshing] = useState(false)
   const [error, setError] = useState<Error>()
 
   useEffect(() => {
@@ -31,11 +29,15 @@ export function useFindEntry<T = any>(id: string): UseFindEntryResult<T> {
       setFound(result)
     }
 
+    setRefreshing(true)
     setError(undefined)
     doIt()
       .catch((e) => setError(e))
-      .finally(() => setLoading(false))
+      .finally(() => {
+        setLoading(false)
+        setRefreshing(false)
+      })
   }, [id, updatedAt])
 
-  return [found, { loading, error }] as UseFindEntryResult<T>
+  return [found, { loading, error, refreshing }, refresh] as UseFindEntryResult<T>
 }

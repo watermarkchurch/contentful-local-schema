@@ -1,4 +1,3 @@
-import { SpaceLink } from 'contentful'
 import type { Asset, AssetCollection, Entry, EntryCollection } from '../contentful/types'
 
 export interface ContentfulDataSource {
@@ -6,36 +5,4 @@ export interface ContentfulDataSource {
   getAssets(query?: any): Promise<AssetCollection> | AssetCollection
   getEntry<T>(id: string): Promise<Entry<T> | undefined> | Entry<T> | undefined
   getEntries<T>(query?: any): Promise<EntryCollection<T>> | EntryCollection<T>
-}
-
-export type SyncItem =
-  Entry<any> |
-  Asset |
-  DeletedEntry |
-  DeletedAsset
-
-export interface DeletedEntry {
-  sys: {
-    type: 'DeletedEntry',
-    id: string,
-    createdAt: string
-    updatedAt: string
-    deletedAt: string
-    space?: {
-        sys: SpaceLink;
-    }
-  }
-}
-
-export interface DeletedAsset {
-  sys: {
-    type: 'DeletedAsset',
-    id: string,
-    createdAt: string
-    updatedAt: string
-    deletedAt: string
-    space?: {
-        sys: SpaceLink;
-    }
-  }
 }

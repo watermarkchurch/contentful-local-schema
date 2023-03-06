@@ -12,18 +12,17 @@ import { useDataSource } from '../context'
  * for the initial load use case.
  */
 export type UseQueryEntriesResult<T> =
-  [undefined, { error?: undefined, loading: true }] |
-  [EntryCollection<T> | undefined, { error: Error, loading: false }] |
-  [EntryCollection<T>, { error?: undefined, loading: false }]
+  [EntryCollection<T>, { error?: Error, loading: boolean, refreshing: boolean }, () => Promise<void>]
 
 export function useQueryEntries<T = any>(
   contentType: string,
   query?: any
 ): UseQueryEntriesResult<T> {
-  const [dataSource, updatedAt] = useDataSource()
+  const [dataSource, updatedAt, refresh] = useDataSource()
 
   const [found, setFound] = useState<EntryCollection<any>>()
   const [loading, setLoading] = useState(true)
+  const [refreshing, setRefreshing] = useState(false)
   const [error, setError] = useState<Error>()
 
   useEffect(() => {
@@ -35,11 +34,15 @@ export function useQueryEntries<T = any>(
       setFound(result)
     }
 
+    setRefreshing(true)
     setError(undefined)
     doIt()
       .catch((e) => setError(e))
-      .finally(() => setLoading(false))
+      .finally(() => {
+        setLoading(false)
+        setRefreshing(false)
+      })
   }, [contentType, query, updatedAt])
 
-  return [found, { loading, error }] as UseQueryEntriesResult<T>
+  return [found, { loading, error, refreshing }, refresh] as UseQueryEntriesResult<T>
 }

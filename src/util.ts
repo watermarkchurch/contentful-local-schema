@@ -1,6 +1,5 @@
-import type { Asset, Entry, LinkContentTypeValidation } from './contentful/types'
+import type { Asset, Entry, LinkContentTypeValidation, DeletedAsset, DeletedEntry } from './contentful/types'
 import inflection from 'inflection'
-import { DeletedAsset, DeletedEntry } from './dataSource'
 
 export function tryParseJson(json: string): unknown | null {
   try {

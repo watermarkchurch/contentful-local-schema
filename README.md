@@ -77,9 +77,54 @@ const ensureContentfulLoaded = enhancedDataSource.restore();
 
 ## Usage with React
 
-This library provides a set of React hooks to easily query your InMemoryDataSource.
-To get started, 
+The `contentful-local-schema/react` library provides a set of React hooks to easily query your InMemoryDataSource.
+To get started, import and mount the provider:
 
+```tsx
+import { LocalSchemaProvider } from 'contentful-local-schema/react'
+import { SplashScreen } from './screens/splashScreen'
+
+// Import your dataSource that you configured above
+import { dataSource } from './dataSource';
+
+export function App() {
+
+  return <LocalSchemaProvider
+      dataSource={dataSource}
+      Loading={SplashScreen}
+    >
+    <Router>
+      ...
+    </Router>
+  </LocalSchemaProvider>
+}
+```
+
+Then in your individual screens, query the data source:
+
+```tsx
+
+export function Home() {
+  const [announcements, { loading, error, refreshing }, refresh] = useQueryEntries('announcements')
+
+  return <FlatList
+    refreshing={loading || refreshing}
+    onRefresh={refresh}
+    data={announcements?.items || []}
+    renderItem={({ item }) => <Item {...item} />}>
+  </FlatList>
+}
+
+export function Announcement({id}: {id: string}) {
+  const [entry, { loading }] = useFindEntry(id)
+
+  // Note: entry is undefined until it finishes loading
+  return <View>
+    <H4>{entry?.fields?.title}</H4>
+    ...
+  </View>
+}
+```
 
 ## Usage with GraphQL
 

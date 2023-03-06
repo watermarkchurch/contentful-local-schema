@@ -1,5 +1,5 @@
 import { Syncable } from '../syncEngine'
-import { DeletedEntry } from '../dataSource'
+import type { DeletedEntry } from '../contentful/types'
 import { InMemoryDataSource } from './in-memory-data-source'
 
 import syncInitial from '../../__fixtures__/sync_initial.json'
@@ -64,7 +64,7 @@ describe('InMemoryDataSource', () => {
         updatedAt: '2021-05-03T14:17:34.000Z',
         deletedAt: '2021-05-03T14:17:34.000Z',
         type: 'DeletedEntry',
-      }
+      } as Partial<DeletedEntry['sys']>
     } as DeletedEntry
 
     instance.index(deletedEntry)

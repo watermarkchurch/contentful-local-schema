@@ -4,7 +4,9 @@
  */
 import {wait} from 'async-toolbox/wait'
 import { URL } from 'whatwg-url'
-import { SyncCollection, Entry, Asset, isAsset, DeletedAsset, DeletedEntry, isDeletedAsset, isDeletedEntry, isEntry, SyncResponse, EntryCollection } from "./types";
+import { isAsset, isEntry, isDeletedAsset, isDeletedEntry } from '../util'
+import type { SyncCollection, Entry, Asset, DeletedAsset, DeletedEntry, SyncResponse } from './types'
+
 
 type Fetch = typeof fetch
 
@@ -127,12 +129,6 @@ export class SimpleContentfulClient {
 
     return resp
   }
-}
-
-interface EntriesQuery {
-  content_type: string,
-
-  include?: number
 }
 
 // tslint:disable-next-line: max-classes-per-file

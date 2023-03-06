@@ -44,6 +44,10 @@ export interface Sys<Type extends string = string> {
   space?: Link<'Space'>
 }
 
+export interface EntrySys extends Sys<'Entry'> {
+  contentType: Link<'ContentType'>
+}
+
 export interface Link<LinkType extends string = string> {
   sys: {
     type: 'Link',
@@ -53,15 +57,13 @@ export interface Link<LinkType extends string = string> {
 }
 
 export interface Entry<T> {
-  sys: Sys & {
-    contentType: Link<'ContentType'>
-  };
+  sys: EntrySys;
   fields: T;
   metadata: Metadata;
 }
 
 export interface Asset {
-  sys: Sys
+  sys: Sys<'Asset'>
   fields: {
       title: string;
       description: string;
@@ -111,11 +113,15 @@ interface TagLink {
 }
 
 export interface DeletedEntry {
-  sys: Sys<'DeletedEntry'>
+  sys: Sys<'DeletedEntry'> & {
+    deletedAt: string
+  }
 }
 
 export interface DeletedAsset {
-  sys: Sys<'DeletedAsset'>
+  sys: Sys<'DeletedAsset'> & {
+    deletedAt: string
+  }
 }
 
 export interface SyncResponse {
@@ -131,19 +137,3 @@ export type SyncItem =
   Asset |
   DeletedEntry |
   DeletedAsset
-
-export function isEntry(e: any): e is Entry<any> {
-  return e && e.sys && e.sys.type == 'Entry'
-}
-
-export function isAsset(e: any): e is Asset {
-  return e && e.sys && e.sys.type == 'Asset'
-}
-
-export function isDeletedEntry(e: any): e is DeletedEntry {
-  return e && e.sys && e.sys.type == 'DeletedEntry'
-}
-
-export function isDeletedAsset(e: any): e is DeletedAsset {
-  return e && e.sys && e.sys.type == 'DeletedAsset'
-}

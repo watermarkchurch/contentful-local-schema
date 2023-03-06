@@ -1,8 +1,8 @@
 import get from 'lodash/get'
 import cloneDeep from 'lodash/cloneDeep'
 
-import type { Asset, AssetCollection, Entry, EntryCollection } from '../contentful/types'
-import { ContentfulDataSource, DeletedAsset, DeletedEntry, SyncItem } from '.'
+import type { Asset, AssetCollection, Entry, EntryCollection, DeletedAsset, DeletedEntry, SyncItem } from '../contentful/types'
+import type { ContentfulDataSource } from '.'
 import { isAsset, isDeletedAsset, isDeletedEntry, isEntry } from '../util'
 import { Syncable } from '../syncEngine'
 import { Exportable } from '../backup'
@@ -145,7 +145,7 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
         .map<Filter>((key) => {
           if (key == 'content_type') {
           // special case
-            return (e) => e.sys.contentType.sys.id == query.content_type
+            return (e) => isEntry(e) && e.sys.contentType.sys.id == query.content_type
           }
           const expected = query[key]
   
@@ -172,8 +172,9 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
     return filters
   }
 
-  private denormalizeForLocale(e: Entry<any> , locale: string): Entry<any>
+  private denormalizeForLocale(e: Entry<any>, locale: string): Entry<any>
   private denormalizeForLocale(e: Asset, locale: string): Asset
+  private denormalizeForLocale(e: Entry<any> | Asset, locale: string): Entry<any> | Asset
   private denormalizeForLocale(e: Entry<any> | Asset, locale: string): Entry<any> | Asset {
     e = cloneDeep(e)
     if (locale == '*') {

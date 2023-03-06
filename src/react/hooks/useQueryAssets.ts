@@ -11,18 +11,17 @@ import { useDataSource } from '../context'
  * Re-running the query does not set "loading: true", the loading flag is intended
  * for the initial load use case.
  */
-export type UseQueryAssetsResult =
-  [undefined, { error?: undefined, loading: true }] |
-  [AssetCollection | undefined, { error: Error, loading: false }] |
-  [AssetCollection, { error?: undefined, loading: false }]
+export type UseQueryAssetsResult = 
+  [AssetCollection, { error?: Error, loading: boolean, refreshing: boolean }, () => Promise<void>]
 
 export function useQueryAssets(
   query?: any
 ): UseQueryAssetsResult {
-  const [dataSource, updatedAt] = useDataSource()
+  const [dataSource, updatedAt, refresh] = useDataSource()
 
   const [found, setFound] = useState<AssetCollection>()
   const [loading, setLoading] = useState(true)
+  const [refreshing, setRefreshing] = useState(false)
   const [error, setError] = useState<Error>()
 
   useEffect(() => {
@@ -33,11 +32,15 @@ export function useQueryAssets(
       setFound(result)
     }
 
+    setRefreshing(true)
     setError(undefined)
     doIt()
       .catch((e) => setError(e))
-      .finally(() => setLoading(false))
+      .finally(() => {
+        setLoading(false)
+        setRefreshing(false)
+      })
   }, [query, updatedAt])
 
-  return [found, { loading, error }] as UseQueryAssetsResult
+  return [found, { loading, error, refreshing }, refresh] as UseQueryAssetsResult
 }
