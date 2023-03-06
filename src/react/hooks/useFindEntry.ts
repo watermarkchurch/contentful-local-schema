@@ -15,7 +15,7 @@ import { useDataSource } from '../context'
 export type UseFindEntryResult<T> =
   [Entry<T> | null | undefined, { error?: undefined, loading: boolean, refreshing: boolean }, () => Promise<void>]
 
-export function useFindEntry<T = any>(id: string): UseFindEntryResult<T> {
+export function useFindEntry<T = any>(id: string, options?: { include?: number }): UseFindEntryResult<T> {
   const [dataSource, updatedAt, refresh] = useDataSource()
 
   const [found, setFound] = useState<Entry<any>>()
@@ -25,7 +25,10 @@ export function useFindEntry<T = any>(id: string): UseFindEntryResult<T> {
 
   useEffect(() => {
     const doIt = async () => {
-      const result = await dataSource.getEntry(id)
+      let result = await dataSource.getEntry(id)
+      if (result && options?.include) {
+        result = await dataSource.resolveEntry(result, options.include)
+      }
       setFound(result)
     }
 
@@ -37,7 +40,7 @@ export function useFindEntry<T = any>(id: string): UseFindEntryResult<T> {
         setLoading(false)
         setRefreshing(false)
       })
-  }, [id, updatedAt])
+  }, [id, updatedAt, options?.include])
 
   return [found, { loading, error, refreshing }, refresh] as UseFindEntryResult<T>
 }

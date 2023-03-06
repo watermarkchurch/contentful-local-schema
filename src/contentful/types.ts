@@ -56,7 +56,7 @@ export interface Link<LinkType extends string = string> {
   }
 }
 
-export interface Entry<T> {
+export interface Entry<T = Record<string, unknown>> {
   sys: EntrySys;
   fields: T;
   metadata: Metadata;

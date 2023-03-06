@@ -104,4 +104,21 @@ describe('useFindEntry', () => {
     })
 
   })
+
+  it('should resolve linked entries', async () => {
+    const wrapper = ({ children }: any) => <LocalSchemaProvider dataSource={dataSource}>{children}</LocalSchemaProvider>
+
+    // act
+    const { result } = renderHook(() => useFindEntry('doyAUR5XEVx4jK4NGvS8z', { include: 2 }), { wrapper })
+    
+    await waitFor(() => {
+      expect(result.current[1].loading).toEqual(false)
+    })
+    const entry = result.current[0]
+    if (!entry) { throw new Error('Entry not found') }
+
+    expect(entry.fields.days[0].fields.scheduleItem[1].fields.title).toEqual('Workshop Kickoff')
+    expect(entry.fields.maps[0].fields.map.fields.file.url).toEqual(
+      '//images.ctfassets.net/xxxxxx/7gdnMGTRQS8EkkgQ3mk4Kh/0fb71cfd2605d257003cf96c5ed67247/CLC19_App_PhoneMap_RJ_Parking.jpg')
+  })
 })

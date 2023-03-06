@@ -1,4 +1,4 @@
-import type { Asset, Entry, LinkContentTypeValidation, DeletedAsset, DeletedEntry } from './contentful/types'
+import type { Asset, Entry, LinkContentTypeValidation, DeletedAsset, DeletedEntry, Link } from './contentful/types'
 import inflection from 'inflection'
 
 export function tryParseJson(json: string): unknown | null {
@@ -50,6 +50,18 @@ export function isDeletedEntry(e: any): e is DeletedEntry {
 
 export function isDeletedAsset(e: any): e is DeletedAsset {
   return e && e.sys && e.sys.type == 'DeletedAsset'
+}
+
+export function isLink(e: any): e is Link {
+  return e && e.sys && e.sys.type == 'Link'
+}
+
+export function isEntryLink(e: any): e is Link<'Entry'> {
+  return isLink(e) && e.sys.linkType == 'Entry'
+}
+
+export function isAssetLink(e: any): e is Link<'Asset'> {
+  return isLink(e) && e.sys.linkType == 'Asset'
 }
 
 export function unionTypeDefName(contentType: string, field: { id: string }) {

@@ -1,13 +1,14 @@
 import React from 'react'
-import debounce from 'lodash-es/debounce'
+import debounce from 'lodash/debounce'
 import { ContentfulDataSource } from '../dataSource'
 import { hasSync, isSyncable } from '../syncEngine'
 import { hasBackup } from '../backup'
+import { addInclude, DataSourceWithInclude } from '../include'
 
 interface LocalSchemaContext {
-  dataSource: ContentfulDataSource,
+  dataSource: DataSourceWithInclude,
   revision: number,
-  resync: () => Promise<void>
+  resync: () => Promise<void> | undefined
 }
 
 const context = React.createContext({
@@ -32,14 +33,16 @@ export function LocalSchemaProvider({
   dataSource,
   Loading
 }: React.PropsWithChildren<LocalSchemaProviderProps>) {
+  // Ensure the query hooks can "resolve" entries
+  addInclude(dataSource)
 
   const [revision, setRevision] = React.useState(1)
 
   /**
    * A function to trigger a resync on-demand
    */
-  const resync: () => Promise<void> =
-    React.useMemo(() => {
+  const resync =
+    React.useMemo<() => Promise<void> | undefined>(() => {
       if (!hasSync(dataSource)) {
         return () => { throw new Error('Sync is not supported.  Did you wrap your data source with `withSync`?') }
       }

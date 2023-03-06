@@ -141,7 +141,7 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
   private parseQuery(query: any): Filter[] {
     const filters: Filter[] =
       Object.keys(query)
-        .filter((key) => !['skip', 'limit', 'locale'].includes(key))
+        .filter((key) => !['skip', 'limit', 'locale', 'include'].includes(key))
         .map<Filter>((key) => {
           if (key == 'content_type') {
           // special case
