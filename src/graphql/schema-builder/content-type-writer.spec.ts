@@ -1,5 +1,5 @@
 import { GraphQLObjectType, GraphQLSchema, printSchema } from 'graphql'
-import { namespace } from '../types'
+import { namespace } from '../../types'
 import ContentTypeWriter from './content-type-writer'
 
 const ns = namespace()

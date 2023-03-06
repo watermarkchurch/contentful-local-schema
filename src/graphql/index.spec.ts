@@ -3,14 +3,15 @@ import { createClient } from 'contentful'
 import { GraphQLSchema } from 'graphql'
 import nock from 'nock'
 
-import { createLocalResolvers, createSchema, withSync } from '.'
-import type {ContentType} from './contentful/types'
-import { ContentfulDataSource } from './dataSource'
-import { InMemoryDataSource } from './dataSource/in-memory-data-source'
-import { addSync } from './syncEngine'
+import { createLocalResolvers, createSchema } from '.'
+import { withSync } from '../syncEngine'
+import type {ContentType} from '../contentful/types'
+import { ContentfulDataSource } from '../dataSource'
+import { InMemoryDataSource } from '../dataSource/in-memory-data-source'
+import { addSync } from '../syncEngine'
 
-import fixture from '../__fixtures__/contentful-export-2021-05-07T16-34-28.json'
-import contentfulSchema from '../__fixtures__/contentful-schema.json'
+import fixture from '../../__fixtures__/contentful-export-2021-05-07T16-34-28.json'
+import contentfulSchema from '../../__fixtures__/contentful-schema.json'
 
 describe('integration', () => {
   describe('Apollo client w/ local resolvers', () => {
@@ -628,14 +629,14 @@ describe('integration', () => {
 
   describe('withSync', () => {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const syncInitial = require('../__fixtures__/sync_initial.json')
+    const syncInitial = require('../../__fixtures__/sync_initial.json')
     const syncPages = [
-      require('../__fixtures__/sync_2.json'),
-      require('../__fixtures__/sync_3.json'),
-      require('../__fixtures__/sync_4.json'),
-      require('../__fixtures__/sync_5.json'),
-      require('../__fixtures__/sync_6.json'),
-      require('../__fixtures__/sync_7.json')
+      require('../../__fixtures__/sync_2.json'),
+      require('../../__fixtures__/sync_3.json'),
+      require('../../__fixtures__/sync_4.json'),
+      require('../../__fixtures__/sync_5.json'),
+      require('../../__fixtures__/sync_6.json'),
+      require('../../__fixtures__/sync_7.json')
     ]
 
     beforeEach(() => {

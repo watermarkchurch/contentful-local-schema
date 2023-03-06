@@ -8,7 +8,7 @@ The `contentful-local-schema` package exposes utilities to create a local
 GraphQL schema and resolvers that can be queried using the `@client` directive.
 See https://www.apollographql.com/docs/react/local-state/local-resolvers/ for details.
 
-## Usage
+## Usage with GraphQL
 
 First, download the 'contentful-schema.json' file and commit it to your project repo:
 ```bash
@@ -19,7 +19,8 @@ $ git commit
 
 Next, use the utilities to load the schema with resolvers into your Apollo client:
 ```ts
-import { createLocalResolvers, createSchema, withSync, InMemoryDataSource } from "contentful-local-schema";
+import { withSync, InMemoryDataSource } from "contentful-local-schema";
+import { createLocalResolvers, createSchema } from "contentful-local-schema/graphql";
 import { ApolloClient, gql, InMemoryCache } from "@apollo/client";
 import {createClient} from 'contentful';
 

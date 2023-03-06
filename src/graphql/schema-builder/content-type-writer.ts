@@ -2,9 +2,9 @@ import inflection from 'inflection'
 import GraphQLJSON from 'graphql-type-json'
 
 import { GraphQLBoolean, GraphQLEnumType, GraphQLEnumValueConfigMap, GraphQLFieldConfigMap, GraphQLFloat, GraphQLInt, GraphQLInterfaceType, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLOutputType, GraphQLString, GraphQLUnionType } from 'graphql'
-import { GraphQLNever, Namespace } from '../types'
-import { idToName, isLinkContentTypeValidation, unionTypeDefName } from '../util'
-import { ContentType, ContentTypeField } from '../contentful/types'
+import { GraphQLNever, Namespace } from '../../types'
+import { idToName, isLinkContentTypeValidation, unionTypeDefName } from '../../util'
+import { ContentType, ContentTypeField } from '../../contentful/types'
 
 export default class ContentTypeWriter {
   public readonly className: string

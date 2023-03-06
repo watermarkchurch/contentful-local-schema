@@ -5,7 +5,7 @@ import * as yargs from 'yargs'
 import {promisify} from 'util'
 import fetch from 'cross-fetch'
 
-import { createSchema } from './index'
+import { createSchema } from './graphql/index'
 import downloadContentfulSchema from './schema-downloader'
 
 interface IArgv {
