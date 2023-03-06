@@ -78,3 +78,7 @@ export function addSync<DataSource extends Syncable>(
 ): asserts dataSource is DataSource & Pick<SyncEngine, 'sync'> {
   withSync(dataSource, client)
 }
+
+export function isSyncable(dataSource: any): dataSource is Syncable {
+  return typeof dataSource.index === 'function'
+}
