@@ -8,13 +8,12 @@ import { wait } from 'async-toolbox'
 
 import { InMemoryDataSource } from '../../dataSource/in-memory-data-source'
 import { LocalSchemaProvider } from '../context'
-import { useFindAsset } from './useFindAsset'
-import type { Asset, Entry } from '../../contentful/types'
+import type { Asset, AssetCollection } from '../../contentful/types'
+import { useQueryAssets } from './useQueryAssets'
 
 import fixture from '../../../__fixtures__/contentful-export-2021-05-07T16-34-28.json'
 
-
-describe('useFindAsset', () => {
+describe('useQueryAssets', () => {
   let dataSource: InMemoryDataSource
 
   beforeEach(async () => {
@@ -24,55 +23,65 @@ describe('useFindAsset', () => {
     dataSource = ds
   })
 
-  it('should find an asset that exists', async () => {
+  it('should find entries that exist', async () => {
     const wrapper = ({ children }: any) => <LocalSchemaProvider dataSource={dataSource}>{children}</LocalSchemaProvider>
 
     // act
-    const { result } = renderHook(() => useFindAsset('1QJlrZxpJrSqaLOg0i1tvt'), { wrapper })
+    const { result } = renderHook(
+      () => useQueryAssets({ 'title[in]': ['poppins', 'avatar'] }),
+      { wrapper }
+    )
     
     await waitFor(() => {
       expect(result.current[1].loading).toEqual(false)
     })
-    const entry = result.current[0]
-    if (!entry) { throw new Error('Entry not found') }
-    expect(entry.sys.id).toEqual('1QJlrZxpJrSqaLOg0i1tvt')
-    expect(entry.fields.title).toEqual('poppins')
+    const assets = result.current[0]
+    if (!assets) { throw new Error('Assets missing') }
+    expect(assets.total).toEqual(2)
+    expect(assets.items[0].sys.id).toEqual('1QJlrZxpJrSqaLOg0i1tvt')
+    expect(assets.items[0].fields.title).toEqual('poppins')
+
+    expect(assets.items[1].sys.id).toEqual('4pQ9K1TbfMjzu5o4BKelK4')
+    expect(assets.items[1].fields.title).toEqual('avatar')
   })
 
-  it('should rerun the query when the id changes', async () => {
+  it('should rerun when the query changes', async () => {
     const wrapper = ({ children }: any) => <LocalSchemaProvider dataSource={dataSource}>{children}</LocalSchemaProvider>
 
     const { result, rerender } = renderHook(
-      ({id}: {id: string}) => useFindAsset(id),
+      ({id}: {id: string}) => useQueryAssets({ 'sys.id': id }),
       {
         initialProps: {id: '1QJlrZxpJrSqaLOg0i1tvt'},
         wrapper
       })
     
     await waitFor(() => {
-      const [entry, {loading}] = result.current
+      const [assets, {loading}] = result.current
       expect(loading).toEqual(false)
-      expect(entry?.sys?.id).toEqual('1QJlrZxpJrSqaLOg0i1tvt')
+      expect(assets?.total).toEqual(1)
+      expect(assets?.items[0].sys.id).toEqual('1QJlrZxpJrSqaLOg0i1tvt')
     })
 
     // act
     rerender({id: '36SvzmmQXUW5naOO1iN2oY'})
     await waitFor(() => {
-      const [entry, {loading}] = result.current
+      const [assets, {loading}] = result.current
       expect(loading).toEqual(false)
-      expect(entry?.sys?.id).toEqual('36SvzmmQXUW5naOO1iN2oY')
+      expect(assets?.total).toEqual(1)
+      expect(assets?.items[0].sys.id).toEqual('36SvzmmQXUW5naOO1iN2oY')
     })
   })
 
-  it('should rerun the query when the asset is reindexed', async () => {
+  it('should rerun the query when the entry is reindexed', async () => {
     const wrapper = ({ children }: any) => <LocalSchemaProvider dataSource={dataSource}>{children}</LocalSchemaProvider>
 
-    const { result } = renderHook(() => useFindAsset('1QJlrZxpJrSqaLOg0i1tvt'), { wrapper })
+    const { result } = renderHook(() => useQueryAssets(), { wrapper })
 
     await waitFor(() => {
-      const [entry, {loading}] = result.current
+      const [assets, {loading}] = result.current
       expect(loading).toEqual(false)
-      expect(entry?.fields?.title).toEqual('poppins')
+      expect(assets?.total).toEqual(268)
+      expect(assets?.items[0].fields.title).toEqual('poppins')
     })
     await wait(2)
 
@@ -93,10 +102,9 @@ describe('useFindAsset', () => {
     })
 
     await waitFor(() => {
-      const [entry, {loading}] = result.current
+      const [assets, {loading}] = result.current
       expect(loading).toEqual(false)
-      expect(entry?.fields?.title).toEqual('poppins2')
+      expect(assets?.items[0].fields.title).toEqual('poppins2')
     })
-
   })
 })

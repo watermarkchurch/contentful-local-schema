@@ -4,7 +4,7 @@ import { isSyncable } from '../syncEngine'
 
 interface LocalSchemaContext {
   dataSource: ContentfulDataSource,
-  updatedAt: number
+  revision: number
 }
 
 const context = React.createContext({
@@ -20,7 +20,7 @@ export interface LocalSchemaProviderProps {
  */
 export function LocalSchemaProvider({children, dataSource}: React.PropsWithChildren<LocalSchemaProviderProps>) {
 
-  const [updatedAt, setUpdatedAt] = React.useState(Date.now())
+  const [revision, setRevision] = React.useState(1)
 
   React.useEffect(() => {
     if (isSyncable(dataSource)) {
@@ -28,15 +28,15 @@ export function LocalSchemaProvider({children, dataSource}: React.PropsWithChild
       const originalIndex = dataSource.index
       dataSource.index = (syncItem) => {
         originalIndex.call(dataSource, syncItem)
-        setUpdatedAt(Date.now())
+        setRevision((i) => (i + 1) % Number.MAX_SAFE_INTEGER)
       }
     }
   }, [dataSource])
 
   return React.createElement(context.Provider, {
     value: {
-      dataSource: dataSource,
-      updatedAt
+      dataSource,
+      revision
     }
   }, children)
 }
@@ -44,5 +44,5 @@ export function LocalSchemaProvider({children, dataSource}: React.PropsWithChild
 export function useDataSource() {
   const ctx = React.useContext(context)
 
-  return [ctx.dataSource, ctx.updatedAt] as const
+  return [ctx.dataSource, ctx.revision] as const
 }
