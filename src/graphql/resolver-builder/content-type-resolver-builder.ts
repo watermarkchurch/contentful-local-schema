@@ -1,7 +1,7 @@
 import type { Resolver, Resolvers } from '@apollo/client'
 import { generateUUID, idToName, isLinkContentTypeValidation, present, unionTypeDefName } from '../../util'
 import { ContentfulDataSource } from '../../dataSource'
-import { namespacedTypeName } from '../../types'
+import { namespacedTypeName } from '../types'
 import { ContentType, ContentTypeField } from '../../contentful/types'
 
 export default class ContentTypeResolverBuilder {

@@ -1,7 +1,7 @@
 import type { ApolloCache } from '@apollo/client'
 import type { SyncItem } from '../../contentful/types'
 import { Syncable } from '../../syncEngine'
-import { namespacedTypeName } from '../../types'
+import { namespacedTypeName } from '../types'
 import { idToName } from '../../util'
 
 export function withCacheEviction<DataSource extends Syncable>(
