@@ -8,7 +8,6 @@ export interface SyncCollection {
   nextSyncToken: string;
 }
 
-
 export interface ContentType {
   sys: {
     id: string
@@ -35,41 +34,34 @@ export interface LinkContentTypeValidation {
 }
 
 
-export interface Sys {
-  type: string;
+export interface Sys<Type extends string = string> {
+  type: Type;
   id: string;
   createdAt: string;
   updatedAt: string;
   locale: string;
   revision?: number;
-  space?: {
-      sys: SpaceLink;
-  };
-  contentType: {
-      sys: ContentTypeLink;
-  };
+  space?: Link<'Space'>
 }
 
-export interface SpaceLink {
-  type: 'Link';
-  linkType: 'Space';
-  id: string;
-}
-
-export interface ContentTypeLink {
-  type: 'Link';
-  linkType: 'ContentType';
-  id: string;
+export interface Link<LinkType extends string = string> {
+  sys: {
+    type: 'Link',
+    linkType: LinkType,
+    id: string
+  }
 }
 
 export interface Entry<T> {
-  sys: Sys;
+  sys: Sys & {
+    contentType: Link<'ContentType'>
+  };
   fields: T;
   metadata: Metadata;
 }
 
 export interface Asset {
-  sys: Sys;
+  sys: Sys
   fields: {
       title: string;
       description: string;
@@ -116,4 +108,42 @@ interface TagLink {
     linkType: 'Tag';
     id: string;
   }
+}
+
+export interface DeletedEntry {
+  sys: Sys<'DeletedEntry'>
+}
+
+export interface DeletedAsset {
+  sys: Sys<'DeletedAsset'>
+}
+
+export interface SyncResponse {
+  sys: { type: 'Array' },
+  items: Array<SyncItem>,
+
+  nextSyncUrl?: string,
+  nextPageUrl?: string
+}
+
+export type SyncItem =
+  Entry<any> |
+  Asset |
+  DeletedEntry |
+  DeletedAsset
+
+export function isEntry(e: any): e is Entry<any> {
+  return e && e.sys && e.sys.type == 'Entry'
+}
+
+export function isAsset(e: any): e is Asset {
+  return e && e.sys && e.sys.type == 'Asset'
+}
+
+export function isDeletedEntry(e: any): e is DeletedEntry {
+  return e && e.sys && e.sys.type == 'DeletedEntry'
+}
+
+export function isDeletedAsset(e: any): e is DeletedAsset {
+  return e && e.sys && e.sys.type == 'DeletedAsset'
 }

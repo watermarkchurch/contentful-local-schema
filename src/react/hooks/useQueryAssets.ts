@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import type { AssetCollection, EntryCollection } from '../../contentful/types'
+import type { AssetCollection } from '../../contentful/types'
 import { useDataSource } from '../context'
 
 /**
@@ -21,7 +21,7 @@ export function useQueryAssets(
 ): UseQueryAssetsResult {
   const [dataSource, updatedAt] = useDataSource()
 
-  const [found, setFound] = useState<EntryCollection<any>>()
+  const [found, setFound] = useState<AssetCollection>()
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<Error>()
 

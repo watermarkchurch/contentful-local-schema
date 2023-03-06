@@ -16,7 +16,7 @@ export class SyncEngine {
 
   constructor(
     private readonly dataSource: Syncable,
-    private readonly client: Pick<ContentfulClientApi, 'sync'>
+    private readonly client: ContentfulClientApi
   ) {
 
   }
