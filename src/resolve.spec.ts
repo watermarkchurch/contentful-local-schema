@@ -2,13 +2,13 @@
 import { InMemoryDataSource } from './dataSource/in-memory-data-source'
 
 import data from '../__fixtures__/contentful-export-2021-05-07T16-34-28.json'
-import { withInclude } from './include'
+import { withResolve } from './resolve'
 
 describe('withInclude', () => {
   let dataSource: InMemoryDataSource
 
   beforeEach(() => {
-    dataSource = withInclude(
+    dataSource = withResolve(
       new InMemoryDataSource()
     )
 

@@ -2,7 +2,7 @@ import { Entry } from './contentful/types'
 import { ContentfulDataSource } from './dataSource'
 import { isAssetLink, isEntryLink } from './util'
 
-export interface DataSourceWithInclude extends ContentfulDataSource {
+export interface DataSourceWithResolve extends ContentfulDataSource {
   /** Given an entry, resolves it down to the specified depth */
   resolveEntry<T extends Entry>(entry: T, depth: number): Promise<T>
 }
@@ -12,7 +12,7 @@ export interface DataSourceWithInclude extends ContentfulDataSource {
  * replacing links recursively down the tree by fetching the linked entries
  * by ID.
  */
-export function withInclude<TDataSource extends ContentfulDataSource>(
+export function withResolve<TDataSource extends ContentfulDataSource>(
   dataSource: TDataSource
 ): TDataSource {
   if ((dataSource as any).__withInclude) {
@@ -76,8 +76,8 @@ async function resolveValue(this: ContentfulDataSource, value: unknown, depth: n
  * replacing links recursively down the tree by fetching the linked entries
  * by ID.
  */
-export function addInclude<TDataSource extends ContentfulDataSource>(
+export function addResolve<TDataSource extends ContentfulDataSource>(
   dataSource: TDataSource
-): asserts dataSource is TDataSource & DataSourceWithInclude {
-  withInclude(dataSource)
+): asserts dataSource is TDataSource & DataSourceWithResolve {
+  withResolve(dataSource)
 }

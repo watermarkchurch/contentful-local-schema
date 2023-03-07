@@ -3,10 +3,10 @@ import debounce from 'lodash/debounce'
 import { ContentfulDataSource } from '../dataSource'
 import { hasSync, isSyncable } from '../syncEngine'
 import { hasBackup } from '../backup'
-import { addInclude, DataSourceWithInclude } from '../include'
+import { addResolve, DataSourceWithResolve } from '../resolve'
 
 interface LocalSchemaContext {
-  dataSource: DataSourceWithInclude,
+  dataSource: DataSourceWithResolve,
   revision: number,
   resync: () => Promise<void> | undefined
 }
@@ -34,7 +34,7 @@ export function LocalSchemaProvider({
   Loading
 }: React.PropsWithChildren<LocalSchemaProviderProps>) {
   // Ensure the query hooks can "resolve" entries
-  addInclude(dataSource)
+  addResolve(dataSource)
 
   const [revision, setRevision] = React.useState(1)
 

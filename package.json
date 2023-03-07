@@ -7,6 +7,10 @@
     "dist",
     "schema-downloader.js",
     "schema-downloader.d.ts",
+    "react.js",
+    "react.d.ts",
+    "graphql.js",
+    "graphql.d.ts",
     "README.md"
   ],
   "bin": "./bin/contentful-local-schema",
