@@ -1,4 +1,4 @@
-import { SyncItem } from '../dataSource'
+import type { SyncItem } from '../contentful/types'
 import { Syncable } from '../syncEngine'
 import { present } from '../util'
 
@@ -101,4 +101,12 @@ export function withBackup<TDataSource extends Exportable & Syncable>(
       await dataSource.setToken(token)
     }
   }
+}
+
+export function isExportable(dataSource: any): dataSource is Exportable {
+  return typeof dataSource.export === 'function'
+}
+
+export function hasBackup(dataSource: any): dataSource is DataSourceWithBackup {
+  return typeof dataSource.backup === 'function' && typeof dataSource.restore === 'function'
 }

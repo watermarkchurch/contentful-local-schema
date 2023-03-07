@@ -1,9 +1,9 @@
 import {ApolloClient, InMemoryCache} from '@apollo/client'
 import { GraphQLList, GraphQLObjectType, GraphQLString } from 'graphql'
 import gql from 'graphql-tag'
-import { ContentfulDataSource } from '../dataSource'
+import { ContentfulDataSource } from '../../dataSource'
 import { namespace } from '../types'
-import { ContentType } from '../contentful/types'
+import { ContentType } from '../../contentful/types'
 import QueryResolverBuilder from './query-resolver-builder'
 
 describe('QueryResolverBuilder', () => {

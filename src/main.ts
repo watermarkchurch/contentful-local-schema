@@ -1,36 +1,21 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import fs from 'fs'
-import { printSchema } from 'graphql'
 import * as path from 'path'
 import * as yargs from 'yargs'
 import {promisify} from 'util'
 import fetch from 'cross-fetch'
 
-import { createSchema } from './index'
 import downloadContentfulSchema from './schema-downloader'
 
-interface IArgv {
-  /** The schema file to load for code generation */
-  file: string,
-  /** The output file in which to write the graphql schema */
-  out?: string
-  /** Whether to download */
-  download?: boolean
-  managementToken?: string,
-  space?: string,
-  environment?: string
-  verbose?: boolean
-
-  namespace?: string,
-  queryNamespace?: string
-}
-
-yargs
+const argv = yargs
   .option('file', {
     alias: 'f',
+    type: 'string',
     describe: 'The location on disk of the schema file.',
   })
   .option('out', {
     alias: 'o',
+    type: 'string',
     describe: 'Where to place the generated gql file.',
   })
   .option('namespace', {
@@ -38,30 +23,35 @@ yargs
     describe: 'Prefixes all types with a certain name',
   })
   .option('queryNamespace', {
+    type: 'string',
     describe: 'Wraps the top level Query object inside a field with this name'
   })
-  .option('download', {
+  .option('skip-download', {
     boolean: true,
-    alias: 'd',
-    describe: 'Whether to download the schema file from the Contentful space first',
+    describe: 'Skip re-downloading the schema file from the Contentful space',
   })
   .option('managementToken', {
     alias: 'm',
+    type: 'string',
     describe: 'The Contentful management token.  Defaults to the env var CONTENTFUL_MANAGEMENT_TOKEN',
   })
   .option('space', {
     alias: 's',
+    type: 'string',
     describe: 'The Contentful space ID. Defaults to the env var CONTENTFUL_SPACE_ID',
   })
   .option('environment', {
     alias: 'e',
+    type: 'string',
     describe: 'The Contentful environment.  Defaults to the env var CONTENTFUL_ENVIRONMENT or \'master\'',
   })
   .option('verbose', {
     boolean: true,
     alias: 'v',
     describe: 'Enable verbose logging',
-  })
+  }).argv
+
+type IArgv = typeof argv;
 
 const defaultLogger = {
   debug() { return }
@@ -88,12 +78,11 @@ async function Run(args: IArgv) {
 
   const schemaFile = options.filename
 
-  const download = args.download ||
-    !(await pathExists(schemaFile))
-  if (download) {
+  if (!options['skip-download']) {
     await downloadContentfulSchema(options, {
       fetch
     })
+    console.log('Downloaded schema to', schemaFile)
   }
 
   if (!(await pathExists(schemaFile))) {
@@ -101,6 +90,15 @@ async function Run(args: IArgv) {
   }
 
   const contentfulSchema = JSON.parse((await readFile(schemaFile)).toString())
+
+  let createSchema, printSchema
+  try {
+    createSchema = require('./graphql/index').createSchema
+    printSchema = require('graphql').printSchema
+  } catch (err) {
+    console.error('Skipping GraphQL schema generation because graphql is not installed.  Please install graphql to generate a GraphQL schema.')
+    return
+  }
   const schema = createSchema({
     contentTypes: contentfulSchema.contentTypes,
     namespace: options.namespace,
@@ -124,11 +122,11 @@ if (fs.existsSync('db') && fs.statSync('db').isDirectory()) {
   file = './db/contentful-schema.json'
 }
 
-const args = Object.assign<IArgv, Partial<IArgv>>(
+const args = Object.assign(
   {
     file
   },
-  yargs.argv as Partial<IArgv>)
+  argv)
 
 if (typeof (args.download) == 'undefined') {
   if (args.managementToken && args.space && args.environment) {

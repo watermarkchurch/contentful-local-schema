@@ -8,7 +8,6 @@ export interface SyncCollection {
   nextSyncToken: string;
 }
 
-
 export interface ContentType {
   sys: {
     id: string
@@ -35,41 +34,36 @@ export interface LinkContentTypeValidation {
 }
 
 
-export interface Sys {
-  type: string;
+export interface Sys<Type extends string = string> {
+  type: Type;
   id: string;
   createdAt: string;
   updatedAt: string;
   locale: string;
   revision?: number;
-  space?: {
-      sys: SpaceLink;
-  };
-  contentType: {
-      sys: ContentTypeLink;
-  };
+  space?: Link<'Space'>
 }
 
-export interface SpaceLink {
-  type: 'Link';
-  linkType: 'Space';
-  id: string;
+export interface EntrySys extends Sys<'Entry'> {
+  contentType: Link<'ContentType'>
 }
 
-export interface ContentTypeLink {
-  type: 'Link';
-  linkType: 'ContentType';
-  id: string;
+export interface Link<LinkType extends string = string> {
+  sys: {
+    type: 'Link',
+    linkType: LinkType,
+    id: string
+  }
 }
 
-export interface Entry<T> {
-  sys: Sys;
+export interface Entry<T = Record<string, unknown>> {
+  sys: EntrySys;
   fields: T;
   metadata: Metadata;
 }
 
 export interface Asset {
-  sys: Sys;
+  sys: Sys<'Asset'>
   fields: {
       title: string;
       description: string;
@@ -117,3 +111,29 @@ interface TagLink {
     id: string;
   }
 }
+
+export interface DeletedEntry {
+  sys: Sys<'DeletedEntry'> & {
+    deletedAt: string
+  }
+}
+
+export interface DeletedAsset {
+  sys: Sys<'DeletedAsset'> & {
+    deletedAt: string
+  }
+}
+
+export interface SyncResponse {
+  sys: { type: 'Array' },
+  items: Array<SyncItem>,
+
+  nextSyncUrl?: string,
+  nextPageUrl?: string
+}
+
+export type SyncItem =
+  Entry<any> |
+  Asset |
+  DeletedEntry |
+  DeletedAsset

@@ -11,15 +11,17 @@
     "module": "CommonJS",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "jsx": "react",
     "lib": [
       "es2015",
-      "dom",
     ],
     "types": [
-      "jest"
+      "jest",
+      "node"
     ]
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "src/**/*.tsx"
   ]
 }

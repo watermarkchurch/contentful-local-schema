@@ -2,7 +2,7 @@
 import nock from 'nock'
 import { createClient } from 'contentful'
 import {SyncEngine} from '.'
-import { InMemoryDataSource } from '..'
+import { InMemoryDataSource } from '../dataSource/in-memory-data-source'
 
 const contentfulClient = createClient({
   accessToken: 'integration-test',

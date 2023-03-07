@@ -1,7 +1,21 @@
-import { SyncCollection } from '../contentful/types'
-import { SyncItem } from '../dataSource'
+import { SyncItem } from '../contentful/types'
 
+// copied out of Contentful JS SDK
+// These types are intentionally looser than our own types, to allow the user to
+// pass in a Contentful client directly
+interface SyncCollection {
+  entries: Array<{ sys: any, fields: any }>;
+  assets: Array<{ sys: any, fields: any }>;
+  deletedEntries: Array<{ sys: any }>;
+  deletedAssets: Array<{ sys: any }>;
+  nextSyncToken: string;
+}
 
+/**
+ * This interface represents any Contentful client capable of using the Sync API.
+ * A simple implementation of this interface is provided by this library, but you
+ * can also use the official Contentful JS SDK.
+ */
 export interface ContentfulClientApi {
   sync(query: any): Promise<SyncCollection>;
 }
@@ -16,7 +30,7 @@ export class SyncEngine {
 
   constructor(
     private readonly dataSource: Syncable,
-    private readonly client: Pick<ContentfulClientApi, 'sync'>
+    private readonly client: ContentfulClientApi
   ) {
 
   }
@@ -77,4 +91,12 @@ export function addSync<DataSource extends Syncable>(
   client: Pick<ContentfulClientApi, 'sync'>
 ): asserts dataSource is DataSource & Pick<SyncEngine, 'sync'> {
   withSync(dataSource, client)
+}
+
+export function isSyncable(dataSource: any): dataSource is Syncable {
+  return typeof dataSource.index === 'function'
+}
+
+export function hasSync(dataSource: any): dataSource is Pick<SyncEngine, 'sync'> {
+  return typeof dataSource.sync === 'function'
 }
