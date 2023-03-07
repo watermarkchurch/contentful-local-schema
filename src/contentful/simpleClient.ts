@@ -3,7 +3,6 @@
  * So we create one that implements sync only
  */
 import {wait} from 'async-toolbox/wait'
-import { URL } from 'whatwg-url'
 import { isAsset, isEntry, isDeletedAsset, isDeletedEntry } from '../util'
 import type { SyncCollection, Entry, Asset, DeletedAsset, DeletedEntry, SyncResponse } from './types'
 

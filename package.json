@@ -42,7 +42,6 @@
     "@types/node": "^18.14.6",
     "@types/react": "^18.0.28",
     "@types/tmp": "^0.2.0",
-    "@types/whatwg-url": "^11.0.0",
     "@types/yargs": "^16.0.1",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
@@ -67,7 +66,6 @@
     "async-toolbox": "^0.7.3",
     "inflection": "^1.13.1",
     "lodash": "^4.17.21",
-    "whatwg-url": ">= 11.0",
     "yargs": "^16.2.0"
   },
   "peerDependencies": {
