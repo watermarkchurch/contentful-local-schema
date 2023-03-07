@@ -15,7 +15,7 @@ export interface DataSourceWithResolve extends ContentfulDataSource {
 export function withResolve<TDataSource extends ContentfulDataSource>(
   dataSource: TDataSource
 ): TDataSource {
-  if ((dataSource as any).__withInclude) {
+  if ((dataSource as any).__withResolve) {
     // We've already wrapped this data source
     return dataSource
   }
@@ -23,7 +23,7 @@ export function withResolve<TDataSource extends ContentfulDataSource>(
   const oldGetEntries = dataSource.getEntries
 
   return Object.assign(dataSource, {
-    __withInclude: true,
+    __withResolve: true,
     getEntries: async (query?: any) => {
       if (query?.include && query.include > 10)
         throw new Error('Maximum include depth exceeded (10)')
