@@ -20,7 +20,7 @@ The library also provides wrappers to keep the Data Source up to date with Conte
 
 ### react-native example
 ```ts 
-import { createSimpleClient, InMemoryDataSource, withSync, withBackup } from 'contentful-local-schema'
+import { createSimpleClient, InMemoryDataSource, addSync, addBackup } from 'contentful-local-schema'
 import AsyncStorage from '@react-native-community/async-storage';
 
 const dataSource = new InMemoryDataSource();
@@ -33,26 +33,20 @@ const contentfulClient = createSimpleClient({
   environmentId,
 });
 
-// Wrap your in-memory data source to enable Syncing
-export const enhancedDataSource = withSync(
-  // Wrap your in-memory data source to enable backup/restore to AsyncStorage
-  withBackup(
-    dataSource,
-    AsyncStorage,
-    `contentful/${spaceId}/${environmentId}`
-  ),
-  contentfulClient
-);
+// Enable Syncing
+addSync(dataSource, contentfulClient)
+// Enable backup/restore to AsyncStorage
+addBackup(dataSource, AsyncStorage, `contentful/${spaceId}/${environmentId}`)
 
 /**
  * Wraps the `sync` and `backup` functions to execute a resync on demand.
  * The react integration handles this for you.
  */ 
 export const resyncContentful = () => {
-  const syncPromise = enhancedDataSource.sync();
+  const syncPromise = dataSource.sync();
   // In the background, after the sync finishes, backup to AsyncStorage.
   // If this fails, we don't really care because at least the sync succeeded.
-  syncPromise.then(() => enhancedDataSource.backup()).catch((ex) => {
+  syncPromise.then(() => dataSource.backup()).catch((ex) => {
     console.error('Post-sync backup failed', ex);
   });
 
@@ -61,7 +55,8 @@ export const resyncContentful = () => {
 
 // Cold startup: import the initial state from async storage.  This returns
 // a promise that can be awaited in your initializers.
-const ensureContentfulLoaded = enhancedDataSource.restore();
+// The react integration also takes care of this.
+const ensureContentfulLoaded = dataSource.restore();
   .then(
     () => resyncContentful(),
     (ex) => {
