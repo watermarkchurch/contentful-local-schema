@@ -45,7 +45,8 @@ export function withResolve<TDataSource extends ContentfulDataSource>(
 async function resolveEntry<T extends Record<string, unknown>>(this: ContentfulDataSource, entry: Entry<T>, depth: number, seen: Map<string, Entry | Asset | undefined> = new Map()) {
   if (depth <= 0) { return entry }
 
-  for(const field of Object.keys(entry.fields)) {
+  const fieldNames = Object.keys(entry.fields) as Array<keyof T>
+  for(const field of fieldNames) {
     const value = entry.fields[field]
     if (Array.isArray(value)) {
       for (let i = 0; i < value.length; i++) {
@@ -83,7 +84,7 @@ async function resolveEntry<T extends Record<string, unknown>>(this: ContentfulD
       if (seen.has(value.sys.id)) {
         const got = seen.get(value.sys.id)
         if (got) {
-          entry.fields[field] = got
+          entry.fields[field] = got as T[keyof T]
         }
         // Otherwise we've tried resolving this link before but failed, no need to try again
         continue
@@ -93,13 +94,13 @@ async function resolveEntry<T extends Record<string, unknown>>(this: ContentfulD
         const linkedEntry = await this.getEntry(value.sys.id)
         seen.set(value.sys.id, linkedEntry)
         if (linkedEntry) {
-          entry.fields[field] = await resolveEntry.call(this, linkedEntry, depth - 1, seen)
+          entry.fields[field] = await resolveEntry.call(this, linkedEntry, depth - 1, seen) as T[keyof T]
         }
       } else {
         const linkedAsset = await this.getAsset(value.sys.id)
         seen.set(value.sys.id, linkedAsset)
         if (linkedAsset) {
-          entry.fields[field] = linkedAsset
+          entry.fields[field] = linkedAsset as T[keyof T]
         }
       }
     }
