@@ -164,6 +164,14 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
             return neOp(s, expected)
           case 'in':
             return inOp(s, expected)
+          case 'gt':
+            return gtOp(s, expected)
+          case 'lt':
+            return ltOp(s, expected)
+          case 'gte':
+            return gteOp(s, expected)
+          case 'lte':
+            return lteOp(s, expected)
           default:
             throw new Error(`Operator not implemented: '${op}'`)
           }
@@ -263,5 +271,33 @@ function inOp(selector: Selector, expected: any[]): Filter {
       return expected.findIndex((exp) => value.includes(exp)) != -1
     }
     return expected.includes(value)
+  }
+}
+
+function gtOp(selector: Selector, expected: any): Filter {
+  return (e) => {
+    const value = selector(e)
+    return value > expected
+  }
+}
+
+function gteOp(selector: Selector, expected: any): Filter {
+  return (e) => {
+    const value = selector(e)
+    return value >= expected
+  }
+}
+
+function ltOp(selector: Selector, expected: any): Filter {
+  return (e) => {
+    const value = selector(e)
+    return value < expected
+  }
+}
+
+function lteOp(selector: Selector, expected: any): Filter {
+  return (e) => {
+    const value = selector(e)
+    return value <= expected
   }
 }

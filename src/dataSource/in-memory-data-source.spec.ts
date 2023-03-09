@@ -84,5 +84,53 @@ describe('InMemoryDataSource', () => {
       const items = instance.getEntries({ 'name': 'Rachel S' })
       expect(items.items[0].sys.id).toEqual('2dVyGMdo3yydeL0QMuc5Cx')
     })
+
+    it('gt', () => {
+      const entries = instance.getEntries({
+        content_type: 'event',
+        'fields.startTime[gt]': '2021-04-29T07:30-05:00'
+      })
+
+      const titles = entries.items.map((i) => i.fields.title)
+      expect(titles).not.toContain('Workshop Kickoff')
+      expect(titles).not.toContain('Staff Consulting Appointments')
+      expect(titles).toContain('Main Stage Session 5')
+    })
+
+    it('gte', () => {
+      const entries = instance.getEntries({
+        content_type: 'event',
+        'fields.startTime[gte]': '2021-04-29T07:30-05:00'
+      })
+
+      const titles = entries.items.map((i) => i.fields.title)
+      expect(titles).not.toContain('Workshop Kickoff')
+      expect(titles).toContain('Staff Consulting Appointments')
+      expect(titles).toContain('Main Stage Session 5')
+    })
+
+    it('lt', () => {
+      const entries = instance.getEntries({
+        content_type: 'event',
+        'fields.startTime[lt]': '2021-04-29T07:30-05:00'
+      })
+
+      const titles = entries.items.map((i) => i.fields.title)
+      expect(titles).toContain('Workshop Kickoff')
+      expect(titles).not.toContain('Staff Consulting Appointments')
+      expect(titles).not.toContain('Main Stage Session 5')
+    })
+
+    it('lte', () => {
+      const entries = instance.getEntries({
+        content_type: 'event',
+        'fields.startTime[lte]': '2021-04-29T07:30-05:00'
+      })
+
+      const titles = entries.items.map((i) => i.fields.title)
+      expect(titles).toContain('Workshop Kickoff')
+      expect(titles).toContain('Staff Consulting Appointments')
+      expect(titles).not.toContain('Main Stage Session 5')
+    })
   })
 })
