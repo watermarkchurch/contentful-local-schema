@@ -1,4 +1,4 @@
-import { Entry } from './contentful/types'
+import { Asset, Entry } from './contentful/types'
 import { ContentfulDataSource } from './dataSource'
 import { isAssetLink, isEntryLink } from './util'
 
@@ -42,33 +42,70 @@ export function withResolve<TDataSource extends ContentfulDataSource>(
   }) as unknown as TDataSource
 }
 
-async function resolveEntry(this: ContentfulDataSource, entry: Entry, depth: number) {
+async function resolveEntry(this: ContentfulDataSource, entry: Entry, depth: number, seen: Map<string, Entry | Asset | undefined> = new Map()) {
   if (depth <= 0) { return entry }
 
   for(const field of Object.keys(entry.fields)) {
     const value = entry.fields[field]
     if (Array.isArray(value)) {
       for (let i = 0; i < value.length; i++) {
-        value[i] = await resolveValue.call(this, value[i], depth)
+        const v = value[i]
+        if (!isEntryLink(v) && !isAssetLink(v)) { continue }
+
+        if (seen.has(v.sys.id)) {
+          const got = seen.get(v.sys.id)
+          if (got) {
+            value[i] = got
+          }
+          // Otherwise we've tried resolving this link before but failed, no need to try again
+          continue
+        }
+
+        if (isEntryLink(v)) {
+          const linkedEntry = await this.getEntry(v.sys.id)
+          seen.set(v.sys.id, linkedEntry)
+          if (linkedEntry) {
+            value[i] = await resolveEntry.call(this, linkedEntry, depth - 1, seen)
+          }
+        } else {
+          const linkedAsset = await this.getAsset(v.sys.id)
+          seen.set(v.sys.id, linkedAsset)
+          if (linkedAsset) {
+            value[i] = linkedAsset
+          }
+        }
+        
       }        
     } else {
-      entry.fields[field] = await resolveValue.call(this, value, depth)
-    }
-  }
-  return entry
-}
+      // This logic intentionally duplicated to avoid excess awaits when value is not a link
+      if (!isEntryLink(value) && !isAssetLink(value)) { continue }
 
-async function resolveValue(this: ContentfulDataSource, value: unknown, depth: number) {
-  if (isEntryLink(value)) {
-    const entry = await this.getEntry(value.sys.id)
-    if (entry) {
-      return resolveEntry.call(this, entry, depth - 1)
+      if (seen.has(value.sys.id)) {
+        const got = seen.get(value.sys.id)
+        if (got) {
+          entry.fields[field] = got
+        }
+        // Otherwise we've tried resolving this link before but failed, no need to try again
+        continue
+      }
+
+      if (isEntryLink(value)) {
+        const linkedEntry = await this.getEntry(value.sys.id)
+        seen.set(value.sys.id, linkedEntry)
+        if (linkedEntry) {
+          entry.fields[field] = await resolveEntry.call(this, linkedEntry, depth - 1, seen)
+        }
+      } else {
+        const linkedAsset = await this.getAsset(value.sys.id)
+        seen.set(value.sys.id, linkedAsset)
+        if (linkedAsset) {
+          entry.fields[field] = linkedAsset
+        }
+      }
     }
-  } else if(isAssetLink(value)) {
-    return await this.getAsset(value.sys.id)
-  } else {
-    return value
   }
+
+  return entry
 }
 
 /**

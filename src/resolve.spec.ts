@@ -53,4 +53,26 @@ describe('withInclude', () => {
     const entry = result.items[0]
     expect(entry.fields.announcements[0].sys.type).toEqual('Link')
   })
+
+  it('correctly resolves duplicate linked entries', async () =>{{
+    const result = await dataSource.getEntries({
+      'sys.id': 'doyAUR5XEVx4jK4NGvS8z',
+      include: 5
+    })
+    // 1odFtvQ3f6ke5e19PG1Fnx
+
+    const communicationTeamOverview = result.items[0].fields.tracks[0].fields.scheduleItems[0]
+    expect(communicationTeamOverview.fields.title).toEqual('Communication Team Overview')
+    const breakoutSession2 = result.items[0].fields.days[2].fields.scheduleItem[5]
+    expect(breakoutSession2.fields.title).toEqual('Breakout Session 2')
+    const communicationTeamOverview2 = breakoutSession2.fields.breakouts[20]
+    expect(communicationTeamOverview2.fields.title).toEqual('Communication Team Overview')
+
+    // The kicker - the two entries should be the same object
+    expect(communicationTeamOverview).toBe(communicationTeamOverview2)
+
+    // And it should be resolved
+    expect(communicationTeamOverview.fields.speakers[0].fields.name).toEqual('C M')
+    expect(communicationTeamOverview.fields.speakers[0].fields.photo.fields.file.fileName).toEqual('C-McIntyre.jpeg')
+  }})
 })
