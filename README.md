@@ -100,7 +100,7 @@ Then in your individual screens, query the data source:
 ```tsx
 
 export function Home() {
-  const [announcements, { loading, error, refreshing }, refresh] = useQueryEntries('announcements')
+  const [announcements, { loading, error, refreshing }, refresh] = useQueryEntries('announcements', { 'date[lt]': Date.now().toISOString() })
 
   return <FlatList
     refreshing={loading || refreshing}
@@ -119,6 +119,27 @@ export function Announcement({id}: {id: string}) {
     ...
   </View>
 }
+```
+
+For more information on the various query methods, see the source files:
+* [useFindEntry](./src/react/hooks/useFindEntry.ts)
+* [useFindAsset](./src/react/hooks/useFindAsset.ts)
+* [useQueryEntries](./src/react/hooks/useQueryEntries.ts)
+* [useQueryAssets](./src/react/hooks/useQueryAssets.ts)
+* [useQuery](./src/react/hooks/useQuery.ts)
+
+Note: `useQuery` can be used to conveniently make multi-step queries against the dataSource.
+Example:
+
+```ts
+// Load all the `day` entries that this conference links to, and sort them by date
+const [days, { loading, error, refreshing}, refresh] = useQuery(async (dataSource) => {
+  const conference = await dataSource.getEntry(conferenceId)
+  const dayIds = (conference.fields.days as Link<'Entry'>[]).map((day) => day.sys.id)
+
+  const days = await dataSource.getEntries({ content_type: 'day', 'sys.id[in]': dayIds })
+  return days.items.sort(byDate)
+}, [conferenceId])
 ```
 
 ## Usage with GraphQL

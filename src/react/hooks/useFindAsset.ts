@@ -1,47 +1,24 @@
-import { useEffect, useState } from 'react'
 import type { Asset } from '../../contentful/types'
-import { useDataSource } from '../context'
+import { useQuery, UseQueryResult } from './useQuery'
+
+export type UseFindAssetResult =
+  UseQueryResult<Asset | null | undefined>
 
 /**
- * The result is in one of 3 states:
- * 1. Loading, asset not available
- * 2. Error, asset may or may not be available
- * 3. Success, but asset may not have been found (undefined)
+ * Queries the dataSource for an asset by ID.
  * 
- * Re-running the query does not set "loading: true", the loading flag is intended
- * for the initial load use case.
+ * If the asset does not exist, the result will be null.
+ * The result will be undefined while the query is loading.
  */
-export type UseFindAssetResult =
-  [Asset | null | undefined, { error?: undefined, loading: boolean, refreshing: boolean }, () => Promise<void>]
-
 export function useFindAsset(
   id: string,
 
   /** Overrides the dependency list to control when the query is re-run */
   deps?: React.DependencyList
 ): UseFindAssetResult {
-  const [dataSource, updatedAt, refresh] = useDataSource()
 
-  const [found, setFound] = useState<Asset>()
-  const [loading, setLoading] = useState(true)
-  const [refreshing, setRefreshing] = useState(false)
-  const [error, setError] = useState<Error>()
-
-  useEffect(() => {
-    const doIt = async () => {
-      const result = await dataSource.getAsset(id)
-      setFound(result)
-    }
-
-    setRefreshing(true)
-    setError(undefined)
-    doIt()
-      .catch((e) => setError(e))
-      .finally(() => {
-        setLoading(false)
-        setRefreshing(false)
-      })
-  }, deps || [id, updatedAt])
-
-  return [found, { loading, error, refreshing }, refresh] as UseFindAssetResult
+  return useQuery<Asset | null | undefined>(
+    async (dataSource) => {
+      return (await dataSource.getAsset(id)) || null
+    }, deps || [id])
 }

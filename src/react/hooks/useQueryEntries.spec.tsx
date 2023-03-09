@@ -6,7 +6,7 @@ import { wait } from 'async-toolbox'
 
 import { InMemoryDataSource } from '../../dataSource/in-memory-data-source'
 import { LocalSchemaProvider } from '../context'
-import type { Entry, EntryCollection } from '../../contentful/types'
+import type { Entry } from '../../contentful/types'
 import { useQueryEntries } from './useQueryEntries'
 
 import fixture from '../../../__fixtures__/contentful-export-2021-05-07T16-34-28.json'
@@ -19,6 +19,8 @@ describe('useQueryEntries', () => {
     fixture.entries.forEach((e: any) => ds.index(e))
     fixture.assets.forEach((a: any) => ds.index(a))
     dataSource = ds
+
+    jest.useRealTimers()
   })
 
   it('should find entries that exist', async () => {

@@ -4,7 +4,7 @@ import { isAssetLink, isEntryLink } from './util'
 
 export interface DataSourceWithResolve extends ContentfulDataSource {
   /** Given an entry, resolves it down to the specified depth */
-  resolveEntry<T extends Entry>(entry: T, depth: number): Promise<T>
+  resolveEntry<T extends Record<string, unknown>>(entry: Entry<T>, depth: number): Promise<Entry<T>>
 }
 
 /**
@@ -42,7 +42,7 @@ export function withResolve<TDataSource extends ContentfulDataSource>(
   }) as unknown as TDataSource
 }
 
-async function resolveEntry(this: ContentfulDataSource, entry: Entry, depth: number, seen: Map<string, Entry | Asset | undefined> = new Map()) {
+async function resolveEntry<T extends Record<string, unknown>>(this: ContentfulDataSource, entry: Entry<T>, depth: number, seen: Map<string, Entry | Asset | undefined> = new Map()) {
   if (depth <= 0) { return entry }
 
   for(const field of Object.keys(entry.fields)) {
@@ -117,4 +117,8 @@ export function addResolve<TDataSource extends ContentfulDataSource>(
   dataSource: TDataSource
 ): asserts dataSource is TDataSource & DataSourceWithResolve {
   withResolve(dataSource)
+}
+
+export function hasResolveEntry(dataSource: any): dataSource is DataSourceWithResolve {
+  return typeof dataSource.resolveEntry === 'function'
 }
