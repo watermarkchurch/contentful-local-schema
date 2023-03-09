@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import eq from 'lodash/eq'
 import type { AssetCollection } from '../../contentful/types'
 import { useDataSource } from '../context'
 
@@ -15,7 +16,10 @@ export type UseQueryAssetsResult =
   [AssetCollection, { error?: Error, loading: boolean, refreshing: boolean }, () => Promise<void>]
 
 export function useQueryAssets(
-  query?: any
+  query?: Record<string, any>,
+
+  /** Overrides the dependency list to control when the query is re-run */
+  deps?: React.DependencyList
 ): UseQueryAssetsResult {
   const [dataSource, updatedAt, refresh] = useDataSource()
 
@@ -23,6 +27,12 @@ export function useQueryAssets(
   const [loading, setLoading] = useState(true)
   const [refreshing, setRefreshing] = useState(false)
   const [error, setError] = useState<Error>()
+
+  // Since the query object is often constructed inline, we need to use a ref and update it manually w/ deep comparison
+  const ref = useRef(query)
+  if (!eq(query, ref.current)) {
+    ref.current = query
+  }
 
   useEffect(() => {
     const doIt = async () => {
@@ -40,7 +50,7 @@ export function useQueryAssets(
         setLoading(false)
         setRefreshing(false)
       })
-  }, [query, updatedAt])
+  }, deps || [ref.current, updatedAt])
 
   return [found, { loading, error, refreshing }, refresh] as UseQueryAssetsResult
 }

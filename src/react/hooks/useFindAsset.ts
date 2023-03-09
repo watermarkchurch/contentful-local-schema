@@ -14,7 +14,12 @@ import { useDataSource } from '../context'
 export type UseFindAssetResult =
   [Asset | null | undefined, { error?: undefined, loading: boolean, refreshing: boolean }, () => Promise<void>]
 
-export function useFindAsset(id: string): UseFindAssetResult {
+export function useFindAsset(
+  id: string,
+
+  /** Overrides the dependency list to control when the query is re-run */
+  deps?: React.DependencyList
+): UseFindAssetResult {
   const [dataSource, updatedAt, refresh] = useDataSource()
 
   const [found, setFound] = useState<Asset>()
@@ -36,7 +41,7 @@ export function useFindAsset(id: string): UseFindAssetResult {
         setLoading(false)
         setRefreshing(false)
       })
-  }, [id, updatedAt])
+  }, deps || [id, updatedAt])
 
   return [found, { loading, error, refreshing }, refresh] as UseFindAssetResult
 }

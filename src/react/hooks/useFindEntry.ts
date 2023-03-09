@@ -15,7 +15,13 @@ import { useDataSource } from '../context'
 export type UseFindEntryResult<T> =
   [Entry<T> | null | undefined, { error?: undefined, loading: boolean, refreshing: boolean }, () => Promise<void>]
 
-export function useFindEntry<T = any>(id: string, options?: { include?: number }): UseFindEntryResult<T> {
+export function useFindEntry<T = any>(
+  id: string,
+  options?: { include?: number },
+
+  /** Overrides the dependency list to control when the query is re-run */
+  deps?: React.DependencyList
+): UseFindEntryResult<T> {
   const [dataSource, updatedAt, refresh] = useDataSource()
 
   const [found, setFound] = useState<Entry<any>>()
@@ -40,7 +46,7 @@ export function useFindEntry<T = any>(id: string, options?: { include?: number }
         setLoading(false)
         setRefreshing(false)
       })
-  }, [id, updatedAt, options?.include])
+  }, deps || [id, updatedAt, options?.include])
 
   return [found, { loading, error, refreshing }, refresh] as UseFindEntryResult<T>
 }
