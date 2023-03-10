@@ -3,6 +3,7 @@ import { InMemoryDataSource } from './dataSource/in-memory-data-source'
 
 import data from '../__fixtures__/contentful-export-2021-05-07T16-34-28.json'
 import { withResolve } from './resolve'
+import { DeletedEntry } from './contentful/types'
 
 describe('withInclude', () => {
   let dataSource: InMemoryDataSource
@@ -52,6 +53,26 @@ describe('withInclude', () => {
     expect(result.items.length).toEqual(1)
     const entry = result.items[0]
     expect(entry.fields.announcements[0].sys.type).toEqual('Link')
+    expect(entry.fields.announcements[0].sys.id).toEqual('6RPLNBrHzAwg4X58WFkCBc')
+  })
+
+  it('should remove links to missing entries/assets', async () => {
+    // before: delete the referenced announcement that was a link above
+    await dataSource.index({
+      sys: {
+        id: '6RPLNBrHzAwg4X58WFkCBc',
+        type: 'DeletedEntry',
+        updatedAt: '2023-01-01T16:34:28.000Z',
+      }
+    } as DeletedEntry)
+
+    const result = await dataSource.getEntries({
+      'sys.id': 'doyAUR5XEVx4jK4NGvS8z',
+      include: 1
+    })
+    expect(result.items.length).toEqual(1)
+    const entry = result.items[0]
+    expect(entry.fields.announcements[0]).toBeNull()
   })
 
   it('correctly resolves duplicate linked entries', async () =>{{

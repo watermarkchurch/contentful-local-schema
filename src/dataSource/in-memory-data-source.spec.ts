@@ -20,7 +20,7 @@ describe('InMemoryDataSource', () => {
     const got = instance.getEntry(item0.sys.id, { locale: '*' })
 
     expect(got).toEqual(item0)
-    expect(instance.getAsset(item0.sys.id)).toBeUndefined()
+    expect(instance.getAsset(item0.sys.id)).toBeNull()
   })
 
   it('gets a synced asset', () => {
@@ -30,7 +30,7 @@ describe('InMemoryDataSource', () => {
     const got = instance.getAsset(expected.sys.id, { locale: '*' })
 
     expect(got).toEqual(expected)
-    expect(instance.getEntry(expected.sys.id)).toBeUndefined()
+    expect(instance.getEntry(expected.sys.id)).toBeNull()
   })
 
   it('gets all synced entries', () => {
@@ -50,7 +50,7 @@ describe('InMemoryDataSource', () => {
   it('handles sync token', async () => {
     const i: Syncable = instance
 
-    expect(await i.getToken()).toBeUndefined()
+    expect(await i.getToken()).toBeNull()
     await i.setToken('1234')
     expect(await i.getToken()).toEqual('1234')
   })

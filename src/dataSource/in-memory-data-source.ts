@@ -21,7 +21,7 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
   }
 
   public getToken() {
-    return this._syncToken
+    return this._syncToken || null
   }
 
   public setToken(token: string) {
@@ -46,11 +46,12 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
     }
   }
 
-  public getAsset(id: string, query?: any): Asset | undefined {
+  public getAsset(id: string, query?: any): Asset | null {
     const asset = this._assets.get(id)
     if (asset && !isDeletedAsset(asset)) {
       return this.denormalizeForLocale(asset, query?.locale || this.defaultLocale)
     }
+    return null
   }
 
   public getAssets(query?: any): AssetCollection {
@@ -88,12 +89,14 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
     }
   }
 
-  public getEntry<T>(id: string, query?: any): Entry<T> | undefined {
+  public getEntry<T>(id: string, query?: any): Entry<T> | null {
     const entry = this._entries.get(id)
     if (entry && !isDeletedEntry(entry)) {
       return this.denormalizeForLocale(entry, query?.locale || this.defaultLocale)
     }
+    return null
   }
+
   public getEntries<T = { [key: string]: any }>(query?: any): EntryCollection<T> {
     const filters = query ? this.parseQuery(query) : []
     const skip = query?.skip || 0

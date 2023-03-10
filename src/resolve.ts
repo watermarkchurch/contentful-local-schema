@@ -55,25 +55,22 @@ async function resolveEntry<T extends Record<string, unknown>>(this: ContentfulD
 
         if (seen.has(v.sys.id)) {
           const got = seen.get(v.sys.id)
-          if (got) {
-            value[i] = got
-          }
-          // Otherwise we've tried resolving this link before but failed, no need to try again
+          value[i] = got
+          // We've tried resolving this link before, even if we failed, no need to try again
           continue
         }
 
         if (isEntryLink(v)) {
-          const linkedEntry = await this.getEntry(v.sys.id)
+          let linkedEntry = await this.getEntry(v.sys.id)
           seen.set(v.sys.id, linkedEntry)
           if (linkedEntry) {
-            value[i] = await resolveEntry.call(this, linkedEntry, depth - 1, seen)
+            linkedEntry = await resolveEntry.call(this, linkedEntry, depth - 1, seen)
           }
+          value[i] = linkedEntry
         } else {
           const linkedAsset = await this.getAsset(v.sys.id)
           seen.set(v.sys.id, linkedAsset)
-          if (linkedAsset) {
-            value[i] = linkedAsset
-          }
+          value[i] = linkedAsset
         }
         
       }        
@@ -83,25 +80,22 @@ async function resolveEntry<T extends Record<string, unknown>>(this: ContentfulD
 
       if (seen.has(value.sys.id)) {
         const got = seen.get(value.sys.id)
-        if (got) {
-          entry.fields[field] = got as T[keyof T]
-        }
-        // Otherwise we've tried resolving this link before but failed, no need to try again
+        entry.fields[field] = got as T[keyof T]
+        // We've tried resolving this link before, even if we failed, no need to try again
         continue
       }
 
       if (isEntryLink(value)) {
-        const linkedEntry = await this.getEntry(value.sys.id)
+        let linkedEntry = await this.getEntry(value.sys.id)
         seen.set(value.sys.id, linkedEntry)
         if (linkedEntry) {
-          entry.fields[field] = await resolveEntry.call(this, linkedEntry, depth - 1, seen) as T[keyof T]
+          linkedEntry = await resolveEntry.call(this, linkedEntry, depth - 1, seen)
         }
+        entry.fields[field] = linkedEntry as T[keyof T]
       } else {
         const linkedAsset = await this.getAsset(value.sys.id)
         seen.set(value.sys.id, linkedAsset)
-        if (linkedAsset) {
-          entry.fields[field] = linkedAsset as T[keyof T]
-        }
+        entry.fields[field] = linkedAsset as T[keyof T]
       }
     }
   }
