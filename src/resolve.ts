@@ -42,7 +42,7 @@ export function withResolve<TDataSource extends ContentfulDataSource>(
   }) as unknown as TDataSource
 }
 
-async function resolveEntry<T extends Record<string, unknown>>(this: ContentfulDataSource, entry: Entry<T>, depth: number, seen: Map<string, Entry | Asset | undefined> = new Map()) {
+async function resolveEntry<T extends Record<string, unknown>>(this: ContentfulDataSource, entry: Entry<T>, depth: number, seen: Map<string, Entry | Asset | null> = new Map()) {
   if (depth <= 0) { return entry }
 
   const fieldNames = Object.keys(entry.fields) as Array<keyof T>
