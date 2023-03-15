@@ -1,5 +1,5 @@
 import React from 'react'
-import debounce from 'lodash/debounce'
+import {throttle} from 'async-toolbox/throttle'
 import { ContentfulDataSource } from '../dataSource'
 import { hasSync, isSyncable } from '../syncEngine'
 import { hasBackup } from '../backup'
@@ -59,14 +59,13 @@ export function LocalSchemaProvider({
       if (!hasBackup(dataSource)) {
         console.warn('No backup method found.  Did you wrap your data source with `withBackup`?')
         // No backup so all we can do is sync
-        return debounce(
+        return throttle(
           dataSource.sync.bind(dataSource),
-          400,
-          { leading: true }
+          400
         )
       }
 
-      return debounce(
+      return throttle(
         () => {
           const syncPromise = dataSource.sync()
           // In the background, after the sync finishes, backup to AsyncStorage.
@@ -77,8 +76,7 @@ export function LocalSchemaProvider({
 
           return syncPromise
         },
-        400,
-        { leading: true }
+        400
       )
     }, [dataSource])
 
