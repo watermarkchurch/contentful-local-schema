@@ -1,6 +1,6 @@
 import type { Entry } from '../../contentful/types'
 import { hasResolveEntry } from '../../resolve'
-import { useQuery, UseQueryResult } from './useQuery'
+import { useQuery, UseQueryOptions, UseQueryResult } from './useQuery'
 
 export type UseFindEntryResult<T> =
   UseQueryResult<Entry<T> | null | undefined>
@@ -15,7 +15,7 @@ export type UseFindEntryResult<T> =
  */
 export function useFindEntry<T extends Record<string, unknown> = any>(
   id: string,
-  options?: { include?: number },
+  options?: UseQueryOptions & { include?: number },
 
   /** Overrides the dependency list to control when the query is re-run */
   deps?: React.DependencyList
@@ -28,5 +28,7 @@ export function useFindEntry<T extends Record<string, unknown> = any>(
         result = await dataSource.resolveEntry<T>(result, options.include)
       }
       return result || null
-    }, deps || [id, options?.include])
+    },
+    options,
+    deps || [id, options?.include])
 }

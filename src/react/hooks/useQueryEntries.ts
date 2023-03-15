@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import eq from 'lodash/eq'
 import type { EntryCollection } from '../../contentful/types'
-import { useQuery, UseQueryResult } from './useQuery'
+import { useQuery, UseQueryOptions, UseQueryResult } from './useQuery'
 
 export type UseQueryEntriesResult<T> =
   UseQueryResult<EntryCollection<T>>
@@ -21,6 +21,8 @@ export function useQueryEntries<T = any>(
    */
   query?: Record<string, any>,
 
+  options?: UseQueryOptions,
+
   /** Overrides the dependency list to control when the query is re-run */
   deps?: React.DependencyList
 ): UseQueryEntriesResult<T> {
@@ -37,5 +39,6 @@ export function useQueryEntries<T = any>(
         ...query
       })
     },
+    options,
     deps || [contentType, ref.current])
 }

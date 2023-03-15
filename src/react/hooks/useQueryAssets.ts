@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import eq from 'lodash/eq'
 import type { AssetCollection } from '../../contentful/types'
-import { useQuery, UseQueryResult } from './useQuery'
+import { useQuery, UseQueryOptions, UseQueryResult } from './useQuery'
 
 export type UseQueryAssetsResult = 
   UseQueryResult<AssetCollection>
@@ -11,6 +11,7 @@ export type UseQueryAssetsResult =
  */
 export function useQueryAssets(
   query?: Record<string, any>,
+  options?: UseQueryOptions,
 
   /** Overrides the dependency list to control when the query is re-run */
   deps?: React.DependencyList
@@ -27,5 +28,6 @@ export function useQueryAssets(
         ...query
       })
     },
+    options,
     deps || [ref.current])
 }

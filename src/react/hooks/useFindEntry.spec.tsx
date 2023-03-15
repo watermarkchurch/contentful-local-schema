@@ -121,4 +121,144 @@ describe('useFindEntry', () => {
     expect(entry.fields.maps[0].fields.map.fields.file.url).toEqual(
       '//images.ctfassets.net/xxxxxx/7gdnMGTRQS8EkkgQ3mk4Kh/0fb71cfd2605d257003cf96c5ed67247/CLC19_App_PhoneMap_RJ_Parking.jpg')
   })
+
+  describe('withSync', () => {
+    let sync: jest.Mock
+    beforeEach(async () => {
+      sync = jest.fn().mockImplementation(async () => {
+        await wait(100)
+      })
+
+      Object.assign(dataSource, {
+        sync
+      })
+    })
+
+    describe('refresh()', () => {
+      it('should set refreshing to true', async () => {
+        const wrapper = ({ children }: any) => <LocalSchemaProvider dataSource={dataSource}>{children}</LocalSchemaProvider>
+
+        // act
+        const { result } = renderHook(() => useFindEntry('3jxtEUoipivQ7TkUfxvPvI'), { wrapper })
+        
+        await waitFor(() => {
+          expect(result.current[1].loading).toEqual(false)
+        })
+        const [entry, _, refresh] = result.current
+        if (!entry) { throw new Error('Entry not found') }
+
+        // act
+        let p: Promise<any>
+        act(() => {
+          p = refresh()
+        })
+        const [__, {refreshing}] = result.current
+
+        // assert
+        expect(refreshing).toEqual(true)
+
+        await act(async () => { await p })
+
+        const [___, {refreshing: refreshing2}] = result.current
+        // assert
+        expect(refreshing2).toEqual(false)
+      })
+    })
+
+    describe('autoRefresh: false', () => {
+      it('should set stale to true when the dataSource is updated', async () => {
+        const wrapper = ({ children }: any) => <LocalSchemaProvider dataSource={dataSource}>{children}</LocalSchemaProvider>
+
+        const { result } = renderHook(() => useFindEntry('3jxtEUoipivQ7TkUfxvPvI', { autoRefresh: false }), { wrapper })        
+        await waitFor(() => {
+          expect(result.current[1].loading).toEqual(false)
+        })
+
+        const [entry, {stale}] = result.current
+        if (!entry) { throw new Error('Entry not found') }
+        expect(stale).toEqual(false)
+
+        // act
+        await act(async () => {
+          await dataSource.index({
+            sys: {
+              id: '3jxtEUoipivQ7TkUfxvPvI',
+              type: 'Entry',
+              'contentType': {
+                'sys': {
+                  'type': 'Link',
+                  'linkType': 'ContentType',
+                  'id': 'conference'
+                }
+              },
+              updatedAt: '2022-01-02T18:00:00.000Z'
+            },
+            fields: {
+              code: {
+                'en-US': 'CLC2020'
+              }
+            }
+          } as Entry<any>)
+        })
+        const [__, {stale: stale2}, refresh] = result.current
+
+        // assert
+        expect(stale2).toEqual(true)
+
+        await act(async () => { await refresh() })
+
+        const [___, {stale: stale3}] = result.current
+        // assert
+        expect(stale3).toEqual(false)
+      })
+    })
+
+    describe('autoRefresh: true', () => {
+      it('should automatically update stale data', async () => {
+        const wrapper = ({ children }: any) => <LocalSchemaProvider dataSource={dataSource}>{children}</LocalSchemaProvider>
+
+        const { result } = renderHook(() => useFindEntry('3jxtEUoipivQ7TkUfxvPvI', {}, []), { wrapper })        
+        await waitFor(() => {
+          expect(result.current[1].loading).toEqual(false)
+        })
+
+        const [entry, {stale}] = result.current
+        if (!entry) { throw new Error('Entry not found') }
+        expect(stale).toEqual(false)
+
+        // act
+        await act(async () => {
+          await dataSource.index({
+            sys: {
+              id: '3jxtEUoipivQ7TkUfxvPvI',
+              type: 'Entry',
+              'contentType': {
+                'sys': {
+                  'type': 'Link',
+                  'linkType': 'ContentType',
+                  'id': 'conference'
+                }
+              },
+              updatedAt: '2022-01-02T18:00:00.000Z'
+            },
+            fields: {
+              code: {
+                'en-US': 'CLC2020'
+              }
+            }
+          } as Entry<any>)
+        })
+        const [__, {stale: stale2}, refresh] = result.current
+
+        // assert
+        expect(stale2).toEqual(true)
+
+        await act(async () => { await refresh() })
+
+        const [___, {stale: stale3}] = result.current
+        // assert
+        expect(stale3).toEqual(false)
+      })
+    })
+  })
 })

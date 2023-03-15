@@ -1,5 +1,5 @@
 import type { Asset } from '../../contentful/types'
-import { useQuery, UseQueryResult } from './useQuery'
+import { useQuery, UseQueryOptions, UseQueryResult } from './useQuery'
 
 export type UseFindAssetResult =
   UseQueryResult<Asset | null | undefined>
@@ -12,6 +12,7 @@ export type UseFindAssetResult =
  */
 export function useFindAsset(
   id: string,
+  options?: UseQueryOptions,
 
   /** Overrides the dependency list to control when the query is re-run */
   deps?: React.DependencyList
@@ -20,5 +21,7 @@ export function useFindAsset(
   return useQuery<Asset | null | undefined>(
     async (dataSource) => {
       return (await dataSource.getAsset(id)) || null
-    }, deps || [id])
+    },
+    options,
+    deps || [id])
 }

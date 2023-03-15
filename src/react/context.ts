@@ -7,7 +7,14 @@ import { addResolve, DataSourceWithResolve } from '../resolve'
 
 interface LocalSchemaContext {
   dataSource: DataSourceWithResolve,
-  revision: number,
+  state: {
+    /** A number that auto-increments whenever a new entry is indexed */
+    revision: number,
+    /** A timestamp indicating when the resync method last completed. */
+    lastSyncedAt: number,
+    /** A timestamp indicating the last time that the post-sync backup completed. */
+    lastBackedUpAt: number
+  },
   resync: () => Promise<void> | undefined
 }
 
@@ -37,6 +44,8 @@ export function LocalSchemaProvider({
   addResolve(dataSource)
 
   const [revision, setRevision] = React.useState(1)
+  const [lastSyncedAt, setLastSyncedAt] = React.useState(0)
+  const [lastBackedUpAt, setLastBackedUpAt] = React.useState(0)
 
   /**
    * A function to trigger a resync on-demand
@@ -82,9 +91,30 @@ export function LocalSchemaProvider({
         if (isSyncable(dataSource)) {
           // Wrap the "index" method to trigger a re-render
           const originalIndex = dataSource.index
-          dataSource.index = (syncItem) => {
-            originalIndex.call(dataSource, syncItem)
+          dataSource.index = async (syncItem) => {
+            const result = await originalIndex.call(dataSource, syncItem)
             setRevision((i) => (i + 1) % Number.MAX_SAFE_INTEGER)
+            return result
+          }
+        }
+
+        if (hasSync(dataSource)) {
+          // Wrap the "sync" method to keep track of when it last succeeded (for loading indicators)
+          const originalSync = dataSource.sync
+          dataSource.sync = async () => {
+            const result = await originalSync.call(dataSource)
+            setLastSyncedAt(Date.now())
+            return result
+          }
+        }
+
+        if (hasBackup(dataSource)) {
+          // Wrap the "backup" method to keep track of when it last succeeded (for loading indicators)
+          const originalBackup = dataSource.backup
+          dataSource.backup = async () => {
+            const result = await originalBackup.call(dataSource)
+            setLastBackedUpAt(Date.now())
+            return result
           }
         }
 
@@ -102,7 +132,11 @@ export function LocalSchemaProvider({
   return React.createElement(context.Provider, {
     value: {
       dataSource,
-      revision,
+      state: {
+        revision,
+        lastSyncedAt,
+        lastBackedUpAt
+      },
       resync
     }
   }, children)
@@ -111,7 +145,7 @@ export function LocalSchemaProvider({
 export function useDataSource() {
   const ctx = React.useContext(context)
 
-  return [ctx.dataSource, ctx.revision, ctx.resync] as const
+  return [ctx.dataSource, ctx.state, ctx.resync] as const
 }
 
 async function initialize(dataSource: ContentfulDataSource): Promise<void> {
