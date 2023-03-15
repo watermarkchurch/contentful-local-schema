@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import eq from 'lodash/eq'
+import isEqual from 'lodash/isEqual'
 import type { AssetCollection } from '../../contentful/types'
 import { useQuery, UseQueryOptions, UseQueryResult } from './useQuery'
 
@@ -18,7 +18,7 @@ export function useQueryAssets(
 ): UseQueryAssetsResult {
   // Since the query object is often constructed inline, we need to use a ref and update it manually w/ deep comparison
   const ref = useRef(query)
-  if (!eq(query, ref.current)) {
+  if (!isEqual(query, ref.current)) {
     ref.current = query
   }
 
