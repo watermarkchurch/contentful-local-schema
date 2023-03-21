@@ -211,6 +211,56 @@ describe('useFindEntry', () => {
         // assert
         expect(stale3).toEqual(false)
       })
+
+      it('should complete the refresh if dataSource is updated during sync', async () => {
+        const wrapper = ({ children }: any) => <LocalSchemaProvider dataSource={dataSource}>{children}</LocalSchemaProvider>
+
+        // set up - find an initial entry
+        const { result } = renderHook(() => useFindEntry('3jxtEUoipivQ7TkUfxvPvI', { autoRefresh: false }), { wrapper })        
+        await waitFor(() => {
+          expect(result.current[1].loading).toEqual(false)
+        })
+        console.log('loading complete')
+        // When refresh is called, that will call sync.  Pretend that the sync indexes a new entry.
+        sync.mockImplementation(async () => {
+          console.log('call sync!')
+          await dataSource.index({
+            sys: {
+              id: '3jxtEUoipivQ7TkUfxvPvI',
+              type: 'Entry',
+              'contentType': {
+                'sys': {
+                  'type': 'Link',
+                  'linkType': 'ContentType',
+                  'id': 'conference'
+                }
+              },
+              updatedAt: '2022-01-02T18:00:00.000Z'
+            },
+            fields: {
+              code: {
+                'en-US': 'CLC2020'
+              }
+            }
+          } as Entry<any>)
+        })
+
+        const [entry, {stale}, refresh] = result.current
+        if (!entry) { throw new Error('Entry not found') }
+        expect(entry.fields.code).toEqual('CLC2019')
+        expect(stale).toEqual(false)
+
+        // act
+        console.log('call refresh!')
+        await act(async () => { await refresh() })
+        console.log('refresh complete')
+
+        const [entry2, {stale: stale2}, _] = result.current
+
+        // assert
+        expect(entry2!.fields.code).toEqual('CLC2020')
+        expect(stale2).toEqual(false)
+      })
     })
 
     describe('autoRefresh: true', () => {
