@@ -10,12 +10,20 @@ interface LocalSchemaContext {
   state: {
     /** A number that auto-increments whenever a new entry is indexed */
     revision: number,
+    /** A timestamp indicating when the index method was last called to update the dataSource. */
+    lastIndexedAt: number,
     /** A timestamp indicating when the resync method last completed. */
     lastSyncedAt: number,
     /** A timestamp indicating the last time that the post-sync backup completed. */
     lastBackedUpAt: number
   },
-  resync: () => Promise<void> | undefined
+  /**
+   * Directly invokes the sync method on the data source, updating the revision number.
+   * If the data source supports backup, this will also trigger a backup in the background.
+   * 
+   * @returns A promise that resolves to the current revision number after sync completed.
+   */
+  resync: () => Promise<number>
 }
 
 const context = React.createContext({
@@ -43,7 +51,8 @@ export function LocalSchemaProvider({
   // Ensure the query hooks can "resolve" entries
   addResolve(dataSource)
 
-  const [revision, setRevision] = React.useState(1)
+  const revision = React.useRef(1)
+  const [lastIndexedAt, setLastIndexedAt] = React.useState(0)
   const [lastSyncedAt, setLastSyncedAt] = React.useState(0)
   const [lastBackedUpAt, setLastBackedUpAt] = React.useState(0)
 
@@ -51,7 +60,7 @@ export function LocalSchemaProvider({
    * A function to trigger a resync on-demand
    */
   const resync =
-    React.useMemo<() => Promise<void> | undefined>(() => {
+    React.useMemo<() => Promise<number>>(() => {
       if (!hasSync(dataSource)) {
         return () => { throw new Error('Sync is not supported.  Did you wrap your data source with `withSync`?') }
       }
@@ -59,22 +68,23 @@ export function LocalSchemaProvider({
       if (!hasBackup(dataSource)) {
         console.warn('No backup method found.  Did you wrap your data source with `withBackup`?')
         // No backup so all we can do is sync
-        return throttle(
-          dataSource.sync.bind(dataSource),
-          400
-        )
+        return throttle(async () => {
+          await dataSource.sync()
+          return revision.current
+        },
+        400)
       }
 
       return throttle(
-        () => {
-          const syncPromise = dataSource.sync()
+        async () => {
+          await dataSource.sync()
           // In the background, after the sync finishes, backup to AsyncStorage.
           // If this fails, we don't really care because at least the sync succeeded.
-          syncPromise.then(() => dataSource.backup()).catch((ex) => {
+          dataSource.backup().catch((ex) => {
             console.error('Post-sync backup failed', ex)
           })
 
-          return syncPromise
+          return revision.current
         },
         400
       )
@@ -91,7 +101,8 @@ export function LocalSchemaProvider({
           const originalIndex = dataSource.index
           dataSource.index = async (syncItem) => {
             const result = await originalIndex.call(dataSource, syncItem)
-            setRevision((i) => (i + 1) % Number.MAX_SAFE_INTEGER)
+            revision.current = (revision.current + 1) % Number.MAX_SAFE_INTEGER
+            setLastIndexedAt(Date.now())
             return result
           }
         }
@@ -131,7 +142,8 @@ export function LocalSchemaProvider({
     value: {
       dataSource,
       state: {
-        revision,
+        revision: revision.current,
+        lastIndexedAt,
         lastSyncedAt,
         lastBackedUpAt
       },

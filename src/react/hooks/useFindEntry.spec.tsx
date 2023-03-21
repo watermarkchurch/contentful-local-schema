@@ -220,10 +220,9 @@ describe('useFindEntry', () => {
         await waitFor(() => {
           expect(result.current[1].loading).toEqual(false)
         })
-        console.log('loading complete')
+
         // When refresh is called, that will call sync.  Pretend that the sync indexes a new entry.
         sync.mockImplementation(async () => {
-          console.log('call sync!')
           await dataSource.index({
             sys: {
               id: '3jxtEUoipivQ7TkUfxvPvI',
@@ -251,9 +250,7 @@ describe('useFindEntry', () => {
         expect(stale).toEqual(false)
 
         // act
-        console.log('call refresh!')
         await act(async () => { await refresh() })
-        console.log('refresh complete')
 
         const [entry2, {stale: stale2}, _] = result.current
 

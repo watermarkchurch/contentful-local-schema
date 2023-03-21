@@ -93,13 +93,6 @@ export function useQuery<TResult>(
   // When the given deps change, this function will change, which will cause the useEffect to re-run.
   const memoizedQuery = useCallback(query, deps || [])
 
-  const executeQuery = useCallback(async () => {
-    setError(undefined)
-    const result = await query(dataSource)
-    setResult(result)
-    setResultsRevision(revision)
-  }, [memoizedQuery, revision])
-
   // Run the query automatically when the dataSource is updated or the deps change.
   useEffect(() => {
     if (!loading && options?.autoRefresh === false) { return }
@@ -107,6 +100,12 @@ export function useQuery<TResult>(
     // The InMemoryStore is sync, not async.  Thus, these queries never get offloaded from the main thread
     // and can hold up react rendering.  Render one frame of "loading" before the query.
     const frame = requestAnimationFrame(() => {
+      const executeQuery = async () => {
+        const result = await query(dataSource)
+        setResult(result)
+        setResultsRevision(revision)
+      }
+
       executeQuery()
         .catch((e) => setError(e))
         .finally(() => {
@@ -120,12 +119,14 @@ export function useQuery<TResult>(
   const refresh = useCallback(async () => {
     setRefreshing(true)
     try {
-      await _refresh()
-      return await executeQuery()
+      const newRevision = await _refresh()
+      const result = await query(dataSource)
+      setResult(result)
+      setResultsRevision(newRevision)
     } finally {
       setRefreshing(false)
     }
-  }, [executeQuery, _refresh])
+  }, [memoizedQuery, _refresh, revision])
 
   return [
     result,
