@@ -72,7 +72,8 @@ describe('withInclude', () => {
     })
     expect(result.items.length).toEqual(1)
     const entry = result.items[0]
-    expect(entry.fields.announcements[0]).toBeNull()
+    expect(entry.fields.announcements[0]?.sys.id).toEqual('2KbRsvE5b134nEo2Lni7pr')
+    expect(entry.fields.announcements.length).toEqual(4)
   })
 
   it('correctly resolves duplicate linked entries', async () =>{{

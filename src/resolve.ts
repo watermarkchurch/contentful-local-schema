@@ -1,6 +1,6 @@
 import { Asset, Entry } from './contentful/types'
 import { ContentfulDataSource } from './dataSource'
-import { isAssetLink, isEntryLink } from './util'
+import { isAssetLink, isEntryLink, present } from './util'
 
 export interface DataSourceWithResolve extends ContentfulDataSource {
   /** Given an entry, resolves it down to the specified depth */
@@ -72,8 +72,10 @@ async function resolveEntry<T extends Record<string, unknown>>(this: ContentfulD
           seen.set(v.sys.id, linkedAsset)
           value[i] = linkedAsset
         }
-        
-      }        
+      }
+
+      // Remove links from our array that have been deleted out of the data store (i.e. draft entries)
+      entry.fields[field] = value.filter(present) as T[keyof T]
     } else {
       // This logic intentionally duplicated to avoid excess awaits when value is not a link
       if (!isEntryLink(value) && !isAssetLink(value)) { continue }
