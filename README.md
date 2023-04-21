@@ -19,7 +19,7 @@ query data from the in-memory `Map` objects that hold the entries and assets.
 The library also provides wrappers to keep the Data Source up to date with Contentful Sync, and back it up to something like AsyncStorage for react-native.
 
 ### react-native example
-```ts 
+```ts
 import { createSimpleClient, InMemoryDataSource, addSync, addBackup } from 'contentful-local-schema'
 import AsyncStorage from '@react-native-community/async-storage';
 
@@ -41,7 +41,7 @@ addBackup(dataSource, AsyncStorage, `contentful/${spaceId}/${environmentId}`)
 /**
  * Wraps the `sync` and `backup` functions to execute a resync on demand.
  * The react integration handles this for you.
- */ 
+ */
 export const resyncContentful = () => {
   const syncPromise = dataSource.sync();
   // In the background, after the sync finishes, backup to AsyncStorage.
@@ -235,3 +235,12 @@ npm install --save-dev @apollo/client
 yarn add --dev @apollo/client
 ```
 
+## License
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+## Code of Ethics
+
+The developers at Watermark Community Church have pledged to govern their interactions with each other, with their clients, and with the larger wcc-contentful user community in accordance with the "instruments of good works" from chapter 4 of The Rule of St. Benedict (hereafter: "The Rule"). This code of ethics has proven its mettle in thousands of diverse communities for over 1,500 years, and has served as a baseline for many civil law codes since the time of Charlemagne.
+
+[See the full Code of Ethics](./CODE_OF_ETHICS.md)
