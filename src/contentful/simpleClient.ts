@@ -4,7 +4,7 @@
  */
 import {wait} from 'async-toolbox/wait'
 import { isAsset, isEntry, isDeletedAsset, isDeletedEntry } from '../util'
-import type { SyncCollection, Entry, Asset, DeletedAsset, DeletedEntry, SyncResponse } from './types'
+import type { SyncCollection, DeletedAsset, DeletedEntry, SyncResponse, SyncEntry, SyncAsset } from './types'
 
 
 type Fetch = typeof fetch
@@ -49,9 +49,9 @@ export class SimpleContentfulClient {
   public async sync(query: any): Promise<SyncCollection> {
     const {space, environmentId} = this.options
     
-    const assets: Asset[] = []
+    const assets: SyncAsset[] = []
     const deletedAssets: DeletedAsset[] = []
-    const entries: Entry<any>[] = []
+    const entries: SyncEntry[] = []
     const deletedEntries: DeletedEntry[] = []
 
     query = query.nextSyncToken ?
@@ -60,7 +60,7 @@ export class SimpleContentfulClient {
 
     let resp = await this.get(`/spaces/${space}/environments/${environmentId}/sync`, query)
     let body = await resp.json() as SyncResponse
-    assets.push(...body.items.filter(isAsset))
+    assets.push(...body.items.filter<SyncAsset>(isAsset))
     deletedAssets.push(...body.items.filter(isDeletedAsset))
     entries.push(...body.items.filter(isEntry))
     deletedEntries.push(...body.items.filter(isDeletedEntry))
@@ -68,7 +68,7 @@ export class SimpleContentfulClient {
     while(body.nextPageUrl) {
       resp = await this.get(body.nextPageUrl)
       body = await resp.json() as SyncResponse
-      assets.push(...body.items.filter(isAsset))
+      assets.push(...body.items.filter<SyncAsset>(isAsset))
       deletedAssets.push(...body.items.filter(isDeletedAsset))
       entries.push(...body.items.filter(isEntry))
       deletedEntries.push(...body.items.filter(isDeletedEntry))
@@ -77,9 +77,9 @@ export class SimpleContentfulClient {
     const nextSyncToken = new URL(body.nextSyncUrl!).searchParams.get('sync_token')!
     return {
       assets,
-      deletedAssets: deletedAssets as unknown as Asset[],
+      deletedAssets: deletedAssets as unknown as DeletedAsset[],
       entries,
-      deletedEntries: deletedEntries as unknown as Entry<any>[],
+      deletedEntries: deletedEntries as unknown as DeletedEntry[],
       nextSyncToken,
       toPlainObject() { return this },
       stringifySafe() { return JSON.stringify(this) }

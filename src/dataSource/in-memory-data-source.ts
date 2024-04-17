@@ -1,7 +1,7 @@
 import get from 'lodash/get'
 import cloneDeep from 'lodash/cloneDeep'
 
-import type { Asset, AssetCollection, Entry, EntryCollection, DeletedAsset, DeletedEntry, SyncItem } from '../contentful/types'
+import type { Asset, AssetCollection, Entry, EntryCollection, DeletedAsset, DeletedEntry, SyncItem, SyncEntry, SyncAsset } from '../contentful/types'
 import type { ContentfulDataSource } from '.'
 import { isAsset, isDeletedAsset, isDeletedEntry, isEntry } from '../util'
 import { Syncable } from '../syncEngine'
@@ -9,8 +9,8 @@ import { Exportable } from '../backup'
 
 
 export class InMemoryDataSource implements ContentfulDataSource, Syncable, Exportable {
-  private readonly _entries: Map<string, Entry<any> | DeletedEntry>
-  private readonly _assets: Map<string, Asset | DeletedAsset>
+  private readonly _entries: Map<string, SyncEntry | DeletedEntry>
+  private readonly _assets: Map<string, SyncAsset | DeletedAsset>
   private _syncToken: string | undefined | null
 
   constructor(
@@ -183,24 +183,42 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
     return filters
   }
 
-  private denormalizeForLocale(e: Entry<any>, locale: string): Entry<any>
-  private denormalizeForLocale(e: Asset, locale: string): Asset
-  private denormalizeForLocale(e: Entry<any> | Asset, locale: string): Entry<any> | Asset
-  private denormalizeForLocale(e: Entry<any> | Asset, locale: string): Entry<any> | Asset {
+  private denormalizeForLocale(e: SyncEntry, locale: string): Entry<any>
+  private denormalizeForLocale(e: SyncAsset, locale: string): Asset
+  private denormalizeForLocale(e: SyncEntry | SyncAsset, locale: string): Entry<any> | Asset
+  private denormalizeForLocale(e: SyncEntry | SyncAsset, locale: string): Entry<any> | Asset {
     e = cloneDeep(e)
     if (locale == '*') {
-      return e
+      // We'll just pretend that the entry fits the denormalized schema, and let the caller cast it correctly.
+      return e as Entry<any> | Asset
     }
+    
+    type FieldsKey = keyof (SyncEntry | SyncAsset)['fields']
 
-    let hasAnyValuesForLocale = false
-    Object.keys(e.fields).forEach((field) => {
+    const returnVal = {
+      sys: {
+        ...e.sys,
+        locale: locale,
+      },
+      metadata: e.metadata,
+      fields: {}
+    } as Entry<any> | Asset
+
+    let hasAnyValuesForLocale = false;
+    (Object.keys(e.fields) as FieldsKey[]).forEach((field: FieldsKey) => {
       const value = e.fields[field]
       if (typeof value != 'object') { return }
   
       // value is of type { 'en-US': something }
       if (locale in value) {
         hasAnyValuesForLocale = true
-        e.fields[field] = value[locale]
+        returnVal.fields[field] = value[locale]
+      } else {
+        // use fallback locale
+        const fallback = this.defaultLocale
+        if (fallback in value) {
+          returnVal.fields[field] = value[fallback]
+        }
       }
     })
     if (!hasAnyValuesForLocale) {
@@ -208,18 +226,17 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
       return this.denormalizeForLocale(e, this.defaultLocale)
     }
 
-    e.sys.locale = locale
-    return e
+    return returnVal
   }
 }
 
-type Filter = (e: Entry<any> | Asset) => boolean
+type Filter = (e: Entry<any> | Asset | SyncEntry | SyncAsset) => boolean
 
 const SysFields = [
   'id'
 ]
 
-type Selector = (e: Entry<any> | Asset) => any
+type Selector = (e: Entry<any> | Asset | SyncEntry | SyncAsset) => any
 
 function selector(key: string, locale: string): Selector {
   if (SysFields.includes(key)) {
@@ -230,7 +247,7 @@ function selector(key: string, locale: string): Selector {
 
   return (e) => {
     const value = get(e, key)
-    if (e.sys.locale || typeof value != 'object') {
+    if ('locale' in e.sys && e.sys.locale || typeof value != 'object') {
       return value
     }
 

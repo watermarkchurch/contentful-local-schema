@@ -1,4 +1,4 @@
-import type { Asset, Entry, LinkContentTypeValidation, DeletedAsset, DeletedEntry, Link } from './contentful/types'
+import type { Asset, Entry, LinkContentTypeValidation, DeletedAsset, DeletedEntry, Link, SyncEntry, SyncItem, SyncAsset } from './contentful/types'
 import inflection from 'inflection'
 
 export function tryParseJson(json: string): unknown | null {
@@ -36,11 +36,41 @@ export function assertPresent<T>(value: T | undefined | null | ''): asserts valu
   }
 }
 
-export function isEntry(e: any): e is Entry<any> {
+/**
+ * This function checks whether an object is an Entry.
+ * 
+ * If we already know that the object is a SyncItem,
+ * then we know that it has the shape of a "locale=*" entry.
+ * 
+ * If we already know that the object has been transformed to a locale,
+ * then we know that it is an Entry with those fields.
+ * 
+ * If we don't already know, then it could be an entry with a locale or an entry with "locale=*" and further type
+ * narrowing is required.
+ */
+export function isEntry(e: SyncItem): e is SyncEntry
+export function isEntry(e: Entry<any> | Asset): e is Entry<any>
+export function isEntry(e: any): e is Entry<any> | SyncEntry
+export function isEntry(e: any): e is Entry<any> | SyncEntry {
   return e && e.sys && e.sys.type == 'Entry'
 }
 
-export function isAsset(e: any): e is Asset {
+/**
+ * This function checks whether an object is an Asset.
+ * 
+ * If we already know that the object is a SyncItem,
+ * then we know that it has the shape of a "locale=*" Asset.
+ * 
+ * If we already know that the object has been transformed to a locale,
+ * then we know that it is an Asset with those fields.
+ * 
+ * If we don't already know, then it could be an entry with a locale or an entry with "locale=*" and further type
+ * narrowing is required.
+ */
+export function isAsset(e: SyncItem): e is SyncAsset
+export function isAsset(e: Entry<any> | Asset): e is Asset
+export function isAsset(e: any): e is Asset | SyncAsset
+export function isAsset(e: any): e is Asset | SyncAsset {
   return e && e.sys && e.sys.type == 'Asset'
 }
 
