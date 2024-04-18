@@ -9,8 +9,8 @@ import { Exportable } from '../backup'
 
 
 export class InMemoryDataSource implements ContentfulDataSource, Syncable, Exportable {
-  private readonly _entries: Map<string, SyncEntry | DeletedEntry>
-  private readonly _assets: Map<string, SyncAsset | DeletedAsset>
+  private _entries: Map<string, SyncEntry | DeletedEntry>
+  private _assets: Map<string, SyncAsset | DeletedAsset>
   private _syncToken: string | undefined | null
 
   constructor(
@@ -140,6 +140,29 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
       yield v
     }
   }
+  
+  public async import(
+    items: Iterable<SyncItem> | AsyncIterable<SyncItem>,
+    token: string | null
+  ): Promise<void> {
+    const newEntries = new Map<string, SyncEntry | DeletedEntry>()
+    const newAssets = new Map<string, SyncAsset | DeletedAsset>()
+
+    for await (const item of items) {
+      if (isEntry(item) || isDeletedEntry(item)) {
+        newEntries.set(item.sys.id, item)
+      } else if(isAsset(item) || isDeletedAsset(item)) {
+        newAssets.set(item.sys.id, item)
+      } else {
+        throw new Error(`Unrecognized sync item: ${(item as any)?.sys?.type}`)
+      }
+    }
+    
+    // Atomically (i.e. without async) replace the old entries and assets
+    this._entries = newEntries
+    this._assets = newAssets
+    this._syncToken = token
+  }
 
   private parseQuery(query: any): Filter[] {
     const filters: Filter[] =
@@ -221,7 +244,7 @@ export class InMemoryDataSource implements ContentfulDataSource, Syncable, Expor
         }
       }
     })
-    if (!hasAnyValuesForLocale) {
+    if (!hasAnyValuesForLocale && locale != this.defaultLocale) {
       // fall back to default
       return this.denormalizeForLocale(e, this.defaultLocale)
     }

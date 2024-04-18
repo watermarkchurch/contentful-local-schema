@@ -132,4 +132,22 @@ describe('SyncEngine', () => {
     expect(store.getEntry('6RPLNBrHzAwg4X58WFkCBc')).toBeFalsy()
     expect(store.getAsset('1QJlrZxpJrSqaLOg0i1tvt')).toBeFalsy()
   })
+  
+  it('does a full resync when the sync token is invalid', async () => {
+    nock('https://cdn.contentful.com')
+      .get('/spaces/xxxxxx/environments/master/sync?sync_token=badToken')
+      .reply(400, JSON.stringify({
+        'sys': {
+          'type':'Error',
+          'id':'BadRequest'
+        },
+        'message': 'The sync token you sent was invalid. Consider trying an initial sync by passing "initial=true".',
+        'requestId':'7553da98-bbd3-4d0c-bae4-e0ad1023e529'
+      }))
+      
+    store.setToken('badToken')
+    
+    // act
+    await subject.sync()
+  })
 })

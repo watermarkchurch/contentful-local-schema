@@ -7,6 +7,17 @@ export interface Exportable {
    * Exports the current state of the data source to a backup key-value store
    */
   export(): Generator<SyncItem, void, void> | AsyncGenerator<SyncItem, void, void>
+  
+  /**
+   * Imports the current state of the data source from a backup key-value store, replacing any existing data
+   * 
+   * The import should be atomically committed once the generator completes
+   * (i.e. without yielding to the event loop (i.e. no async during the commit)).
+   */
+  import(
+    items: Iterable<SyncItem> | AsyncIterable<SyncItem>,
+    token: string | null
+  ): void | Promise<void>
 }
 
 /**
@@ -27,7 +38,13 @@ export interface ReadableKeyValueStorage {
  * 
  */
 export interface DataSourceWithBackup {
+  /**
+   * Initiates a backup of the data source to the configured key-value store
+   */
   backup(): Promise<void>
+  /**
+   * Restores the data source from the configured key-value store
+   */
   restore(): Promise<void>
 }
 
@@ -60,51 +77,51 @@ export function withBackup<TDataSource extends Exportable & Syncable>(
   storage: WritableKeyValueStorage & ReadableKeyValueStorage,
   prefix: string
 ): TDataSource & DataSourceWithBackup {
+
   return Object.assign(
     dataSource,
     {
-      backup: backup.bind(dataSource),
-      restore: restore.bind(dataSource)
+      backup: wrapBackupFn(dataSource),
+      restore: wrapRestoreFn(dataSource)
     }
   )
 
-  async function backup(): Promise<void> {
-    const iterator = dataSource.export()
+  function wrapBackupFn(dataSource: TDataSource): () =>Promise<void> {
+    return async () => {
+      const iterator = dataSource.export()
 
-    // TODO: batch this by size into multiple pages due to 2mb entry size limit
-    // https://react-native-async-storage.github.io/async-storage/docs/limits/
-    const batch: SyncItem[] = []
-    for await (const item of iterator) {
-      batch.push(item)
+      // TODO: batch this by size into multiple pages due to 2mb entry size limit
+      // https://react-native-async-storage.github.io/async-storage/docs/limits/
+      const batch: SyncItem[] = []
+      for await (const item of iterator) {
+        batch.push(item)
+      }
+      
+      const token = await dataSource.getToken()
+      await Promise.all([
+        storage.setItem(`${prefix}/entries`, JSON.stringify(batch)),
+        storage.setItem(`${prefix}/token`, token || '')
+      ])
     }
-    
-    const token = await dataSource.getToken()
-    await Promise.all([
-      storage.setItem(`${prefix}/entries`, JSON.stringify(batch)),
-      storage.setItem(`${prefix}/token`, token || '')
-    ])
   }
 
-  async function restore(this: Syncable): Promise<void> {
-    const [data, token] = await Promise.all([
-      storage.getItem(`${prefix}/entries`),
-      storage.getItem(`${prefix}/token`)
-    ])
+  function wrapRestoreFn(dataSource: TDataSource): () => Promise<void> {
+    return async () => {
+      const [data, token] = await Promise.all([
+        storage.getItem(`${prefix}/entries`),
+        storage.getItem(`${prefix}/token`)
+      ])
 
-    if (!data) { return }
+      if (!present(data)) { return }
 
-    const entries = JSON.parse(data) as SyncItem[]
-    for(const e of entries) {
-      await dataSource.index(e)
-    }
-    if (present(token)) {
-      await dataSource.setToken(token)
+      const entries = JSON.parse(data) as SyncItem[]
+      await dataSource.import(entries, token)
     }
   }
 }
 
 export function isExportable(dataSource: any): dataSource is Exportable {
-  return typeof dataSource.export === 'function'
+  return typeof dataSource.export === 'function' && typeof dataSource.import === 'function'
 }
 
 export function hasBackup(dataSource: any): dataSource is DataSourceWithBackup {

@@ -1,4 +1,6 @@
+import { isError } from 'lodash';
 import { SyncItem } from '../contentful/types'
+import { isExportable } from '../backup';
 
 // copied out of Contentful JS SDK
 // These types are intentionally looser than our own types, to allow the user to
@@ -38,26 +40,51 @@ export class SyncEngine {
   public async sync(): Promise<void> {
     const token = await this.dataSource.getToken()
 
-    const collection = await this.client.sync(
-      token ?
-        { nextSyncToken: token } :
-        { initial: true }
-    )
+    let collection: SyncCollection
+    try {
+      collection = await this.client.sync(
+        token ?
+          { nextSyncToken: token } :
+          { initial: true }
+      )
+    } catch (e) {
+      if (isError(e) && e.message == 'Request failed with status code 400') {
+        return await this.fullResync()
+      }
+      // if (e.message == 'The access token you sent could not be found or is invalid.') {
+      //   throw new Error('Invalid Contentful access token')
+      // }
+      throw e
+    }
 
-    for(const e of collection.entries) {
-      await this.dataSource.index(e)
+    const allItems = iterateCollection(collection)
+    for(const item of allItems) {
+      await this.dataSource.index(item)
     }
-    for(const e of collection.assets) {
-      await this.dataSource.index(e)
-    }
-    for(const e of collection.deletedEntries) {
-      await this.dataSource.index(e)
-    }
-    for(const e of collection.deletedAssets) {
-      await this.dataSource.index(e)
-    }
+
     await this.dataSource.setToken(collection.nextSyncToken)
   }
+
+  private async fullResync(): Promise<void> {
+    const collection = await this.client.sync({ initial: true })
+
+    const allItems = iterateCollection(collection)
+
+    if (isExportable(this.dataSource)) {
+      await this.dataSource.import(allItems, collection.nextSyncToken)
+    } else {
+      for(const item of allItems) {
+        await this.dataSource.index(item)
+      }
+    }
+  }
+}
+
+function* iterateCollection(collection: SyncCollection): Generator<SyncItem> {
+  for(const e of collection.entries) { yield e }
+  for(const e of collection.assets) { yield e }
+  for(const e of collection.deletedEntries) { yield e }
+  for(const e of collection.deletedAssets) { yield e }
 }
 
 /**
