@@ -5,10 +5,10 @@ import type { Asset, AssetCollection, Entry, EntryCollection, DeletedAsset, Dele
 import type { ContentfulDataSource } from '.'
 import { isAsset, isDeletedAsset, isDeletedEntry, isEntry } from '../util'
 import { Syncable } from '../syncEngine'
-import { Exportable } from '../backup'
+import { Exportable, Importable } from '../backup'
 
 
-export class InMemoryDataSource implements ContentfulDataSource, Syncable, Exportable {
+export class InMemoryDataSource implements ContentfulDataSource, Syncable, Exportable, Importable {
   private _entries: Map<string, SyncEntry | DeletedEntry>
   private _assets: Map<string, SyncAsset | DeletedAsset>
   private _syncToken: string | undefined | null

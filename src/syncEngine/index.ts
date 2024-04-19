@@ -1,6 +1,6 @@
-import { isError } from 'lodash';
+import { isError } from 'lodash'
 import { SyncItem } from '../contentful/types'
-import { isExportable } from '../backup';
+import { isImportable } from '../backup'
 
 // copied out of Contentful JS SDK
 // These types are intentionally looser than our own types, to allow the user to
@@ -25,6 +25,13 @@ export interface ContentfulClientApi {
 export interface Syncable {
   getToken(): string | undefined | null | Promise<string | undefined | null>
   setToken(token: string): void | Promise<void>
+  /**
+   * Applies a single synced change of an entry or asset to the data source.
+   * The current state of the Contentful space can be reconstructed by applying
+   * all changes in the order they were received.
+   * 
+   * @param syncItem The entry or asset which has changed, received from the Sync API.
+   */
   index(syncItem: SyncItem): void | Promise<void>
 }
 
@@ -49,12 +56,15 @@ export class SyncEngine {
       )
     } catch (e) {
       if (isError(e) && e.message == 'Request failed with status code 400') {
-        return await this.fullResync()
+        if (isImportable(this.dataSource)) {
+          return await this.fullResync()
+        }
       }
       throw e
     }
 
     const allItems = iterateCollection(collection)
+    // We don't use "import" during normal sync, because we only get back the entries and assets that changed.
     for(const item of allItems) {
       await this.dataSource.index(item)
     }
@@ -63,17 +73,16 @@ export class SyncEngine {
   }
 
   private async fullResync(): Promise<void> {
+    // We have to use "import" during a full resync, because the full resync doesn't include deletedEntries or deletedAssets.
+    // So if some entries or assets were unpublished between the last successful sync and now, the only way to clear
+    // them from the data source is to use "import".
+    if (!isImportable(this.dataSource)) { throw new Error('Data source does not support full resync, the "import" method must be implemented.') }
+      
     const collection = await this.client.sync({ initial: true })
 
     const allItems = iterateCollection(collection)
-
-    if (isExportable(this.dataSource)) {
-      await this.dataSource.import(allItems, collection.nextSyncToken)
-    } else {
-      for(const item of allItems) {
-        await this.dataSource.index(item)
-      }
-    }
+    await this.dataSource.import(allItems, collection.nextSyncToken)
+  
   }
 }
 

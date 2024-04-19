@@ -7,11 +7,16 @@ export interface Exportable {
    * Exports the current state of the data source to a backup key-value store
    */
   export(): Generator<SyncItem, void, void> | AsyncGenerator<SyncItem, void, void>
-  
+}
+
+export interface Importable {
   /**
-   * Imports the current state of the data source from a backup key-value store, replacing any existing data
+   * Atomically replaces the full state of the Contentful space, replacing any existing data.
+   * This is used when:
+   *   - The data source is being restored from a backup
+   *   - Or a full resync from Contentful is required.
    * 
-   * The import should be atomically committed once the generator completes
+   * Implementations must atomically commit the new state once the generator completes
    * (i.e. without yielding to the event loop (i.e. no async during the commit)).
    */
   import(
@@ -115,13 +120,24 @@ export function withBackup<TDataSource extends Exportable & Syncable>(
       if (!present(data)) { return }
 
       const entries = JSON.parse(data) as SyncItem[]
-      await dataSource.import(entries, token)
+      if (isImportable(dataSource)) {
+        await dataSource.import(entries, token)
+      } else {
+        // In this case, we can fall back to the "index" method because during restore we assume the data source is empty.
+        for(const item of entries) {
+          await dataSource.index(item)
+        }
+      }
     }
   }
 }
 
 export function isExportable(dataSource: any): dataSource is Exportable {
-  return typeof dataSource.export === 'function' && typeof dataSource.import === 'function'
+  return typeof dataSource.export === 'function'
+}
+
+export function isImportable(dataSource: any): dataSource is Importable {
+  return typeof dataSource.import === 'function'
 }
 
 export function hasBackup(dataSource: any): dataSource is DataSourceWithBackup {
