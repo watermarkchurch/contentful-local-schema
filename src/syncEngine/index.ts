@@ -51,9 +51,6 @@ export class SyncEngine {
       if (isError(e) && e.message == 'Request failed with status code 400') {
         return await this.fullResync()
       }
-      // if (e.message == 'The access token you sent could not be found or is invalid.') {
-      //   throw new Error('Invalid Contentful access token')
-      // }
       throw e
     }
 
