@@ -127,6 +127,9 @@ export function withBackup<TDataSource extends Exportable & Syncable>(
         for(const item of entries) {
           await dataSource.index(item)
         }
+        if (present(token)) {
+          await dataSource.setToken(token)
+        }
       }
     }
   }
