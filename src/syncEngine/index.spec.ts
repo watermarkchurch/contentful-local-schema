@@ -3,6 +3,7 @@ import nock from 'nock'
 import { createClient } from 'contentful'
 import {SyncEngine} from '.'
 import { InMemoryDataSource } from '../dataSource/in-memory-data-source'
+import { SimpleContentfulClient } from '../contentful/simpleClient'
 
 const contentfulClient = createClient({
   accessToken: 'integration-test',
@@ -131,5 +132,58 @@ describe('SyncEngine', () => {
 
     expect(store.getEntry('6RPLNBrHzAwg4X58WFkCBc')).toBeFalsy()
     expect(store.getAsset('1QJlrZxpJrSqaLOg0i1tvt')).toBeFalsy()
+  })
+  
+  it('does a full resync when the sync token is invalid', async () => {
+    nock('https://cdn.contentful.com')
+      .get('/spaces/xxxxxx/environments/master/sync?sync_token=badToken')
+      .reply(400, JSON.stringify({
+        'sys': {
+          'type':'Error',
+          'id':'BadRequest'
+        },
+        'message': 'The sync token you sent was invalid. Consider trying an initial sync by passing "initial=true".',
+        'requestId':'7553da98-bbd3-4d0c-bae4-e0ad1023e529'
+      }))
+      
+    store.setToken('badToken')
+    
+    // act
+    await subject.sync()
+  })
+  
+  describe('with Simple Client', () => {
+    let simpleClient: SimpleContentfulClient
+    let fetch: typeof globalThis.fetch
+
+    beforeEach(() => {
+      fetch = require('node-fetch')
+      
+      simpleClient = new SimpleContentfulClient({
+        accessToken: 'integration-test',
+        space: 'xxxxxx',
+      }, 
+      fetch)
+      
+      subject = new SyncEngine(store, simpleClient)
+    })
+
+    it('does a full resync when the sync token is invalid', async () => {
+      nock('https://cdn.contentful.com')
+        .get('/spaces/xxxxxx/environments/master/sync?sync_token=badToken')
+        .reply(400, JSON.stringify({
+          'sys': {
+            'type':'Error',
+            'id':'BadRequest'
+          },
+          'message': 'The sync token you sent was invalid. Consider trying an initial sync by passing "initial=true".',
+          'requestId':'7553da98-bbd3-4d0c-bae4-e0ad1023e529'
+        }))
+        
+      store.setToken('badToken')
+      
+      // act
+      await subject.sync()
+    })
   })
 })

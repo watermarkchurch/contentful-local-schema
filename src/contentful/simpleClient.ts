@@ -122,7 +122,8 @@ export class SimpleContentfulClient {
       }
 
       if (resp.status != 200) {
-        throw new Error(`Unexpected status code ${resp.status} for '${path}'`)
+        // match the error message from the official client
+        throw new Error(`Request failed with status code ${resp.status}`)
       }
     } while (resp.status != 200)
 

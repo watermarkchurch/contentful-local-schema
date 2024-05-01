@@ -133,4 +133,46 @@ describe('InMemoryDataSource', () => {
       expect(titles).not.toContain('Main Stage Session 5')
     })
   })
+  
+  describe('import', () => {
+    it('replaces all existing entreis', async () => {
+      const newItems = [
+        {
+          sys: {
+            id: '1',
+            type: 'Entry',
+            contentType: {
+              sys: {
+                id: 'person'
+              }
+            }
+          },
+          fields: {
+            name: 'Alice'
+          }
+        },
+        {
+          sys: {
+            id: '2',
+            type: 'Asset'
+          },
+          fields: {
+            title: 'Bob'
+          }
+        }
+      ] as any[]
+      
+      // act
+      await instance.import(newItems, 'newToken')
+      
+      const entries = instance.getEntries()
+      const assets = instance.getAssets()
+
+      expect(entries.total).toEqual(1)
+      expect(entries.items.length).toEqual(1)
+      expect(assets.total).toEqual(1)
+      expect(assets.items.length).toEqual(1)
+      expect(instance.getToken()).toEqual('newToken')
+    })
+  })
 })
