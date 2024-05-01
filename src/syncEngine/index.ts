@@ -72,7 +72,7 @@ export class SyncEngine {
     await this.dataSource.setToken(collection.nextSyncToken)
   }
 
-  private async fullResync(): Promise<void> {
+  public async fullResync(): Promise<void> {
     // We have to use "import" during a full resync, because the full resync doesn't include deletedEntries or deletedAssets.
     // So if some entries or assets were unpublished between the last successful sync and now, the only way to clear
     // them from the data source is to use "import".
@@ -103,11 +103,12 @@ function* iterateCollection(collection: SyncCollection): Generator<SyncItem> {
 export function withSync<DataSource extends Syncable>(
   dataSource: DataSource,
   client: Pick<ContentfulClientApi, 'sync'>
-): DataSource & Pick<SyncEngine, 'sync'> {
+): DataSource & Pick<SyncEngine, 'sync' | 'fullResync'> {
   const syncEngine = new SyncEngine(dataSource, client)
 
   return Object.assign(dataSource, {
-    sync: syncEngine.sync.bind(syncEngine)
+    sync: syncEngine.sync.bind(syncEngine),
+    fullResync: syncEngine.fullResync.bind(syncEngine)
   })
 }
 
@@ -122,7 +123,7 @@ export function withSync<DataSource extends Syncable>(
 export function addSync<DataSource extends Syncable>(
   dataSource: DataSource,
   client: Pick<ContentfulClientApi, 'sync'>
-): asserts dataSource is DataSource & Pick<SyncEngine, 'sync'> {
+): asserts dataSource is DataSource & Pick<SyncEngine, 'sync' | 'fullResync'> {
   withSync(dataSource, client)
 }
 
